@@ -1,0 +1,77 @@
+*
+!*/
+
+# whitelist .gitignore from https://www.howtogeek.com/devops/how-to-set-up-gitignore-as-a-whitelist/
+
+# programming languages
+!*.py
+!*.js
+!*.ts
+!*.mjs
+!*.mts
+!*.map
+!*.c
+!*.h
+!*.cpp
+!*.hpp
+!*.go
+!*.rb
+!*.lua
+!*.nse
+!*.php
+!*.java
+!*.sed
+!*.awk
+!*.pl
+!*.rs
+!*.lisp
+!*.s
+!*.racket
+!*.r
+!*.cs
+!*.pro
+!*.kt
+
+# data store
+!*.yml
+!*.yaml
+!*.json5
+!*.toml
+!*.json
+!*.mjson
+!*.sql
+
+# templates
+!*.mdl
+!*.j2
+
+# text files
+!*.html
+!*.md
+!*.markdown
+!*.txt
+!*.rst
+!*.log
+!README # detection in lower case
+!readme
+
+# shell scripts
+!*.sh
+!*.fish
+!*.cmd
+!*.ps1
+!*.xsh
+!*.xonsh
+!*.expect
+
+# specials
+
+!.gitignore
+!.subModuleOrigin
+
+# containers
+!Dockerfile
+
+# config
+!*.config
+!*.conf
