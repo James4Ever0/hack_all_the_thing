@@ -39,6 +39,8 @@ require 'amazing_print'
 # puts(result)
 # how to pretty print?
 # gem install amazing_print
+$LOAD_PATH << "."
+require 'test'
 
 rescue Interrupt
   puts "\nAborting..."
