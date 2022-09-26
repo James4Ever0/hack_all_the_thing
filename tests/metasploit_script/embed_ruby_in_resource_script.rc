@@ -1,6 +1,6 @@
 <ruby>
 puts('hello world')
 result = run_single("search cve:2008")
-puts(result)
+puts(result) # return true
 puts("search end")
 </ruby>
