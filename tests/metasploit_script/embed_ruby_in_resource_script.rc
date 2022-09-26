@@ -1,4 +1,5 @@
 <ruby>
 puts('hello world\n')
 result = run_single("search cve:2008")
+print(result)
 </ruby>
