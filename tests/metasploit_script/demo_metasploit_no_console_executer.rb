@@ -1,4 +1,5 @@
-#!/usr/share/metasploit-framework/ruby
+###
+# !/usr/share/metasploit-framework/ruby
 # -*- coding: binary -*-
 #
 # This user interface provides users with a command console interface to the
