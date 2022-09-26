@@ -12,4 +12,4 @@ how to deduplicate?
 
 how to make it editable?
 
-how to update? automated or manual?
+how to update? automated or manual? which source should we use? exploitdb?
