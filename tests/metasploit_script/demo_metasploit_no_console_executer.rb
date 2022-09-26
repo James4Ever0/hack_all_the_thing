@@ -26,8 +26,6 @@ begin
 #   Metasploit::Framework::Command::Console.start
 print('load complete')
 
-
-
 rescue Interrupt
   puts "\nAborting..."
   exit(1)
