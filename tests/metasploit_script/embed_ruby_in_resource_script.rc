@@ -14,3 +14,5 @@ result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 puts("search end")
 print(result)
 </ruby>
+
+exit
