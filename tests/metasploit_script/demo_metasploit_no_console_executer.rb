@@ -37,7 +37,9 @@ require 'amazing_print'
 # how about let's use absolute import path?
 # print(result)
 # puts(result)
-ap result
+# ap result
+data = [ false, 42, %w(forty two), { :now => Time.now, :class => Time.now.class, :distance => 42e42 } ]
+ap data
 # how to pretty print?
 # gem install amazing_print
 $LOAD_PATH << "." # must add this line
