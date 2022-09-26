@@ -12,4 +12,4 @@ how to deduplicate?
 
 how to make it editable?
 
-how to update?
+how to update? automated or manual?
