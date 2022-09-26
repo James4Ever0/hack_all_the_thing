@@ -9,3 +9,5 @@ what should we put into this thing?
 submit a link and put into readability.js?
 
 how to deduplicate?
+
+how to make it editable?
