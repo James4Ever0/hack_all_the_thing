@@ -41,9 +41,9 @@ require 'amazing_print'
 # puts(result)
 # ap result
 # puts result.inspect
-# require 'pp'
+require 'pp'
 # pp result
-ap result.first # it is a list.
+pp result.first # it is a list.
 # ap data
 # how to pretty print?
 # gem install amazing_print
