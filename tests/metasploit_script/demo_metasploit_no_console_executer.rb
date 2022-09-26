@@ -18,7 +18,7 @@ begin
   metasploit_msfconsole_location = "/usr/bin/msfconsole"
   # what the heck is going on?
   require Pathname.new(metasploit_msfconsole_location).realpath.expand_path.parent.join('config', 'boot')
-  require 'msfenv'
+  require 'msfenv' # wtf is this?
   require 'metasploit/framework/profiler'
   require 'metasploit/framework/command/console'
 
