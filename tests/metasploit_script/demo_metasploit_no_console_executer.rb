@@ -24,7 +24,7 @@ begin
 
   Metasploit::Framework::Profiler.start
 #   Metasploit::Framework::Command::Console.start
-print('load complete\n')
+print("load complete\n")
 search_string = Msf::Modules::Metadata::Search.parse_search_string("cve:2008")
 
 result = Msf::Modules::Metadata::Cache.instance.find(search_string)
