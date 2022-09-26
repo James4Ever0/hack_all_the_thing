@@ -39,7 +39,7 @@ require 'amazing_print'
 # puts(result)
 # how to pretty print?
 # gem install amazing_print
-$LOAD_PATH << "."
+$LOAD_PATH << "." # must add this line
 require 'test'
 
 rescue Interrupt
