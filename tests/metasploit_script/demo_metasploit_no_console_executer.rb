@@ -39,7 +39,25 @@ require 'ap'
 # how about let's use absolute import path?
 # print(result)
 # puts(result)
-ap result
+# ap result
+thod.arity
+          args = "(#{(1..n).collect {|i| "arg#{i}"}.join(", ")})"
+        elsif method.arity < 0
+          n = -method.arity
+          args = "(#{(1..n).collect {|i| "arg#{i}"}.join(", ")}, ...)"
+        end
+        klass = $1 if method.inspect =~ /Method: (.*?)#/
+        [name, args, klass]
+      end
+      max_name = data.collect {|item| item[0].size}.max
+      max_args = data.collect {|item| item[1].size}.max
+      data.each do |item| 
+        print " #{ANSI_BOLD}#{item[0].rjust(max_name)}#{ANSI_RESET}"
+        print "#{ANSI_GRAY}#{item[1].ljust(max_args)}#{ANSI_RESET}"
+        print "   #{ANSI_LGRAY}#{item[2]}#{ANSI_RESET}\n"
+      end
+      data.size
+    end
 # data = [ false, 42, %w(forty two), { :now => Time.now, :class => Time.now.class, :distance => 42e42 } ]
 # ap data
 # how to pretty print?
