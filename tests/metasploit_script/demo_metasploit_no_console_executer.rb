@@ -17,10 +17,10 @@ begin
   require Pathname.new(__FILE__).realpath.expand_path.parent.join('config', 'boot')
   require 'msfenv'
   require 'metasploit/framework/profiler'
-  require 'metasploit/framework/command/console'
+#   require 'metasploit/framework/command/console'
 
   Metasploit::Framework::Profiler.start
-  Metasploit::Framework::Command::Console.start
+#   Metasploit::Framework::Command::Console.start
 rescue Interrupt
   puts "\nAborting..."
   exit(1)
