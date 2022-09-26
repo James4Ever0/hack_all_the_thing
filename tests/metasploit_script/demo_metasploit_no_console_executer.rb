@@ -30,6 +30,7 @@ search_string = Msf::Modules::Metadata::Search.parse_search_string("cve:2008")
 result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 
 require 'amazing_print'
+# how about let's use absolute import path?
 # print(result)
 # puts(result)
 # how to pretty print?
