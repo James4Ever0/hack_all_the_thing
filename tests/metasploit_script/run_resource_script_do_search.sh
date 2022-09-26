@@ -1,2 +1,2 @@
 # msfconsole -r embed_ruby_in_resource_script.rc
-msfconsole -x 'irb -e $LOAD_PATH << '.'; re'
+msfconsole -x 'irb -e $LOAD_PATH << "."; require "test"
