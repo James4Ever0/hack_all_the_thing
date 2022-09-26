@@ -4,7 +4,8 @@ puts('hello world')
 # where is the damn search thing?
 #puts(result) # return true
 
-# you are going to dig into the msf 
+# you are going to dig into the msf source code.
+# can you run bare ruby script instead of this heavy shit?
 
 puts("search end")
 </ruby>
