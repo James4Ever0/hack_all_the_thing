@@ -32,6 +32,7 @@ result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 # print(result)
 # puts(result)
 # how to pretty print?
+# gem install amazing_print
 
 rescue Interrupt
   puts "\nAborting..."
