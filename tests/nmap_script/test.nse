@@ -1,4 +1,5 @@
 portrule = function(host, port) 
+	print("portrule",host,port)
 	    return port.protocol == "tcp" and port.number == 8022 and port.state == "open" 
     end
 action = function (host, port)
