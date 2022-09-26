@@ -48,6 +48,7 @@ require 'awesome_print'
 # ap data
 # how to pretty print?
 ap result.first
+# they cannot pretty print this thing. fuck
 # gem install amazing_print
 $LOAD_PATH << "." # must add this line
 require 'test'
