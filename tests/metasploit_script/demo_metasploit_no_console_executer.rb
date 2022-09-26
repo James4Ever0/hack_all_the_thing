@@ -34,8 +34,8 @@ $LOAD_PATH << "/var/lib/gems/3.0.0/gems/awesome_print-1.9.2/lib/"
 # require '/var/lib/gems/3.0.0/gems/amazing_print-1.4.0'
 # use the gem inside the msfconsole.
 # maybe not.
-# require 'amazing_print'
-require 'ap'
+require 'amazing_print'
+# require 'ap'
 # how about let's use absolute import path?
 # print(result)
 # puts(result)
