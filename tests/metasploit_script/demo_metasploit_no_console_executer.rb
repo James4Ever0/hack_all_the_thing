@@ -30,7 +30,7 @@ search_string = Msf::Modules::Metadata::Search.parse_search_string("cve:2008")
 result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 
 # require '/var/lib/gems/3.0.0/gems/amazing_print-1.4.0'
-# use the gem inside the msf
+# use the gem inside the msfconsole.
 # how about let's use absolute import path?
 # print(result)
 # puts(result)
