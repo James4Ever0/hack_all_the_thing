@@ -63,6 +63,7 @@
 !*.xsh
 !*.xonsh
 !*.expect
+!*.rc
 
 # specials
 
