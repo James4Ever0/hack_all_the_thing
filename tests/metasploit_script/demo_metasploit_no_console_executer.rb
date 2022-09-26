@@ -44,10 +44,11 @@ $LOAD_PATH << "/var/lib/gems/3.0.0/gems/awesome_print-1.9.2/lib/"
 # require 'pp'
 # pp result
 # pp result.first # it is a list.
-require 'awesome_print'
+# require 'awesome_print'
 # ap data
+pp result.first
 # how to pretty print?
-ap result.first
+# ap result.first
 # they cannot pretty print this thing. fuck
 # gem install amazing_print
 $LOAD_PATH << "." # must add this line
