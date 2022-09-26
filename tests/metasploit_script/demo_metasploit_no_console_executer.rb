@@ -41,7 +41,7 @@ result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 # puts(result)
 # ap result
 # puts result.inspect
-require 'pp'
+# require 'pp'
 # pp result
 pp result.first # it is a list.
 # ap data
