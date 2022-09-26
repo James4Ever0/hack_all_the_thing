@@ -11,3 +11,5 @@ submit a link and put into readability.js?
 how to deduplicate?
 
 how to make it editable?
+
+how to update?
