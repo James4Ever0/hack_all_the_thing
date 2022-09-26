@@ -1,1 +1,1 @@
-msfconsole -x "run test.rb"
+msfconsole -x "load /root/Desktop/works/hack_all_the_thing/tests/metasploit_script/test.rb"
