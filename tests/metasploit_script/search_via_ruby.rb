@@ -1,4 +1,4 @@
-<ruby>
+
 puts('hello world')
 #result = run_single("search cve:2008")
 # where is the damn search thing?
