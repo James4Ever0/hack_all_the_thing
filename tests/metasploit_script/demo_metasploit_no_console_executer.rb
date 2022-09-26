@@ -20,7 +20,7 @@ begin
   require Pathname.new(metasploit_msfconsole_location).realpath.expand_path.parent.join('config', 'boot')
   require 'msfenv' # wtf is this?
   require 'metasploit/framework/profiler'
-  require 'metasploit/framework/command/console'
+  # require 'metasploit/framework/command/console'
 
   Metasploit::Framework::Profiler.start
 #   Metasploit::Framework::Command::Console.start
