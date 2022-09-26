@@ -2,6 +2,9 @@
 puts('hello world')
 #result = run_single("search cve:2008")
 # where is the damn search thing?
-puts(result) # return true
+#puts(result) # return true
+
+# you are going to dig into the msf 
+
 puts("search end")
 </ruby>
