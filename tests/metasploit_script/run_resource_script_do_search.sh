@@ -1,1 +1,1 @@
-msfconsole -r run_resource_script_do
+msfconsole -r embed_ruby_in_resource_script.rc
