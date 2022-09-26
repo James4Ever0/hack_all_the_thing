@@ -7,3 +7,5 @@ use sql? or something else? use jina?
 what should we put into this thing?
 
 submit a link and put into readability.js?
+
+how to deduplicate?
