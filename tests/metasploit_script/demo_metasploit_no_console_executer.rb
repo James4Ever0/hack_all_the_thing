@@ -40,7 +40,9 @@ result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 # print(result)
 # puts(result)
 # ap result
-puts result.inspect
+# puts result.inspect
+require 'pp'
+pp result
 # ap data
 # how to pretty print?
 # gem install amazing_print
