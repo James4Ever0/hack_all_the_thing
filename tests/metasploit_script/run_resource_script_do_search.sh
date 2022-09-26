@@ -1,1 +1,1 @@
-msfconsole -r ru
+msfconsole -r run_resource_script_do
