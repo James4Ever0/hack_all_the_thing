@@ -1,1 +1,5 @@
-print("test script")
+
+action = function (host, port)
+	print("test script")
+	return
+end
