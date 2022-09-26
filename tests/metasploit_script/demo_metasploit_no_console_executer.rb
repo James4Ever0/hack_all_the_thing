@@ -30,6 +30,7 @@ search_string = Msf::Modules::Metadata::Search.parse_search_string("cve:2008")
 result = Msf::Modules::Metadata::Cache.instance.find(search_string)
 
 # print(result)
+# how to pretty print?
 
 rescue Interrupt
   puts "\nAborting..."
