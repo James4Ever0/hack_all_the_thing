@@ -37,6 +37,7 @@ require 'amazing_print'
 # how about let's use absolute import path?
 # print(result)
 # puts(result)
+
 # how to pretty print?
 # gem install amazing_print
 $LOAD_PATH << "." # must add this line
