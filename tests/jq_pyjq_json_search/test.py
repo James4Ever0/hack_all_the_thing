@@ -11,6 +11,7 @@ mdict2 = {1:"def",2:"ghi",3:"defghi",4:["def","ghi"]}
 #expression='paths(type=="string")'
 #
 expression='paths(try contains("def") catch false)'
-values=pyjq.all(expression,mdict)
+values=pyjq.all(expression,mdict2)
+#values=pyjq.all(expression,mdict)
 print("mdict:",mdict)
 print("values:", values)
