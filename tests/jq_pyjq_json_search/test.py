@@ -16,7 +16,9 @@ mdict3={"Abc":"dEF","a":[1,2,{'de':{'t':'uwy'}}]}
 #expression='paths(try contains("def") catch false)' # a simple keyword search tool.
 #expression='walk(if type == "string" then ascii_upcase else . end)'
 # next we need 'lower'
-expression='to_entries'
+#expression='to_entries'
+#[[{'key': 'Abc', 'value': 'dEF'}, {'key': 'a', 'value': [1, 2, {'de': {'t': 'uwy'}}]}]]
+# not so good?
 values=pyjq.all(expression,mdict3)
 #values=pyjq.all(expression,mdict2)
 #values=pyjq.all(expression,mdict)
