@@ -5,7 +5,7 @@ mdict={k:mdict for k in "ghi"}
 
 import pyjq
 
-expression="getpath(path(..))"
+expression='path(..) | select("def" in getpath(.) )'
 values=pyjq.all(expression,mdict)
 print("mdict:",mdict)
 print("values:", values)
