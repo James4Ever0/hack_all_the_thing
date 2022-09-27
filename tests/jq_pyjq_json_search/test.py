@@ -15,8 +15,8 @@ mdict3={"Abc":"dEF","a":[1,2,{'de':{'t':'uwy'}}]}
 #
 #expression='paths(try contains("def") catch false)' # a simple keyword search tool.
 #expression='walk(if type == "string" then ascii_upcase else . end)'
-expression='recurse(ascii_upcase;type=="string")'
 # next we need 'lower'
+expression='paths|getpaths'
 values=pyjq.all(expression,mdict3)
 #values=pyjq.all(expression,mdict2)
 #values=pyjq.all(expression,mdict)
