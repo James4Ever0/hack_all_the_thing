@@ -19,7 +19,7 @@ mdict3={"Abc":"dEF","a":[1,2,{'de':{'t':'uwy'}}]}
 #expression='to_entries'
 #[[{'key': 'Abc', 'value': 'dEF'}, {'key': 'a', 'value': [1, 2, {'de': {'t': 'uwy'}}]}]]
 # not so good?
-expression='.[]'
+#expression='.[]' # unroll for 1 layer
 values=pyjq.all(expression,mdict3)
 #values=pyjq.all(expression,mdict2)
 #values=pyjq.all(expression,mdict)
