@@ -16,7 +16,8 @@ mdict3={"Abc":"dEF"}
 #expression='paths(try contains("def") catch false)' # a simple keyword search tool.
 expression='ascii_downcase'
 # next we need 'lower'
-values=pyjq.all(expression,mdict2)
+values=pyjq.all(expression,mdict3)
+#values=pyjq.all(expression,mdict2)
 #values=pyjq.all(expression,mdict)
 print("mdict:",mdict)
 print("values:", values)
