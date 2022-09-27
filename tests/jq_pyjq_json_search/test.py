@@ -6,6 +6,9 @@ mdict={k:mdict for k in "ghi"}
 import pyjq
 
 mdict2 = {1:"def",2:"ghi",3:"defghi",4:["def","ghi"]}
+# key of json dict must be string.
+import json
+mdict2=json.loads(json.dumps(mdict2))
 
 #expression='.. try contains("def") catch false'
 #expression='paths(type=="string")'
