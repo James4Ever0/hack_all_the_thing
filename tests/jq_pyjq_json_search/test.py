@@ -7,3 +7,4 @@ import pyjq
 
 expression="path(.)"
 values=pyjq.all(expression,mdict)
+print("values:", values)
