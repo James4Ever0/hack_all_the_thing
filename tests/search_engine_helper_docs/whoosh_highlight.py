@@ -1,6 +1,3 @@
-# now we only index a single file.
+from load_demo_data import data
 
-with open("jq_man.log","r") as f:
-    data=f.read()
 
-# whatever search engine you use.
