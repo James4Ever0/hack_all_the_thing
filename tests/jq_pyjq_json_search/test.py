@@ -22,7 +22,7 @@ mdict3={"Abc":"dEF","a":[1,2,{'de':{'t':'uwy'}}]}
 #expression='.[]' # unroll for 1 layer
 #expression='..|select(type=="string")'
 #expression="keys" #similar to python dict.keys()
-expression='walk(if type=="string" then path(ascii_downcase) else . end)|'
+expression='walk(if type=="string" then ascii_downcaseelse . end)|'
 #expression='type=="string"|=ascii_downcase | path(..|select(type=="string"))'
 #expression=' path(..|select(type=="string"))'
 values=pyjq.all(expression,mdict3)
