@@ -5,7 +5,7 @@ mdict={k:mdict for k in "ghi"}
 
 import pyjq
 
-expression='try .. contains("def") catch false'
+expression='.. try contains("def") catch false'
 #expression='paths(type=="string")'
 values=pyjq.all(expression,mdict)
 print("mdict:",mdict)
