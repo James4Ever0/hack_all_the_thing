@@ -46,7 +46,8 @@ def index_search(dirname, search_fields, search_query):
         results.fragmenter.charlimit = 1000000
         print("Search Results: ")
         for hit in results:
-            highlights = hit.highlights('content', top=5) # str. not list.
+            # highlights = hit.highlights('content', top=5) # str. not list.
+            highlights = hit.highlights('content', text=data)
             # highlights = hit.highlights('content')
             # print(dir(highlights))
             # breakpoint()
