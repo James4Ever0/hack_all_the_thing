@@ -15,7 +15,7 @@ from docarray.typing import Image, Text, JSON
 class WPExcerpt:
     source: Text
     content: Text
-    meta: JSON
+    lineRange: JSON
 
 
 a = WPArticle(
