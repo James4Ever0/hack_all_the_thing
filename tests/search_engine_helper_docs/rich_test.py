@@ -13,3 +13,4 @@ print(Panel(panel_group))
 # it is a panel.
 
 # we need textual. another library to make console interface.
+# cause we are searching!
