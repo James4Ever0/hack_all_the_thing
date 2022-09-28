@@ -16,7 +16,7 @@ from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer
 fragmenter = ContextFragmenter(charlimit = charlimit)
-
+formatter = 
 
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
                      scorer=BasicFragmentScorer, minscore=1, order=FIRST
