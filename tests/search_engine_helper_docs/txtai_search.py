@@ -8,4 +8,4 @@ from load_demo_data import data
 # preserve at most one white space in the end? or forcing one white space instead?
 
 # first we want line by line presentation. make sure we get the right array!
-# CRLF-> LF 
+# CRLF -> LF should be done before this step.
