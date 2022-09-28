@@ -24,7 +24,7 @@ class Application:
 
         # Create embeddings model, backed by sentence-transformers & transformers
         self.embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
-
+        # warning! this is huge.
     def run(self):
         """
         Runs a Streamlit application.
