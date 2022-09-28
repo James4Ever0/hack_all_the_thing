@@ -104,7 +104,7 @@ while True:
         break
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex + endIndexOffset
-    endIndex = min(endIndex, newContentLength)
+    endIndex = min(endIndex, newContentLength-1)
     if endIndex <= startIndex:  # failsafe.
         continue
     # the append process.
