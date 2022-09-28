@@ -31,7 +31,7 @@ da = DocumentArray(
 da.apply(Document.embed_feature_hashing, backend="process")
 
 q = (
-    WPExcerpt(text=query)
+    WPExcerpt(content=query)
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
