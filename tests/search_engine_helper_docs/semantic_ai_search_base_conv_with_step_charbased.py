@@ -83,7 +83,7 @@ for lineNumber, line in enumerate(linewise):
 
 newContentLength = len(newContent)
 startIndex = 0
-
+listOf
 while True:
     if startIndex >= newContentLength:
         break
