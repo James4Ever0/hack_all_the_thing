@@ -5,6 +5,8 @@ import os
 from txtai.embeddings import Embeddings
 
 # seems it can pull out the right thing.
+# but the ram consumption?
+
 class Application:
     """
     Main application.
