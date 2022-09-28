@@ -90,7 +90,7 @@ for lineNumber, line in enumerate(linewise):
 # MAX KEY: 85783
 # which is smaller than:
 # KeyError: 85830
-# so it is obvious that we need the smaller 'endIndex', by using min(endIndex, )
+# so it is obvious that we need the smaller 'endIndex', by using min(endIndex, newContentLength)
 # breakpoint()
 
 newContentLength = len(newContent)
@@ -103,6 +103,8 @@ while True:
     if startIndex >= newContentLength:
         break
     endIndexOffset = group_per_conv_group * char_per_group
+    endIndex = startIndex = endIndexOffset
+    min(endIndex, newContentLength)
     # the append process.
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
