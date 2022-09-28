@@ -84,7 +84,7 @@ for lineNumber, line in enumerate(linewise):
 newContentLength = len(newContent)
 startIndex = 0
 listOfCleanedMergedConvGroupWithLineIndexMapping = []
-# maybe you want to merge the fetched 'cleanedMerged
+# maybe you want to merge the fetched 'cleanedMergedConvGroup
 while True:
     if startIndex >= newContentLength:
         break
