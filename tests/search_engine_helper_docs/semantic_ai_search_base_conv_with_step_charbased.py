@@ -92,7 +92,7 @@ while True:
         break
     endIndexOffset = group_per_conv_group * char_per_group
     # the append process.
-    mElem = {'conv_group':}
+    mElem = {'conv_group':newContent[]}
 
     # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
