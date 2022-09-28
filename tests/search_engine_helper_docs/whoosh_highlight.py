@@ -48,7 +48,8 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
             # highlights = hit.highlights('content', text=data)
-            sprint(dir(hit))
+            # sprint(dir(hit))
+            print(matched_terms)
             # fragments = hit.fragments('content')
             # print(fragments)
             # sprint(highlights)
