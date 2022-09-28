@@ -16,7 +16,7 @@ from docarray.typing import Image, Text, JSON
 class WPExcerpt:
     source: Text
     content: Text
-    lineRange: tuple
+    lineRange: JSON
 
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
@@ -31,7 +31,7 @@ da = DocumentArray(
 da.apply(Document.embed_feature_hashing, backend="process")
 
 q = (
-    Document(WPExcerpt(content=query)
+    Document(WPExcerpt(content=query))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
