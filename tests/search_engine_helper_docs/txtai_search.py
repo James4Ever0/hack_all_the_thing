@@ -16,7 +16,7 @@ from load_demo_data import data
 data = data.replace("\r\n","\n")
 # the original data, shall be used as reference. save it somewhere, like database.
 
-linewise = data.split("\n") # there won't be 
+linewise = data.split("\n") # there won't be "\n" 
 
 
 def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
