@@ -34,7 +34,7 @@ da.apply(Document.embed_feature_hashing, backend="process")
 # what is this shit?
 q = (
     Document(text=query)
-    .embed_feature_hashing(fields=('content',))
+    .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
 
@@ -48,7 +48,7 @@ mDocument = docArray_5[0]
 # breakpoint()
 # print(mDocument.source.text)
 # print(mDocument.content.text)
-print(mDocument.lineRange.tags)
+# print(mDocument.lineRange.tags)
 # [1933, 1936]
 # how the fuck you have this?
 
