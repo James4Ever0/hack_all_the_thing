@@ -42,6 +42,7 @@ def index_search(dirname, search_fields, search_query):
     # what is this q?
     sprint(q)
     breakpoint()
+    # (title:math OR content:math OR title:addition OR content:addition)
     
     
     with ix.searcher() as s:
