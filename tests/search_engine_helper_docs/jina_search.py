@@ -1,3 +1,4 @@
+from matplotlib.pyplot import text
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
     linewise,
@@ -15,7 +16,7 @@ from docarray.typing import Image, Text, JSON
 @dataclass
 class WPExcerpt:
     source: Text
-    content: Text
+    text: Text
     lineRange: JSON
 
 
