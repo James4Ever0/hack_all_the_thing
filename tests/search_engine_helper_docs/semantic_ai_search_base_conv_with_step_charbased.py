@@ -84,7 +84,8 @@ for lineNumber, line in enumerate(linewise):
 newContentLength = len(newContent)
 startIndex = 0
 while True:
-    if startIndex 
+    if startIndex >= newContentLength:
+        break
     endIndexOffset = step_group_for_
     startIndex += step_group_for_conv* char_per_group
 
