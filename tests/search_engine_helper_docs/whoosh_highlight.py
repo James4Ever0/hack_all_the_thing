@@ -21,7 +21,6 @@ if not os.path.exists("index_dir"):
 ix = index.create_in("index_dir", schema)
 writer = ix.writer()
 
-for i in range(df):
-    writer.add_document(title=str(df.title.iloc[i]), content=str(df2.content.iloc[i]),
-                    path=str(i))
+# for i in range(df):
+writer.add_document(title=str(df.title.iloc[i]), content=str(df2.content.iloc[i]),path=str(i))
 writer.commit()
