@@ -4,10 +4,11 @@
 from rich import print
 from rich.console import Group
 from rich.panel import Panel
+from rich.text import Text
 
 panel_group = Group(
     Panel("Hello", style="on blue"),
-    Panel(("World", style='yellow'), style="black on red"),
+    Panel(Te("World", style='yellow'), style="black on red"),
 )
 print(Panel(panel_group))
 # it is a panel.
