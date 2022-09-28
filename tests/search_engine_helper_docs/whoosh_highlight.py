@@ -47,7 +47,8 @@ def index_search(dirname, search_fields, search_query):
         print("Search Results: ")
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
-            highlights = hit.highlights('content', text=data)
+            # highlights = hit.highlights('content', text=data)
+            hit.
             # it is multi-sourced. separaed by three dots.
             # how it fucking works?
             # highlights = hit.highlights('content')
