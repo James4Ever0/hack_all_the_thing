@@ -4,4 +4,9 @@ from lazero.utils.logger import sprint
 query = "math addition"
 
 # we need exact location of the thing! scroll to it and display it!
-# consider using jina?
+from whoosh.highlight import highlight
+
+text =data
+
+excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
+                     scorer=BasicFragmentScorer, minscore=1, order=FIRST)
