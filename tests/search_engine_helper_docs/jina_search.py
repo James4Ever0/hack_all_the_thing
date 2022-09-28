@@ -20,7 +20,7 @@ class WPExcerpt:
 
 a = WPArticle(
     banner='https://.../cat-dog-flight.png',
-    headline='Everything to know about flying with pets, ...',
+    content='Everything to know about flying with pets, ...',
     lineRange=
 )
 
