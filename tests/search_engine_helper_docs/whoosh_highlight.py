@@ -1,5 +1,5 @@
 from load_demo_data import data
-        from lazero.utils.logger import sprint
+from lazero.utils.logger import sprint
 
 # a single document, unparsed!
 
@@ -44,7 +44,7 @@ def index_search(dirname, search_fields, search_query):
         results = s.search(q, terms=True, limit = 10)
         print("Search Results: ")
         for hit in results:
-            print()
+            print(hit.highlights('content'))
         # print(results[0:10])
         # return results
 
