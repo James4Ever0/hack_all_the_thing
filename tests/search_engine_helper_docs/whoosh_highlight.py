@@ -48,6 +48,7 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
             # highlights = hit.highlights('content', text=data)
+            print(dir(hit))
             fragments = hit.fragments('content')
             print(fragments)
             # it is multi-sourced. separaed by three dots.
