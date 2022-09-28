@@ -64,7 +64,7 @@ newContentCharIndexToLineIndexDict = {}
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # for zero length line (after cleaned), we skip without doing anything.
-    if len(line) == 0:
+    if len(line_cleaned) == 0:
         continue
     # print("{}:".format(lineNumber), line_cleaned)
     # this process will never decrease the length of the line.
