@@ -10,3 +10,4 @@ class SimpleApp(App):
 
 
 # SimpleApp.run(log="textual.log")
+SimpleApp.run()
