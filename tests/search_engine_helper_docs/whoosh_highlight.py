@@ -48,15 +48,15 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
             # highlights = hit.highlights('content', text=data)
-            print(dir(hit))
+            sprint(dir(hit))
             # fragments = hit.fragments('content')
             # print(fragments)
+            # sprint(highlights)
             # it is multi-sourced. separaed by three dots.
             # how it fucking works?
             # highlights = hit.highlights('content')
             # print(dir(highlights))
             # breakpoint()
-            sprint(highlights)
             # may still not going to work.
             # no highlight?
             # 104797, which is 104k.
