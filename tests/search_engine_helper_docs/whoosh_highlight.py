@@ -49,5 +49,7 @@ def index_search(dirname, search_fields, search_query):
 
 query = "math addition"
 results_dict = index_search("index_dir", ['title','content'], query)
-breakpoint()
+# breakpoint()
+for hit in results_dict:
+    print(hit.highlights('content'))
 # it is a single document, with no hits!
