@@ -42,7 +42,7 @@ def index_search(dirname, search_fields, search_query):
     
     
     with ix.searcher() as s:
-        results = s.search(q, terms=True, limit = 10)
+        results = s.search(q, terms=True, limit = 10) # what fucking terms?
         results.fragmenter.charlimit = 100000
         print("Search Results: ")
         # shall you replace the formatter.
