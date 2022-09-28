@@ -84,7 +84,7 @@ for lineNumber, line in enumerate(linewise):
 newContentLength = len(newContent)
 startIndex = 0
 while True:
-    startIndexOffset, endIndexOffset = 0, 
+    startIndexOffset, endIndexOffset = 0, step_group_for_
     startIndex += step_group_for_conv* char_per_group
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
