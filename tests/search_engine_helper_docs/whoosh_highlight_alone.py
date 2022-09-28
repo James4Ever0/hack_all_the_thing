@@ -13,5 +13,6 @@ analyzer =
 fragmenter = 
 formatter = 
 
+from whoosh.highlightBasicFragmentScorer
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
                      scorer=BasicFragmentScorer, minscore=1, order=FIRST)
