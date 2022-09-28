@@ -27,7 +27,7 @@ if __name__ == "__main__":
     # strange.
 
         # Convert queries to embedding vectors
-        data = np.array([self.transform((None, row, None)) for row in data])
+        data = np.array([self.transform((None, row, None)) for row in data_source])
 
         # Dot product on normalized vectors is equal to cosine similarity
         scores = np.dot(queries, data.T).tolist()
