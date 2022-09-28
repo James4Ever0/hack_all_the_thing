@@ -1,10 +1,10 @@
 from docarray import dataclass, Document
-from docarray.typing import Image, Text, JSON
+from docarray.typing import Text, JSON
 
 
 @dataclass
 class WPArticle:
-    banner: Image
+    # banner: Image
     headline: Text
     meta: JSON
 
