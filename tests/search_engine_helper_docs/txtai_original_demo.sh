@@ -1,0 +1,1 @@
+streamlit run txtai_original_demo.py 
