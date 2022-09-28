@@ -14,4 +14,5 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
-for lineNumber, line in linewise:
+for lineNumber, line in enumerate(linewise):
+    print(lineNumber)
