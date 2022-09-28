@@ -27,7 +27,8 @@ if __name__ == "__main__":
     # strange.
 
         # Convert queries to embedding vectors
-    data = np.array([embeddings.transform((None, row, None)) for row in data_source])
+        [embeddings.transform((None, row, None)) for row in data_source]
+    data = np.array()
     # i need progressbar!
 
         # Dot product on normalized vectors is equal to cosine similarity
