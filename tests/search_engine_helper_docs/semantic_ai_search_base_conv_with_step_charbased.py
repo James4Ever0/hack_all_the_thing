@@ -86,6 +86,7 @@ for lineNumber, line in enumerate(linewise):
     newContentCharIndexToLineIndexDict.update(mDict)
 
 # now, how to do convolution, or the windowed conv-like excerpt creation?
+breakpoint()
 
 newContentLength = len(newContent)
 startIndex = 0
