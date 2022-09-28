@@ -51,7 +51,7 @@ def standardLineCleaner(line):
 
 char_per_line = 
 
-a
+# rule to add space: if there's "-"
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
