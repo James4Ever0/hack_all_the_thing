@@ -103,7 +103,7 @@ while True:
     if startIndex >= newContentLength: # does not break? wtf?
         break
     endIndexOffset = group_per_conv_group * char_per_group
-    endIndex = startIndex = endIndexOffset
+    endIndex = startIndex + endIndexOffset
     endIndex = min(endIndex, newContentLength)
     if endIndex <= startIndex:  # failsafe.
         continue
