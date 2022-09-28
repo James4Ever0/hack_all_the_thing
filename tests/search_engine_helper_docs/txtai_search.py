@@ -14,5 +14,4 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
-for line in linewise:
-    
+for lineNumber, line in linewise:
