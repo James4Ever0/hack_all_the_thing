@@ -7,7 +7,7 @@ query = "math addition"
 from whoosh.highlight import highlight
 
 text =data
-terms = query # what is this terms?
+terms = list() # what is this terms?
 # A sequence or set containing the query words to match, e.g. (“render”, “shader”).
 
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
