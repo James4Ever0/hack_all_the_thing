@@ -51,6 +51,8 @@ def standardLineCleaner(line):
 
 char_per_line = 
 
+a
+
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # print("{}:".format(lineNumber), line_cleaned)
