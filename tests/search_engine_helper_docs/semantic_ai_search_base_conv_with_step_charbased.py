@@ -58,6 +58,8 @@ step_group_for_conv = 2  # instead of 1. just to make sure these conv groups ove
 # if not, then make sure there's one space between two lines.
 # create char index to line index mapping.
 
+
+
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # print("{}:".format(lineNumber), line_cleaned)
