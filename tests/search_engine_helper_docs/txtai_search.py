@@ -27,7 +27,7 @@ if __name__ == "__main__":
     # strange.
 
         # Convert queries to embedding vectors
-    data = np.array([self.transform((None, row, None)) for row in data_source])
+    data = np.array([embeddings.transform((None, row, None)) for row in data_source])
 
         # Dot product on normalized vectors is equal to cosine similarity
 
@@ -43,6 +43,6 @@ if __name__ == "__main__":
         scores = np.dot(queries, data.T).tolist()
 
         # uid = embeddings.similarity(query, data)[0][0]
-        uid = getSimilarity()
+        uid = 
         answer = data_source[uid]
         print(answer)
