@@ -21,6 +21,7 @@ class Application:
 
         # Create embeddings model, backed by sentence-transformers & transformers
         self.embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
+        # loading this thing?
         # warning! this is a huge model. could crash my freaking device.
     def run(self):
         """
@@ -29,7 +30,6 @@ class Application:
 
         st.title("Similarity Search")
         st.markdown("This application runs a basic similarity search that identifies the best matching row for a query.")
-
 
         if query:
             # Get index of best section that best matches query
