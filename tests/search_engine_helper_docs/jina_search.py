@@ -30,6 +30,7 @@ q = (
 docArray_5 = q.matches[:5]
 # do we have other things?
 
+print(docArray_5.matches)
 # it is not good! we do not have anything related to 'math' or 'addition' or 'operation'!
 
 # still nothing? wtf?
