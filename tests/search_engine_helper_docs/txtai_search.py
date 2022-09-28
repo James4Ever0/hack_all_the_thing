@@ -26,7 +26,7 @@ if __name__ == "__main__":
     import numpy as np
     # strange.
 
-        # Convert queries to embedding vectors
+    # Convert queries to embedding vectors
     print('loading data_source')
     import progressbar
     data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)])
