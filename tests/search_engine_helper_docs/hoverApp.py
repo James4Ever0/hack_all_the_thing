@@ -8,7 +8,9 @@ from rich.text import Text
 text = Text(
     "hello world python this is python", style="green"
 )  # there is no style applied.
+import os
 text.on(click="view.toggle('world')") # what is this fucking toggle?
+# text.on(click="view.toggle('world')") # what is this fucking toggle?
 
 class Hover(Widget):
 
