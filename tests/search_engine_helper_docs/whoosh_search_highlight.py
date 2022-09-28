@@ -45,7 +45,7 @@ def index_search(dirname, search_fields, search_query):
     # (title:math OR content:math OR title:addition OR content:addition)
     # why you have case conversion? why the fuck?
 
-    # how about let's set it as max?
+    # how about let's set it as max 
     
     with ix.searcher() as s:
         results = s.search(q, terms=True, limit = 10) # what fucking terms?
