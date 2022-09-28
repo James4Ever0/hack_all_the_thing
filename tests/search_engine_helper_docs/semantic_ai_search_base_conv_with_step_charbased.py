@@ -83,7 +83,7 @@ for lineNumber, line in enumerate(linewise):
 
 newContentLength = len(newContent)
 startIndex = 0
-listOfCleanedConvGroup
+listOfCleanedMergedConvGroup
 while True:
     if startIndex >= newContentLength:
         break
