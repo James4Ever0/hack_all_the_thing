@@ -32,7 +32,6 @@ class Hover(Widget):
         if self.name == "widget 1":
             # import os
             # command = 'bash less_jump_to_line.sh'
-            
             # os.system(command) # does not work properly! fuck.
         else:
             print("CLICKED {}".format(self.name))
