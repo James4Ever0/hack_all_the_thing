@@ -127,7 +127,7 @@ while True:
 
 del newContentCharIndexToLineIndexDict
 
-when extracted merged conv groups are next to each other, highlight the conv group with the highest score and other hits use secondary colors. for single conv group without neighbors, directly highlight 
+# when extracted merged conv groups are next to each other, highlight the conv group with the highest score and other hits use secondary colors. for single conv group without neighbors, directly highlight it with primary color.
 
 if __name__ == "__main__":
     # a typical test. we check this manually.
