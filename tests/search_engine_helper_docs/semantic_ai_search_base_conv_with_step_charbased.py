@@ -90,6 +90,7 @@ print("MAX KEY:", max(list(newContentCharIndexToLineIndexDict.keys())))
 # MAX KEY: 85783
 # which is smaller than:
 # KeyError: 85830
+# so it is obvious that we need the smaller 'end
 breakpoint()
 
 newContentLength = len(newContent)
