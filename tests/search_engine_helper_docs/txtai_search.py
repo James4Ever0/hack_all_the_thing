@@ -53,3 +53,4 @@ def standardLineCleaner(line):
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     print("{}:".format(lineNumber), line_cleaned)
+# we decide to join lines with space no matter what.
