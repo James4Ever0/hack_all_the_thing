@@ -59,6 +59,7 @@ step_group_for_conv = 2  # instead of 1. just to make sure these conv groups ove
 # create char index to line index mapping.
 
 newContent = ""
+newContentCa
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
