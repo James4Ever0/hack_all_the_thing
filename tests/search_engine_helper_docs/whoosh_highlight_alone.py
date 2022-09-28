@@ -14,7 +14,14 @@ formatter =
 from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter, NullFormatter
 
 class ListFormatter(NullFormatter):
-    
+    def format(self, fragments, replace=False):
+    """Returns a formatted version of the given text, using a list of
+    :class:`Fragment` objects.
+    """
+
+    formatted = [self.format_fragment(f, replace=replace)
+                    for f in fragments]
+    return formatted
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer
