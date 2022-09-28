@@ -86,7 +86,7 @@ startIndex = 0
 listOfCleanedMergedConvGroupWithLineIndexMapping = []
 # maybe you want to merge the fetched 'cleanedMergedConvGroup' according to 'lineIndexMapping', but that's another story.
 # you can use the mathlib, from pyjom.
-# i think it 
+# i think the mathlib should be
 while True:
     if startIndex >= newContentLength:
         break
