@@ -40,6 +40,8 @@ if __name__ == "__main__":
             break
         queries = [query]
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
+        scores = np.dot(queries, data.T).tolist()
+
         # uid = embeddings.similarity(query, data)[0][0]
         uid = getSimilarity()
         answer = data_source[uid]
