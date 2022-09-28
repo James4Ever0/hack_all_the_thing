@@ -39,7 +39,8 @@ def lstripChars(line, chars=[" ","\t"]):
     return line
 
 def standardLineCleaner(line):
-    line = 
+    line = removeDuplicates(line)
+    line = lstripC
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = 
