@@ -8,6 +8,7 @@ highlighted = text.highlight_words(['python'],style='yellow') # but we should no
 # just a damn number?
 console.print(text) # red.
 # now we have color. what else?
+# we need interface!
 # print(highlighted)
 
 # after successfully bricked my damn lenovo device, i realized that there is nothing good using such a restricted shit.
