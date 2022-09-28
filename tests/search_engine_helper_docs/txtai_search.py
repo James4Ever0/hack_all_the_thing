@@ -50,7 +50,7 @@ def standardLineCleaner(line):
     return line
 
 char_per_group = 30
-group_per_conv_group = 2
+group_per_conv_group = 3
 # step is 1
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
