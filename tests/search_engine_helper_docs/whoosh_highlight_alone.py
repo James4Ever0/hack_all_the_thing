@@ -13,6 +13,7 @@ analyzer =
 fragmenter = 
 formatter = 
 
-from whoosh.highlightBasicFragmentScorer
+from whoosh.highlight import BasicFragmentScorer, FIRST
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
-                     scorer=BasicFragmentScorer, minscore=1, order=FIRST)
+                     scorer=BasicFragmentScorer, minscore=1, order=FIRST
+                     )
