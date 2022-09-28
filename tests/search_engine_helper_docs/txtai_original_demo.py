@@ -42,7 +42,7 @@ class Application:
             "Make huge profits without work, earn up to $100,000 a day",
         ]
 
-        data = st.text_area("Data", value="\n".join(data)) # this is web interface. not the
+        data = st.text_area("Data", value="\n".join(data)) # this is web interface. not what we want for the answer.
         query = st.text_input("Query")
 
         data = data.split("\n")
