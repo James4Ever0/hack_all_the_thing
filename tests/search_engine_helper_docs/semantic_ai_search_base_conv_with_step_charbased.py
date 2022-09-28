@@ -104,7 +104,7 @@ while True:
         break
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex = endIndexOffset
-    min(endIndex, newContentLength)
+    endIndex = min(endIndex, newContentLength)
     # the append process.
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
