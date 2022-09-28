@@ -52,7 +52,7 @@ def standardLineCleaner(line):
 char_per_line = 
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
-# if 
+# if not, then 
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
