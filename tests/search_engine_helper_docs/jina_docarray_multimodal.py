@@ -21,4 +21,4 @@ a = WPArticle(
 d = Document(a)
 # print(d)
 print(d.headline.text)
-print(d.meta.a)
+print(d.meta.author)
