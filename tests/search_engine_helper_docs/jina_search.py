@@ -19,7 +19,7 @@ class WPExcerpt:
 
 
 a = WPArticle(
-    source='https://.../cat-dog-flight.png',
+    source='',
     content='Everything to know about flying with pets, ...',
     lineRange=
 )
