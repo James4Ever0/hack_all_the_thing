@@ -6,7 +6,8 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 query = "math addition"
 
 from docarray import Document, DocumentArray
-# A example multimodal document	
+
+# A example multimodal document
 from docarray import dataclass, Document
 from docarray.typing import Image, Text, JSON
 
@@ -18,15 +19,13 @@ class WPExcerpt:
     lineRange: tuple
 
 
-
-
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
-WPArticle(
-    source='jq_man.log',
-    content=elem["conv_group_merged"],
-    lineRange=elem['line_range']
-)
+    WPExcerpt(
+        source="jq_man.log",
+        content=elem["conv_group_merged"],
+        lineRange=elem["line_range"],
+    )
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
