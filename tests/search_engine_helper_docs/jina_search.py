@@ -39,4 +39,4 @@ q = (
     .match(da, metric="jaccard", use_scipy=True)
 )
 
-print(q.matches[:5, ("content", "scores__jaccard__value")])
+print(q.matches[:5, ("text", "scores__jaccard__value")])
