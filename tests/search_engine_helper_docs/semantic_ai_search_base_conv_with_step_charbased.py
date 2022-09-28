@@ -56,7 +56,7 @@ step_group_for_conv = 2  # instead of 1. just to make sure these conv groups ove
 
 assert step_group_for_conv <= group_per_conv_group # at least there is no gap, though when equal there will be no overlapping.
 assert group_per_conv_group >= 1
-assert char_per_group >=0
+assert char_per_group >=1
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
 # create char index to line index mapping.
