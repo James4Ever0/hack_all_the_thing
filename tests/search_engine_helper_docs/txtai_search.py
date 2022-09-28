@@ -8,6 +8,7 @@ from txtai.embeddings import Embeddings
 # 1455MiB. this is high.
 # this is a search application! damn it.
 
+from 
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
