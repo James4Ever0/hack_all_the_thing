@@ -12,7 +12,7 @@ from docarray.typing import Image, Text, JSON
 
 
 @dataclass
-class WPArticle:
+class WPExcerpt:
     banner: Image
     headline: Text
     meta: JSON
