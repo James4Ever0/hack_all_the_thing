@@ -1,6 +1,6 @@
 from semantic_ai_search_base_conv_with_step_charbased import listOfCleanedMergedConvGroupWithLineIndexMapping, linewise
 
-query = "math addition"`
+query = "math addition"
 
 from docarray import Document, DocumentArray
 
@@ -9,7 +9,7 @@ da = DocumentArray(Document(text=s.strip()) for s in d.text.split('\n') if s.str
 da.apply(Document.embed_feature_hashing, backend='process')
 
 q = (
-    Document(text='she smiled too much')
+    Document(text=query)
     .embed_feature_hashing()
     .match(da, metric='jaccard', use_scipy=True)
 )
