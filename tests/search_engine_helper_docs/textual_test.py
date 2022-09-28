@@ -4,4 +4,4 @@ text.on(click="view.toggle('world')")
 
 text.highlight_words('python','bold red')
 print(text)
-# after successifully bricked my damn lenovo device, i realized that there is nothing good using such a 
+# after successifully bricked my damn lenovo device, i realized that there is nothing good using such an rest
