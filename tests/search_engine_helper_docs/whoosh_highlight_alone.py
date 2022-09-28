@@ -38,7 +38,7 @@ excerpts = highlight(
     analyzer,
     fragmenter,
     formatter,
-    top=3,
+    top=5,
     scorer=BasicFragmentScorer,
     minscore=1,
     order=FIRST,
