@@ -10,7 +10,7 @@ class WPArticle:
 
 
 a = WPArticle(
-    banner='https://.../cat-dog-flight.png',
+    # banner='https://.../cat-dog-flight.png', # this is wrong. we shall remove this fake url
     headline='Everything to know about flying with pets, ...',
     meta={
         'author': 'Nathan Diller',
