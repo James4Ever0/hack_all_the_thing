@@ -1,6 +1,5 @@
 # do not use streamlit this time. maybe you want repl?
 # check the damn GPU usage!
-import os
 
 from txtai.embeddings import Embeddings
 
