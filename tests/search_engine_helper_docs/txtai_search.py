@@ -7,8 +7,6 @@ Requires streamlit to be installed.
 
 import os
 
-import streamlit as st
-
 from txtai.embeddings import Embeddings
 
 
