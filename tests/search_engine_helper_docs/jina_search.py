@@ -21,17 +21,19 @@ class WPExcerpt:
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
-    Document(WPExcerpt(
-        source="jq_man.log",
-        content=elem["conv_group_merged"],
-        lineRange=list(elem["line_range"]),
-    ))
+    Document(
+        WPExcerpt(
+            source="jq_man.log",
+            content=elem["conv_group_merged"],
+            lineRange=list(elem["line_range"]),
+        )
+    )
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
 
 q = (
-    Document(WPExcerpt(content=query,source=None,lineRange=None))
+    Document(WPExcerpt(content=query, source=None, lineRange=None))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
