@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     # Get index of best section that best matches query
     while True:
-    query = input("> ")
-    uid = embeddings.similarity(query, data)[0][0]
-    answer = data[uid]
-    print(answer)
+        query = input("> ")
+        uid = embeddings.similarity(query, data)[0][0]
+        answer = data[uid]
+        print(answer)
