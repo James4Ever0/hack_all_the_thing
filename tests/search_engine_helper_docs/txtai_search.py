@@ -7,4 +7,4 @@ from load_demo_data import data
 # shall we really strip out the trailing white space, causing potential unwanted merges?
 # preserve at most one white space in the end? or forcing one white space instead?
 
-# first we want line by line presentation. make sure we get the right 
+# first we want line by line presentation. make sure we get the right array!
