@@ -100,11 +100,11 @@ listOfCleanedMergedConvGroupWithLineIndexMapping = []
 # you can use the mathlib, from pyjom.
 # i think the mathlib should be embedded to lazero. pyjom's mathlib can be grabbed from there.
 while True:
-    if startIndex >= newContentLength: # does not break? wtf?
+    if startIndex >= newContentLength:  # does not break? wtf?
         break
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex + endIndexOffset
-    endIndex = min(endIndex, newContentLength-1)
+    endIndex = min(endIndex, newContentLength - 1)
     if endIndex <= startIndex:  # failsafe.
         continue
     # the append process.
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     print("CONTENT EXCERPT:")
     sprint(the_final_one["conv_group_merged"])
     start, end = the_final_one["line_range"]
-    myLines = linewise[start:end+1] # this is inclusive!
+    myLines = linewise[start : end + 1]  # this is inclusive!
     # shall we only change the text color?
     for line in myLines:
         print(line)
