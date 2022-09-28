@@ -24,6 +24,7 @@ if __name__ == "__main__":
     print("MODEL READY")
     while True:
         query = input("> ")
+        print("")
         uid = embeddings.similarity(query, data)[0][0]
         answer = data[uid]
         print(answer)
