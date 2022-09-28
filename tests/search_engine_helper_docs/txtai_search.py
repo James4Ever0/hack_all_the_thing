@@ -46,6 +46,6 @@ if __name__ == "__main__":
         scores = np.dot(queries, data.T).tolist()
 
         # uid = embeddings.similarity(query, data)[0][0]
-        uid = 
+        uid = uids[0][0][0]
         answer = data_source[uid]
         print(answer)
