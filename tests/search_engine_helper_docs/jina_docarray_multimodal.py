@@ -21,4 +21,4 @@ a = WPArticle(
 d = Document(a)
 # print(d)
 print(d.headline.text)
-print(d.meta.tags)
+print(d.meta.tags) # so this is tags.
