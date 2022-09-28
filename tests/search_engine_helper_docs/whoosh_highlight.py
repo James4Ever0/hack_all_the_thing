@@ -45,11 +45,13 @@ def index_search(dirname, search_fields, search_query):
         results = s.search(q, terms=True, limit = 10)
         results.fragmenter.charlimit = 100000
         print("Search Results: ")
+        # shall you replace the formatter.
+        results.formatter = ListFormatter
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
             # highlights = hit.highlights('content', text=data)
             # sprint(dir(hit))
-            # print(hit.matched_terms) # too ling.
+            # print(hit.matched_terms) # too long.
             # ['__class__', '__contains__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_fields', 'clear', 'docnum', 'fields', 'get', 'highlights', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'matched_terms', 'more_like_this', 'pos', 'rank', 'reader', 'results', 'score', 'searcher', 'update', 'values']
             # fragments = hit.fragments('content')
             # print(fragments)
