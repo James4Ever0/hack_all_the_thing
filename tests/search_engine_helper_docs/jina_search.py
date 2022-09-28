@@ -8,12 +8,6 @@ query = "math addition"
 
 from docarray import Document, DocumentArray
 
-# A example multimodal document
-from docarray import dataclass, Document
-from docarray.typing import Image, Text, JSON
-
-
-
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
@@ -21,6 +15,7 @@ da = DocumentArray(
             source="jq_man.log",
             text=elem["conv_group_merged"], # must contain text/tags fields.
             lineRange=list(elem["line_range"])
+    )
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
