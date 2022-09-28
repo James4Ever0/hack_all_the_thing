@@ -12,6 +12,7 @@ text = Text(
 # text.on(click="os.system('bash less_jump_to_line.sh')") # what is this fucking toggle?
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
 text.on(click="view.toggle('side')") 
+# text.on(click="view.toggle('side')") 
 
 class Hover(Widget):
 
