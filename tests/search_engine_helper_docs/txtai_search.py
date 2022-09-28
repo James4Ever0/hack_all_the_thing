@@ -21,7 +21,8 @@ linewise = data.split("\n")
 
 def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
     for char in chars:
-        unallowedCha
+        unallowedConsecutiveLength = maxConsecutiveLength +1
+        
 
 def lstripChars(line, chars=[" ","\t"]):
 
