@@ -29,6 +29,6 @@ q = (
 print(q.matches[:5, ("text", "scores__jaccard__value")])
 # do we have other things?
 
-# it is not good! we do not have anything 
+# it is not good! we do not have anything related to 'math' or '
 
 # still nothing? wtf?
