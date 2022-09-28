@@ -11,7 +11,9 @@ terms = set(query.split(" ")) # what is this terms?
 # A sequence or set containing the query words to match, e.g. (“render”, “shader”).
 formatter = 
 
-from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter
+from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter, NullFormatter
+
+
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer
