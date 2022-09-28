@@ -82,5 +82,7 @@ for lineNumber, line in enumerate(linewise):
 # now, how to do convolution, or the windowed conv-like excerpt creation?
 
 newContentLength = len(newContent)
+while True:
+    
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
