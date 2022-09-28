@@ -10,7 +10,6 @@ from whoosh import index
 import os, os.path
 from whoosh import index
 from whoosh import qparser
-from whoosh.qparser import QueryParser
 
 schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored = True))
 
