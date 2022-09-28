@@ -25,3 +25,24 @@ writer = ix.writer()
 writer.add_document(title="jq manual", content=data,path="jq_man.log")
 writer.commit()
 
+# https://stackoverflow.com/questions/19477319/whoosh-accessing-search-page-result-items-throws-readerclosed-exception
+# http://annamarbut.blogspot.com/2018/08/whoosh-pandas-and-redshift-implementing.html
+# https://ai.intelligentonlinetools.com/ml/search-text-documents-whoosh/
+def index_search(dirname, search_fields, search_query):
+    ix = index.open_dir(dirname)
+    schema = ix.schema
+    
+    og = qparser.OrGroup.factory(0.9)
+    mp = qparser.MultifieldParser(search_fields, schema, group = og)
+
+    
+    q = mp.parse(search_query)
+    
+    
+    with ix.searcher() as s:
+        results = s.search(q, terms=True, limit = 10)
+        print("Search Results: ")
+        
+        
+        print(results[0:10])
+
