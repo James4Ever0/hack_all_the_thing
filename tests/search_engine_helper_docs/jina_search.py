@@ -47,6 +47,7 @@ mDocument = docArray_5[0]
 print(mDocument.source.text)
 print(mDocument.text)
 print(mDocument.lineRange.tags)
+[1933, 1936]
 
 # <Document ('id', 'adjacency', 'text', 'tags', 'embedding', 'scores') at 5b7fb3671d405bdb1840b2c2a2fd7c2f>
 # we do not have other fields.
