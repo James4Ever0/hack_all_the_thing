@@ -25,7 +25,7 @@ from docarray import Document, DocumentArray
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
     Document(text=elem["conv_group_merged"],
-    ))
+    )
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
