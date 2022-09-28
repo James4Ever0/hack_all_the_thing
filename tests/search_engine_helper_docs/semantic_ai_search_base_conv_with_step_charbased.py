@@ -100,7 +100,7 @@ listOfCleanedMergedConvGroupWithLineIndexMapping = []
 # you can use the mathlib, from pyjom.
 # i think the mathlib should be embedded to lazero. pyjom's mathlib can be grabbed from there.
 while True:
-    if startIndex >= newContentLength:
+    if startIndex >= newContentLength: # does not break? wtf?
         break
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex = endIndexOffset
