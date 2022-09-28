@@ -23,15 +23,7 @@ class Application:
         self.embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
         # loading this thing?
         # warning! this is a huge model. could crash my freaking device.
-    def run(self):
-        """
-        Runs a Streamlit application.
-        """
 
-        st.title("Similarity Search")
-        st.markdown("This application runs a basic similarity search that identifies the best matching row for a query.")
-
-        if query:
             # Get index of best section that best matches query
             uid = self.embeddings.similarity(query, data)[0][0]
             answer = data[uid]
