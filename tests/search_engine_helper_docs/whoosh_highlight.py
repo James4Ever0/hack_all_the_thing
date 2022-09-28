@@ -42,6 +42,7 @@ def index_search(dirname, search_fields, search_query):
     
     with ix.searcher() as s:
         results = s.search(q, terms=True, limit = 10)
+        results.fragmenter.charlimit = 1000
         print("Search Results: ")
         for hit in results:
             print(hit.highlights('content'))
