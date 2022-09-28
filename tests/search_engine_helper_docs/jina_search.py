@@ -20,7 +20,7 @@ class WPExcerpt:
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
-    Document(Excerpt(
+    Document(WPExcerpt(
         source="jq_man.log",
         text=elem["conv_group_merged"],  # must contain text/tags fields.
         lineRange=list(elem["line_range"]),
