@@ -27,10 +27,9 @@ if __name__ == "__main__":
     # strange.
 
         # Convert queries to embedding vectors
-        data = np.array([self.transform((None, row, None)) for row in data_source])
+    data = np.array([self.transform((None, row, None)) for row in data_source])
 
         # Dot product on normalized vectors is equal to cosine similarity
-        scores = np.dot(queries, data.T).tolist()
 
         # Add index and sort desc based on score
         return [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
