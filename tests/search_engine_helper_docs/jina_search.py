@@ -20,7 +20,7 @@ class WPExcerpt:
 
 a = WPArticle(
     source='',
-    content='Everything to know about flying with pets, ...',
+    content=,
     lineRange=
 )
 
