@@ -105,18 +105,16 @@ while True:
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex = endIndexOffset
     endIndex = min(endIndex, newContentLength)
-    if endIndex <= startIndex: # failsafe.
+    if endIndex <= startIndex:  # failsafe.
         break
     # the append process.
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
     ]  # maybe not just one line?
-    lineIndexEnd = newContentCharIndexToLineIndexDict[
-        endIndex
-    ]  # key error? wtf?
+    lineIndexEnd = newContentCharIndexToLineIndexDict[endIndex]  # key error? wtf?
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {
-        "conv_group_merged": newContent[startIndex :endIndex],
+        "conv_group_merged": newContent[startIndex:endIndex],
         "line_range": lineIndicesTuple,
     }
     listOfCleanedMergedConvGroupWithLineIndexMapping.append(
