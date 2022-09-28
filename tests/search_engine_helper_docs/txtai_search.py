@@ -41,6 +41,6 @@ if __name__ == "__main__":
             break
         queries = [query]
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
-        uid = embeddings.similarity(query, data)[0][0]
+        # uid = embeddings.similarity(query, data)[0][0]
         answer = data[uid]
         print(answer)
