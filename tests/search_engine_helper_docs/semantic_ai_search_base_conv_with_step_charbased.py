@@ -95,7 +95,7 @@ while True:
     lineIndexStart = newContentCharIndexToLineIndexDict[startIndex] # maybe not just one line?
     lineIndexEnd = newContentCharIndexToLineIndexDict[startIndex+endIndexOffset]
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
-    mElem = {'conv_group':newContent[startIndex, startIndex+endIndexOffset], 'line_range':lineInicesTuple}
+    mElem = {'conv_group':newContent[startIndex, startIndex+endIndexOffset], 'line_range':lineIndicesTuple}
 
     # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
