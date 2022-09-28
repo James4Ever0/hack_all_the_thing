@@ -39,4 +39,5 @@ def lstripChars(line, chars=[" ","\t"]):
     return line
 
 for lineNumber, line in enumerate(linewise):
-    print("{}:".format(lineNumber),line)
+    line_cleaned = 
+    print("{}:".format(lineNumber),line_cleaned)
