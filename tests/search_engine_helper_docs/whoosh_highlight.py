@@ -46,6 +46,7 @@ def index_search(dirname, search_fields, search_query):
         print("Search Results: ")
         for hit in results:
             print(hit.highlights('content'))
+            # may still not going to work.
             # no highlight?
             # 104797, which is 104k.
             # exceeds the freaking limit!
