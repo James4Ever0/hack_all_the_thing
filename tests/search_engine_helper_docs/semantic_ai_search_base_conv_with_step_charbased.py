@@ -106,7 +106,7 @@ while True:
     endIndex = startIndex = endIndexOffset
     endIndex = min(endIndex, newContentLength)
     if endIndex <= startIndex:  # failsafe.
-        break
+        continue
     # the append process.
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
