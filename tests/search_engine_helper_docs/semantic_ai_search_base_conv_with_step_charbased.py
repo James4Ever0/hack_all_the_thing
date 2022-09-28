@@ -105,14 +105,14 @@ while True:
     endIndexOffset = group_per_conv_group * char_per_group
     endIndex = startIndex = endIndexOffset
     endIndex = min(endIndex, newContentLength)
-    if endIndex <= startIndex:
+    if endIndex <= startIndex: # failsafe.
         break
     # the append process.
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
     ]  # maybe not just one line?
     lineIndexEnd = newContentCharIndexToLineIndexDict[
-        startIndex + endIndexOffset
+        endIndex
     ]  # key error? wtf?
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {
