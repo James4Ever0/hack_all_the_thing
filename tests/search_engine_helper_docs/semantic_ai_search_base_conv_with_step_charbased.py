@@ -54,9 +54,11 @@ char_per_group = 30
 group_per_conv_group = 3
 step_group_for_conv = 2  # instead of 1. just to make sure these conv groups overlap.
 
-assert step_group_for_conv <= group_per_conv_group # at least there is no gap, though when equal there will be no overlapping.
+assert (
+    step_group_for_conv <= group_per_conv_group
+)  # at least there is no gap, though when equal there will be no overlapping.
 assert group_per_conv_group >= 1
-assert char_per_group >=1
+assert char_per_group >= 1
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
 # create char index to line index mapping.
@@ -98,13 +100,17 @@ while True:
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
     ]  # maybe not just one line?
-    lineIndexEnd = newContentCharIndexToLineIndexDict[startIndex + endIndexOffset] # key error? wtf?
+    lineIndexEnd = newContentCharIndexToLineIndexDict[
+        startIndex + endIndexOffset
+    ]  # key error? wtf?
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {
         "conv_group_merged": newContent[startIndex : startIndex + endIndexOffset],
         "line_range": lineIndicesTuple,
     }
-    listOfCleanedMergedConvGroupWithLineIndexMapping.append(mElem) # this shall be the thing that we need. just maybe.
+    listOfCleanedMergedConvGroupWithLineIndexMapping.append(
+        mElem
+    )  # this shall be the thing that we need. just maybe.
     # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
 
@@ -113,10 +119,11 @@ while True:
 if __name__ == "__main__":
     # a typical test. we check this manually.
     from lazero.utils.logger import sprint
+
     the_final_one = listOfCleanedMergedConvGroupWithLineIndexMapping[-1]
     print("CONTENT EXCERPT:")
     sprint(the_final_one["conv_group_merged"])
-    start, end = the_final_one['line_range']
+    start, end = the_final_one["line_range"]
     myLines = linewise[start:end]
     for line in myLines:
         print(line)
