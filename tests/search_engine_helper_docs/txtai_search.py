@@ -67,7 +67,3 @@ def create():
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
-    # Create and run application
-    app = create()
-    app.run()
