@@ -53,7 +53,7 @@ char_per_line =
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
-# if by adding one extra space 
+# if by adding one extra space we satisfied the criterion, 
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
