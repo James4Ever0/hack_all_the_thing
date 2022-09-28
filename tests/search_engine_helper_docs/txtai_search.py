@@ -14,9 +14,9 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
-def removeDuplicates(line, char=" "):
+def removeDuplicates(line, chars=" "):
 
-def lstripChars(line, chars=)
+def lstripChars(line, chars=[])
 
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
