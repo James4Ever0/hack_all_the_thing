@@ -47,4 +47,5 @@ def index_search(dirname, search_fields, search_query):
         print(results[0:10])
         return results
 
+query = "math addition"
 results_dict = index_search("index_dir", ['title','content'], query)
