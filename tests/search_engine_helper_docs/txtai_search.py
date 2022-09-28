@@ -25,7 +25,9 @@ if __name__ == "__main__":
     print("type 'q' to quit")
     while True:
         query = input("> ")
-        # print("quitting")
+        if query == "q":
+            print("quitting")
+            break
         uid = embeddings.similarity(query, data)[0][0]
         answer = data[uid]
         print(answer)
