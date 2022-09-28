@@ -9,17 +9,6 @@ from txtai.embeddings import Embeddings
 # 1455MiB. this is high.
 # this is a search application! damn it.
 
-class Application:
-    """
-    Main application.
-    """
-
-    def __init__(self):
-        """
-        Creates a new application.
-        """
-
-        # Create embeddings model, backed by sentence-transformers & transformers
         embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
         # loading this thing?
         # warning! this is a huge model. could crash my freaking device.
