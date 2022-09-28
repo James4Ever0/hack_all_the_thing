@@ -3,7 +3,7 @@ text = Text("hello world python this is python", style='red') # there is no styl
 text.on(click="view.toggle('world')")
 from rich.console import Console
 console = Console()
-highlighted = text.highlight_words('python',style='yellow') # but we should not highlight individual letters 
+highlighted = text.highlight_words(['python'],style='yellow') # but we should not highlight individual letters right?
 # just a damn number?
 console.print(text) # red.
 # print(highlighted)
