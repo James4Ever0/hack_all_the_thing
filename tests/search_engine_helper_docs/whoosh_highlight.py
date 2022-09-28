@@ -45,7 +45,7 @@ def index_search(dirname, search_fields, search_query):
         results.fragmenter.charlimit = 1000000
         print("Search Results: ")
         for hit in results:
-            print(hit.highlights('content'))
+            print(hit.highlights('content', top=5))
             # may still not going to work.
             # no highlight?
             # 104797, which is 104k.
