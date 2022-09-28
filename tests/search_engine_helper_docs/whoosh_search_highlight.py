@@ -38,6 +38,8 @@ def index_search(dirname, search_fields, search_query):
 
     
     q = mp.parse(search_query)
+
+    # what is this q?
     
     
     with ix.searcher() as s:
