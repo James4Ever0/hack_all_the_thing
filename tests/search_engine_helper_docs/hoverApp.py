@@ -32,7 +32,7 @@ class HoverApp(App):
 
     async def on_mount(self) -> None:
         hovers = (Hover() for _ in range(2))
-        await self.view.dock(*hovers, edge="top",name='side')
+        await self.view.dock(*hovers, edge="top",)
         # here we got the view.
 
 
