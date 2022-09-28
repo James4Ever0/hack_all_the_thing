@@ -1,1 +1,1 @@
-streamlit run txtai_original_demo.py 
+streamlit run txtai_original_demo.py localhost:8501
