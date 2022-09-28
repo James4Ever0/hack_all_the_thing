@@ -83,7 +83,7 @@ for lineNumber, line in enumerate(linewise):
     newContentLength = len(newContent)
     mDict = {newContentLength + index: lineNumber for index in range(lineCleanedLength)}
     newContent += line_cleaned
-    newContentCharIndexToLineIndexDict.update(mDict)
+    newContentCharIndexToLineIndexDict.update(mDict) # this shall be the most 
 
 # now, how to do convolution, or the windowed conv-like excerpt creation?
 # print("MAX KEY:", max(list(newContentCharIndexToLineIndexDict.keys())))
