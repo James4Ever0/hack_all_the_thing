@@ -14,7 +14,7 @@ from docarray.typing import Text, JSON
 
 @dataclass
 class WPArticle:
-    banner: Image
+    banner: Text
     headline: Text
     meta: JSON
 
