@@ -46,4 +46,5 @@ excerpts = highlight(
 
 
 for excerpt in excerpts:
-    sprint(excerpt)
+    sprint(excerpt) # three things. need we produce both formatted version and not formatted version?
+    # no upper case? fuck?
