@@ -62,5 +62,7 @@ for lineNumber, line in enumerate(linewise):
     # print("{}:".format(lineNumber), line_cleaned)
     if line_cleaned.endswith("-"):
         line_cleaned = line_cleaned[:-1]
+    elif line_cleaned.endswith(" "):
+        
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
