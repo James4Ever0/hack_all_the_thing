@@ -93,7 +93,8 @@ while True:
     endIndexOffset = group_per_conv_group * char_per_group
     # the append process.
     lineIndexStart =  # maybe not just one line?
-    lineIndices = list(set(lineIndices))
+    lineIndexEnd = 
+    lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {'conv_group':newContent[startIndex, startIndex+endIndexOffset], ''}
 
     # add to startIndex.
