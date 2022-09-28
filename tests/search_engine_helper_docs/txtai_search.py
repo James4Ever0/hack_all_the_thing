@@ -16,7 +16,7 @@ linewise = data.split("\n")
 
 def removeDuplicates(line, char=" "):
 
-def remove
+def 
 
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
