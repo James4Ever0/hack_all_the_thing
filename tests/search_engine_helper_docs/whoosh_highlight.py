@@ -47,9 +47,9 @@ def index_search(dirname, search_fields, search_query):
             print(hit.highlights('content'))
             # no highlight?
             # there is just one single hit. no other hits?
-            ters, like <b class="match term0">addition</b>, generally feed...and no result.
+#             ters, like <b class="match term0">addition</b>, generally feed...and no result.
 
-   <b class="match term1">Addition</b>: +
+#    <b class="match term1">Addition</b>: +
        The operator + takes
         # print(results[0:10])
         # return results
