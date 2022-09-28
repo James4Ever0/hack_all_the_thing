@@ -46,7 +46,7 @@ mDocument = docArray_5[0]
 # breakpoint()
 print(mDocument.source.text)
 print(mDocument.text)
-print(mDocument.lineRange)
+print(mDocument.lineRange.tags)
 
 # <Document ('id', 'adjacency', 'text', 'tags', 'embedding', 'scores') at 5b7fb3671d405bdb1840b2c2a2fd7c2f>
 # we do not have other fields.
