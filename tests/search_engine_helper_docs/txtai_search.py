@@ -4,7 +4,7 @@ import os
 
 from txtai.embeddings import Embeddings
 
-
+# seems it can pull out the right thing.
 class Application:
     """
     Main application.
