@@ -46,6 +46,8 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             print(hit.highlights('content'))
             # no highlight?
+            # 104797, which is 104k.
+            # exceeds the freaking limit!
             # there is just one single hit. no other hits?
 #             ters, like <b class="match term0">addition</b>, generally feed...and no result.
 
