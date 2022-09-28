@@ -19,5 +19,5 @@ a = WPArticle(
 )
 
 d = Document(a)
-print(d)
-breakpoint()
+# print(d)
+print(d.meta)
