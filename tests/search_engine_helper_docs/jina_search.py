@@ -13,7 +13,7 @@ from docarray.typing import Text, JSON
 
 
 @dataclass
-class WPArticle:
+class WPExcerpt:
     source: Text
     text: Text
     lineRange: JSON
