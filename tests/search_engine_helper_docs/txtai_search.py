@@ -10,4 +10,4 @@ from load_demo_data import data
 # first we want line by line presentation. make sure we get the right array!
 # CRLF -> LF should be done before this step. it does not affect readability or structure.
 
-# since we do not have the 'keyword' based highlighter, we can only do 
+# since we do not have the 'keyword' based highlighter, we can only do line-wise highlighting.
