@@ -33,14 +33,14 @@ da.apply(Document.embed_feature_hashing, backend="process")
 # what is this shit?
 q = (
     Document(WPExcerpt(content=query, source=None, lineRange=None))
-    .embed_feature_hashing(fields=('content'))
+    .embed_feature_hashing(fields=('content',))
     .match(da, metric="jaccard", use_scipy=True)
 )
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5]
 # do we have other things?
-print(q.) # no embedding! wtf?
+print(q) # no embedding! wtf?
 # {'multi_modal_schema': {'content': {'attribute_type': <AttributeType.DOCUMENT: 'document'>, 'type': 'Text', 'position': 0}}}
 # print(docArray_5[0, ('text')])
 mDocument = docArray_5[0]
