@@ -11,7 +11,7 @@ text = Text(
 # import os
 # text.on(click="os.system('bash less_jump_to_line.sh')") # what is this fucking toggle?
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
-# text.on(click=lambda: os.system('bash less_jump_to_line.sh')) 
+# text.on(click=lambda: os.system('bash less_jump_to_line.sh')) # unmarshallable. fuck.
 text.on(click="view.toggle('side')") 
 
 class Hover(Widget):
