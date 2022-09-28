@@ -49,7 +49,7 @@ def standardLineCleaner(line):
     line = lstripChars(line)
     return line
 
-char_per_line = 
+char_per_line = 30
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
