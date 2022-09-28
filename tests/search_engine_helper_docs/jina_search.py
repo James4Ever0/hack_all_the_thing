@@ -8,8 +8,8 @@ query = "math addition operation"
 
 from docarray import Document, DocumentArray
 
-from docarray import dataclass, Document
-from docarray.typing import Image, Text, JSON
+from docarray import dataclass
+from docarray.typing import Text, JSON
 
 
 @dataclass
