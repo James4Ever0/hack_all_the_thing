@@ -24,7 +24,7 @@ from docarray import Document, DocumentArray
 #         content=elem["conv_group_merged"],  # must contain text/tags fields.
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
-    Document(,
+    Document(text=elem["conv_group_merged"],
     ))
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
@@ -46,7 +46,7 @@ print(q.embedding) # no embedding! wtf?
 # print(docArray_5[0, ('text')])
 mDocument = docArray_5[0]
 # breakpoint()
-print(mDocument.source.text)
+# print(mDocument.source.text)
 # print(mDocument.content.text)
 print(mDocument.lineRange.tags)
 # [1933, 1936]
