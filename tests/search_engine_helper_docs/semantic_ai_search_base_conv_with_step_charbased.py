@@ -126,6 +126,7 @@ while True:
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
 
 del newContentCharIndexToLineIndexDict # maybe we should not delete this, to create more accurate highlights, determine boudaries with whitespace?
+# but it is way too 
 
 # when extracted merged conv groups are next to each other, highlight the conv group with the highest score and other hits use secondary colors. for single conv group without neighbors, directly highlight it with primary color.
 
