@@ -83,7 +83,8 @@ for lineNumber, line in enumerate(linewise):
 
 newContentLength = len(newContent)
 startIndex = 0
-listOfCleanedMergedConvGroupWithLineIndexMapping
+listOfCleanedMergedConvGroupWithLineIndexMapping = []
+# maybe you want to merge the fetched 
 while True:
     if startIndex >= newContentLength:
         break
