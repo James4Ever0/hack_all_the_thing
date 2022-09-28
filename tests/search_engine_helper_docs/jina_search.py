@@ -25,13 +25,13 @@ da = DocumentArray(
         source="jq_man.log",
         content=elem["conv_group_merged"],
         lineRange=list(elem["line_range"]),
-    )
+    ))
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
 
 q = (
-    Document(WPExcerpt(content=query))
+    Document(WPExcerpt(content=query,source=None,))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
