@@ -5,14 +5,14 @@ from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
 
-text = Text(
-    "hello world python this is python", style="green"
-)  # there is no style applied.
+# text = Text(
+#     "hello world python this is python", style="green"
+# )  # there is no style applied.
 # import os
 # text.on(click="os.system('bash less_jump_to_line.sh')") # what is this fucking toggle?
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
 # text.on(click=lambda: os.system('bash less_jump_to_line.sh')) # unmarshallable. fuck.
-text.on(click="view.toggle('side')") 
+# text.on(click="view.toggle('side')") 
 
 class Hover(Widget):
 
@@ -28,7 +28,7 @@ class Hover(Widget):
         self.mouse_over = False
     
     def on_click(self):
-        self.
+        print("CLICKED!")
 
 
 class HoverApp(App):
