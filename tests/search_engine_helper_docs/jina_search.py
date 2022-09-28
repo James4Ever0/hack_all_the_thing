@@ -40,7 +40,8 @@ q = (
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5]
 # do we have other things?
-print(q._metadata)
+# print(q._metadata)
+# {'multi_modal_schema': {'content': {'attribute_type': <AttributeType.DOCUMENT: 'document'>, 'type': 'Text', 'position': 0}}}
 # print(docArray_5[0, ('text')])
 mDocument = docArray_5[0]
 # breakpoint()
