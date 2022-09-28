@@ -60,5 +60,7 @@ step_group_for_conv = 2 # instead of 1. just to make sure these conv groups over
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # print("{}:".format(lineNumber), line_cleaned)
+    if line_cleaned.endswith("-"):
+        line_cleaned = line_cleaned[:-1]
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
