@@ -29,7 +29,8 @@ class Hover(Widget):
         self.mouse_over = False
     
     def on_click(self):
-        print("CLICKED {}".format(self.name))
+        # print("CLICKED {}".format(self.name))
+        
 
 
 class HoverApp(App):
