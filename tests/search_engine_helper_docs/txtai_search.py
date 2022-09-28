@@ -35,7 +35,7 @@ if __name__ == "__main__":
         # Dot product on normalized vectors is equal to cosine similarity
 
         # Add index and sort desc based on score
-        return [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
+    uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
     while True:
         query = input("> ")
         if query == "q":
