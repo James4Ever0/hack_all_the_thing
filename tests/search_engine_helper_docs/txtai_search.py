@@ -14,7 +14,7 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
-def removeDuplicates(line, chars=[" ","\t"]):
+def removeDuplicates(line, chars=[" ","\t"], max):
 
 def lstripChars(line, chars=[" ","\t"]):
 
