@@ -61,6 +61,7 @@ def index_search(dirname, search_fields, search_query):
             # fragments = hit.fragments('content')
             # print(fragments)
             sprint(highlights)
+            # it also contains the 'MATH' thing.
             # it is multi-sourced. separaed by three dots.
             # how it fucking works?
             # highlights = hit.highlights('content')
