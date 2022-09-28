@@ -26,7 +26,7 @@ q = (
     .match(da, metric="jaccard", use_scipy=True)
 )
 
-print(q.matches[:5, ("text", "scores__jaccard__value")])
+# print(q.matches[:5, ("text", "scores__jaccard__value")])
 # do we have other things?
 
 # it is not good! we do not have anything related to 'math' or 'addition' or 'operation'!
