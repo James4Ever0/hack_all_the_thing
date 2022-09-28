@@ -49,9 +49,10 @@ def standardLineCleaner(line):
     line = lstripChars(line)
     return line
 
+
 char_per_group = 30
 group_per_conv_group = 3
-step_group_for_conv = 2 # instead of 1. just to make sure these conv groups overlap.
+step_group_for_conv = 2  # instead of 1. just to make sure these conv groups overlap.
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
@@ -62,7 +63,7 @@ for lineNumber, line in enumerate(linewise):
     # print("{}:".format(lineNumber), line_cleaned)
     if line_cleaned.endswith("-"):
         line_cleaned = line_cleaned[:-1]
-    elif line_cleaned.endswith(" "):
-        line_cleaned+= " "
+    elif not line_cleaned.endswith(" "):
+        line_cleaned += " "
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
