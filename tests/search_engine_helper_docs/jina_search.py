@@ -19,7 +19,7 @@ class WPExcerpt:
 
 
 a = WPArticle(
-    source='',
+    source='jq_man.log',
     content=,
     lineRange=
 )
