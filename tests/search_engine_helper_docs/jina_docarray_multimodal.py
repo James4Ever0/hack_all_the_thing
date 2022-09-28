@@ -20,4 +20,4 @@ a = WPArticle(
 
 d = Document(a)
 # print(d)
-print(d.headline)
+print(d.headline.text)
