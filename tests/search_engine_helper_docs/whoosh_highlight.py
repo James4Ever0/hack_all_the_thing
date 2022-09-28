@@ -52,6 +52,7 @@ def index_search(dirname, search_fields, search_query):
 query = "math addition"
 # must not with reader closed.
 # results_dict = index_search("index_dir", ['title','content'], query)
+index_search("index_dir", ['title','content'], query)
 # breakpoint()
 # for hit in results_dict:
 #     print(hit.highlights('content'))
