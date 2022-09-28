@@ -23,7 +23,7 @@ class HoverApp(App):
     """Demonstrates custom widgets"""
 
     async def on_mount(self) -> None:
-        hovers = (Hover() for _ in range(10))
+        hovers = (Hover() for _ in range(2))
         await self.view.dock(*hovers, edge="top")
 
 
