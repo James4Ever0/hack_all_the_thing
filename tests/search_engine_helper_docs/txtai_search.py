@@ -23,3 +23,4 @@ if __name__ == "__main__":
     # Get index of best section that best matches query
     uid = embeddings.similarity(query, data)[0][0]
     answer = data[uid]
+    print(answer)
