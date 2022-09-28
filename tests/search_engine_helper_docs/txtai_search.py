@@ -28,7 +28,10 @@ def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
     return line
 
 def lstripChars(line, chars=[" ","\t"]):
-    w
+    while True:
+        for char in chars:
+            if line.startswith(char):
+                line = line.lstrip(char)
 
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
