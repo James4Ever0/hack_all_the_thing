@@ -32,7 +32,7 @@ da.apply(Document.embed_feature_hashing, backend="process")
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
 q = (
-    Document(WPExcerpt(text=query, source=None, lineRange=None))
+    Document(WPExcerpt(content=query, source=None, lineRange=None))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
