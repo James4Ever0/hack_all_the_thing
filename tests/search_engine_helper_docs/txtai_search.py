@@ -17,16 +17,6 @@ from txtai.embeddings import Embeddings
         answer = data[uid]
 
 
-@st.cache(allow_output_mutation=True)
-def create():
-    """
-    Creates and caches a Streamlit application.
-
-    Returns:
-        Application
-    """
-
-    return Application()
 
 
 if __name__ == "__main__":
