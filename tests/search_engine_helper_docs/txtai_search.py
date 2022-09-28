@@ -40,7 +40,7 @@ if __name__ == "__main__":
             print("quitting")
             break
         queries = [query]
-        queries = np.array([self.transform((None, query, None)) for query in queries])
+        queries = np.array([self.transform((None, q, None)) for q in queries])
         uid = embeddings.similarity(query, data)[0][0]
         answer = data[uid]
         print(answer)
