@@ -90,7 +90,7 @@ for lineNumber, line in enumerate(linewise):
 # MAX KEY: 85783
 # which is smaller than:
 # KeyError: 85830
-# so it is obvious that we need the smaller 'endIndex', by using min()
+# so it is obvious that we need the smaller 'endIndex', by using min(endIndex, )
 # breakpoint()
 
 newContentLength = len(newContent)
