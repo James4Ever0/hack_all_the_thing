@@ -44,7 +44,7 @@ docArray_5 = q.matches[:5]
 # print(q.embedding) # no embedding! wtf?
 # {'multi_modal_schema': {'content': {'attribute_type': <AttributeType.DOCUMENT: 'document'>, 'type': 'Text', 'position': 0}}}
 # print(docArray_5[0, ('text')])
-mDocument = docArray_5[0]
+# mDocument = docArray_5[0]
 # breakpoint()
 # print(mDocument.source.text)
 # print(mDocument.content.text)
