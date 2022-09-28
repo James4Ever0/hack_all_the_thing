@@ -8,15 +8,15 @@ query = "math addition operation"
 
 from docarray import Document, DocumentArray
 
-from docarray import dataclass
-from docarray.typing import Text, JSON
+# from docarray import dataclass
+# from docarray.typing import Text, JSON
 
 
-@dataclass
-class WPExcerpt:
-    source: Text
-    content: Text
-    lineRange: JSON
+# @dataclass
+# class WPExcerpt:
+#     source: Text
+#     content: Text
+#     lineRange: JSON
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 # WPExcerpt(
