@@ -95,7 +95,7 @@ while True:
     lineIndexStart = newContentCharIndexToLineIndexDict[
         startIndex
     ]  # maybe not just one line?
-    lineIndexEnd = newContentCharIndexToLineIndexDict[startIndex + endIndexOffset]
+    lineIndexEnd = newContentCharIndexToLineIndexDict[startIndex + endIndexOffset] # key error? wtf?
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {
         "conv_group_merged": newContent[startIndex : startIndex + endIndexOffset],
