@@ -18,7 +18,7 @@ class WPExcerpt:
     lineRange: tuple
 
 
-a = WPArticle(
+WPArticle(
     source='jq_man.log',
     content=elem["conv_group_merged"],
     lineRange=elem['line_range']
