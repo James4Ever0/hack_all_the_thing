@@ -23,7 +23,7 @@ def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
     for char in chars:
         minUnallowedConsecutiveLength = maxConsecutiveLength +1
         while True:
-            if 
+            if char
 
 def lstripChars(line, chars=[" ","\t"]):
 
