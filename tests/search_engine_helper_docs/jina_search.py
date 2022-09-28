@@ -24,7 +24,7 @@ da = DocumentArray(
     Document(
         WPExcerpt(
             source="jq_man.log",
-            content=elem["conv_group_merged"],
+            c=elem["conv_group_merged"],
             lineRange=list(elem["line_range"]),
         )
     )
