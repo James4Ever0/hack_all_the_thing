@@ -8,16 +8,6 @@ from txtai.embeddings import Embeddings
 # 1455MiB. this is high.
 # this is a search application! damn it.
 
-        embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
-        # loading this thing?
-        # warning! this is a huge model. could crash my freaking device.
-
-        # Get index of best section that best matches query
-        uid = self.embeddings.similarity(query, data)[0][0]
-        answer = data[uid]
-
-
-
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
