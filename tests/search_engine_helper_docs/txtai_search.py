@@ -42,5 +42,6 @@ if __name__ == "__main__":
         queries = [query]
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
         # uid = embeddings.similarity(query, data)[0][0]
+        getSimilarity()
         answer = data[uid]
         print(answer)
