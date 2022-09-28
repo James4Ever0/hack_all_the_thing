@@ -39,15 +39,11 @@ class Application:
             "Make huge profits without work, earn up to $100,000 a day",
         ]
 
-        data = st.text_area("Data", value="\n".join(data)) # this is web interface. not what we want for the answer.
-        query = st.text_input("Query")
-
-        data = data.split("\n")
 
         if query:
             # Get index of best section that best matches query
             uid = self.embeddings.similarity(query, data)[0][0]
-            st.write(data[uid])
+            answer = data[uid]
 
 
 @st.cache(allow_output_mutation=True)
@@ -64,4 +60,4 @@ def create():
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
-# progressbar? 
+    # progressbar? 
