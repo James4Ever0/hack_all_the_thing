@@ -127,7 +127,7 @@ while True:
 
 del newContentCharIndexToLineIndexDict
 
-when extracted merged conv groups are next to each other, 
+when extracted merged conv groups are next to each other, use the conv group with the h
 
 if __name__ == "__main__":
     # a typical test. we check this manually.
