@@ -30,6 +30,8 @@ class Hover(Widget):
     
     def on_click(self):
         if self.name == "widget 1":
+            import os
+            command = 'bash less_jump_to_line.sh'
             os.system(command)
         else:
             print("CLICKED {}".format(self.name))
