@@ -73,6 +73,7 @@ for lineNumber, line in enumerate(linewise):
         line_cleaned += " "
     # we shall get the length again, cause we have processed this thing.
     lineLength = len(line)
+    newContentLength = len(newContent)
     mDict = {len(newContent) for in range(lineLength)}
     newContent+=line
     newContentCharIndexToLineIndexDict.update(mDict)
