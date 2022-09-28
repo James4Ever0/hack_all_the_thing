@@ -5,7 +5,7 @@ query = "math addition"
 from docarray import Document, DocumentArray
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
-da = DocumentArray(Document(text=elem[''], line_span=) for elem in listOfCleanedMergedConvGroupWithLineIndexMapping )
+da = DocumentArray(Document(text=elem[''], line_span=elem['line_']) for elem in listOfCleanedMergedConvGroupWithLineIndexMapping )
 da.apply(Document.embed_feature_hashing, backend='process')
 
 q = (
