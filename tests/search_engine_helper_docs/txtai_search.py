@@ -44,5 +44,5 @@ def standardLineCleaner(line):
     return line
 
 for lineNumber, line in enumerate(linewise):
-    line_cleaned = 
+    line_cleaned = standardLineCleaner(line)
     print("{}:".format(lineNumber),line_cleaned)
