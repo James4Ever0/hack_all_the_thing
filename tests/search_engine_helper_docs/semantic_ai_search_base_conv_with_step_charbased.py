@@ -85,5 +85,6 @@ newContentLength = len(newContent)
 startIndex = 0
 while True:
     startIndexOffset, endIndexOffset = 0, 
+    startIndex += step_
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
