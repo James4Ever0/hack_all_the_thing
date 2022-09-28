@@ -46,6 +46,7 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             print(hit.highlights('content'))
             # no highlight?
+            # 
         # print(results[0:10])
         # return results
 
