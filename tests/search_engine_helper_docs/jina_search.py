@@ -31,6 +31,7 @@ docArray_5 = q.matches[:5]
 # do we have other things?
 
 print(docArray_5[0])
+# <Document ('id', 'adjacency', 'text', 'tags', 'embedding', 'scores') at 5b7fb3671d405bdb1840b2c2a2fd7c2f>
 # it is not good! we do not have anything related to 'math' or 'addition' or 'operation'!
 
 # still nothing? wtf?
