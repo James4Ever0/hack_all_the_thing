@@ -8,6 +8,15 @@ query = "math addition operation"
 
 from docarray import Document, DocumentArray
 
+from docarray import dataclass, Document
+from docarray.typing import Image, Text, JSON
+
+
+@dataclass
+class WPArticle:
+    banner: Image
+    headline: Text
+    meta: JSON
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
