@@ -15,9 +15,7 @@ from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter, Null
 
 class ListFormatter(NullFormatter):
     def format(self, fragments, replace=False):
-    """Returns a formatted version of the given text, using a list of
-    :class:`Fragment` objects.
-    """
+    # return list this time.
 
     formatted = [self.format_fragment(f, replace=replace)
                     for f in fragments]
