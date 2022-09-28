@@ -69,5 +69,6 @@ for lineNumber, line in enumerate(linewise):
     elif not line_cleaned.endswith(" "):
         line_cleaned += " "
     newContent+=line
+    newContentCharIndexToLineIndexDict.update()
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
