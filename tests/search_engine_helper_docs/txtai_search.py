@@ -16,7 +16,7 @@ linewise = data.split("\n")
 
 def removeDuplicates(line, char=" "):
 
-def lstripChars(l)
+def lstripChars(line, chars=)
 
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
