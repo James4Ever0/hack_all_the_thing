@@ -22,5 +22,6 @@ ix = index.create_in("index_dir", schema)
 writer = ix.writer()
 
 # for i in range(df):
-writer.add_document(title=str(df.title.iloc[i]), content=data,path="jq_man.log")
+writer.add_document(title="jq manual", content=data,path="jq_man.log")
 writer.commit()
+
