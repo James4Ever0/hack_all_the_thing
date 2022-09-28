@@ -44,7 +44,7 @@ def index_search(dirname, search_fields, search_query):
         print("Search Results: ")
         
         
-        print(results[0:10])
+        # print(results[0:10])
         return results
 
 query = "math addition"
