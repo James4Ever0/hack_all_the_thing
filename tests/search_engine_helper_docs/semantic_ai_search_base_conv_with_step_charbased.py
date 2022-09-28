@@ -82,6 +82,7 @@ for lineNumber, line in enumerate(linewise):
 # now, how to do convolution, or the windowed conv-like excerpt creation?
 
 newContentLength = len(newContent)
+startIndex = 0
 while True:
     startIndexOffset, endIndexOffset = 0, 
 
