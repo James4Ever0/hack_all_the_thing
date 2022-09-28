@@ -14,8 +14,8 @@ formatter =
 
 from whoosh.highlight import BasicFragmentScorer, FIRST
 from whoosh.analysis import StandardAnalyzer
-charlimit = 
-analyzer = StandardAnalyzer(charlimit = charlimit)
+charlimit = 1000000
+analyzer = StandardAnalyzer()
 
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
                      scorer=BasicFragmentScorer, minscore=1, order=FIRST
