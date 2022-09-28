@@ -14,7 +14,7 @@ formatter =
 from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
-analyzer = StandardAnalyzer()
+analyzer = StandardAnalyzer
 fragmenter = ContextFragmenter(charlimit = charlimit)
 
 
