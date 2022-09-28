@@ -1,10 +1,5 @@
-"""
-Basic similarity search example. Used in the original txtai demo.
-
-Requires streamlit to be installed.
-  pip install streamlit
-"""
-
+# do not use streamlit this time. maybe you want repl?
+# check the damn GPU usage!
 import os
 
 from txtai.embeddings import Embeddings
