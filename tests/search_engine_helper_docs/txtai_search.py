@@ -6,7 +6,7 @@ from txtai.embeddings import Embeddings
 
 # seems it can pull out the right thing.
 # but the ram consumption?
-# 1455MiB
+# 1455MiB. this is high.
 
 class Application:
     """
