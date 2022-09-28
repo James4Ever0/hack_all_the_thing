@@ -83,6 +83,6 @@ for lineNumber, line in enumerate(linewise):
 
 newContentLength = len(newContent)
 while True:
-    
+    startIndexOffset, endIndexOffset = 0, 
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
