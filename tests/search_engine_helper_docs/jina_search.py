@@ -40,6 +40,7 @@ q = (
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5, ("text")]
+print(docArray_5)
 # do we have other things?
 # print(q.embedding) # no embedding! wtf?
 # {'multi_modal_schema': {'content': {'attribute_type': <AttributeType.DOCUMENT: 'document'>, 'type': 'Text', 'position': 0}}}
