@@ -27,7 +27,8 @@ if __name__ == "__main__":
     # strange.
 
         # Convert queries to embedding vectors
-    print('loading datasource')
+    print('loading data_source')
+    import progressbar
     data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)])
     # i need progressbar!
 
