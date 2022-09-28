@@ -93,7 +93,7 @@ while True:
     endIndexOffset = group_per_conv_group * char_per_group
     # the append process.
 
-    # add to
+    # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
