@@ -113,3 +113,4 @@ if __name__ == "__main__":
     the_final_one = listOfCleanedMergedConvGroupWithLineIndexMapping[-1]
     print(the_final_one["conv_group_merged"])
     start, end = the_final_one['line_range']
+    linewise[start:end]
