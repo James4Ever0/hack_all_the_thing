@@ -11,7 +11,7 @@ from txtai.embeddings import Embeddings
 from semantic_ai_search_base_conv_with_step_charbased import listOfCleanedMergedConvGroupWithLineIndexMapping
 
 data = [elem['conv_group_merged'] for elem in listOfCleanedMergedConvGroupWithLineIndexMapping]
-
+import os
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     # progressbar? 
