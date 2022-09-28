@@ -22,6 +22,7 @@ if __name__ == "__main__":
 
     # Get index of best section that best matches query
     print("MODEL READY")
+    print("type 'q' to quit")
     while True:
         query = input("> ")
         print("")
