@@ -12,6 +12,8 @@ from load_demo_data import data
 
 # since we do not have the 'keyword' based highlighter, we can only do line-wise highlighting.
 
+data = data.replace("")
+
 linewise = data.split("\n")
 
 # where's the crlf -> lf ?
