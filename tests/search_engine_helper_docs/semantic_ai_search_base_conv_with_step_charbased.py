@@ -79,4 +79,6 @@ for lineNumber, line in enumerate(linewise):
     newContent += line_cleaned
     newContentCharIndexToLineIndexDict.update(mDict)
 
+# now, how to do convolution?
+
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
