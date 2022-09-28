@@ -50,7 +50,8 @@ def index_search(dirname, search_fields, search_query):
 #             ters, like <b class="match term0">addition</b>, generally feed...and no result.
 
 #    <b class="match term1">Addition</b>: +
-       The operator + takes
+    #    The operator + takes
+    # what line?
         # print(results[0:10])
         # return results
 
