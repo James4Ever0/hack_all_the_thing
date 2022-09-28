@@ -21,7 +21,7 @@ class WPExcerpt:
 a = WPArticle(
     banner='https://.../cat-dog-flight.png',
     headline='Everything to know about flying with pets, ...',
-    meta=
+    lineRange=
 )
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
