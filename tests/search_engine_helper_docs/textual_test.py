@@ -7,6 +7,7 @@ highlighted = text.highlight_words(['python'],style='yellow') # but we should no
 # so we pass a list of words to be highlighted.
 # just a damn number?
 console.print(text) # red.
+# now we have color. what else?
 # print(highlighted)
 
 # after successfully bricked my damn lenovo device, i realized that there is nothing good using such a restricted shit.
