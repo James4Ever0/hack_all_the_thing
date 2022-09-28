@@ -6,8 +6,9 @@ class Beeper(App):
         # self.console.bell()
         key = event.key
         # self.console.print('some text here')
-        self.console.print(key, dir(key))
-        # will pretty print the dir thing. 
+        print(dir(key))
+        self.console.print(key)
+        # will pretty print the dir thing. fuck.
         # it will print from bottom up, accumulatively.
         # but what is the fucking key?
 
