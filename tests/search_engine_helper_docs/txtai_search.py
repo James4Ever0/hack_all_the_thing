@@ -40,6 +40,7 @@ if __name__ == "__main__":
         if query == "q":
             print("quitting")
             break
+        queries = [query]
         uid = embeddings.similarity(query, data)[0][0]
         answer = data[uid]
         print(answer)
