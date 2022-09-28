@@ -54,6 +54,7 @@ char_per_group = 30
 group_per_conv_group = 3
 step_group_for_conv = 2  # instead of 1. just to make sure these conv groups overlap.
 
+assert step_group_for_conv ==
 assert (
     step_group_for_conv <= group_per_conv_group
 )  # at least there is no gap, though when equal there will be no overlapping.
