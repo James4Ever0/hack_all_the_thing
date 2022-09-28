@@ -74,7 +74,7 @@ for lineNumber, line in enumerate(linewise):
     # we shall get the length again, cause we have processed this thing.
     lineLength = len(line)
     newContent+=line
-    mDict = {}
+    mDict = { for in range()}
     newContentCharIndexToLineIndexDict.update(mDict)
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
