@@ -10,3 +10,4 @@ panel_group = Group(
     Panel("World", style="on red"),
 )
 print(Panel(panel_group))
+# it is a panel.
