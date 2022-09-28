@@ -49,7 +49,7 @@ def standardLineCleaner(line):
     line = lstripChars(line)
     return line
 
-sentence_per_line
+sentence_per_line = 
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
