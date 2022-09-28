@@ -7,7 +7,7 @@ from rich.panel import Panel
 
 panel_group = Group(
     Panel("Hello", style="on blue"),
-    Panel("World", style="on red"),
+    Panel("World", style="black on red"),
 )
 print(Panel(panel_group))
 # it is a panel.
