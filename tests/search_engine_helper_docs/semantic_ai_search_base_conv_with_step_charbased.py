@@ -127,6 +127,8 @@ while True:
 
 del newContentCharIndexToLineIndexDict
 
+when lines are 
+
 if __name__ == "__main__":
     # a typical test. we check this manually.
     from lazero.utils.logger import sprint
