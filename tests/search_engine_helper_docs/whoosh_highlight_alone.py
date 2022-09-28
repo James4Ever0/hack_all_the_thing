@@ -15,16 +15,15 @@ from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter, Null
 
 class ListFormatter(NullFormatter):
     def format(self, fragments, replace=False):
-    # return list this time.
-
-    formatted = [self.format_fragment(f, replace=replace)
-                    for f in fragments]
-    return formatted
+        # return list this time.
+        formatted = [self.format_fragment(f, replace=replace)
+                        for f in fragments]
+        return formatted
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer
 fragmenter = ContextFragmenter(charlimit = charlimit)
-formatter = ListFormatter
+formatter = ListFormatter()
 
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
                      scorer=BasicFragmentScorer, minscore=1, order=FIRST
