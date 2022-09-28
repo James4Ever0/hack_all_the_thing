@@ -125,7 +125,8 @@ while True:
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
 
-del newContentCharIndexToLineIndexDict[char_per_group] //
+del newContentCharIndexToLineIndexDict
+
 if __name__ == "__main__":
     # a typical test. we check this manually.
     from lazero.utils.logger import sprint
