@@ -45,5 +45,5 @@ excerpts = highlight(
 )
 
 
-for except in excerpts:
+for excerpt in excerpts:
     sprint(excerpt)
