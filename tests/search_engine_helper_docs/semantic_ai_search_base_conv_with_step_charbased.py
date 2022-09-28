@@ -62,7 +62,7 @@ newContent = ""
 newContentCharIndexToLineIndexDict = {}
 
 for lineNumber, line in enumerate(linewise):
-    # for zero length line, we skip without d
+    # for zero length line, we skip without doing anything.
     line_cleaned = standardLineCleaner(line)
     # print("{}:".format(lineNumber), line_cleaned)
     if line_cleaned.endswith("-"):
