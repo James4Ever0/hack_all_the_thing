@@ -45,7 +45,7 @@ docArray_5 = q.matches[:5]
 mDocument = docArray_5[0]
 # breakpoint()
 print(mDocument.source.text)
-print(mDocument.content.text)
+# print(mDocument.content.text)
 print(mDocument.lineRange.tags)
 # [1933, 1936]
 # how the fuck you have this?
