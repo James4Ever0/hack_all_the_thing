@@ -69,7 +69,6 @@ for lineNumber, line in enumerate(linewise):
         line_cleaned = line_cleaned[:-1]
     elif not line_cleaned.endswith(" "):
         line_cleaned += " "
-    lineLength = len(line)
     newContent+=line
     mDict = {}
     newContentCharIndexToLineIndexDict.update(mDict)
