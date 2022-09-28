@@ -14,7 +14,7 @@ from load_demo_data import data
 
 # where's the crlf -> lf ?
 data = data.replace("\r\n","\n")
-# the original data, shall be used as reference. save it somewhere.
+# the original data, shall be used as reference. save it somewhere, like database.
 
 linewise = data.split("\n")
 
