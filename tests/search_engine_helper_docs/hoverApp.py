@@ -3,7 +3,12 @@ from rich.panel import Panel
 from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
+from rich.text import Text
 
+text = Text(
+    "hello world python this is python", style="green"
+)  # there is no style applied.
+text.on(click="view.toggle('world')")
 
 class Hover(Widget):
 
