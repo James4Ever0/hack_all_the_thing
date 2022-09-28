@@ -42,7 +42,8 @@ docArray_5 = q.matches[:5]
 # do we have other things?
 
 # print(docArray_5[0, ('text')])
-mAdocArray_5[0])
+mDocument = docArray_5[0]
+breakpoint()
 # <Document ('id', 'adjacency', 'text', 'tags', 'embedding', 'scores') at 5b7fb3671d405bdb1840b2c2a2fd7c2f>
 # we do not have other fields.
 # it is not good! we do not have anything related to 'math' or 'addition' or 'operation'!
