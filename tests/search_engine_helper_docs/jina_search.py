@@ -6,7 +6,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 
 # query = "math addition operation" # strange enbedding!
 # query="following examples"
-query=
+query="math" # not common maybe
 from docarray import Document, DocumentArray
 
 # from docarray import dataclass
