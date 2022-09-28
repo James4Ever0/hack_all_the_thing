@@ -73,7 +73,7 @@ for lineNumber, line in enumerate(linewise):
     elif not line_cleaned.endswith(" "):
         line_cleaned += " "
     # we shall get the length again, cause we have processed this thing.
-    lineLength = len(line_cleaned)
+    lineCleanedLength = len(line_cleaned)
     newContentLength = len(newContent)
     mDict = {newContentLength + index: lineNumber for index in range(lineLength)}
     newContent += line
