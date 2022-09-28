@@ -40,10 +40,10 @@ def index_search(dirname, search_fields, search_query):
     q = mp.parse(search_query)
 
     # what is this q?
-    sprint(q)
-    breakpoint()
+    # sprint(q)
+    # breakpoint()
     # (title:math OR content:math OR title:addition OR content:addition)
-    
+    # why you have case conversion? why the fuck?
     
     with ix.searcher() as s:
         results = s.search(q, terms=True, limit = 10) # what fucking terms?
