@@ -46,7 +46,7 @@ def index_search(dirname, search_fields, search_query):
         results.fragmenter.charlimit = 100000
         print("Search Results: ")
         # shall you replace the formatter.
-        results.formatter = ListFormatter
+        # results.formatter = ListFormatter
         # or we could directly use the highlighter without whoosh?
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
