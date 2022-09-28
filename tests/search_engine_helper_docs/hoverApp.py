@@ -8,11 +8,11 @@ from rich.text import Text
 text = Text(
     "hello world python this is python", style="green"
 )  # there is no style applied.
-import os
+# import os
 # text.on(click="os.system('bash less_jump_to_line.sh')") # what is this fucking toggle?
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
-text.on(click=lambda: os.system('bash less_jump_to_line.sh')) 
-# text.on(click="view.toggle('side')") 
+# text.on(click=lambda: os.system('bash less_jump_to_line.sh')) 
+text.on(click="view.toggle('side')") 
 
 class Hover(Widget):
 
