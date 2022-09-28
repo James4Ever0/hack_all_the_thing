@@ -1,7 +1,8 @@
 from rich.text import Text
-text = Text("hello world python this is python", style='red') #
+text = Text("hello world python this is python", style='red') # there is no style applied.
 text.on(click="view.toggle('world')")
-
+from rich.console import Console
+console = Console()
 # highlighted = text.highlight_words('python',style='yellow')
 # just a damn number?
 print(text)
