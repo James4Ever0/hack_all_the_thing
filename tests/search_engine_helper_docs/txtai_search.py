@@ -23,6 +23,17 @@ if __name__ == "__main__":
     # Get index of best section that best matches query
     print("MODEL READY")
     print("type 'q' to quit")
+    # strange.
+
+        # Convert queries to embedding vectors
+        queries = np.array([self.transform((None, query, None)) for query in queries])
+        data = np.array([self.transform((None, row, None)) for row in data])
+
+        # Dot product on normalized vectors is equal to cosine similarity
+        scores = np.dot(queries, data.T).tolist()
+
+        # Add index and sort desc based on score
+        return [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
     while True:
         query = input("> ")
         if query == "q":
