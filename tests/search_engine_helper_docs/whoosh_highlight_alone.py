@@ -3,4 +3,4 @@ from lazero.utils.logger import sprint
 
 query = "math addition"
 
-# not only we need the 
+# we need exact location of the 
