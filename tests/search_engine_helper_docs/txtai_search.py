@@ -18,5 +18,5 @@ if __name__ == "__main__":
     # warning! this is a huge model. could crash my freaking device.
 
     # Get index of best section that best matches query
-    uid = self.embeddings.similarity(query, data)[0][0]
+    uid = embeddings.similarity(query, data)[0][0]
     answer = data[uid]
