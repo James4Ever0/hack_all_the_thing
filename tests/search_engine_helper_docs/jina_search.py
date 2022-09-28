@@ -33,7 +33,7 @@ da.apply(Document.embed_feature_hashing, backend="process")
 # what is this shit?
 q = (
     Document(WPExcerpt(content=query, source=None, lineRange=None))
-    .embed_feature_hashing(fields=)
+    .embed_feature_hashing(fields=('content'))
     .match(da, metric="jaccard", use_scipy=True)
 )
 
