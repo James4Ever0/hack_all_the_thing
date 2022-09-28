@@ -12,11 +12,12 @@ from load_demo_data import data
 
 # since we do not have the 'keyword' based highlighter, we can only do line-wise highlighting.
 
+# where's the crlf -> lf ?
 data = data.replace("\r\n","\n")
+# the original data, shall be used as reference. save it somewhere.
 
 linewise = data.split("\n")
 
-# where's the crlf -> lf ?
 
 def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
 
