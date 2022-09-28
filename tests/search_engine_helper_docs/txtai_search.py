@@ -14,5 +14,7 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
+def removeDuplicates(line, char=" "):
+
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
