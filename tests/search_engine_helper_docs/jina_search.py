@@ -20,11 +20,11 @@ class WPExcerpt:
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
-    Document(
+    Document(Excerpt(
         source="jq_man.log",
         text=elem["conv_group_merged"],  # must contain text/tags fields.
         lineRange=list(elem["line_range"]),
-    )
+    ))
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing, backend="process")
