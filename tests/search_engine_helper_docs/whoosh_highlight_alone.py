@@ -13,7 +13,8 @@ formatter =
 
 from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter, NullFormatter
 
-
+class ListFormatter(NullFormatter):
+    
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer
