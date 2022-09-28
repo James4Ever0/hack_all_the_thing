@@ -85,6 +85,6 @@ newContentLength = len(newContent)
 startIndex = 0
 while True:
     startIndexOffset, endIndexOffset = 0, 
-    startIndex += step_group_for_conv* group_
+    startIndex += step_group_for_conv* char_p
 
 # we decide to join lines with space no matter what. afterwards we use standard cleaner to remove duplicate spaces.
