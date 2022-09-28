@@ -51,7 +51,7 @@ def standardLineCleaner(line):
 
 char_per_group = 30
 group_per_conv_group = 3
-step_group_for_conv = 2 # instead of 1. just to make sure these conv groups overlaps.
+step_group_for_conv = 2 # instead of 1. just to make sure these conv groups overlap.
 
 # rule to add space: if there's "-" ending, remove the "-" then directly concat with another line.
 # if not, then make sure there's one space between two lines.
