@@ -1,4 +1,5 @@
 from load_demo_data import data
+        from lazero.utils.logger import sprint
 
 # a single document, unparsed!
 
@@ -42,14 +43,15 @@ def index_search(dirname, search_fields, search_query):
     with ix.searcher() as s:
         results = s.search(q, terms=True, limit = 10)
         print("Search Results: ")
-        
-        
+        for hit in results:
+            print()
         # print(results[0:10])
-        return results
+        # return results
 
 query = "math addition"
-results_dict = index_search("index_dir", ['title','content'], query)
+# must not with reader closed.
+# results_dict = index_search("index_dir", ['title','content'], query)
 # breakpoint()
-for hit in results_dict:
-    print(hit.highlights('content'))
+# for hit in results_dict:
+#     print(hit.highlights('content'))
 # it is a single document, with no hits!
