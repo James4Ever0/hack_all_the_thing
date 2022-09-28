@@ -34,7 +34,7 @@ def lstripChars(line, chars=[" ","\t"]):
             if line.startswith(char):
                 line = line.lstrip(char)
                 flag=True
-        if flag:
+        if not flag: break
 
 for lineNumber, line in enumerate(linewise):
     print("{}:".format(lineNumber),line)
