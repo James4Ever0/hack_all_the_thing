@@ -5,3 +5,4 @@ from load_demo_data import data
 # we need to check the line number.
 
 # shall we really strip out the trailing white space, causing unwanted merges?
+# preserve at most one white space 
