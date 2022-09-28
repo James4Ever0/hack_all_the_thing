@@ -12,3 +12,6 @@ from load_demo_data import data
 
 # since we do not have the 'keyword' based highlighter, we can only do line-wise highlighting.
 
+linewise = data.split("\n")
+
+for 
