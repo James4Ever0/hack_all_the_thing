@@ -101,7 +101,7 @@ while True:
         "conv_group_merged": newContent[startIndex : startIndex + endIndexOffset],
         "line_range": lineIndicesTuple,
     }
-    listOfCleanedMergedConvGroupWithLineIndexMapping.append(mElem)
+    listOfCleanedMergedConvGroupWithLineIndexMapping.append(mElem) # this shall be the thing th
     # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
 
