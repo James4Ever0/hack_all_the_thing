@@ -43,3 +43,7 @@ excerpts = highlight(
     minscore=1,
     order=FIRST,
 )
+
+
+for except in excerpts:
+    sprint(excerpt)
