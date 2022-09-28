@@ -3,9 +3,9 @@ text = Text("hello world python this is python", style='red') # there is no styl
 text.on(click="view.toggle('world')")
 from rich.console import Console
 console = Console()
-# highlighted = text.highlight_words('python',style='yellow')
+highlighted = text.highlight_words('python',style='yellow')
 # just a damn number?
-print(text)
+console.print(text) # red.
 # print(highlighted)
 
 # after successfully bricked my damn lenovo device, i realized that there is nothing good using such a restricted shit.
