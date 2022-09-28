@@ -6,7 +6,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 query = "math addition"
 
 from docarray import Document, DocumentArray
-A example multimodal document	
+# A example multimodal document	
 from docarray import dataclass, Document
 from docarray.typing import Image, Text, JSON
 
