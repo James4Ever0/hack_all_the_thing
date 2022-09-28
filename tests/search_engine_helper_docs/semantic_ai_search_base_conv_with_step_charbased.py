@@ -129,7 +129,7 @@ if __name__ == "__main__":
     # a typical test. we check this manually.
     from lazero.utils.logger import sprint
 
-    the_final_one = listOfCleanedMergedConvGroupWithLineIndexMapping[-1]
+    the_final_one = listOfCleanedMergedConvGroupWithLineIndexMapping[-2]
     print("CONTENT EXCERPT:")
     sprint(the_final_one["conv_group_merged"])
     start, end = the_final_one["line_range"]
