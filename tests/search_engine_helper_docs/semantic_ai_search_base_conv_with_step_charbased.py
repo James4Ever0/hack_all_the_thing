@@ -67,6 +67,7 @@ for lineNumber, line in enumerate(linewise):
         continue
     line_cleaned = standardLineCleaner(line)
     # print("{}:".format(lineNumber), line_cleaned)
+    # this process will never decrease the 
     if line_cleaned.endswith("-"):
         line_cleaned = line_cleaned[:-1]
     elif not line_cleaned.endswith(" "):
