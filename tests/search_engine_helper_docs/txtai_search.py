@@ -43,7 +43,6 @@ if __name__ == "__main__":
         queries = [query]
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
         scores = np.dot(queries, data.T).tolist()
-
         # uid = embeddings.similarity(query, data)[0][0]
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
         uid = uids[0][0][0]
