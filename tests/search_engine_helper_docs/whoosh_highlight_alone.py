@@ -9,13 +9,13 @@ from whoosh.highlight import highlight
 text =data
 terms = set(query.split(" ")) # what is this terms?
 # A sequence or set containing the query words to match, e.g. (“render”, “shader”).
-fragmenter = 
 formatter = 
 
-from whoosh.highlight import BasicFragmentScorer, FIRST
+from whoosh.highlight import BasicFragmentScorer, FIRST, ContextFragmenter
 from whoosh.analysis import StandardAnalyzer
 charlimit = 1000000
 analyzer = StandardAnalyzer()
+fragmenter = 
 
 excerpts = highlight(text, terms, analyzer, fragmenter, formatter, top=3,
                      scorer=BasicFragmentScorer, minscore=1, order=FIRST
