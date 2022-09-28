@@ -86,7 +86,7 @@ for lineNumber, line in enumerate(linewise):
     newContentCharIndexToLineIndexDict.update(mDict)
 
 # now, how to do convolution, or the windowed conv-like excerpt creation?
-print("MAX KEY:", max(list()))
+print("MAX KEY:", max(list(newContentCharIndexToLineIndexDict.keys())))
 breakpoint()
 
 newContentLength = len(newContent)
