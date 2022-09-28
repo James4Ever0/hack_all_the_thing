@@ -4,7 +4,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
     linewise,
 )
 
-query = "math addition operation" # strange enbedd
+query = "math addition operation" # strange enbedding!
 
 from docarray import Document, DocumentArray
 
