@@ -16,7 +16,7 @@ from docarray.typing import Text, JSON
 class WPArticle:
     banner: Text
     headline: Text
-    meta: JSON
+    line: JSON
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 da = DocumentArray(
