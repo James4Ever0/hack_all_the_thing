@@ -116,7 +116,7 @@ while True:
     ]  # key error? wtf?
     lineIndicesTuple = (lineIndexStart, lineIndexEnd)
     mElem = {
-        "conv_group_merged": newContent[startIndex : startIndex + endIndexOffset],
+        "conv_group_merged": newContent[startIndex :endIndex],
         "line_range": lineIndicesTuple,
     }
     listOfCleanedMergedConvGroupWithLineIndexMapping.append(
