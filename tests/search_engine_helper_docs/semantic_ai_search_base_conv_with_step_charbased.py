@@ -92,6 +92,7 @@ while True:
         break
     endIndexOffset = group_per_conv_group * char_per_group
     # the append process.
+    
 
     # add to startIndex.
     startIndex += step_group_for_conv * char_per_group
