@@ -24,7 +24,7 @@ class ListFormatter(NullFormatter):
         formatted = [self.format_fragment(f, replace=replace) for f in fragments]
         return formatted
 
-# i need you to implement your own highlighter here. 
+# i need you to implement your own highlighter here. if possible, extract the 'terms' thing.
 
 
 from whoosh.analysis import StandardAnalyzer
