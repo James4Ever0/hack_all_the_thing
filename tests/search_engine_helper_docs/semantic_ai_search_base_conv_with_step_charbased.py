@@ -87,6 +87,8 @@ for lineNumber, line in enumerate(linewise):
 
 # now, how to do convolution, or the windowed conv-like excerpt creation?
 print("MAX KEY:", max(list(newContentCharIndexToLineIndexDict.keys())))
+# MAX KEY: 85783
+# which is smaller than 
 breakpoint()
 
 newContentLength = len(newContent)
