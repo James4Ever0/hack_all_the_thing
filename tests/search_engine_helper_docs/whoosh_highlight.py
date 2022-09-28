@@ -23,6 +23,7 @@ ix = index.create_in("index_dir", schema)
 writer = ix.writer()
 
 # for i in range(df):
+# it will not be duplicated.
 writer.add_document(title="jq manual", content=data,path="jq_man.log")
 writer.commit()
 
