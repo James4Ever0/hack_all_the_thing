@@ -49,6 +49,7 @@ def index_search(dirname, search_fields, search_query):
             # highlights = hit.highlights('content')
             # print(dir(highlights))
             # breakpoint()
+            sprint(highlights)
             # may still not going to work.
             # no highlight?
             # 104797, which is 104k.
