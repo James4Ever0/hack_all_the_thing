@@ -26,6 +26,8 @@ class Hover(Widget):
 
     def on_leave(self) -> None:
         self.mouse_over = False
+    
+    def
 
 
 class HoverApp(App):
