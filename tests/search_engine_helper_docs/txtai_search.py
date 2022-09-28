@@ -14,6 +14,8 @@ from load_demo_data import data
 
 linewise = data.split("\n")
 
+# where's the crlf -> lf ?
+
 def removeDuplicates(line, chars=[" ","\t"], maxConsecutiveLength=1):
 
 def lstripChars(line, chars=[" ","\t"]):
