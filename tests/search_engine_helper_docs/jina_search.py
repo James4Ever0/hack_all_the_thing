@@ -24,9 +24,9 @@ from docarray import Document, DocumentArray
 #         content=elem["conv_group_merged"],  # must contain text/tags fields.
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
-    Document(text=elem["conv_group_merged"],index=index
+    Document(text=elem["conv_group_merged"]
     )
-    for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping
+    for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
 da.apply(Document.embed_feature_hashing)
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
