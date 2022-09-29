@@ -16,8 +16,8 @@ if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     # progressbar? 
 
-    embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"}) # same as the demo.
-    
+    embeddings = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"}) # same as the 'indexed' demo.
+
     # loading this thing?
     # warning! this is a huge model. could crash my freaking device.
 
