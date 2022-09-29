@@ -22,7 +22,7 @@ import os
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    os.environ["http_proxy"] = "false"
     # progressbar?
 
 # needs to query from huggingface?
