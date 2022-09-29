@@ -27,10 +27,10 @@ schema = Schema(
 
 # create empty index directory
 
-if not os.path.exists("index_dir"):
-    os.mkdir("index_dir")
+if not os.path.exists(indexDiretory):
+    os.mkdir(indexDiretory)
 
-ix = index.create_in("index_dir", schema)
+ix = index.create_in(indexDiretory, schema)
 writer = ix.writer()
 
 # for i in range(df):
@@ -127,8 +127,8 @@ def index_search(dirname, search_fields, search_query):
 query = "apply recursive every item"  # seems not so good.
 # query = "math addition"
 # must not with reader closed.
-# results_dict = index_search("index_dir", ['title','content'], query)
-index_search("index_dir", ["title", "content"], query)
+# results_dict = index_search(indexDiretory, ['title','content'], query)
+index_search(indexDiretory, ["title", "content"], query)
 # breakpoint()
 # for hit in results_dict:
 #     print(hit.highlights('content'))
