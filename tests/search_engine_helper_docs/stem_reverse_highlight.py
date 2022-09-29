@@ -40,7 +40,8 @@ queryStemmedWords = englishTextToStemmedWords(query)
 # sentence -> [(original_word, stemmed_word), ...]
 
 # we need to show these highlights! fuck.
-sprint(queryStemmedWords)
+from lazero.utils.logger import sprint
+sprint('QqueryStemmedWords)
 
 for answer in answers:
     highlightSet = set()
