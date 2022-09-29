@@ -17,7 +17,6 @@ class WPExcerpt:
     source: Text
     text: Text
     lineRange: JSON
-    index: int
 
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
@@ -28,10 +27,10 @@ da = DocumentArray(
             source="jq_man.log",
             text=elem["conv_group_merged"],  # must contain text/tags fields.
             lineRange=list(elem["line_range"]),
-            index=index,
+            # index=index,
         )
     )
-    for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
+    for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing)
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
