@@ -54,7 +54,6 @@ console = Console()
 
 # so we pass a list of words to be highlighted.
 # just a damn number?
-console.print(text)
 for answer in answers:
     text = Text(
     answer, style='gray'
@@ -65,6 +64,7 @@ for answer in answers:
         if stemmed_word in queryStemmedWords:
             highlightSet.add(original_word) # just original_word is enough. remember to deduplicate.
     
-    highlighted = text.highlight_words(
-    ["python"]highlightSet, style="yellow"
+    text.highlight_words(
+    highlightSet, style="yellow"
 )  # but we should not highlight individual letters right?
+console.print(text)
