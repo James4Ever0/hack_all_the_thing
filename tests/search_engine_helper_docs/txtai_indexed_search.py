@@ -24,6 +24,7 @@ if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     os.environ["http_proxy"] = ""
     os.environ["https_proxy"] = ""
+    os.environ["all_proxy"] = ""
     # progressbar?
 
 # needs to query from huggingface?
