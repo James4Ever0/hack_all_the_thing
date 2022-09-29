@@ -71,6 +71,7 @@ def index_search(dirname, search_fields, search_query):
         # results.formatter = ListFormatter
         # it is some kind of 'html formatter', so we use BeautifulSoup
         results.formatter = HtmlFormatter(between=formatter_join_token)
+        # this time we do not use the formatter?
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
         # you may want the context and the exact line number.
