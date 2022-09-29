@@ -44,6 +44,22 @@ from lazero.utils.logger import sprint
 sprint("QUERY:",query)
 sprint('QUERY KEYWORDS STEMMED:',queryStemmedWords)
 
+
+from rich.text import Text
+
+text = Text(
+    "hello world python this is python", style="green"
+)  # there is no style applied.
+text.on(click="view.toggle('world')") # fuck?
+from rich.console import Console
+
+console = Console()
+highlighted = text.highlight_words(
+    ["python"], style="yellow"
+)  # but we should not highlight individual letters right?
+# so we pass a list of words to be highlighted.
+# just a damn number?
+console.print(text)
 for answer in answers:
     highlightSet = set()
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
