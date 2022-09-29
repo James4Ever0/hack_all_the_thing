@@ -1,0 +1,10 @@
+{
+    "query": "math operation",
+    "answers": [
+        " sinh sqrt tan tanh tgamma trunc y0 y1. Two-input C math functions: atan2 copysign drem fd",
+        "ity of the corresponding math functions in your operating system and C math library. Unava",
+        "ivision by zero raises an error. Currently most arithmetic operations operating on infinit",
+        "jn ldexp modf nextafter nexttoward pow remainder scalb scalbln yn. Three-input C math func",
+        "ln yn. Three-input C math functions: fma. See your system´s manual for more information on"
+    ]
+}
