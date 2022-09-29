@@ -1,8 +1,12 @@
 # from load_demo_data import data
-from semantic_ai_search_base_conv_with_step_charbased import listOfCleanedMergedConvGroupWithLineIndexMapping
+from semantic_ai_search_base_conv_with_step_charbased import (
+    listOfCleanedMergedConvGroupWithLineIndexMapping,
+)
+
 # from lazero.utils.logger import sprint
-import uuid 
+import uuid
 from bs4 import BeautifulSoup as BS
+
 # a single document, unparsed!
 # you know there will be newline for this search engine.
 
@@ -17,7 +21,9 @@ from whoosh import index
 from whoosh import qparser
 from whoosh.highlight import HtmlFormatter
 
-schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored = True))
+schema = Schema(
+    title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True)
+)
 
 # create empty index directory
 
@@ -30,9 +36,11 @@ writer = ix.writer()
 # for i in range(df):
 # it will not be duplicated.
 for elem in listOfCleanedMergedConvGroupWithLineIndexMapping:
-    data = elem['conv_group_merged']
+    data = elem["conv_group_merged"]
     lineRange = elem["line_range"]
-    writer.add_document(title="jq manual", content=data, lineRange = lineRange,path="jq_man.log")
+    writer.add_document(
+        title="jq manual", content=data, lineRange=lineRange, path="jq_man.log"
+    )
 writer.commit()
 
 # https://stackoverflow.com/questions/19477319/whoosh-accessing-search-page-result-items-throws-readerclosed-exception
@@ -41,10 +49,10 @@ writer.commit()
 def index_search(dirname, search_fields, search_query):
     ix = index.open_dir(dirname)
     schema = ix.schema
-    
+
     og = qparser.OrGroup.factory(0.9)
-    mp = qparser.MultifieldParser(search_fields, schema, group = og)
-    
+    mp = qparser.MultifieldParser(search_fields, schema, group=og)
+
     q = mp.parse(search_query)
 
     # what is this q?
@@ -53,9 +61,8 @@ def index_search(dirname, search_fields, search_query):
     # (title:math OR content:math OR title:addition OR content:addition)
     # why you have case conversion? why the fuck?
 
-    
     with ix.searcher() as s:
-        results = s.search(q, terms=True, limit = 10) # what fucking terms?
+        results = s.search(q, terms=True, limit=10)  # what fucking terms?
         results.fragmenter.charlimit = 100000
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
@@ -63,7 +70,7 @@ def index_search(dirname, search_fields, search_query):
         formatter_join_token = str(uuid.uuid4())
         # results.formatter = ListFormatter
         # it is some kind of 'html formatter', so we use BeautifulSoup
-        results.formatter = HtmlFormatter(between = formatter_join_token)
+        results.formatter = HtmlFormatter(between=formatter_join_token)
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
         # you may want the context and the exact line number.
@@ -71,18 +78,18 @@ def index_search(dirname, search_fields, search_query):
         # or we could directly use the highlighter without whoosh?
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
-            highlights_joined = hit.highlights('content', text=data)
+            highlights_joined = hit.highlights("content", text=data)
             highlights = highlights_joined.split(formatter_join_token)
             for highlight in highlights:
                 # print('HIGHLIGHT FORMATTED:', [highlight])
                 # breakpoint()
-                highlightBS = BS(highlight, features='lxml')
+                highlightBS = BS(highlight, features="lxml")
                 highlightText = highlightBS.text
                 matches = set()
-                for match in highlightBS.find_all('strong'):
+                for match in highlightBS.find_all("strong"):
                     matches.add(match.text)
-                print('HIGHLIGHT_TEXT:', highlightText)
-                print('MATCHES:', matches)
+                print("HIGHLIGHT_TEXT:", highlightText)
+                print("MATCHES:", matches)
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
@@ -104,20 +111,22 @@ def index_search(dirname, search_fields, search_query):
             # 104797, which is 104k.
             # exceeds the freaking limit!
             # there is just one single hit. no other hits?
+
+
 #             ters, like <b class="match term0">addition</b>, generally feed...and no result.
 
 #    <b class="match term1">Addition</b>: +
-    #    The operator + takes
-    # what line?
-        # print(results[0:10])
-        # return results
+#    The operator + takes
+# what line?
+# print(results[0:10])
+# return results
 
 # query = "apply recursive every"
-query = "apply recursive every item" # seems not so good.
+query = "apply recursive every item"  # seems not so good.
 # query = "math addition"
 # must not with reader closed.
 # results_dict = index_search("index_dir", ['title','content'], query)
-index_search("index_dir", ['title','content'], query)
+index_search("index_dir", ["title", "content"], query)
 # breakpoint()
 # for hit in results_dict:
 #     print(hit.highlights('content'))
