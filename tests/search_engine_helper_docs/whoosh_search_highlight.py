@@ -69,9 +69,9 @@ def index_search(dirname, search_fields, search_query):
             for highlight in highlights:
                 highlightBS = BS(highlight, feature='lxml')
                 highlightText = highlightBS.text
-                matchs = set()
+                matches = set()
                 for match in highlightBS.findall('match'):
-                    matchs.add(match.text)
+                    matches.add(match.text)
                 print('HIGHLIGHT_TEXT:', highlightText)
                 print('MATCHES:', matches)
             # sprint(dir(hit))
