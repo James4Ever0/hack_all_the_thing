@@ -69,8 +69,8 @@ newContentCharIndexToLineIndexDict = {}
 
 alphabets = "abcdefghijklmnopqrstuvwxyz"
 alphabets += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-english punctuals = 
+import string
+english punctuals = string.
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
