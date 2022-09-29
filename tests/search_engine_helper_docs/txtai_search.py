@@ -32,7 +32,8 @@ if __name__ == "__main__":
     import progressbar
     data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)]) # we need something other than this. fast info retrieval.
     # you want to use other methods?
-    embeddings.index # what is this fucking index?
+    # embeddings.index # what is this fucking index?
+    # document format: (id, data, tags)
     # i need progressbar!
         # Dot product on normalized vectors is equal to cosine similarity
 
