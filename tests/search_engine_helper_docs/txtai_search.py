@@ -71,4 +71,5 @@ if __name__ == "__main__":
             print('score:', score)
         with open("demo_txtai_search_results.json",'w+') as f:
             for uid, score in uid_list_top5:
-                
+                answer = data_source[uid]
+                f.write()
