@@ -106,8 +106,8 @@ def index_search(dirname, search_fields, search_query):
         # print(results[0:10])
         # return results
 
-query = "apply recursive every"
-# query = "apply recursive every item"
+# query = "apply recursive every"
+query = "apply recursive every item"
 # query = "math addition"
 # must not with reader closed.
 # results_dict = index_search("index_dir", ['title','content'], query)
