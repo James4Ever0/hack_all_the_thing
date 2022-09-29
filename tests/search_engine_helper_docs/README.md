@@ -1,4 +1,4 @@
-**BUT WE CANNOT READ THE CODING QUESTIONS!**
+**BUT WE CANNOT QUERY THE CODING QUESTIONS!**
 
 how to build a terminal based search engine?
 
