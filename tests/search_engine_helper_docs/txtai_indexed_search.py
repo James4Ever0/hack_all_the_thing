@@ -56,7 +56,7 @@ if __name__ == "__main__":
         if query == "q":
             print("quitting")
             break
-        uid = embeddings.search(query, 1)[0][0]
+        uid = embeddings.search(query, 1)[0][0] # what is this thing?
 
 
         for uid, score in uid_list_top5:
