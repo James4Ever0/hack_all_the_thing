@@ -47,19 +47,18 @@ sprint('QUERY KEYWORDS STEMMED:',queryStemmedWords)
 
 from rich.text import Text
 
-text = Text(
-    "hello world python this is python", style='gray'
-)  # there is no style applied.
+
 from rich.console import Console
 
 console = Console()
-highlighted = text.highlight_words(
-    ["python"], style="yellow"
-)  # but we should not highlight individual letters right?
+
 # so we pass a list of words to be highlighted.
 # just a damn number?
 console.print(text)
 for answer in answers:
+    text = Text(
+    answer, style='gray'
+)  # there is no style applied.
     highlightSet = set()
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
     for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
