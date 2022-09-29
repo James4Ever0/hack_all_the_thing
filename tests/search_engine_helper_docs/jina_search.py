@@ -24,20 +24,25 @@ from docarray import Document, DocumentArray
 #         content=elem["conv_group_merged"],  # must contain text/tags fields.
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
-    Document(text=elem["conv_group_merged"],index=index, lineRange = elem['line_range'] # it is putted into 'tags' section.
+    Document(
+        text=elem["conv_group_merged"],
+        index=index,
+        lineRange=elem["line_range"],  # it is putted into 'tags' section.
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
 
 
 from txtai.embeddings import Embeddings
+
 embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
 # change the 'embedding' attribute.
 def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
     return d
 
-da.apply(preproc) # apply what?
+
+da.apply(preproc,)  # apply what?
 
 
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
@@ -45,7 +50,7 @@ da.apply(preproc) # apply what?
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
 # query="math addition function" # not common maybe
-query = 'apply to every element recursively' # seems it does not understand this query so well.
+query = "apply to every element recursively"  # seems it does not understand this query so well.
 # we are gonna do this in txtai_search.py once again.
 
 # this feature hashing is bad. not as advanced as txtai.
@@ -53,19 +58,16 @@ query = 'apply to every element recursively' # seems it does not understand this
 
 qd = Document(text=query)
 qd = preproc(qd)
-q = (
-    
-    .embed_feature_hashing()
-    .match(da, metric="jaccard", use_scipy=True)
-)
+q = qd.match(da, metric="jaccard", use_scipy=True)
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("text",'tags', 'scores__jaccard__value')]
+docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
 # two separate shit?
 mdata = list(zip(*docArray_5))
 mdata.sort(key=lambda x: x[2], reverse=True)
 # print(docArray_5)
 from lazero.utils.logger import sprint
+
 for hit in mdata:
     sprint(hit)
 # do we have other things?
