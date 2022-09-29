@@ -31,6 +31,8 @@ class ListFormatter(NullFormatter):
 
 from whoosh.analysis import StandardAnalyzer
 
+# the highlighter just do the search for whatever reason.
+
 charlimit = 1000000
 analyzer = StandardAnalyzer()
 fragmenter = ContextFragmenter(charlimit=charlimit)
