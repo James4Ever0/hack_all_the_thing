@@ -8,6 +8,8 @@ from lazero.utils.logger import sprint
 # 1455MiB. this is high.
 # this is a search application! damn it.
 
+# we still got some 
+
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
