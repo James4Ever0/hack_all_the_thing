@@ -10,6 +10,9 @@ from nltk.stem import PorterStemmer
 englishNLP = en_core_web_sm.load()
 porterStemmer = PorterStemmer()
 
+
+def englishTextToOriginal
+
 import json
 
 with open("demo_txtai_search_results",'r') as f:
@@ -23,4 +26,3 @@ answers = test_data['answers']
 # sentence -> [(original_word, stemmed_word), ...]
 
 for answer in answers:
-    
