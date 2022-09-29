@@ -81,8 +81,9 @@ def index_search(dirname, search_fields, search_query):
         # or we could directly use the highlighter without whoosh?
         for hitIndex, hit in enumerate(results): # we cannot override the imported 'index'
             sprint('HIT:',hitIndex)
-            print(hit)
-            breakpoint()
+            # print(hit)
+            # breakpoint()
+            content = hit['content']
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
