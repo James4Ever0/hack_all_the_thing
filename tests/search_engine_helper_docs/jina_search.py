@@ -24,9 +24,9 @@ from docarray import Document, DocumentArray
 #         content=elem["conv_group_merged"],  # must contain text/tags fields.
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
-    Document(text=elem["conv_group_merged"],
+    Document(text=elem["conv_group_merged"],index=index
     )
-    for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
+    for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping
 )
 da.apply(Document.embed_feature_hashing)
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
@@ -47,7 +47,7 @@ q = (
 )
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("id","text", 'scores__jaccard__value')]
+docArray_5 = q.matches[:5, ("index","text", 'scores__jaccard__value')]
 # two separate shit?
 mdata = list(zip(*docArray_5))
 mdata.sort(key=lambda x: x[2], reverse=True)
