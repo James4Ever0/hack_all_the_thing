@@ -1,4 +1,4 @@
-# you may increase the span for whoosh to search, since this 
+# you may increase the span for whoosh to search, since this is 
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
