@@ -62,6 +62,7 @@ if __name__ == "__main__":
         # you may want set some score filters.
         for element in uid_list_top5:
             uid, score = element.tolist()
+            # where is the damn score? wtf?
             answer = data_source[uid]
             print("{}:".format(uid),answer)
             print('score:', score)
