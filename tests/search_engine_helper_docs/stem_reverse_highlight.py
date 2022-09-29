@@ -7,7 +7,8 @@ from nltk.stem import PorterStemmer
 # shall we detect the language id first?
 # but this is a short excerpt. except for lingua we won't get shit.
 # just english and chinese. for other languages we don't understand so much.
-englishNLP = en_core_web_sm.load()
+# this requires tensorflow.
+englishNLP = en_core_web_sm.load() # oh shit
 porterStemmer = PorterStemmer()
 
 
@@ -32,7 +33,7 @@ def englishTextToStemmedWords(text):
 
 import json
 
-with open("demo_txtai_search_results", "r") as f:
+with open("demo_txtai_search_results.json", "r") as f:
     content = f.read()
     test_data = json.loads(content)
 
