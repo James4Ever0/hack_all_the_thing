@@ -46,7 +46,7 @@ def stripChars(line, chars=[" ", "\t"]):
 
 def standardLineCleaner(line):
     line = removeDuplicates(line)
-    line = lstripChars(line)
+    line = stripChars(line)
     return line
 
 
