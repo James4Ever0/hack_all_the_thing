@@ -58,13 +58,11 @@ if __name__ == "__main__":
         # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array! 
         # what is this shit anyway?
-        print(uid_list_top5) # we need different results. 
-        breakpoint()
+        # print(uid_list_top5) # we need different results. 
+        # breakpoint()
         # you may want set some score filters.
-        for element in uid_list_top5:
-            
-            print("ELEMENT:", element)
-            breakpoint()
+        for uid, score in uid_list_top5:
+            uid = int(uid)
             # where is the damn score? wtf?
             answer = data_source[uid]
             print("{}:".format(uid),answer)
