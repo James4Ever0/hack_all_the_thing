@@ -30,8 +30,8 @@ writer = ix.writer()
 # for i in range(df):
 # it will not be duplicated.
 for elem in listOfCleanedMergedConvGroupWithLineIndexMapping:
-    data = elem['conv_group_merged": newContent[startIndex:endIndex],
-    lineRange = elemline_range"']
+    data = elem['conv_group_merged']
+    lineRange = elem["line_range"]
     writer.add_document(title="jq manual", content=data, lineRange = lineRange,path="jq_man.log")
 writer.commit()
 
