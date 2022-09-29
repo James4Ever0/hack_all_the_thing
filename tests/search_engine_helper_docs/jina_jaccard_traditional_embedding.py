@@ -46,9 +46,9 @@ da = DocumentArray(
 # with jaccard.
 # da.apply(preproc, show_progress=True, num_worker=1, backend="thread")  # apply what?
 
-print("embedding done")
+# print("embedding done")
 
-# da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
+da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
 
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
