@@ -34,6 +34,8 @@ with open("demo_txtai_search_results",'r') as f:
 query = test_data['query']
 answers = test_data['answers']
 
+query
+
 # parse and stem both query and answer, check for commondities.
 # sentence -> [(original_word, stemmed_word), ...]
 
