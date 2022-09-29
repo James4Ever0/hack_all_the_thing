@@ -20,14 +20,15 @@ class WPExcerpt:
     index:int
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
-WPExcerpt(
+
+da = DocumentArray(
+    Document(
+        WPExcerpt(
         source="jq_man.log",
         text=elem["conv_group_merged"],  # must contain text/tags fields.
         lineRange=list(elem["line_range"])
         index = index
 )
-da = DocumentArray(
-    Document(
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
