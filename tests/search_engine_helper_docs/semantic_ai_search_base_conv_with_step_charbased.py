@@ -67,6 +67,8 @@ assert char_per_group >= 1
 newContent = ""
 newContentCharIndexToLineIndexDict = {}
 
+alphabets = "abcdefghijklmnopqrstuvwxyz"
+
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # for zero length line (after cleaned), we skip without doing anything.
