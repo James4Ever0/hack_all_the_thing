@@ -54,6 +54,7 @@ if __name__ == "__main__":
         #          #b #doc #data
         # uid= uids[0][0][0]
         uid_list_top5 = np.array(uids,dtype=int)[0,:5,:] # allow omitted index???
+        # the 
         # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array! 
         # what is this shit anyway?
