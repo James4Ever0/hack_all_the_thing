@@ -48,7 +48,8 @@ if __name__ == "__main__":
         scores = np.dot(queries, data.T).tolist()
         # uid = embeddings.similarity(query, data)[0][0]
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
-        # #b: 
+        # #b: index of the query, produced result
+        # #doc: index of the document of the 
         #                    #b #doc #data
         uid_list_top5 = uids[0][0][:5]
         # what is this shit anyway?
