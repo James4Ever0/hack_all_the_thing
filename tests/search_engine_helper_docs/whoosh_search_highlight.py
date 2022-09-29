@@ -4,6 +4,7 @@ import uuid
 from bs4 import BeautifulSoup as BS
 # a single document, unparsed!
 
+# you know there will be newline for this search engine.
 # remember this shit is long!
 
 from whoosh.fields import Schema, TEXT, ID
