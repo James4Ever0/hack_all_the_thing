@@ -22,7 +22,8 @@ def englishTextToOriginalAndStemmedWordPairs(text):
     return originalAndStemmedWordPairs
 
 def englishTextToStemmedWords(text):
-    return 
+    originalAndStemmedWordPairs = englishTextToStemmedWordPairs(text)
+    return [stemmed_word for original_word, stemmed_word in originalAndStemmedWordPairs]
 import json
 
 with open("demo_txtai_search_results",'r') as f:
