@@ -78,12 +78,12 @@ def index_search(dirname, search_fields, search_query):
         # line number? use string slice and count('\n') please.
         # or we could directly use the highlighter without whoosh?
         for hitIndex, hit in enumerate(results): # we cannot override the imported 'index'
-            sprint('HIT:',hitIndex)
+            print('HIT:',hitIndex)
             # print(hit)
             # breakpoint()
             content = hit['content']
             # reversed stem highlight!
-            print('content:',content)
+            sprint('content:',content)
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
