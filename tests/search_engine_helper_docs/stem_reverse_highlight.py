@@ -40,7 +40,8 @@ queryStemmedWords = englishTextToStemmedWords(query)
 # sentence -> [(original_word, stemmed_word), ...]
 
 for answer in answers:
+    highlightSet = set()
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
     for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
         if stemmed_word in queryStemmedWords:
-            .add(original_word) # just original_word is enough. remember to deduplicate.
+            highlightSet.add(original_word) # just original_word is enough. remember to deduplicate.
