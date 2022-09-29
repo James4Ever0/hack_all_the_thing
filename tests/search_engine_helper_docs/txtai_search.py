@@ -63,6 +63,7 @@ if __name__ == "__main__":
         # print(uid_list_top5) # we need different results. 
         # breakpoint()
         # you may want set some score filters.
+        with open()
         for uid, score in uid_list_top5:
             uid = int(uid)
             # where is the damn score? wtf?
