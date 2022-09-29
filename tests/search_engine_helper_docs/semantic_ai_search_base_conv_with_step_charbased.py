@@ -19,6 +19,8 @@ data = data.replace("\r\n", "\n")
 linewise = data.split("\n")  # there won't be "\n" in the line.
 
 
+# it goes without saying that a media guy sure need some search skills.
+
 def removeDuplicates(line, chars=[" ", "\t"], maxConsecutiveLength=1):
     for char in chars:
         minUnallowedConsecutiveLength = maxConsecutiveLength + 1
