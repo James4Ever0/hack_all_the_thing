@@ -24,6 +24,7 @@ if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     # progressbar?
 
+# needs to query from huggingface?
     embeddings = Embeddings(
         {"path": "sentence-transformers/nli-mpnet-base-v2"}
     )  # same as the 'indexed' demo.
