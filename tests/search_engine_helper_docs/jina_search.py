@@ -12,17 +12,20 @@ from docarray import Document, DocumentArray
 # from docarray.typing import Text, JSON
 
 
-# @dataclass
-# class WPExcerpt:
-#     source: Text
-#     content: Text
-#     lineRange: JSON
+@dataclass
+class WPExcerpt:
+    source: Text
+    content: Text
+    lineRange: JSON
+        index:int
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 WPExcerpt(
         source="jq_man.log",
         text=elem["conv_group_merged"],  # must contain text/tags fields.
         lineRange=list(elem["line_range"])
+        index = index
+)
 da = DocumentArray(
     Document(text=elem["conv_group_merged"]
     )
