@@ -9,7 +9,7 @@ query = "math addition"
 from whoosh.highlight import highlight
 
 text = data
-terms = set(query.split(" "))  # what is this terms?
+terms = set(query.split(" "))  # what are these terms?
 # A sequence or set containing the query words to match, e.g. (“render”, “shader”).
 
 from whoosh.highlight import (
