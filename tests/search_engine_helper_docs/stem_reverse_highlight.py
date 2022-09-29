@@ -39,7 +39,8 @@ queryStemmedWords = englishTextToStemmedWords(query)
 # parse and stem both query and answer, check for commondities.
 # sentence -> [(original_word, stemmed_word), ...]
 
-# we need to show these highlights!
+# we need to show these highlights! fuck.
+sprint(queryStemmedWords)
 
 for answer in answers:
     highlightSet = set()
