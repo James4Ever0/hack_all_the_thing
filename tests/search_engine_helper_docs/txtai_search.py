@@ -58,7 +58,7 @@ if __name__ == "__main__":
         # this is a list, not a numpy array! 
         # what is this shit anyway?
         # print(uid_list_top5) # we need different results. 
-        # breakpoint()
+        breakpoint()
         # you may want set some score filters.
         for element in uid_list_top5:
             uid, score = element.tolist()
