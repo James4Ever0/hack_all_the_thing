@@ -1,6 +1,7 @@
 from load_demo_data import data
 from lazero.utils.logger import sprint
-import uuid
+import uuid 
+from bs4 import BeautifulSoup as BS
 # a single document, unparsed!
 
 # remember this shit is long!
@@ -53,7 +54,7 @@ def index_search(dirname, search_fields, search_query):
         # shall you replace the formatter.
         formatter_join_token = str(uuid.uuid4())
         # results.formatter = ListFormatter
-        # it is some kind of 'html formatter', so we use 
+        # it is some kind of 'html formatter', so we use BeautifulSoup
         results.formatter = 
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
