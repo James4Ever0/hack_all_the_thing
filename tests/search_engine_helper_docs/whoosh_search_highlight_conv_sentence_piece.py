@@ -1,4 +1,5 @@
-from load_demo_data import data
+# from load_demo_data import data
+listOfCleanedMergedConvGroupWithLineIndexMapping
 # from lazero.utils.logger import sprint
 import uuid 
 from bs4 import BeautifulSoup as BS
