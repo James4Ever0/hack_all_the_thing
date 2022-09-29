@@ -70,7 +70,7 @@ newContentCharIndexToLineIndexDict = {}
 alphabets = "abcdefghijklmnopqrstuvwxyz"
 alphabets += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 import string
-english_punctuals = string.punctuation
+english_punctuation = string.punctuation
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
@@ -81,7 +81,7 @@ for lineNumber, line in enumerate(linewise):
     # this process will never decrease the length of the line.
     if line_cleaned.endswith("-"):
         line_cleaned = line_cleaned[:-1]
-    elif line_cleaned[-1] in alphabets+punctuation:
+    elif line_cleaned[-1] in alphabets+english_punctuation:
         line_cleaned += " "
     # we shall get the length again, cause we have processed this thing.
     lineCleanedLength = len(line_cleaned)
