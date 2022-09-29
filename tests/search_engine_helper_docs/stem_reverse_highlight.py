@@ -41,4 +41,6 @@ queryStemmedWords = englishTextToStemmedWords(query)
 
 for answer in answers:
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
-    
+    for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
+        if stemmed_word in queryStemmedWords:
+            
