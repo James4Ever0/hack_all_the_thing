@@ -60,6 +60,7 @@ query = "apply to every element recursively"  # seems it does not understand thi
 # don't know what is 'jaccard'. most like some
 
 qd = Document(text=query)
+qd = qd.embed
 # qd = preproc(qd)
 # q = qd.match(da, limit=5)
 q = qd.match(da, metric="jaccard", use_scipy=True)
