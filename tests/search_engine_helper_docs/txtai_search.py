@@ -76,6 +76,6 @@ if __name__ == "__main__":
             for uid, score in uid_list_top5:
                 answer = data_source[uid]
                 answers.append(answer)
-            data_example_json.update({})
+            data_example_json.update({'answers': answers})
             f.write(data_example_json)
             print("write to %s" % storage_file_name)
