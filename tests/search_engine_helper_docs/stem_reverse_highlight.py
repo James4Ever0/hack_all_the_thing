@@ -20,4 +20,3 @@ query = test_data['query']
 answers = test_data['answers']
 
 for answer in answers:
-    
