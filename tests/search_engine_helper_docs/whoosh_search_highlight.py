@@ -72,6 +72,7 @@ def index_search(dirname, search_fields, search_query):
                 matchs = set()
                 for match in highlightBS.findall('match'):
                     matchs.add(match.text)
+                print()
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
