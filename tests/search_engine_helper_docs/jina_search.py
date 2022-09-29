@@ -8,8 +8,8 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 # query="following examples"
 from docarray import Document, DocumentArray
 
-# from docarray import dataclass
-# from docarray.typing import Text, JSON
+from docarray import dataclass
+from docarray.typing import Text, JSON
 
 
 @dataclass
@@ -17,7 +17,7 @@ class WPExcerpt:
     source: Text
     content: Text
     lineRange: JSON
-        index:int
+    index:int
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 WPExcerpt(
