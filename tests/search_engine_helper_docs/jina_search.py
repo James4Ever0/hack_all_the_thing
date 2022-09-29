@@ -33,7 +33,8 @@ da.apply(Document.embed_feature_hashing)
 
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
-query="math addition function" # not common maybe
+# query="math addition function" # not common maybe
+query = 'apply to every element recursively'
 
 q = (
     Document(text=query)
