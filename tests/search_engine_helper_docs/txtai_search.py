@@ -47,6 +47,7 @@ if __name__ == "__main__":
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
         scores = np.dot(queries, data.T).tolist() # the damn dot product!
         # uid = embeddings.similarity(query, data)[0][0]
+        # this is actually the same. just a miniatured 'indexed' thing.
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
         # #b: index of the query, produced result
         # #doc: index of the document of the produced data
