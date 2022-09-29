@@ -67,7 +67,7 @@ def index_search(dirname, search_fields, search_query):
             highlights_joined = hit.highlights('content', text=data)
             highlights = highlights_joined.split(formatter_join_token)
             for highlight in highlights:
-                highlightBS = BS(highlight, feature='lxml')
+                highlightBS = BS(highlight, features='lxml')
                 highlightText = highlightBS.text
                 matches = set()
                 for match in highlightBS.findall('match'):
