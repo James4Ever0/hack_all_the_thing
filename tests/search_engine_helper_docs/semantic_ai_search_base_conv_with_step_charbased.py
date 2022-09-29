@@ -68,6 +68,7 @@ newContent = ""
 newContentCharIndexToLineIndexDict = {}
 
 alphabets = "abcdefghijklmnopqrstuvwxyz"
+alphabets += "ABCDEFGHIJKLMNOPQRSTUVWXY
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
