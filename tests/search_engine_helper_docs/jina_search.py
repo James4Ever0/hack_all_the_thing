@@ -34,10 +34,10 @@ from txtai.embeddings import Embeddings
 embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
 # change the 'embedding' attribute.
 def preproc(d: Document):
-    d.embedding = embedding.transform((None, q, None))
+    d.embedding = embedding.transform((None, d.text, None))
     return d
 
-da.apply() # apply what?
+da.apply(preproc) # apply what?
 
 
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
