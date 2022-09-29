@@ -41,7 +41,7 @@ print('model loaded')
 def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
     return d
-# it sucks.
+# it sucks... really.
 da.apply(preproc,show_progress=True, num_worker=1, backend='thread')  # apply what?
 
 print('embedding done')
@@ -59,7 +59,8 @@ query = "apply to every element recursively"  # seems it does not understand thi
 
 qd = Document(text=query)
 qd = preproc(qd)
-q = qd.match(da, metric="jaccard", use_scipy=True)
+q = qd.match(da, limit=5)
+# q = qd.match(da, metric="jaccard", use_scipy=True)
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
