@@ -59,6 +59,7 @@ if __name__ == "__main__":
         # what is this shit anyway?
         # print(uid_list_top5) # we need different results. 
         # breakpoint()
+        # you may want set some score filters.
         for uid, score in uid_list_top5:
             answer = data_source[uid]
             print("{}:".format(uid),answer)
