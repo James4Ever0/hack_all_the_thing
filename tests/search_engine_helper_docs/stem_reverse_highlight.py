@@ -14,8 +14,8 @@ porterStemmer = PorterStemmer()
 def englishTextToOriginalAndStemmedWordPairs(text):
     global englishNLP, porterStemmer
     doc = englishNLP(text)
-    
-
+    for token in doc:
+        text = token.text
 import json
 
 with open("demo_txtai_search_results",'r') as f:
