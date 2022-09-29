@@ -20,5 +20,6 @@ query = test_data['query']
 answers = test_data['answers']
 
 # parse and stem both query and answer, check for commondities.
+# sentence -> []
 
 for answer in answers:
