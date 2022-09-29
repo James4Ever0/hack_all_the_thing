@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     data = np.array(
         [
-            embeddings.transform((None, row, None))
+            embeddings.transform((None, row, None)) # this process will be slow. it is one by one.
             for row in progressbar.progressbar(data_source)
         ]
     )  # we need something other than this. fast info retrieval.
