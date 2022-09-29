@@ -19,10 +19,10 @@ from docarray import Document, DocumentArray
 #     lineRange: JSON
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
-# WPExcerpt(
-#         source="jq_man.log",
-#         content=elem["conv_group_merged"],  # must contain text/tags fields.
-#         lineRange=list(elem["line_range"])
+WPExcerpt(
+        source="jq_man.log",
+        text=elem["conv_group_merged"],  # must contain text/tags fields.
+        lineRange=list(elem["line_range"])
 da = DocumentArray(
     Document(text=elem["conv_group_merged"]
     )
