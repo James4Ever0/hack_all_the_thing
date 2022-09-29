@@ -28,7 +28,10 @@ da = DocumentArray(
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
+
 da.apply(Document.embed_feature_hashing) # apply what?
+
+
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
 
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
