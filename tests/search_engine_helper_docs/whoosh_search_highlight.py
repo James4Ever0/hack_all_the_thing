@@ -53,6 +53,7 @@ def index_search(dirname, search_fields, search_query):
         # shall you replace the formatter.
         # results.formatter = ListFormatter
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
+        # but to get the position is not so easy.
         # or we could directly use the highlighter without whoosh?
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
