@@ -84,6 +84,7 @@ def index_search(dirname, search_fields, search_query):
             # print(hit)
             # breakpoint()
             content = hit['content']
+            # reverse stem highlight!
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
