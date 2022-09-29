@@ -13,7 +13,8 @@ porterStemmer = PorterStemmer()
 
 def englishTextToOriginalAndStemmedWordPairs(text):
     global englishNLP, porterStemmer
-    doc = englishNLP.
+    doc = englishNLP(text)
+    
 
 import json
 
