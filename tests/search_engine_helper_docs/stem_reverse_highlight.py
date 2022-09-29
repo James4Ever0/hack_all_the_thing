@@ -16,8 +16,8 @@ def englishTextToOriginalAndStemmedWordPairs(text):
     doc = englishNLP(text)
     originalAndStemmedWordPairs = []
     for token in doc:
-        text = token.text
-        porterStemmer.
+        original_word = token.text
+        stemmed_wordporterStemmer.stem(text)
 import json
 
 with open("demo_txtai_search_results",'r') as f:
