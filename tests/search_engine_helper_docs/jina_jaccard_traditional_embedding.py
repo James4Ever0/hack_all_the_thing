@@ -79,6 +79,7 @@ from lazero.utils.logger import sprint
 
 for hit in mdata:
     sprint(hit)
+    # you may want to 'stem highlight' these things.
 # do we have other things?
 # print(q.embedding) # no embedding! wtf?
 # {'multi_modal_schema': {'content': {'attribute_type': <AttributeType.DOCUMENT: 'document'>, 'type': 'Text', 'position': 0}}}
