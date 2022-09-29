@@ -27,7 +27,7 @@ WPExcerpt(
         index = index
 )
 da = DocumentArray(
-    Document(text=elem["conv_group_merged"]
+    Document(
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
