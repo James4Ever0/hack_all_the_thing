@@ -48,9 +48,8 @@ sprint('QUERY KEYWORDS STEMMED:',queryStemmedWords)
 from rich.text import Text
 
 text = Text(
-    "hello world python this is python", style="green"
+    "hello world python this is python", style='gray'
 )  # there is no style applied.
-text.on(click="view.toggle('world')") # fuck?
 from rich.console import Console
 
 console = Console()
