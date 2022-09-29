@@ -57,26 +57,7 @@ if __name__ == "__main__":
             print("quitting")
             break
         queries = [query]
-        queries = np.array([embeddings.transform((None, q, None)) for q in queries])
-        scores = np.dot(queries, data.T).tolist()
-        # uid = embeddings.similarity(query, data)[0][0]
-        uids = [
-            sorted(enumerate(score), key=lambda x: x[1], reverse=True)
-            for score in scores
-        ]
-        # #b: index of the query, produced result
-        # #doc: index of the document of the produced data
-        # #data: different position inside the data, representing different values: (index, score)
-        #          #b #doc #data
-        # uid= uids[0][0][0]
-        uid_list_top5 = np.array(uids)[0, :5, :]  # allow omitted index???
-        # the thing is integer based. so the score is always zero.
-        # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
-        # this is a list, not a numpy array!
-        # what is this shit anyway?
-        # print(uid_list_top5) # we need different results.
-        # breakpoint()
-        # you may want set some score filters.
+
         for uid, score in uid_list_top5:
             uid = int(uid)
             # where is the damn score? wtf?
