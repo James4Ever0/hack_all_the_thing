@@ -5,7 +5,7 @@ import en_core_web_sm
 from nltk.stem import PorterStemmer
 
 # shall we detect the language id first?
-# but this is a short excerpt. except for 
+# but this is a short excerpt. except for lingua we won't get shit.
 englishNLP = 
 
 with open(".json",'r') as f:
