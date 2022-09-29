@@ -47,10 +47,10 @@ q = (
 )
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("text", 'scores__jaccard__value')]
+docArray_5 = q.matches[:5, ("_id","text", 'scores__jaccard__value')]
 # two separate shit?
 mdata = list(zip(*docArray_5))
-mdata.sort(key=lambda x: x[1], reverse=True)
+mdata.sort(key=lambda x: x[2], reverse=True)
 # print(docArray_5)
 from lazero.utils.logger import sprint
 for hit in mdata:
