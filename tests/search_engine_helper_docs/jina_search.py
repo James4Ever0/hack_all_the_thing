@@ -17,18 +17,19 @@ class WPExcerpt:
     source: Text
     content: Text
     lineRange: JSON
-    index:int
+    index: int
+
 
 # d = Document(uri='https://www.gutenberg.org/files/1342/1342-0.txt').load_uri_to_text()
 
 da = DocumentArray(
     Document(
         WPExcerpt(
-        source="jq_man.log",
-        text=elem["conv_group_merged"],  # must contain text/tags fields.
-        lineRange=list(elem["line_range"]),
-        index = index
-)
+            source="jq_man.log",
+            text=elem["conv_group_merged"],  # must contain text/tags fields.
+            lineRange=list(elem["line_range"]),
+            index=index,
+        )
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
@@ -38,25 +39,26 @@ da.apply(Document.embed_feature_hashing)
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
 # query="math addition function" # not common maybe
-query = 'apply to every element recursively' # seems it does not understand this query so well.
+query = "apply to every element recursively"  # seems it does not understand this query so well.
 # we are gonna do this in txtai_search.py once again.
 
 # this feature hashing is bad. not as advanced as txtai.
 # don't know what is 'jaccard'. most like some information retrieval method.
 
 q = (
-    Document(WPExcerpt(text=query,source=None,lineRange=None, index=None))
+    Document(WPExcerpt(text=query, source=None, lineRange=None, index=None))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("index","text", 'scores__jaccard__value')]
+docArray_5 = q.matches[:5, ("index", "text", "scores__jaccard__value")]
 # two separate shit?
 mdata = list(zip(*docArray_5))
 mdata.sort(key=lambda x: x[2], reverse=True)
 # print(docArray_5)
 from lazero.utils.logger import sprint
+
 for hit in mdata:
     sprint(hit)
 # do we have other things?
