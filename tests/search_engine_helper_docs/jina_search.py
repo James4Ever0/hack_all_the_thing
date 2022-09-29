@@ -6,7 +6,6 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 
 # query = "math addition operation" # strange enbedding!
 # query="following examples"
-query="math" # not common maybe
 from docarray import Document, DocumentArray
 
 # from docarray import dataclass
@@ -34,6 +33,8 @@ da.apply(Document.embed_feature_hashing)
 
 # <Document ('id', 'adjacency', '_metadata', 'embedding', 'scores', 'chunks') at 3b330837d3111c7ded9bc83bb2808f2d>
 # what is this shit?
+query="math addition" # not common maybe
+
 q = (
     Document(text=query)
     .embed_feature_hashing()
