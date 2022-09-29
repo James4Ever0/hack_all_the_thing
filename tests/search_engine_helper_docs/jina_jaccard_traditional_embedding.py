@@ -62,8 +62,9 @@ query = "apply to every element recursively"  # seems it does not understand thi
 qd = Document(text=query)
 qd = qd.embed_feature_hashing()
 # qd = preproc(qd)
-# q = qd.match(da, limit=5)
-q = qd.match(da, metric="jaccard", use_scipy=True)
+q = qd.match(da, limit=5)
+# q = qd.match(da, metric="jaccard", use_scipy=True)
+
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 # docArray_5 = q.matches[:5, ("text", "tags", "scores__cosine__value")]
