@@ -25,6 +25,7 @@ schema = Schema(
     title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True)
 )
 
+indexDirectory = 'index_dir2'
 # create empty index directory
 
 if not os.path.exists(indexDiretory):
