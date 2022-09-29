@@ -31,7 +31,7 @@ writer = ix.writer()
 # it will not be duplicated.
 for elem in listOfCleanedMergedConvGroupWithLineIndexMapping:
     data = 
-    writer.add_document(title="jq manual", content=data,,path="jq_man.log")
+    writer.add_document(title="jq manual", content=data, line,path="jq_man.log")
 writer.commit()
 
 # https://stackoverflow.com/questions/19477319/whoosh-accessing-search-page-result-items-throws-readerclosed-exception
