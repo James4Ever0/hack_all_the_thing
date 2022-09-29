@@ -64,6 +64,7 @@ q = qd.match(da, limit=5)
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
+# docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
 # two separate shit?
 mdata = list(zip(*docArray_5))
 mdata.sort(key=lambda x: x[2], reverse=True)
