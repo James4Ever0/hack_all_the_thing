@@ -42,8 +42,9 @@ def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
     return d
 
-da.apply(preproc,show_progress=True, num_worker=1, backend='process')  # apply what?
+da.apply(preproc,show_progress=True, num_worker=1, backend='thread')  # apply what?
 
+print('embedding done')
 
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
 
