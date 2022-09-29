@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup as BS
 
 # remember this shit is long!
 
+# but what if we don't 
+
 from whoosh.fields import Schema, TEXT, ID
 from whoosh import index
 import os, os.path
