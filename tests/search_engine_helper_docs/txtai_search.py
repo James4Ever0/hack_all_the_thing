@@ -61,6 +61,7 @@ if __name__ == "__main__":
         # breakpoint()
         # you may want set some score filters.
         for element in uid_list_top5:
+            uid, score = element.tolist()
             answer = data_source[uid]
             print("{}:".format(uid),answer)
             print('score:', score)
