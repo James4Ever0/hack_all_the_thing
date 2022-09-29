@@ -37,6 +37,8 @@ da.apply(Document.embed_feature_hashing)
 query = 'apply to every element recursively' # seems it does not understand this query so well.
 # we are gonna do this in txtai_search.py once again.
 
+# this feature hashing is bad. not as advanced as txtai.
+
 q = (
     Document(text=query)
     .embed_feature_hashing()
