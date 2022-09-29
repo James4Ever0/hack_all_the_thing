@@ -38,6 +38,7 @@ query = 'apply to every element recursively' # seems it does not understand this
 # we are gonna do this in txtai_search.py once again.
 
 # this feature hashing is bad. not as advanced as txtai.
+# don't know what is 'jaccard'. 
 
 q = (
     Document(text=query)
