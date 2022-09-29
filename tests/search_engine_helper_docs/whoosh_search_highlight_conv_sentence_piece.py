@@ -23,6 +23,7 @@ from whoosh.highlight import HtmlFormatter
 
 # question: how to tokenize chinese text?
 # better search for 'whoosh 中文搜索'
+# whoosh + jieba
 schema = Schema(
     title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True),
 )
