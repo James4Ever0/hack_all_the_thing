@@ -19,6 +19,6 @@ with open("demo_txtai_search_results",'r') as f:
 query = test_data['query']
 answers = test_data['answers']
 
-# parse and stem both query and answer, check for 
+# parse and stem both query and answer, check for commondities.
 
 for answer in answers:
