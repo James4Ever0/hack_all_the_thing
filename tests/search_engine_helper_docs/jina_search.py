@@ -29,6 +29,8 @@ da = DocumentArray(
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
 
+# change the 'embedding' attribute.
+
 da.apply(Document.embed_feature_hashing) # apply what?
 
 
