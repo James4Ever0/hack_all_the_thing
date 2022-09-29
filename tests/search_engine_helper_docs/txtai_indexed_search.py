@@ -2,7 +2,7 @@
 # check the damn GPU usage!
 
 from txtai.embeddings import Embeddings
-from lazero.utils.
+from lazero.utils.logger import sprint
 # seems it can pull out the right thing.
 # but the ram consumption?
 # 1455MiB. this is high.
