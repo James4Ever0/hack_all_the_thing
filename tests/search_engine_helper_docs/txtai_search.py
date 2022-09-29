@@ -72,6 +72,7 @@ if __name__ == "__main__":
         storage_file_name = "demo_txtai_search_results.json"
         data_example_json = {}
         with open(storage_file_name,'w+') as f:
+            answers = []
             for uid, score in uid_list_top5:
                 answer = data_source[uid]
                 answers.append(answer)
