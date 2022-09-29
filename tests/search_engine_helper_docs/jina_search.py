@@ -27,7 +27,6 @@ da = DocumentArray(
             source="jq_man.log",
             text=elem["conv_group_merged"],  # must contain text/tags fields.
             lineRange=list(elem["line_range"]),
-            # index=index,
         )
     )
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
@@ -51,7 +50,7 @@ q = (
 )
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("index", "text", "scores__jaccard__value")]
+docArray_5 = q.matches[:5, ("lineRange", "text", "scores__jaccard__value")]
 # two separate shit?
 mdata = list(zip(*docArray_5))
 mdata.sort(key=lambda x: x[2], reverse=True)
