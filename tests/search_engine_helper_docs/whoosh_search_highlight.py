@@ -53,6 +53,7 @@ def index_search(dirname, search_fields, search_query):
         # shall you replace the formatter.
         formatter_join_token = str(uuid.uuid4())
         # results.formatter = ListFormatter
+        # it is some kind of 'html formatter', so we use 
         results.formatter = 
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
