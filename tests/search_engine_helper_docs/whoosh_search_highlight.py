@@ -1,6 +1,6 @@
 from load_demo_data import data
 # from lazero.utils.logger import sprint
-import uuid 
+import uuid
 from bs4 import BeautifulSoup as BS
 # a single document, unparsed!
 # you know there will be newline for this search engine.
