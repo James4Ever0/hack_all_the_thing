@@ -21,7 +21,8 @@ def englishTextToOriginalAndStemmedWordPairs(text):
         originalAndStemmedWordPairs.append((original_word, stemmed_word))
     return originalAndStemmedWordPairs
 
-def englishText
+def englishTextToStemmedWords(text):
+    return 
 import json
 
 with open("demo_txtai_search_results",'r') as f:
