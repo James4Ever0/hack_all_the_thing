@@ -34,7 +34,7 @@ from txtai.embeddings import Embeddings
 embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
 # change the 'embedding' attribute.
 def preproc(d: Document):
-    d.embedding = embedding.
+    d.embedding = embedding.transform((None, q, None))
     return d
 
 da.apply() # apply what?
