@@ -77,5 +77,5 @@ if __name__ == "__main__":
                 answer = data_source[uid]
                 answers.append(answer)
             data_example_json.update({'answers': answers})
-            f.write(data_example_json)
+            f.write(json.dumps(data_example_json, ensure_ascii=False, indent=4))
             print("write to %s" % storage_file_name)
