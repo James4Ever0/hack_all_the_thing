@@ -40,6 +40,8 @@ if __name__ == "__main__":
     import progressbar
 
     embeddings.index((uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))) # are you sure that this progressbar will work?
+    # generator? are we passing a generator?
+    # this is quick! fuck.
 
     # Extract uid of first result
     # search result format: (uid, score)
