@@ -51,4 +51,4 @@ if __name__ == "__main__":
         uid_list_top5 = uids[0][0][:5]
         for uid in uid_list_top5:
             answer = data_source[uid]
-            print(answer)
+            print("{}:".format(uid),answer)
