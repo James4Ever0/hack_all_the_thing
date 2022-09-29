@@ -50,7 +50,7 @@ if __name__ == "__main__":
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
         # #b: index of the query, produced result
         # #doc: index of the document of the produced data
-        # #data: different position inside the data, representing different values ()
+        # #data: different position inside the data, representing different values: (index, score)
         #                    #b #doc #data
         uid_list_top5 = uids[0][0][:5]
         # what is this shit anyway?
