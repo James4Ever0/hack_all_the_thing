@@ -4,7 +4,6 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 )
 
 from lazero.utils.logger import sprint
-import uuid
 
 # a single document, unparsed!
 # you know there will be newline for this search engine.
@@ -17,7 +16,7 @@ from whoosh.fields import Schema, TEXT, ID, STORED
 from whoosh import index
 import os, os.path
 from whoosh import qparser
-from whoosh.highlight import HtmlFormatter
+# from whoosh.highlight import HtmlFormatter
 
 # question: how to tokenize chinese text?
 # better search for 'whoosh 中文搜索' 'whoosh + jieba'
@@ -68,10 +67,10 @@ def index_search(dirname, search_fields, search_query):
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
         # shall you replace the formatter.
-        formatter_join_token = str(uuid.uuid4())
+        # formatter_join_token = str(uuid.uuid4())
         # results.formatter = ListFormatter
         # it is some kind of 'html formatter', so we use BeautifulSoup
-        results.formatter = HtmlFormatter(between=formatter_join_token)
+        # results.formatter = HtmlFormatter(between=formatter_join_token)
         # this time we do not use the formatter?
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
