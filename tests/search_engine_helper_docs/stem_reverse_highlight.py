@@ -20,6 +20,8 @@ def englishTextToOriginalAndStemmedWordPairs(text):
         stemmed_word= porterStemmer.stem(original_word)
         originalAndStemmedWordPairs.append((original_word, stemmed_word))
     return originalAndStemmedWordPairs
+
+def englishText
 import json
 
 with open("demo_txtai_search_results",'r') as f:
