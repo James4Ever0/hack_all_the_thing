@@ -21,6 +21,8 @@ from whoosh import index
 from whoosh import qparser
 from whoosh.highlight import HtmlFormatter
 
+# question: how to tokenize chinese text?
+# better search for 'whoosh'
 schema = Schema(
     title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True),
 )
