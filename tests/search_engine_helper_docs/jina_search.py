@@ -51,8 +51,10 @@ query = 'apply to every element recursively' # seems it does not understand this
 # this feature hashing is bad. not as advanced as txtai.
 # don't know what is 'jaccard'. most like some
 
+qd = Document(text=query)
+qd = preproc(qd)
 q = (
-    Document(text=query)
+    
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
