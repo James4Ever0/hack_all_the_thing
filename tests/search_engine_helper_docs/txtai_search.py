@@ -44,6 +44,7 @@ if __name__ == "__main__":
             print("quitting")
             break
         queries = [query]
+        # this damn hyphen is different from the minus sign. that's why it is causing trouble.
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
         scores = np.dot(queries, data.T).tolist() # the damn dot product!
         # uid = embeddings.similarity(query, data)[0][0]
