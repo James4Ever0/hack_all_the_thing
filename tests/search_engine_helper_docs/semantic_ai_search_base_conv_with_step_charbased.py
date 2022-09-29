@@ -70,7 +70,7 @@ newContentCharIndexToLineIndexDict = {}
 alphabets = "abcdefghijklmnopqrstuvwxyz"
 alphabets += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 import string
-english punctuals = string.
+english_punctuals = string.punctuation
 
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
