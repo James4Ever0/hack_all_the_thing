@@ -81,19 +81,7 @@ def index_search(dirname, search_fields, search_query):
         # or we could directly use the highlighter without whoosh?
         for hitIndex, hit in enumerate(results): # we cannot override the imported 'index'
             sprint('HIT:',hitIndex)
-            # highlights = hit.highlights('content', top=5) # str. not list.
-            highlights_joined = hit.highlights("content", text=data, top=1)
-            highlights = highlights_joined.split(formatter_join_token)
-            for highlight in highlights:
-                # print('HIGHLIGHT FORMATTED:', [highlight])
-                # breakpoint()
-                highlightBS = BS(highlight, features="lxml")
-                highlightText = highlightBS.text
-                matches = set()
-                for match in highlightBS.find_all("strong"):
-                    matches.add(match.text)
-                print("HIGHLIGHT_TEXT:", highlightText)
-                print("MATCHES:", matches)
+            
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
