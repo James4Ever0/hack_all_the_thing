@@ -2,7 +2,7 @@
 # check the damn GPU usage!
 
 from txtai.embeddings import Embeddings
-
+from lazero.utils.
 # seems it can pull out the right thing.
 # but the ram consumption?
 # 1455MiB. this is high.
@@ -60,14 +60,14 @@ if __name__ == "__main__":
         # the "1" is the limit. how about let's make it into 5?
         limit = 5
         uid_list_top5= embeddings.search(query, limit) # what is this thing?
-        print(uid_list_top5)
-        breakpoint()
+        # print(uid_list_top5)
+        # breakpoint()
         # [(849, 0.6242430210113525), (186, 0.6196383833885193), (823, 0.6172434687614441), (728, 0.6048709750175476), (1389, 0.6044095158576965)]
-        # something like this.
+        # something like this. pretty cool.
 
         for uid, score in uid_list_top5:
             # uid = int(uid)
             # where is the damn score? wtf?
             answer = data_source[uid]
             print("{}:".format(uid), answer)
-            print("score:", score)
+            sprint("score:", score)
