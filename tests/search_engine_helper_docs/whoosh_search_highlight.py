@@ -67,7 +67,7 @@ def index_search(dirname, search_fields, search_query):
             highlights_joined = hit.highlights('content', text=data)
             highlights = highlights_joined.split(formatter_join_token)
             for highlight in highlights:
-                BS(highlight)
+                highlight_bs = BS(highlight)
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
