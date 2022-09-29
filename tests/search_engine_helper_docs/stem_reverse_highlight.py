@@ -41,8 +41,8 @@ queryStemmedWords = englishTextToStemmedWords(query)
 
 # we need to show these highlights! fuck.
 from lazero.utils.logger import sprint
-sprint("QUERY",query)
-sprint('QUERY KEYWORDS STEMMED',queryStemmedWords)
+sprint("QUERY:",query)
+sprint('QUERY KEYWORDS STEMMED:',queryStemmedWords)
 
 for answer in answers:
     highlightSet = set()
