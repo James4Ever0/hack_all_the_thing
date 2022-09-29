@@ -77,7 +77,7 @@ def index_search(dirname, search_fields, search_query):
         # you may want the context and the exact line number.
         # line number? use string slice and count('\n') please.
         # or we could directly use the highlighter without whoosh?
-        for hit in results:
+        for index, hit in (results):
             # highlights = hit.highlights('content', top=5) # str. not list.
             highlights_joined = hit.highlights("content", text=data, top=1)
             highlights = highlights_joined.split(formatter_join_token)
