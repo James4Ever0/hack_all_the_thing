@@ -65,6 +65,7 @@ def index_search(dirname, search_fields, search_query):
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
             highlights = hit.highlights('content', text=data)
+            highlights = highlights
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
