@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
 
         for uid, score in uid_list_top5:
-            uid = int(uid)
+            # uid = int(uid)
             # where is the damn score? wtf?
             answer = data_source[uid]
             print("{}:".format(uid), answer)
