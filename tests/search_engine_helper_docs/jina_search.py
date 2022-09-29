@@ -24,7 +24,7 @@ from docarray import Document, DocumentArray
 #         content=elem["conv_group_merged"],  # must contain text/tags fields.
 #         lineRange=list(elem["line_range"])
 da = DocumentArray(
-    Document(text=elem["conv_group_merged"],index=index # it is putted into 'tags' section.
+    Document(text=elem["conv_group_merged"],index=index, lineRange = elem['line_range'] # it is putted into 'tags' section.
     )
     for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
