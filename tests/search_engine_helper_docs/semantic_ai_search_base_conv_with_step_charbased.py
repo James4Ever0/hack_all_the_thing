@@ -70,6 +70,8 @@ newContentCharIndexToLineIndexDict = {}
 alphabets = "abcdefghijklmnopqrstuvwxyz"
 alphabets += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+english punctuals = 
+
 for lineNumber, line in enumerate(linewise):
     line_cleaned = standardLineCleaner(line)
     # for zero length line (after cleaned), we skip without doing anything.
