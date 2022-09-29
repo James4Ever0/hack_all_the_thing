@@ -42,6 +42,7 @@ def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
     return d
 # it sucks... really.
+# with jaccard.
 da.apply(preproc,show_progress=True, num_worker=1, backend='thread')  # apply what?
 
 print('embedding done')
@@ -63,7 +64,7 @@ q = qd.match(da, limit=5)
 # q = qd.match(da, metric="jaccard", use_scipy=True)
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
-docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
+docArray_5 = q.matches[:5, ("text", "tags", "scores__cosine__value")]
 # docArray_5 = q.matches[:5, ("text", "tags", "scores__jaccard__value")]
 # two separate shit?
 mdata = list(zip(*docArray_5))
