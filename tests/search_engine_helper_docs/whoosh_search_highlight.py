@@ -35,7 +35,6 @@ def index_search(dirname, search_fields, search_query):
     
     og = qparser.OrGroup.factory(0.9)
     mp = qparser.MultifieldParser(search_fields, schema, group = og)
-
     
     q = mp.parse(search_query)
 
