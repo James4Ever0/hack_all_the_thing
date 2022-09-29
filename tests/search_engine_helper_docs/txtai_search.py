@@ -70,9 +70,10 @@ if __name__ == "__main__":
             print("{}:".format(uid),answer)
             print('score:', score)
         storage_file_name = "demo_txtai_search_results.json"
+        data_example_json = {}
         with open(storage_file_name,'w+') as f:
             for uid, score in uid_list_top5:
                 answer = data_source[uid]
                 answers.append(answer)
             f.write(data_example_json)
-            print("write to %s")
+            print("write to %s" % storage_file_name)
