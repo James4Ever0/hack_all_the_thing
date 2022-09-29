@@ -31,7 +31,7 @@ writer = ix.writer()
 # it will not be duplicated.
 for elem in listOfCleanedMergedConvGroupWithLineIndexMapping:
     data = elem['conv_group_merged": newContent[startIndex:endIndex],
-        "line_range"']
+    lineRange = elemline_range"']
     writer.add_document(title="jq manual", content=data, lineRange = lineRange,path="jq_man.log")
 writer.commit()
 
