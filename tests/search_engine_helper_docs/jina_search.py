@@ -36,16 +36,18 @@ da = DocumentArray(
 from txtai.embeddings import Embeddings
 
 embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
-print('model loaded')
+print("model loaded")
 # change the 'embedding' attribute.
 def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
     return d
+
+
 # it sucks... really.
 # with jaccard.
-da.apply(preproc,show_progress=True, num_worker=1, backend='thread')  # apply what?
+da.apply(preproc, show_progress=True, num_worker=1, backend="thread")  # apply what?
 
-print('embedding done')
+print("embedding done")
 
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
 
