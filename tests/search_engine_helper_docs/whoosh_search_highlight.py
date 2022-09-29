@@ -64,8 +64,8 @@ def index_search(dirname, search_fields, search_query):
         # or we could directly use the highlighter without whoosh?
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
-            highlights = hit.highlights('content', text=data)
-            highlights = highlights
+            highlights_joined = hit.highlights('content', text=data)
+            highlights = highlights_joined
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
