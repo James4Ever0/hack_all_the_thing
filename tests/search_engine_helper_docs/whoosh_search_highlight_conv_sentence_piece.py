@@ -1,5 +1,5 @@
 # from load_demo_data import data
-listOfCleanedMergedConvGroupWithLineIndexMapping
+from semantic_ai_search_base_conv_with_step_charbased import listOfCleanedMergedConvGroupWithLineIndexMapping
 # from lazero.utils.logger import sprint
 import uuid 
 from bs4 import BeautifulSoup as BS
