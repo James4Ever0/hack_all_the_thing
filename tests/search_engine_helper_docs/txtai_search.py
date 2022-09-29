@@ -53,14 +53,14 @@ if __name__ == "__main__":
         # #data: different position inside the data, representing different values: (index, score)
         #          #b #doc #data
         # uid= uids[0][0][0]
-        uid_list_top5 = np.array(uids,dtype=int)[0,:5] # allow omitted index???
+        uid_list_top5 = np.array(uids,dtype=int)[0,:5,:] # allow omitted index???
         # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array! 
         # what is this shit anyway?
         # print(uid_list_top5) # we need different results. 
         # breakpoint()
         # you may want set some score filters.
-        for uid, score in uid_list_top5:
+        for element in uid_list_top5:
             answer = data_source[uid]
             print("{}:".format(uid),answer)
             print('score:', score)
