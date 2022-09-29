@@ -44,7 +44,6 @@ if __name__ == "__main__":
 
     # Extract uid of first result
     # search result format: (uid, score)
-    uid = embeddings.search(query, 1)[0][0]
     # you want to use other methods?
     # embeddings.index # what is this fucking index?
     # document format: (id, data, tags)
