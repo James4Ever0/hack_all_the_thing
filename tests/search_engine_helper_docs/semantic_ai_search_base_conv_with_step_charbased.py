@@ -36,8 +36,8 @@ def stripChars(line, chars=[" ", "\t"]):
     while True:
         flag = False
         for char in chars:
-            if line.startswith(char):
-                line = line.lstrip(char)
+            if line.startswith(char) or line.endswith(char):
+                line = line.strip(char)
                 flag = True
         if not flag:
             break
