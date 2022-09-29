@@ -47,7 +47,7 @@ if __name__ == "__main__":
         ]
     )  # we need something other than this. fast info retrieval.
 
-    embeddings.index([(uid, text, None) for uid, text in enumerate(data)])
+    embeddings.index([(uid, text, None) for uid, text in enumerate(progressbar.progressbar(data))])
 
     # Extract uid of first result
     # search result format: (uid, score)
