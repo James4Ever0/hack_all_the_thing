@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup as BS
 
 # but what if we don't simply import 'data'? instead we do the search against our convoluted array?
 
-from whoosh.fields import Schema, TEXT, ID
+from whoosh.fields import Schema, TEXT, ID, STORED
 from whoosh import index
 import os, os.path
 from whoosh import index
@@ -24,7 +24,7 @@ from whoosh.highlight import HtmlFormatter
 # question: how to tokenize chinese text?
 # better search for 'whoosh 中文搜索' 'whoosh + jieba'
 schema = Schema(
-    title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True),
+    title=TEXT(stored=True), path=ID(stored=True), content=TEXT(stored=True), =STORED()
 )
 
 indexDirectory = 'index_dir2'
