@@ -3,8 +3,8 @@ from lazero.utils.logger import sprint
 import uuid 
 from bs4 import BeautifulSoup as BS
 # a single document, unparsed!
-
 # you know there will be newline for this search engine.
+
 # remember this shit is long!
 
 from whoosh.fields import Schema, TEXT, ID
@@ -107,6 +107,7 @@ def index_search(dirname, search_fields, search_query):
         # return results
 
 query = "math addition"
+# query = "math addition"
 # must not with reader closed.
 # results_dict = index_search("index_dir", ['title','content'], query)
 index_search("index_dir", ['title','content'], query)
