@@ -46,6 +46,8 @@ if __name__ == "__main__":
     print("loading data_source")
     import progressbar
 
+    # but i want to ask, what can be the 'tags'?
+
     embeddings.index((uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))) # are you sure that this progressbar will work?
     # generator? are we passing a generator?
     # this is quick! fuck.
