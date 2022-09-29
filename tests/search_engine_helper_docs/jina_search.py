@@ -45,7 +45,7 @@ query = 'apply to every element recursively' # seems it does not understand this
 # don't know what is 'jaccard'. most like some information retrieval method.
 
 q = (
-    Document(WPExcerpt(text=query,source=None,lineRange=None, ))
+    Document(WPExcerpt(text=query,source=None,lineRange=None, index=None))
     .embed_feature_hashing()
     .match(da, metric="jaccard", use_scipy=True)
 )
