@@ -79,7 +79,7 @@ def index_search(dirname, search_fields, search_query):
         # or we could directly use the highlighter without whoosh?
         for hit in results:
             # highlights = hit.highlights('content', top=5) # str. not list.
-            highlights_joined = hit.highlights("content", text=data)
+            highlights_joined = hit.highlights("content", text=data, top=1)
             highlights = highlights_joined.split(formatter_join_token)
             for highlight in highlights:
                 # print('HIGHLIGHT FORMATTED:', [highlight])
