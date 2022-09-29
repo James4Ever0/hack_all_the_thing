@@ -3,7 +3,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
 
-# from lazero.utils.logger import sprint
+from lazero.utils.logger import sprint
 import uuid
 from bs4 import BeautifulSoup as BS
 
@@ -62,7 +62,7 @@ def index_search(dirname, search_fields, search_query):
     # why you have case conversion? why the fuck?
 
     with ix.searcher() as s:
-        results = s.search(q, terms=True, limit=10)  # what fucking terms?
+        results = s.search(q, terms=True, limit=5)  # what fucking terms?
         results.fragmenter.charlimit = 100000
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
@@ -77,7 +77,7 @@ def index_search(dirname, search_fields, search_query):
         # you may want the context and the exact line number.
         # line number? use string slice and count('\n') please.
         # or we could directly use the highlighter without whoosh?
-        for index, hit in (results):
+        for index, hit in enumerate(results):
             # highlights = hit.highlights('content', top=5) # str. not list.
             highlights_joined = hit.highlights("content", text=data, top=1)
             highlights = highlights_joined.split(formatter_join_token)
