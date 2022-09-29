@@ -26,7 +26,7 @@ from docarray import Document, DocumentArray
 da = DocumentArray(
     Document(text=elem["conv_group_merged"],
     )
-    for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
+    for index, elem in enumerate(listOfCleanedMergedConvGroupWithLineIndexMapping)
 )
 da.apply(Document.embed_feature_hashing)
 # da.apply(Document.embed_feature_hashing, backend="process") # what the fuck?
@@ -50,7 +50,7 @@ q = (
 docArray_5 = q.matches[:5, ("text",'tags', 'scores__jaccard__value')]
 # two separate shit?
 mdata = list(zip(*docArray_5))
-mdata.sort(key=lambda x: x[1], reverse=True)
+mdata.sort(key=lambda x: x[2], reverse=True)
 # print(docArray_5)
 from lazero.utils.logger import sprint
 for hit in mdata:
