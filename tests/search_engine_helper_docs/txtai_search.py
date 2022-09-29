@@ -29,9 +29,9 @@ if __name__ == "__main__":
     # Convert queries to embedding vectors
     print('loading data_source')
     import progressbar
-    data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)]) # we need something other than this. 
+    data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)]) # we need something other than this. fast info retrieval.
+    # you want to use 
     # i need progressbar!
-
         # Dot product on normalized vectors is equal to cosine similarity
 
         # Add index and sort desc based on score
