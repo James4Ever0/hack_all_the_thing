@@ -80,7 +80,7 @@ for lineNumber, line in enumerate(linewise):
         continue
     # print("{}:".format(lineNumber), line_cleaned)
     # this process will never decrease the length of the line.
-    # i guess the symbol is different somehow. 
+    # i guess the symbol is different somehow. the hyphen is not avaliable on keyboard.
     if line_cleaned.endswith("-") or line_cleaned.endswith("‐"):
         line_cleaned = line_cleaned[:-1]
     elif line_cleaned[-1] in alphabets+english_punctuation:
