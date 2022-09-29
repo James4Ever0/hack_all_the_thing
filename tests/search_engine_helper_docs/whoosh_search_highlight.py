@@ -1,5 +1,5 @@
 from load_demo_data import data
-from lazero.utils.logger import sprint
+# from lazero.utils.logger import sprint
 import uuid 
 from bs4 import BeautifulSoup as BS
 # a single document, unparsed!
