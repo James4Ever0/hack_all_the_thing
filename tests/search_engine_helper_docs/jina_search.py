@@ -44,6 +44,8 @@ q = (
 
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5, ("text", 'scores__jaccard__value')]
+# two separate shit?
+mdata = zip(*docArray_5)
 # print(docArray_5)
 from lazero.utils.logger import sprint
 for hit in docArray_5:
