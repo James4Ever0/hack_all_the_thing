@@ -17,7 +17,6 @@ from bs4 import BeautifulSoup as BS
 from whoosh.fields import Schema, TEXT, ID, STORED
 from whoosh import index
 import os, os.path
-from whoosh import index
 from whoosh import qparser
 from whoosh.highlight import HtmlFormatter
 
