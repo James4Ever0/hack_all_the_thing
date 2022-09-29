@@ -15,7 +15,7 @@ from docarray.typing import Text, JSON
 @dataclass
 class WPExcerpt:
     source: Text
-    content: Text
+    text: Text
     lineRange: JSON
     index: int
 
