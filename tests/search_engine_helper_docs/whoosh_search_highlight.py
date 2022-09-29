@@ -1,6 +1,6 @@
 from load_demo_data import data
 from lazero.utils.logger import sprint
-
+import uuid
 # a single document, unparsed!
 
 # remember this shit is long!
@@ -51,6 +51,7 @@ def index_search(dirname, search_fields, search_query):
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
         # shall you replace the formatter.
+        formatter_join_token = str(uuid.uuid4())
         # results.formatter = ListFormatter
         # i mean it will join the results with some magic UUID, so you may have chance of spliting it out.
         # but to get the position is not so easy.
