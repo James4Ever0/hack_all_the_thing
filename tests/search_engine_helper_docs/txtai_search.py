@@ -93,6 +93,7 @@ if __name__ == "__main__":
         with open(storage_file_name, "w+") as f:
             answers = []
             for uid, score in uid_list_top5:
+                uid = int(uid)
                 answer = data_source[uid]
                 answers.append(answer)
             data_example_json.update({"answers": answers})
