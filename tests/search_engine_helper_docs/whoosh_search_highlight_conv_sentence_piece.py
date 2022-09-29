@@ -29,6 +29,7 @@ writer = ix.writer()
 
 # for i in range(df):
 # it will not be duplicated.
+for 
 writer.add_document(title="jq manual", content=data,path="jq_man.log")
 writer.commit()
 
