@@ -57,7 +57,8 @@ if __name__ == "__main__":
             print("quitting")
             break
         # the "1" is the limit. how about let's make it into 5?
-        uid = embeddings.search(query, linit)[0][0] # what is this thing?
+        limit = 5
+        uid_list_top5= embeddings.search(query, limit) # what is this thing?
 
 
         for uid, score in uid_list_top5:
