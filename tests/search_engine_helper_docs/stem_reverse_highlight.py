@@ -8,6 +8,9 @@ from nltk.stem import PorterStemmer
 # but this is a short excerpt. except for lingua we won't get shit.
 # just english and chinese. for other languages we don't understand so much.
 englishNLP = en_core_web_sm.load()
+porterStemmer = PorterStemmer()
+
+import json
 
 with open(".json",'r') as f:
     content = f.read()
