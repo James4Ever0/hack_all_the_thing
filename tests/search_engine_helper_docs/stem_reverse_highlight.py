@@ -15,3 +15,5 @@ import json
 with open("demo_txtai_search_results",'r') as f:
     content = f.read()
     test_data = json.loads(content)
+
+query = test_data['query']
