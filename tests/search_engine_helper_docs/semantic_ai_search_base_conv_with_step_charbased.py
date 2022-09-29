@@ -80,7 +80,7 @@ for lineNumber, line in enumerate(linewise):
         continue
     # print("{}:".format(lineNumber), line_cleaned)
     # this process will never decrease the length of the line.
-    if line_cleaned.endswith("-"):
+    if line_cleaned.endswith("-") or line_cleaned.endswith("‐"):
         line_cleaned = line_cleaned[:-1]
     elif line_cleaned[-1] in alphabets+english_punctuation:
         line_cleaned += " "
