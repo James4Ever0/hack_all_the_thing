@@ -45,7 +45,7 @@ if __name__ == "__main__":
             break
         queries = [query]
         queries = np.array([embeddings.transform((None, q, None)) for q in queries])
-        scores = np.dot(queries, data.T).tolist()
+        scores = np.dot(queries, data.T).tolist() # the damn dot product!
         # uid = embeddings.similarity(query, data)[0][0]
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
         # #b: index of the query, produced result
