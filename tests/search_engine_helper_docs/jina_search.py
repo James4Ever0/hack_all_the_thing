@@ -45,10 +45,10 @@ q = (
 # print(q.matches[:5, ("text", "scores__jaccard__value")])
 docArray_5 = q.matches[:5, ("text", 'scores__jaccard__value')]
 # two separate shit?
-mdata = zip(*docArray_5)
+mdata = list(zip(*docArray_5))
 # print(docArray_5)
 from lazero.utils.logger import sprint
-for hit in docArray_5:
+for hit in mdata:
     sprint(hit)
 # do we have other things?
 # print(q.embedding) # no embedding! wtf?
