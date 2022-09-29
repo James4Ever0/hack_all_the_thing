@@ -30,8 +30,8 @@ writer = ix.writer()
 # for i in range(df):
 # it will not be duplicated.
 for elem in listOfCleanedMergedConvGroupWithLineIndexMapping:
-    data = 
-    writer.add_document(title="jq manual", content=data, line,path="jq_man.log")
+    data = elem['']
+    writer.add_document(title="jq manual", content=data, lineRange = lineRange,path="jq_man.log")
 writer.commit()
 
 # https://stackoverflow.com/questions/19477319/whoosh-accessing-search-page-result-items-throws-readerclosed-exception
