@@ -52,7 +52,7 @@ if __name__ == "__main__":
         # #doc: index of the document of the produced data
         # #data: different position inside the data, representing different values: (index, score)
         #                    #b #doc #data
-        uid_list_top5 = uids[0][0][:5]
+        uid_list_top5 = uids[0][:5][:5]
         # what is this shit anyway?
         print(uid_list_top5) # we need different results. 
         breakpoint()
