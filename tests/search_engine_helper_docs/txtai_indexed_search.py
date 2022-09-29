@@ -28,6 +28,7 @@ if __name__ == "__main__":
     # progressbar?
 
 # needs to query from huggingface?
+# will this fucking work?
     embeddings = Embeddings(
         {"path": "sentence-transformers/nli-mpnet-base-v2"}
     )  # same as the 'indexed' demo.
