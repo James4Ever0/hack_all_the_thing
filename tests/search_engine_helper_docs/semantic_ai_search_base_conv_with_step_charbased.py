@@ -76,7 +76,7 @@ for lineNumber, line in enumerate(linewise):
     # this process will never decrease the length of the line.
     if line_cleaned.endswith("-"):
         line_cleaned = line_cleaned[:-1]
-    elif line_cleaned[-1] in 
+    elif line_cleaned[-1] in alphabets:
         line_cleaned += " "
     # we shall get the length again, cause we have processed this thing.
     lineCleanedLength = len(line_cleaned)
