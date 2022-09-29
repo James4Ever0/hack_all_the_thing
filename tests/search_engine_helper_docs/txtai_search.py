@@ -70,7 +70,7 @@ if __name__ == "__main__":
             print("{}:".format(uid),answer)
             print('score:', score)
         storage_file_name = "demo_txtai_search_results.json"
-        data_example_json = {'query':}
+        data_example_json = {'query':query}
         with open(storage_file_name,'w+') as f:
             answers = []
             for uid, score in uid_list_top5:
