@@ -40,14 +40,7 @@ if __name__ == "__main__":
     print("loading data_source")
     import progressbar
 
-    data = np.array(
-        [
-            embeddings.transform((None, row, None)) # this process will be slow. it is one by one.
-            for row in progressbar.progressbar(data_source)
-        ]
-    )  # we need something other than this. fast info retrieval.
-
-    embeddings.index([(uid, text, None) for uid, text in enumerate(progressbar.progressbar(data))])
+    embeddings.index([(uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))])
 
     # Extract uid of first result
     # search result format: (uid, score)
