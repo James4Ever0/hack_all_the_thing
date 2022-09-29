@@ -35,6 +35,7 @@ da.apply(Document.embed_feature_hashing)
 # what is this shit?
 # query="math addition function" # not common maybe
 query = 'apply to every element recursively' # seems it does not understand this query so well.
+# we are gonna do this in txtai_search.py once again.
 
 q = (
     Document(text=query)
