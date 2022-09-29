@@ -11,7 +11,8 @@ englishNLP = en_core_web_sm.load()
 porterStemmer = PorterStemmer()
 
 
-def englishTextToOriginal
+def englishTextToOriginalAndStemmedWordPairs(text):
+    
 
 import json
 
