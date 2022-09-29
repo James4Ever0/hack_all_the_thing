@@ -36,6 +36,7 @@ da = DocumentArray(
 from txtai.embeddings import Embeddings
 
 embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
+print('model loaded')
 # change the 'embedding' attribute.
 def preproc(d: Document):
     d.embedding = embedding.transform((None, d.text, None))
