@@ -64,4 +64,7 @@ for answer in answers:
     for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
         if stemmed_word in queryStemmedWords:
             highlightSet.add(original_word) # just original_word is enough. remember to deduplicate.
-    highlightSet
+    
+    highlighted = text.highlight_words(
+    ["python"]highlightSet, style="yellow"
+)  # but we should not highlight individual letters right?
