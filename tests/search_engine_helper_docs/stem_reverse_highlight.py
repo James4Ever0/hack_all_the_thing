@@ -22,7 +22,7 @@ def englishTextToOriginalAndStemmedWordPairs(text):
     return originalAndStemmedWordPairs
 
 def englishTextToStemmedWords(text):
-    originalAndStemmedWordPairs = englishTextToStemmedWordPairs(text)
+    originalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(text)
     return [stemmed_word for original_word, stemmed_word in originalAndStemmedWordPairs]
 import json
 
