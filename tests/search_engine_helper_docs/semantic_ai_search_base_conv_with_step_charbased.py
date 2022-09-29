@@ -32,7 +32,7 @@ def removeDuplicates(line, chars=[" ", "\t"], maxConsecutiveLength=1):
     return line
 
 
-def lstripChars(line, chars=[" ", "\t"]):
+def stripChars(line, chars=[" ", "\t"]):
     while True:
         flag = False
         for char in chars:
