@@ -59,7 +59,8 @@ if __name__ == "__main__":
         # the "1" is the limit. how about let's make it into 5?
         limit = 5
         uid_list_top5= embeddings.search(query, limit) # what is this thing?
-        print()
+        print(uid_list_top5)
+        breakpoint()
 
         for uid, score in uid_list_top5:
             # uid = int(uid)
