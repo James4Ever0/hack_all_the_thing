@@ -31,10 +31,10 @@ da = DocumentArray(
 
 
 from txtai.embeddings import Embeddings
-Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
+embedding = Embeddings({"path": "sentence-transformers/nli-mpnet-base-v2"})
 # change the 'embedding' attribute.
 def preproc(d: Document):
-    d.embedding = 
+    d.embedding = embedding.
     return d
 
 da.apply() # apply what?
