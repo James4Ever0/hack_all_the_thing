@@ -17,22 +17,27 @@ def englishTextToOriginalAndStemmedWordPairs(text):
     originalAndStemmedWordPairs = []
     for token in doc:
         original_word = token.text
-        stemmed_word= porterStemmer.stem(original_word)
+        stemmed_word = porterStemmer.stem(original_word)
         originalAndStemmedWordPairs.append((original_word, stemmed_word))
     return originalAndStemmedWordPairs
 
+
 def englishTextToStemmedWords(text):
     originalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(text)
-    stemmedWords = [stemmed_word for original_word, stemmed_word in originalAndStemmedWordPairs]
+    stemmedWords = [
+        stemmed_word for original_word, stemmed_word in originalAndStemmedWordPairs
+    ]
     return stemmedWords
+
+
 import json
 
-with open("demo_txtai_search_results",'r') as f:
+with open("demo_txtai_search_results", "r") as f:
     content = f.read()
     test_data = json.loads(content)
 
-query = test_data['query']
-answers = test_data['answers']
+query = test_data["query"]
+answers = test_data["answers"]
 
 queryStemmedWords = englishTextToStemmedWords(query)
 
@@ -41,8 +46,9 @@ queryStemmedWords = englishTextToStemmedWords(query)
 
 # we need to show these highlights! fuck.
 from lazero.utils.logger import sprint
-sprint("QUERY:",query)
-sprint('QUERY KEYWORDS STEMMED:',queryStemmedWords)
+
+sprint("QUERY:", query)
+sprint("QUERY KEYWORDS STEMMED:", queryStemmedWords)
 
 
 from rich.text import Text
@@ -55,16 +61,16 @@ console = Console()
 # so we pass a list of words to be highlighted.
 # just a damn number?
 for answer in answers:
-    text = Text(
-    answer, style='gray'
-)  # there is no style applied.
+    text = Text(answer, style="gray")  # there is no style applied.
     highlightSet = set()
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
     for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
         if stemmed_word in queryStemmedWords:
-            highlightSet.add(original_word) # just original_word is enough. remember to deduplicate.
-    
+            highlightSet.add(
+                original_word
+            )  # just original_word is enough. remember to deduplicate.
+
     text.highlight_words(
-    highlightSet, style="yellow"
-)  # but we should not highlight individual letters right?
-console.print(text)
+        highlightSet, style="yellow"
+    )  # but we should not highlight individual letters right?
+    console.print(text)
