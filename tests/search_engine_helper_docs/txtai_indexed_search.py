@@ -39,7 +39,7 @@ if __name__ == "__main__":
     print("loading data_source")
     import progressbar
 
-    embeddings.index([(uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))]) # are you sure that this progressbar will work?
+    embeddings.index((uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))) # are you sure that this progressbar will work?
 
     # Extract uid of first result
     # search result format: (uid, score)
