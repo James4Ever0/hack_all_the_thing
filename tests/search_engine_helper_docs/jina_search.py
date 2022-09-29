@@ -31,7 +31,7 @@ da = DocumentArray(
 
 # change the 'embedding' attribute.
 def preproc(d: Document):
-    d.embeding = 
+    d.embedding = 
     return d
 
 da.apply() # apply what?
