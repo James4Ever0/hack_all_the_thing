@@ -43,4 +43,4 @@ for answer in answers:
     answerOriginalAndStemmedWordPairs = englishTextToOriginalAndStemmedWordPairs(answer)
     for original_word, stemmed_word in answerOriginalAndStemmedWordPairs:
         if stemmed_word in queryStemmedWords:
-            .append((original_word)) # just original_word is enough. remember to deduplicate.
+            .add(original_word) # just original_word is enough. remember to deduplicate.
