@@ -30,7 +30,7 @@ if __name__ == "__main__":
     print('loading data_source')
     import progressbar
     data = np.array([embeddings.transform((None, row, None)) for row in progressbar.progressbar(data_source)]) # we need something other than this. fast info retrieval.
-    # you want to use 
+    # you want to use other methods?
     # i need progressbar!
         # Dot product on normalized vectors is equal to cosine similarity
 
