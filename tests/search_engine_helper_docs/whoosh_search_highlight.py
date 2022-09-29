@@ -68,10 +68,10 @@ def index_search(dirname, search_fields, search_query):
             highlights = highlights_joined.split(formatter_join_token)
             for highlight in highlights:
                 highlightBS = BS(highlight)
-                highlightText = highlight
+                highlightText = highlightBS.text
                 matchs = []
                 for match in highlightBS.findall('match'):
-                    
+                    match.text
             # sprint(dir(hit))
             # print(hit.matched_terms) # too long.
             # print(dir(hit.matched_terms)) # method?
