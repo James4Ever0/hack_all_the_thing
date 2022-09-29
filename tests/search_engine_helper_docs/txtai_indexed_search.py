@@ -1,6 +1,8 @@
 # do not use streamlit this time. maybe you want repl?
 # check the damn GPU usage!
 
+# are you sure indexed search is the same as similarity search?
+
 from txtai.embeddings import Embeddings
 from lazero.utils.logger import sprint
 # seems it can pull out the right thing.
