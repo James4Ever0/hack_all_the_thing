@@ -53,8 +53,8 @@ if __name__ == "__main__":
         # #data: different position inside the data, representing different values: (index, score)
         #          #b #doc #data
         # uid= uids[0][0][0]
-        uid_list_top5 = np.array(uids,dtype=int)[0,:5,:] # allow omitted index???
-        # the thing is integer based. so the score is always zero. fuck.
+        uid_list_top5 = np.array(uids)[0,:5,:] # allow omitted index???
+        # the thing is integer based. so the score is always zero.
         # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array! 
         # what is this shit anyway?
@@ -62,7 +62,7 @@ if __name__ == "__main__":
         breakpoint()
         # you may want set some score filters.
         for element in uid_list_top5:
-            uid, score = element.tolist()
+            
             print("ELEMENT:", element)
             breakpoint()
             # where is the damn score? wtf?
