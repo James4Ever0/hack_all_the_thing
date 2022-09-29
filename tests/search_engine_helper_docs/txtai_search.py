@@ -51,13 +51,13 @@ if __name__ == "__main__":
         # #b: index of the query, produced result
         # #doc: index of the document of the produced data
         # #data: different position inside the data, representing different values: (index, score)
-        #                    #b #doc #data
+        #          #b #doc #data
         # uid= uids[0][0][0]
         uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array! 
         # what is this shit anyway?
-        print(uid_list_top5) # we need different results. 
-        breakpoint()
-        # for uid in uid_list_top5:
-        #     answer = data_source[uid]
-        #     print("{}:".format(uid),answer)
+        # print(uid_list_top5) # we need different results. 
+        # breakpoint()
+        for uid in uid_list_top5:
+            answer = data_source[uid]
+            print("{}:".format(uid),answer)
