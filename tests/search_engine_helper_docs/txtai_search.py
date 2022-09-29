@@ -49,6 +49,9 @@ if __name__ == "__main__":
         # uid = embeddings.similarity(query, data)[0][0]
         uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
         uid_list_top5 = uids[0][0][:5]
+        # what is this shit anyway?
+        print(uid_list_top5)
+        breakpoint()
         # for uid in uid_list_top5:
         #     answer = data_source[uid]
         #     print("{}:".format(uid),answer)
