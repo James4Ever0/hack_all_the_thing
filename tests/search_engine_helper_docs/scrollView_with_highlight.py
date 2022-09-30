@@ -89,7 +89,7 @@ class MyApp(App):
         lineNumber2 = 
         self.body.set_y(lineNumber2)
 
-    def getEquivalentLineNumber(self.):
+    def getEquivalentLineNumber(self,):
 
         size = os.get_terminal_size()
         # msize = self.body.window.layout.width# it is totally not right!
