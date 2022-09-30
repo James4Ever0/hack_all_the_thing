@@ -105,3 +105,12 @@ set_focus Static(name='Static#2')
 MouseDown(x=65, y=2274, screen_y=2, button=1) >>> Static(name='Static#2')
 MouseUp(x=65, y=2274, screen_y=2, button=1) >>> Static(name='Static#2')
 Click(x=65, y=2274, screen_y=2, button=1) >>> Static(name='Static#2')
+set_focus Static(name='Static#2')
+MouseDown(x=56, y=2277, screen_y=5, button=1) >>> Static(name='Static#2')
+MouseUp(x=56, y=2277, screen_y=5, button=1) >>> Static(name='Static#2')
+Click(x=56, y=2277, screen_y=5, button=1) >>> Static(name='Static#2')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
