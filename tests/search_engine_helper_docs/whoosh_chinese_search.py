@@ -2,12 +2,10 @@
 from whoosh.index import create_in
 from whoosh.fields import *
 ​
-# 搜索
 from whoosh.qparser import QueryParser
 
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
-​
 ​
 analyzer = ChineseAnalyzer()
 class ArticleSchema(SchemaClass):
