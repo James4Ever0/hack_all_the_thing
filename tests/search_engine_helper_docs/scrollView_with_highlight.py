@@ -107,7 +107,7 @@ class MyApp(App):
 
         equivalentLineCountPerLine = [
             max(
-                1, math.ceil(length / (columns-1))
+                1, math.ceil(length / (columns-2))
             )  # that's because of the scrollbar taking 1 extra column.
             for length in content_line_char_count
         ]
@@ -116,7 +116,7 @@ class MyApp(App):
         # lineNumber2 = max(0, lineNumber2-center)
         context = 2
         lineNumber2 = max(
-            0, lineNumber2 - 1 - context+lines*2
+            0, lineNumber2 -1-context
         )  # minus 1 to get the exact line location.
         self.body.set_y(lineNumber2)
 
