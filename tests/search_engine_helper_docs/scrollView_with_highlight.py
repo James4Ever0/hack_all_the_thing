@@ -110,14 +110,6 @@ class MyApp(App):
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
-        # you want more context?
-        # total_sum =
-        # print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
-        # print("LINE TOTAL COUNT:", len(content_line_char_count))
-        # # breakpoint()
-        # print("LINE NUMBER:", lineNumber)
-        # print("LINE NUMBER 2:", lineNumber2)
-        # breakpoint()
         self.body.set_y(lineNumber2)
 
 
