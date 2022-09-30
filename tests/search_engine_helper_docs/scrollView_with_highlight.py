@@ -89,7 +89,7 @@ class MyApp(App):
         import math
 
         equivalentLineCountPerLine = [
-            max(1, math.ceil(length / (columns - 1)))
+            max(1, math.ceil(length / (columns - 1))) # that's of the scrollbar
             for length in content_line_char_count
         ]
 
