@@ -15,10 +15,16 @@ from textual.app import App
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
-    async def capture
+    async def copyScrollView(self):
+        console= Console()
+        with console.capture() as capture:
+            console.print(self.body)
+        result = capture.get()
+
+        print("RESULT:", result)
+        breakpoint()
     async def on_load(self) -> None:
-        action = '
-        await self.bind('c',action,'Copy')
+        action = 'copyScrollView()'
         self.body = ScrollView()
         with open(filepath, 'r') as f:
             content = f.read()
@@ -28,6 +34,7 @@ class MyApp(App):
         highlightWord= 'recursive' # maybe not so right.
         self.contentText.highlight_words([highlightLine], style='black on red')
         self.contentText.highlight_words([highlightWord], style='yellow on red')
+        # await self.bind('c',action,'Copy')
 
     async def on_mount(self) -> None:
         # self.set_interval(5, self.refresh)
