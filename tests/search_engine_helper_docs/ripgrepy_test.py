@@ -12,6 +12,8 @@ result = rg.with_filename().line_number().ignore_case().json().run().as_dict
 for elem in result:
     searchType=elem['type']
     data = elem['data']
+    path_text = data['path']['text']
+    
 # rich.print(result)
 #     {
 #         'type': 'match',
