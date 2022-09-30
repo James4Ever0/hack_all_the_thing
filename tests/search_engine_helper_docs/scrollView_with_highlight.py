@@ -14,6 +14,7 @@ filepath = "test.txt"  # col: 108
 # col=10 -> 9
 # col=1 -> 0
 # end digit: 7 -> 106
+# minus 2?
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
 
