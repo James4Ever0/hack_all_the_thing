@@ -55,13 +55,6 @@ class MyApp(App):
         # await self.body.emit(scrollTo)
         results=self.body.__rich_repr__() # generator!
         results_list = [x for x in results]
-        # with self.body.window.console.capture() as capture:
-        #     self.body.window.
-        # result = capture.get()
-        # mRich = self.body.__rich__() # wtf?
-
-        # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
-        # await self.body.watch_y(lineNumber)
         print('RESULT:',results_list)
         breakpoint()
 
