@@ -16,6 +16,7 @@ from textual.widgets import ScrollView
 from textual.app import App
 
 
+
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     def on_key(self, event):
