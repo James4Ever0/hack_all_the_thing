@@ -9,21 +9,22 @@ result = rg.with_filename().line_number().ignore_case().json().run().as_dict
 # result = rg.with_filename().line_number().ignore_case().json().run() # this will produce list. is it right?
 
 # import rich
-
+for elem in result:
+    
 # rich.print(result)
-        {
-            'type': 'match',
-            'data': {
-                'path': {
-                    'text': 
-    '/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log'
-                },
-                'lines': {
-                    'text': '       erator will be efficient. In the example below the 
-    recursive call by _range\n'
-                },
-                'line_number': 2268,
-                'absolute_offset': 87045,
-                'submatches': [{'match': {'text': 'recursive'}, 'start': 58, 'end': 67}]
-            }
-        }
+#     {
+#         'type': 'match',
+#         'data': {
+#             'path': {
+#                 'text': 
+# '/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log'
+#             },
+#             'lines': {
+#                 'text': '       erator will be efficient. In the example below the 
+# recursive call by _range\n'
+#             },
+#             'line_number': 2268,
+#             'absolute_offset': 87045,
+#             'submatches': [{'match': {'text': 'recursive'}, 'start': 58, 'end': 67}]
+#         }
+#     }
