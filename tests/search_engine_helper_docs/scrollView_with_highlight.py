@@ -29,6 +29,7 @@ class MyApp(App):
         # results_list = [x for x in results]
 
         print("RESULT:", result)
+        print("RESULT2:", result2)
         breakpoint()
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
