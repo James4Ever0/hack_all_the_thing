@@ -6,10 +6,10 @@ lineNumber = 2268
 # notice: terminal interface is not stable.
 
 keywords = set(["recursive"])
-# filepath = (
-#     "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
-# )
-filepath = "test.txt"  # col: 108
+filepath = (
+    "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
+)
+# filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
 # col=1 -> 0
