@@ -85,6 +85,9 @@ class MyApp(App):
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
+        lineNumber2 = 
+        self.body.set_y(lineNumber2)
+
     def getEquivalentLineNumber():
 
         size = os.get_terminal_size()
@@ -110,7 +113,6 @@ class MyApp(App):
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
-        self.body.set_y(lineNumber2)
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
