@@ -4,3 +4,4 @@ filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_doc
 
 from textual.widgets import ScrollView
 view = ScrollView()
+view.
