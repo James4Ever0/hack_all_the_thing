@@ -7,4 +7,4 @@ result = rg.with_filename().line_number().ignore_case().run().as_dict()
 
 import rich
 
-rich.print_json(resutl)
+rich.print(result)
