@@ -92,10 +92,9 @@ class MyApp(App):
 
         lineNumber2 = sum(
             equivalentLineCountPerLine[:lineNumber]
-            
         )
         # total_sum = 
-        print("TOTAL_SUM:", sum())
+        print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
         print("LINE TOTAL COUNT:", len(content_line_char_count))
         # breakpoint()
         print("LINE NUMBER:", lineNumber)
