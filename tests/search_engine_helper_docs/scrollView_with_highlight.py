@@ -75,6 +75,7 @@ class MyApp(App):
         print("WINDOW SIZE:", msize)
         columns, lines = size.columns, size.lines
         print("COLUMNS:",columns)
+        breakpoint()
         import math
 
         lineNumber2 = [
