@@ -23,6 +23,7 @@ class MyApp(App):
         highlightLine = '       erator will be efficient. In the example below the recursive call by _range\n'
         highlightWord= 'recursive' # maybe not so right.
         self.contentText.highlight_words([highlightLine], style='black on red')
+        self.contentText.highlight_words([highlightWord], style='on red')
 
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
