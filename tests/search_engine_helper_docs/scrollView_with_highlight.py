@@ -9,7 +9,9 @@ keywords = set(["recursive"])
 # filepath = (
 #     "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
 # )
-filepath = 'test.txt'
+filepath = 'test.txt' # col: 108
+# now check the layout?
+co
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
 
