@@ -30,6 +30,8 @@ class MyApp(App):
         await self.body.update(self.contentText)
         # scrollTo = ScrollTo(self.body,0,lineNumber)
         # await self.body.handle_scroll_to(scrollTo)
+        self.y= lineNumber
+        self.target_y = lineNumber
         self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
 
         # self.body.scroll_in_to_view(lineNumber)
