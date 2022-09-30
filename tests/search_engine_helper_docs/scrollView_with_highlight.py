@@ -21,6 +21,7 @@ class MyApp(App):
             self.copyScrollView()
     def copyScrollView(self):
         results=self.body.__rich_repr__() # generator!
+        "na"
         results_list = [x for x in results]
 
         print("RESULT:", results_list)
