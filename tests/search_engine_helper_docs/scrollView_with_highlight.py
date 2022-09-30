@@ -41,8 +41,8 @@ class MyApp(App):
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
-        if key == "c":
-            await self.copyScrollView()
+        if key == "t":
+            await self.toggleScrollView()
         elif key == 'j':
             await self.jumpScrollView()
 
@@ -54,7 +54,7 @@ class MyApp(App):
             self.index%=len(lineNumbers)
             self.body.set_y(lineNumbers[self.index])
 
-    async def copyScrollView(self):
+    async def toggleScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
         await self.view.action_toggle("ScrollView#1")
@@ -113,7 +113,7 @@ class MyApp(App):
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
-        context = 1
+        context = 0
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
