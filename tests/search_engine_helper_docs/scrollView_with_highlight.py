@@ -40,6 +40,9 @@ class MyApp(App):
         key = event.key
         if key == "c":
             await self.copyScrollView()
+    
+    async def jumpScrollView(self):
+        
 
     async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
