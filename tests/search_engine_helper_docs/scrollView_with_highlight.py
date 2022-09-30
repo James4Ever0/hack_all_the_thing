@@ -96,9 +96,9 @@ class MyApp(App):
             ]
         )
         # total_sum = 
-        print("TOTAL_SUM:", sum([math.ceil(length / (columns - 1))  # when with scrollbar.
-                # you can't view things with col=1 right?
+        print("TOTAL_SUM:", sum([math.ceil(length / (columns)) 
                 for length in content_line_char_count]))
+        print()
         # breakpoint()
         print("LINE NUMBER:", lineNumber)
         print("LINE NUMBER 2:", lineNumber2)
