@@ -82,7 +82,7 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-        # end digit: 7
+        # end digit: 7 -> 10
 
         lineNumber2 = sum(
             [
