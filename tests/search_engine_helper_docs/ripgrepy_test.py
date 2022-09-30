@@ -8,6 +8,6 @@ rg = Ripgrepy(expression, filepath) # ignore case? how?
 result = rg.with_filename().line_number().ignore_case().json().run().as_dict
 # result = rg.with_filename().line_number().ignore_case().json().run() # this will produce list. is it right?
 
-import rich
+# import rich
 
-rich.print(result)
+# rich.print(result)
