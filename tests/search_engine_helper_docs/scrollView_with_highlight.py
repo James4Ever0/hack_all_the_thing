@@ -42,7 +42,8 @@ class MyApp(App):
         key = event.key
         if key == "c":
             await self.copyScrollView()
-        elif key == 'j'
+        elif key == 'j':
+            await self.jumpScrollView()
 
     async def jumpScrollView(self):
         # jump to next candidate.
