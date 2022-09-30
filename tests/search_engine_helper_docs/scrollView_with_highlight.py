@@ -36,6 +36,7 @@ class MyApp(App):
         # await self.body.emit(scrollTo)
         self.body.set_y(lineNumber)
         self.body.window.console.capture
+        self.body.window.re
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
         # await self.body.watch_y(lineNumber)
 
