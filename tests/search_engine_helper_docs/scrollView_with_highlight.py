@@ -39,6 +39,7 @@ class MyApp(App):
         #     self.body.window.
         # result = capture.get()
         result = self.body.__rich__() # wtf?
+        console= 
         print("RESULT:", result)
         breakpoint()
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
