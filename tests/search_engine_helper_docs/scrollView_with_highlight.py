@@ -7,16 +7,19 @@ filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_doc
 # are you sure this will really jump to the freaking line???
 
 from textual.widgets import ScrollView
-view = ScrollView()
-with open(filepath, 'r') as f:
-    content = f.read()
-from rich.text import Text
-contentText = Text(content)
+
 
 from textual.app import App
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
+    async def on_load(self) -> None:
+        view = ScrollView()
+with open(filepath, 'r') as f:
+    content = f.read()
+from rich.text import Text
+contentText = Text(content)
+
     async def on_mount(self) -> None:
         await self.view.dock(view, edge="top")
         await view.update(contentText)
