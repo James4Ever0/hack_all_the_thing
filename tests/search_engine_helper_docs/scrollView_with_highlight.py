@@ -29,7 +29,7 @@ class MyApp(App):
         # [('name','ScrollView#1')]
 
         # disable mouse capture instead.
-        self.dri
+        self._driver.
 
         # console = Console()
         # with console.capture() as capture:
