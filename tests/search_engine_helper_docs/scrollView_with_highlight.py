@@ -19,8 +19,8 @@ class MyApp(App):
         # self.console.bell()
         key = event.key
         if key == 'c':
-            self.copy
-    async def copyScrollView(self):
+            self.copyScrollView()
+    def copyScrollView(self):
         console= Console()
         with console.capture() as capture:
             console.print(self.body)
