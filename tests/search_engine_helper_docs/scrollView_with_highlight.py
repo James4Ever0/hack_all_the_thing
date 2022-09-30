@@ -15,7 +15,9 @@ from textual.app import App
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
+    async def capture
     async def on_load(self) -> None:
+        action = '
         await self.bind('c',action,'Copy')
         self.body = ScrollView()
         with open(filepath, 'r') as f:
