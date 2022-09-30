@@ -1,7 +1,5 @@
 
 from whoosh.index import create_in
-from whoosh.fields import *
-
 
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
