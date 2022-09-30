@@ -2,7 +2,11 @@ from ripgrepy import Ripgrepy
 # The Ripgrepy class takes two arguments. The regex to search for and the folder path to search in
 # hold 'option' or 'alt' key while selecting content?
 expression = "recursive"
-filepath = "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
+filepath = "./jq_man.log"
+
+#if there is no reply, or even error (json decode error aka no reply), we should be warned.
+#treat it as 'no such file' or else?
+
 rg = Ripgrepy(expression, filepath) # ignore case? how?
 # but this does not include the preprocessor.
 # i mean the processor of connecting lines together.
