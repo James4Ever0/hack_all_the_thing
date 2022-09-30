@@ -15,6 +15,7 @@ filepath = "test.txt"  # col: 108
 # col=1 -> 0
 # end digit: 7 -> 108
 # there is no scrollbar. fuck.
+# with scrollbar: width=1. end digit: 6 -> 107
 # minus 2?
 # cat: col=108 -> 7
 # are you sure this will really jump to the freaking line???
