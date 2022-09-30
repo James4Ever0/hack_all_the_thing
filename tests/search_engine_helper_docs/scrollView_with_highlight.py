@@ -95,7 +95,7 @@ class MyApp(App):
                 for length in content_line_char_count[:lineNumber]
             ]
         )
-        
+        total_sum = 
         breakpoint()
         print("LINE NUMBER:", lineNumber)
         print("LINE NUMBER 2:", lineNumber2)
