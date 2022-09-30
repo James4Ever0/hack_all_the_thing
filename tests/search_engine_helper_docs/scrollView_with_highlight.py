@@ -24,7 +24,7 @@ class MyApp(App):
         if key == "c":
             self.copyScrollView()
 
-    def copyScrollView(self):
+    async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
 
