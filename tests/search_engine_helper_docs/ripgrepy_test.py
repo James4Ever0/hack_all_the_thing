@@ -15,7 +15,7 @@ for elem in result:
     data = elem['data']
     path_text = data['path']['text']
     line_text = data['lines']['text']
-    line_number = data['lines']['line_number']
+    line_number = data['line_number']
     submatches = data['submatches']
     matched_word_set = set(match['match']['text'] for match in submatches)
     # jump to the freaking line please?
