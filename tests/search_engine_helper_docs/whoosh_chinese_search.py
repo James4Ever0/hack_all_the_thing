@@ -2,11 +2,6 @@
 from whoosh.index import create_in
 from whoosh.fields import *
 ​
-# 构建索引
-schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT)
-ix = create_in("indexdir3", schema)
-writer = ix.writer()
-​
 # 搜索
 from whoosh.qparser import QueryParser
 
@@ -21,7 +16,7 @@ class ArticleSchema(SchemaClass):
     author = TEXT(stored=True, analyzer=analyzer)
 
 schema = ArticleSchema()
-ix = create_in("indexdir", schema, indexname='article_index')
+ix = create_in("indexdir3", schema, indexname='article_index')
 writer = ix.writer()
 writer.add_document(title="登鹳雀楼", author="王之涣",content="白日依山尽，黄河入海流，欲穷千里目，更上一层楼")
 writer.add_document(title="登高", author="杜甫", content="风急天高猿啸哀，渚清沙白鸟飞回")
