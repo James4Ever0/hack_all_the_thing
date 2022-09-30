@@ -28,7 +28,7 @@ class MyApp(App):
         with self.body.console.capture() as capture:
             self.body.refresh()
         #     console.print(self.body.window.layout.render(console))
-            result = capture.get()
+        result = capture.get()
 
         print("RESULT:", result)
         breakpoint()
