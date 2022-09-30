@@ -78,7 +78,7 @@ class MyApp(App):
 
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
-        self.body = ScrollView(self.readerName)
+        self.body = ScrollView(name=self.readerName)
 
         from rich.text import Text
 
