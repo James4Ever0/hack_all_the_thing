@@ -95,7 +95,8 @@ class MyApp(App):
                 for length in content_line_char_count[:lineNumber]
             ]
         )
-
+        
+        breakpoint()
         print("LINE NUMBER:", lineNumber)
         print("LINE NUMBER 2:", lineNumber2)
         breakpoint()
