@@ -48,15 +48,6 @@ class MyApp(App):
         # scrollTo = ScrollTo(self.body.vscroll, 0, lineNumber)
         # await self.body.emit(scrollTo)
 
-        # with self.body.window.console.capture() as capture:
-        #     self.body.window.
-        # result = capture.get()
-        # mRich = self.body.__rich__() # wtf?
-
-        # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
-        # await self.body.watch_y(lineNumber)
-        print('RESULT:',results_list)
-        breakpoint()
 
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
