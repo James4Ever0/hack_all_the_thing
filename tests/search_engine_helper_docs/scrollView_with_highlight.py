@@ -30,7 +30,7 @@ class MyApp(App):
         console = Console()
         with console.capture() as capture:
             result2 = self.body.window.render(
-                console, console.options
+                console
             )  # renderable!
         result = capture.get()
         # results_list = [x for x in results]
