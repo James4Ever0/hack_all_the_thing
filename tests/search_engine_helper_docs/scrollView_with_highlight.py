@@ -11,6 +11,9 @@ keywords = set(["recursive"])
 filepath = (
     "./jq_man.log"
 )
+
+# implement soft/hard wrap method yourself, or the scroll view will get tricky.
+def 
 # filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
