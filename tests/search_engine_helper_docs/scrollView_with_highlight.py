@@ -23,7 +23,7 @@ class MyApp(App):
     def copyScrollView(self):
         console= Console()
         with console.capture() as capture:
-            console.print(self.body)
+            console.print(self.body.window.layout.)
         result = capture.get()
 
         print("RESULT:", result)
