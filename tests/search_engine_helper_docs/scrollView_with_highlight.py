@@ -5,7 +5,7 @@ lineNumber = 2268
 keywords = set(['recursive'])
 filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log'
 # are you sure this will really jump to the freaking line???
-from .console import Console
+from rich.console import Console
 # you cannot select this thing. better use 'less'
 
 from textual.widgets import ScrollView
@@ -22,6 +22,7 @@ class MyApp(App):
     def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
+        console=C
         results_list=self.body.__rich__() #renderable!
         # results_list = [x for x in results]
 
