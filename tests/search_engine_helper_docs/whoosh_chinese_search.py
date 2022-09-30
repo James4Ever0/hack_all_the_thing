@@ -9,7 +9,7 @@ indexDirectory = "indexdir3"
 
 
 if not os.path.exists(indexDirectory):
-    os.mkdir(indexDirec)
+    os.mkdir(indexDirectory)
 class ArticleSchema(SchemaClass):
     title = TEXT(stored=True, analyzer=analyzer)
     content = TEXT(stored=True, analyzer=analyzer)
