@@ -5,7 +5,7 @@ lineNumber = 2268
 keywords = set(['recursive'])
 filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log'
 # are you sure this will really jump to the freaking line???
-from  import Console
+from .console import Console
 # you cannot select this thing. better use 'less'
 
 from textual.widgets import ScrollView
