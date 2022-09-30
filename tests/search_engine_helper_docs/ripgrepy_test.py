@@ -3,4 +3,6 @@ from ripgrepy import Ripgrepy
 expression = "recursive"
 filepath = "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
 rg = Ripgrepy(expression, filepath) # ignore case? how?
-result = rg.with_filename().line_number().ignore_case().run().
+result = rg.with_filename().line_number().ignore_case().run().as_dict()
+
+for elem in r
