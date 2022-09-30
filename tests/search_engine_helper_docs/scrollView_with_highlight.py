@@ -87,14 +87,12 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-        line
+        equivlantLineCountPerLine = [max(1,math.ceil(length / (columns-1))) 
+                for length in content_line_char_count]
 
         lineNumber2 = sum(
-            [
-                max(1,math.ceil(length / (columns - 1)))  # when with scrollbar.
-                # you can't view things with col=1 right?
-                for length in content_line_char_count[:lineNumber]
-            ]
+            [:lineNumber]
+            
         )
         # total_sum = 
         print("TOTAL_SUM:", sum())
