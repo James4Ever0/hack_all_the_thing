@@ -67,7 +67,7 @@ class MyApp(App):
         await self.body.update(self.contentText)
         import os
         size = os.get_terminal_size()
-        col,lines = size.columns, 
+        columns,lines = size.columns, size.lines
         lineNumber2 = 
         self.body.set_y(lineNumber2)
 
