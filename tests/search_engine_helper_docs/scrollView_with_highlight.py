@@ -22,11 +22,11 @@ class MyApp(App):
             self.copyScrollView()
     def copyScrollView(self):
         console= Console()
-        self.view.render_cache
-        with console.capture() as capture:
+        result = self.view.render_cache
+        # with console.capture() as capture:
             # self.body.window.layout.render(console)
         #     console.print(self.body.window.layout.render(console))
-        result = capture.get()
+        # result = capture.get()
 
         print("RESULT:", result)
         breakpoint()
