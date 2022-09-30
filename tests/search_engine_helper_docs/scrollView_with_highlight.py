@@ -35,9 +35,9 @@ class MyApp(App):
         # scrollTo = ScrollTo(self.body.vscroll, 0, lineNumber)
         # await self.body.emit(scrollTo)
         self.body.set_y(lineNumber)
-        with self.body.window.console.capture() as capture:
-            self.body.window.
-        result = capture.get()
+        # with self.body.window.console.capture() as capture:
+        #     self.body.window.
+        # result = capture.get()
         print("RESULT:", result)
         breakpoint()
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
