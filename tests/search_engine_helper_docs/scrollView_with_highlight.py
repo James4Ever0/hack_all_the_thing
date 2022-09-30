@@ -28,8 +28,8 @@ class MyApp(App):
         result=capture.get()
         # results_list = [x for x in results]
 
-        print("RESULT:", result)
-        print("RESULT2:", result2)
+        print("RESULT:",[ result],type(result))
+        print("RESULT2:", [x for x in result2])
         breakpoint()
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
