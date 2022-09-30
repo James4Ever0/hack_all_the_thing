@@ -7,7 +7,6 @@ filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_doc
 # are you sure this will really jump to the freaking line???
 
 from textual.widgets import ScrollView
-from textual.scrollbar import ScrollTo
 
 
 from textual.app import App
