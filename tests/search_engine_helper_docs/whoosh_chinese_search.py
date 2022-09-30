@@ -8,8 +8,8 @@ analyzer = ChineseAnalyzer()
 indexDirectory = "indexdir3"
 
 
-if not os.path.exists(i):
-    os.mkdir(i)
+if not os.path.exists(index):
+    os.mkdir(index)
 class ArticleSchema(SchemaClass):
     title = TEXT(stored=True, analyzer=analyzer)
     content = TEXT(stored=True, analyzer=analyzer)
