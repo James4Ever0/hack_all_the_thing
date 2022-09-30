@@ -34,7 +34,7 @@ class MyApp(App):
         # results_list = [x for x in results]
 
         print("RESULT:", [result], type(result))
-        print("RESULT2:", [(x, type(x)) for x in result2])
+        print("RESULT2:", result2)
         breakpoint()
 
     async def on_load(self) -> None:
