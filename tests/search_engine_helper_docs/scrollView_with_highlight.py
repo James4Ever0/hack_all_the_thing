@@ -37,6 +37,7 @@ class MyApp(App):
         self.body.set_y(lineNumber)
         with self.body.window.console.capture() as capture:
             self.body.window.refresh()
+        print(capture.get())
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
         # await self.body.watch_y(lineNumber)
 
