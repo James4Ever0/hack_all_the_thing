@@ -18,7 +18,8 @@ from textual.widgets import ScrollView
 
 from textual.app import App
 
-
+with open(filepath, "r") as f:
+    content = f.read()
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
@@ -50,8 +51,7 @@ class MyApp(App):
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
         self.body = ScrollView()
-        with open(filepath, "r") as f:
-            content = f.read()
+
         from rich.text import Text
 
         self.contentText = Text(content)
@@ -67,7 +67,7 @@ class MyApp(App):
         await self.body.update(self.contentText)
         import os
         os.get_terminal_size()
-        self.body.set_y(lineNumber)
+        self.body.set_y(lineNumber2)
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
