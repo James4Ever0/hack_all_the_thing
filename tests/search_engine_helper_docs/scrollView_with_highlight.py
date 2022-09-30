@@ -87,7 +87,6 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         lineNumber2 = 
-        self.body.set_y(lineNumber2)
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
         size = os.get_terminal_size()
