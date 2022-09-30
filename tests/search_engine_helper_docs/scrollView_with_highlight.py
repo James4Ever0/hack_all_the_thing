@@ -24,7 +24,7 @@ class MyApp(App):
         results=self.body.__rich_repr__() # generator!
         results_list = [x for x in results]
 
-        print("RESULT:", result)
+        print("RESULT:", results_list)
         breakpoint()
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
