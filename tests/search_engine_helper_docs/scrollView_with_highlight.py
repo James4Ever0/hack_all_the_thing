@@ -18,8 +18,7 @@ from textual.app import App
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_mount(self) -> None:
-        await self.view.dock(Placeholder(), edge="left", size=40)
-        await self.view.dock(view edge="top")
+        await self.view.dock(view, edge="top")
 
 
 view.update(contentText)
