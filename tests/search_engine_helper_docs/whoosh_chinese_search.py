@@ -5,6 +5,7 @@ from jieba.analyse import ChineseAnalyzer
 
 analyzer = ChineseAnalyzer()
 
+indexDirectory = "indexdir3"
 
 
 class ArticleSchema(SchemaClass):
