@@ -10,7 +10,7 @@ result = rg.with_filename().line_number().ignore_case().json().run().as_dict
 
 # import rich
 for elem in result:
-    
+    searchType=
 # rich.print(result)
 #     {
 #         'type': 'match',
