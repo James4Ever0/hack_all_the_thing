@@ -70,7 +70,7 @@ class MyApp(App):
         import os
         size = os.get_terminal_size()
         columns,lines = size.columns, size.lines
-        lineNumber2 = content_line_char_count
+        lineNumber2 = [// +1 content_line_char_count[:lineNumber]]
         self.body.set_y(lineNumber2)
 
 
