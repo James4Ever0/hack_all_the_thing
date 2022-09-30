@@ -87,11 +87,11 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-        equivlantLineCountPerLine = [max(1,math.ceil(length / (columns-1))) 
+        equivalentLineCountPerLine = [max(1,math.ceil(length / (columns-1))) 
                 for length in content_line_char_count]
 
         lineNumber2 = sum(
-            [:lineNumber]
+            equivalentLineCountPerLine[:lineNumber]
             
         )
         # total_sum = 
