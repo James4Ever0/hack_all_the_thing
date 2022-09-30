@@ -30,7 +30,8 @@ class MyApp(App):
         await self.body.update(self.contentText)
         # self.body.y= lineNumber
         # self.body.target_y = lineNumber
-        # self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
+        self.body.set_y(lineNumber)
+        self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
 
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
