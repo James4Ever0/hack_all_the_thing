@@ -13,7 +13,7 @@ for elem in result:
     searchType=elem['type']
     data = elem['data']
     path_text = data['path']['text']
-    line_text = data['lines'][]
+    line_text = data['lines']['text']
 # rich.print(result)
 #     {
 #         'type': 'match',
