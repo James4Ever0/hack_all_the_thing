@@ -35,7 +35,7 @@ class MyApp(App):
         # scrollTo = ScrollTo(self.body.vscroll, 0, lineNumber)
         # await self.body.emit(scrollTo)
         self.body.set_y(lineNumber)
-        self.body.window.console
+        self.body.window.console.
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
         # await self.body.watch_y(lineNumber)
 
