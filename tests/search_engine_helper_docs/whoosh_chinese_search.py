@@ -73,7 +73,7 @@ from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
 from whoosh.query import compound, Term
 
-ix = open_dir("indexdir", indexname='article_index')
+ix = open_dir("indexdir3", indexname='article_index')
 with ix.searcher() as searcher:
     author_query = [Term('author', '黄河'), Term('author', '杜甫')]
     content_query = [Term('content', '黄河'), Term('content', '杜甫')]
