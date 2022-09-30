@@ -21,8 +21,7 @@ from textual.app import App
 with open(filepath, "r") as f:
     content = f.read()
 
-content_line_char_count = [lontent.split("\n")
-
+content_line_char_count = [len(line) for line in content.split("\n")]
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
@@ -71,7 +70,7 @@ class MyApp(App):
         import os
         size = os.get_terminal_size()
         columns,lines = size.columns, size.lines
-        lineNumber2 = 
+        lineNumber2 = content_line_char_count
         self.body.set_y(lineNumber2)
 
 
