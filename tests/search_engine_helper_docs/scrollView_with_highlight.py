@@ -20,7 +20,7 @@ class MyApp(App):
             content = f.read()
         from rich.text import Text
         self.contentText = Text(content)
-        hi
+        highlightLine = '       erator will be efficient. In the example below the recursive call by _range\n'
         self.contentText.highlight([])
 
     async def on_mount(self) -> None:
