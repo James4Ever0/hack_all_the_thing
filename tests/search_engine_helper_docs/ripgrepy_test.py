@@ -17,7 +17,9 @@ for elem in result:
     line_number = data['lines']['line_number']
     submatches = data['submatches']
     matched_word_set = set(match['match']['text'] for match in submatches)
-    
+    # jump to the freaking line please?
+
+# need a scrollbar application, jump to specific line and highlight the 
 # rich.print(result)
 #     {
 #         'type': 'match',
