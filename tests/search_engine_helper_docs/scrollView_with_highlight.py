@@ -24,8 +24,7 @@ class MyApp(App):
         # [('name','ScrollView#1')]
         console=Console()
         with console.capture() as capture:
-            renderableLayout = self.body.window.__rich_console__(console,console.) #renderable!
-            console.print(renderableLayout)
+            result2= self.body.window.__rich_console__(console,console.options) #renderable!
         result=capture.get()
         # results_list = [x for x in results]
 
