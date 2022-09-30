@@ -71,7 +71,7 @@ class MyApp(App):
         import os
 
         size = os.get_terminal_size()
-        msize = self.body.window.
+        msize = self.body.size
         print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
         print("COLUMNS:",columns)
