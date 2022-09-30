@@ -105,12 +105,16 @@ class ScrollView(View):
         self.target_y = y_
         self.reserved_y = y_
         # what the fuck is making it into 0?
+        self.animate("y", self.target_y, easing="out_cubic", speed=y_*3)
+
 
     def set_x(self, x_):
         # self.home()
         self.x = x_
         self.target_x = x_
         self.reserved_x = x_
+        self.animate("x", self.target_x, easing="out_cubic", speed=x_*3)
+
 
     def home(self) -> None:
         # still zero. fuck.
@@ -118,6 +122,7 @@ class ScrollView(View):
         self.x = self.y = 0
         self.reserved_x = self.reserved_y = 0
         self.target_x = self.target_y = 0
+
 
     def scroll_up(self) -> None:
         self.target_y = self.reserved_y
