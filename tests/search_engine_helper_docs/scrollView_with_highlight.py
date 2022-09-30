@@ -23,6 +23,6 @@ class MyApp(App):
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        # view.scroll_in_to_view(lineNumber)
+        self.body.scroll_in_to_view(lineNumber)
     
 MyApp.run(title="Code Viewer", log="textual.log")
