@@ -15,7 +15,7 @@ from textual.app import App
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_load(self) -> None:
-        self.body = ScrollView(position={'y':})
+        self.body = ScrollView(position={'y':lineNumber,'target_y':lineNumber})
         with open(filepath, 'r') as f:
             content = f.read()
         from rich.text import Text
