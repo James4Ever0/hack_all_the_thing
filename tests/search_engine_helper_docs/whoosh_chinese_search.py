@@ -10,10 +10,6 @@ writer = ix.writer()
 # 搜索
 from whoosh.qparser import QueryParser
 
-<Hit {'path': '/a', 'title': 'First document'}>
-官网上的例子，我没有做任何修改，只是添加了两行注释。整个程序分为两部分，第一部分是构建索引的过程，第二部分是搜索的过程。
-
-
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
 ​
@@ -23,9 +19,7 @@ class ArticleSchema(SchemaClass):
     title = TEXT(stored=True, analyzer=analyzer)
     content = TEXT(stored=True, analyzer=analyzer)
     author = TEXT(stored=True, analyzer=analyzer)
-与官网中的例子不同，我通过继承SchemaClass 来实现一个新的类，以此定义索引模式。而且我设置了analyzer 为ChineseAnalyzer， 这样whoosh就可以支持中文索引了，analyzer会对文档中的中文进行分词。
 
-2.4 添加文档
 schema = ArticleSchema()
 ix = create_in("indexdir", schema, indexname='article_index')
 writer = ix.writer()
