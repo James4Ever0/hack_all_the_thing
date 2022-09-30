@@ -3,4 +3,4 @@ keywords = set(['recursive'])
 
 import rich
 
-ScrollView()
+view = ScrollView()
