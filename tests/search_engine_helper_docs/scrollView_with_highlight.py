@@ -8,7 +8,6 @@ filepath = (
 )
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
-import asyncio
 
 # you cannot select this thing. better use 'less'
 
