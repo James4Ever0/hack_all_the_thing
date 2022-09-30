@@ -1,6 +1,5 @@
 lineNumber = 2268
 keywords = set(['recursive'])
 
-import rich
-
+from textural.widgets import ScrollView
 view = ScrollView()
