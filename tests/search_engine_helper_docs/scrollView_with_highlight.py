@@ -42,7 +42,7 @@ class MyApp(App):
         result = self.body.__rich__() # wtf?
         console= Console()
         with console.capture() as capture:
-            console.
+            console.print(re)
 
         print("RESULT:", result)
         breakpoint()
