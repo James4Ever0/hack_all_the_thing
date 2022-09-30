@@ -14,6 +14,7 @@ for elem in result:
     data = elem['data']
     path_text = data['path']['text']
     line_text = data['lines']['text']
+    line_number = data['lines']['number']
 # rich.print(result)
 #     {
 #         'type': 'match',
