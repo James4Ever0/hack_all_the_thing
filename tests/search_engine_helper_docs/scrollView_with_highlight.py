@@ -4,6 +4,7 @@ lineNumber = 2268
 # call by _range\n'
 
 # notice: terminal interface is not stable.
+import os
 
 keywords = set(["recursive"])
 filepath = (
@@ -84,7 +85,7 @@ class MyApp(App):
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        import os
+    def getEquivalentLineNumber():
 
         size = os.get_terminal_size()
         # msize = self.body.window.layout.width# it is totally not right!
