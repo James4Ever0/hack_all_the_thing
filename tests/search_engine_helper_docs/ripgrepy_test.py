@@ -3,7 +3,7 @@ from ripgrepy import Ripgrepy
 expression = "recursive"
 filepath = "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
 rg = Ripgrepy(expression, filepath) # ignore case? how?
-result = rg.with_filename().line_number().ignore_case().json().run()
+result = rg.with_filename().line_number().ignore_case().run().as_dict
 # result = rg.with_filename().line_number().ignore_case().json().run() # this will produce list.
 
 import rich
