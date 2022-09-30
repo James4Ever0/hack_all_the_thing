@@ -72,7 +72,8 @@ class MyApp(App):
         msize = self.body.window.size
         print("WINDOW SIZE:", msize)
         columns,lines = size.columns, size.lines
-        lineNumber2 = [//columns +1 content_line_char_count[:lineNumber]]
+        import math
+        lineNumber2 = [length/columns) for length in content_line_char_count[:lineNumber]]
         self.body.set_y(lineNumber2)
 
 
