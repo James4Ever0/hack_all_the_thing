@@ -2,6 +2,7 @@
 driver=<class 'textual.drivers.linux_driver.LinuxDriver'>
 Load() >>> MyApp(title='Textual')
 Mount() >>> MyApp(title='Code Viewer')
+DockView(name='DockView#1') IS NOT RUNNING
 Mount() >>> DockView(name='DockView#1')
 Mount() >>> ScrollView(name='ScrollView#1')
 Mount() >>> ScrollView(name='ScrollView#1')
@@ -9,3 +10,11 @@ Mount() >>> WindowView(name='WindowView#1')
 TRANSLATING layout
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
+set_focus Static(name='Static#2')
+MouseDown(x=57, y=2, button=1) >>> Static(name='Static#2')
+MouseUp(x=57, y=2, button=1) >>> Static(name='Static#2')
+Click(x=57, y=2, button=1) >>> Static(name='Static#2')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
