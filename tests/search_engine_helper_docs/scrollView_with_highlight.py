@@ -21,6 +21,7 @@ class MyApp(App):
         from rich.text import Text
         self.contentText = Text(content)
         highlightLine = '       erator will be efficient. In the example below the recursive call by _range\n'
+        highlightWord= 'recursive' # maybe not so right.
         self.contentText.highlight([])
 
     async def on_mount(self) -> None:
