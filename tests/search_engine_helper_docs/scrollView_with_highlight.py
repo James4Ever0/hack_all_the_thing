@@ -23,6 +23,7 @@ with open(filepath, "r") as f:
 
 content_line_char_count = [len(line) for line in content.split("\n")]
 
+
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_key(self, event):
@@ -68,12 +69,17 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         import os
+
         size = os.get_terminal_size()
         msize = self.body.window.size
         print("WINDOW SIZE:", msize)
-        columns,lines = size.columns, size.lines
+        columns, lines = size.columns, size.lines
         import math
-        lineNumber2 = [length/columns) for length in content_line_char_count[:lineNumber]]
+
+        lineNumber2 = [
+            math.ceil(length / columns)
+            for length in content_line_char_count[:lineNumber]
+        ]
         self.body.set_y(lineNumber2)
 
 
