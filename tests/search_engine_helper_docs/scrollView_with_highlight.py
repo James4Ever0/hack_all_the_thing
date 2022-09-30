@@ -24,6 +24,6 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         # self.body.scroll_in_to_view(lineNumber)
-        # self.body.scroll_y = lineNumber
+        # self.body.target_y = lineNumber
     
 MyApp.run(title="Code Viewer", log="textual.log")
