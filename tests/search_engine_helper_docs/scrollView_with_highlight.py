@@ -22,7 +22,8 @@ class MyApp(App):
     def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
-        console=C
+        console=Console()
+        with console.capture() as
         results_list=self.body.__rich__() #renderable!
         # results_list = [x for x in results]
 
