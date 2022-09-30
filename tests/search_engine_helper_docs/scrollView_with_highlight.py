@@ -27,17 +27,20 @@ class MyApp(App):
     def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
-        # console = Console()
-        with console.capture() as capture:
-            self.body.window.render_lines()
-            result2= self.body.window.render_cache
-            # result2 = self.body.window.refresh(repaint=True) # renderable!
-        result = capture.get()
-        # results_list = [x for x in results]
 
-        print("RESULT:", [result], type(result))
-        print("RESULT2:", [text[0] for text in result2.lines])
-        breakpoint()
+        # disable mouse capture instead.
+
+        # console = Console()
+        # with console.capture() as capture:
+        #     self.body.window.render_lines()
+        #     result2= self.body.window.render_cache
+        #     # result2 = self.body.window.refresh(repaint=True) # renderable!
+        # result = capture.get()
+        # # results_list = [x for x in results]
+
+        # print("RESULT:", [result], type(result))
+        # print("RESULT2:", [text[0] for text in result2.lines])
+        # breakpoint()
 
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
