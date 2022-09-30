@@ -91,6 +91,7 @@ class MyApp(App):
         lineNumber2 = sum(
             [
                 math.ceil(length / (columns - 1))  # when with scrollbar.
+                # you can't view things with col=1 right?
                 for length in content_line_char_count[:lineNumber]
             ]
         )
