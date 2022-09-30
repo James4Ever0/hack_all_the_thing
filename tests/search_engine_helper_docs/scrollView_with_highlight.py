@@ -29,6 +29,7 @@ class MyApp(App):
         # [('name','ScrollView#1')]
         console = Console()
         with console.capture() as capture:
+            self.body.window.
             result2= self.body.window.render_cache
             # result2 = self.body.window.refresh(repaint=True) # renderable!
         result = capture.get()
