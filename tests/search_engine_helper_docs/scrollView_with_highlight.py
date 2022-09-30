@@ -11,7 +11,8 @@ keywords = set(["recursive"])
 # )
 filepath = 'test.txt' # col: 108
 # now check the layout?
-co
+# col=10 -> 9
+# col=1 -> 0
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
 
