@@ -33,6 +33,7 @@ class MyApp(App):
 
         # disable mouse capture instead.
         await self.capture_mouse(None)
+        await self.capture_mouse(None)
 
         # console = Console()
         # with console.capture() as capture:
