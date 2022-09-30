@@ -85,6 +85,7 @@ class MyApp(App):
         # print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
         # print("COLUMNS:", columns)
+        center_line = 
         # breakpoint()
         import math
 
