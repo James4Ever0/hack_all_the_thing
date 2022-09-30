@@ -25,7 +25,7 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         scrollTo = ScrollTo(self.body,0,lineNumber)
-        self.body.handle_
+        self.body.handle_scroll_to(scrollTo)
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
         # self.body.y = lineNumber
