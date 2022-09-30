@@ -14,15 +14,15 @@ from textual.app import App
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_load(self) -> None:
-        self.view = ScrollView()
+        self.body = ScrollView()
         with open(filepath, 'r') as f:
             content = f.read()
         from rich.text import Text
         self.contentText = Text(content)
 
     async def on_mount(self) -> None:
-        await self.view.dock(self.view, edge="top")
-        await self.view.update(self.contentText)
+        await self.view.dock(self.body, edge="top")
+        await self.body.update(self.contentText)
         # view.scroll_in_to_view(lineNumber)
     
 MyApp.run(title="Code Viewer", log="textual.log")
