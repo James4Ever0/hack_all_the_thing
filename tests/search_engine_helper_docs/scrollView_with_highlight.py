@@ -66,6 +66,7 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         self.body.set_y(lineNumber)
+        os.get_terminal_size()
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
