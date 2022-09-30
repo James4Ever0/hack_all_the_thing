@@ -96,8 +96,8 @@ class MyApp(App):
             ]
         )
 
-        print("LINE NUMBER:", lineNumber2)
-        breakpoint()
+        # print("LINE NUMBER:", lineNumber2)
+        # breakpoint()
         self.body.set_y(lineNumber2)
 
 
