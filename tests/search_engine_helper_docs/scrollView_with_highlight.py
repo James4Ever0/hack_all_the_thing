@@ -69,7 +69,8 @@ class MyApp(App):
         await self.body.update(self.contentText)
         import os
         size = os.get_terminal_size()
-        self.body.window.size
+        msize = self.body.window.size
+        print("WINDOW SIZE:", msize)
         columns,lines = size.columns, size.lines
         lineNumber2 = [//columns +1 content_line_char_count[:lineNumber]]
         self.body.set_y(lineNumber2)
