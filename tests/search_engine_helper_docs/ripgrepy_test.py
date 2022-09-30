@@ -18,6 +18,9 @@ for elem in result:
     submatches = data['submatches']
     matched_word_set = set(match['match']['text'] for match in submatches)
     # jump to the freaking line please?
+    print("LINENUM:", line_number)
+    print("TEXT:", line_text)
+    
 
 # need a scrollbar application, jump to specific line and highlight the line, the keywords.
 
