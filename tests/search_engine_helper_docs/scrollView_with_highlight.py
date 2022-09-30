@@ -46,7 +46,7 @@ class MyApp(App):
     async def jumpScrollView(self):
         # jump to next candidate.
         # will it work for hidden ScrollView
-        await self.body.set_y(lineNumber2)
+        await self.body.set_y(lineNumbers[index])
 
     async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
