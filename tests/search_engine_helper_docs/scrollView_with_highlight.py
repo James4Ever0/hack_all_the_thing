@@ -74,6 +74,7 @@ class MyApp(App):
         msize = self.body.window.size
         print("WINDOW SIZE:", msize)
         columns, lines = size.columns, size.lines
+        print("COLUMNS:",columns)
         import math
 
         lineNumber2 = [
