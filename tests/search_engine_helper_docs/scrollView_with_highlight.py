@@ -1,15 +1,15 @@
-lineNumbers = [2268]
+#lineNumbers = [2268]
 # notice: this is the line.
 #  'text': '       erator will be efficient. In the example below the recursive
 # call by _range\n'
-
+lineNumbers=[]
 # notice: terminal interface is not stable.
 import os
 import math
 
 keywords = set(["recursive"])
 filepath = (
-    "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
+    "./jq_man.log"
 )
 # filepath = "test.txt"  # col: 108
 # now check the layout?
@@ -37,6 +37,7 @@ content_line_char_count = [len(line) for line in content.split("\n")]
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
+    index=0
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
@@ -48,7 +49,9 @@ class MyApp(App):
     async def jumpScrollView(self):
         # jump to next candidate.
         # will it work for hidden ScrollView
-        await self.body.set_y(lineNumbers[index])
+        self.index+=1
+        self.index%=len(lineNumbers)
+        await self.body.set_y(lineNumbers[self.index])
 
     async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
@@ -88,7 +91,7 @@ class MyApp(App):
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        self.jumpToEquivalentLineNumber(content_line_char_count, lineNumbers[0])
+        self.jumpToEquivalentLineNumber(content_line_char_count, lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
         size = os.get_terminal_size()
