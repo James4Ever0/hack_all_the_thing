@@ -9,7 +9,7 @@ keywords = set(["recursive"])
 # filepath = (
 #     "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
 # )
-filepath = 'test.txt' # col: 108
+filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
 # col=1 -> 0
@@ -79,14 +79,16 @@ class MyApp(App):
         # the width is zero. means adaptive?
         # print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
-        print("COLUMNS:",columns)
+        print("COLUMNS:", columns)
         breakpoint()
         import math
 
-        lineNumber2 = sum([
-            math.ceil(length / columns)
-            for length in content_line_char_count[:lineNumber]
-        ])
+        lineNumber2 = sum(
+            [
+                math.ceil(length / columns)
+                for length in content_line_char_count[:lineNumber]
+            ]
+        )
         # self.body.set_y(lineNumber2)
 
 
