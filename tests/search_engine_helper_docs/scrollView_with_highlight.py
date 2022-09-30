@@ -114,7 +114,7 @@ class MyApp(App):
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
-        context = lines
+        context = 0
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
