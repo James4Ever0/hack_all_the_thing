@@ -40,7 +40,7 @@ class MyApp(App):
         key = event.key
         if key == "c":
             await self.copyScrollView()
-    
+
     async def jumpScrollView(self):
         # jump to next candidate.
         # will it work for hidden ScrollView
@@ -97,14 +97,18 @@ class MyApp(App):
         import math
 
         equivalentLineCountPerLine = [
-            max(1, math.ceil(length / (columns - 1))) # that's because of the scrollbar taking 1 extra column.
+            max(
+                1, math.ceil(length / (columns - 1))
+            )  # that's because of the scrollbar taking 1 extra column.
             for length in content_line_char_count
         ]
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
         context = 1
-        lineNumber2 = max(0, lineNumber2-1-context) # minus 1 to get the exact line location.
+        lineNumber2 = max(
+            0, lineNumber2 - 1 - context
+        )  # minus 1 to get the exact line location.
         # you want more context?
         # total_sum =
         # print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
@@ -114,5 +118,6 @@ class MyApp(App):
         # print("LINE NUMBER 2:", lineNumber2)
         # breakpoint()
         self.body.set_y(lineNumber2)
+
 
 MyApp.run(title="Code Viewer", log="textual.log")
