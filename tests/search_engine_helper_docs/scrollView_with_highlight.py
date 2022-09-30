@@ -23,7 +23,7 @@ class MyApp(App):
     def copyScrollView(self):
         console= Console()
         #nothing!
-        result = self.body.window._get_lines # [(text, style, control), ...]
+        result = self.body.window # [(text, style, control), ...]
         # nothing here?
         # with console.capture() as capture:
             # self.body.window.layout.render(console)
