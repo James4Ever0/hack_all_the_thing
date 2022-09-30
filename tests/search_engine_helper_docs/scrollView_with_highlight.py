@@ -27,6 +27,7 @@ class MyApp(App):
         self.contentText.highlight_words([highlightWord], style='yellow on red')
 
     async def on_mount(self) -> None:
+        self.set_interval(1, self.refresh)
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
         # self.body.y= lineNumber
