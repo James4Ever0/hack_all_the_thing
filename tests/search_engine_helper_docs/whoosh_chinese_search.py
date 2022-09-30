@@ -6,32 +6,13 @@ from whoosh.fields import *
 schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT)
 ix = create_in("indexdir3", schema)
 writer = ix.writer()
-writer.add_document(title=u"First document", path=u"/a",content=u"This is the first document we've added!")
-writer.add_document(title=u"Second document", path=u"/b", content=u"The second one is even more interesting!")
-writer.commit()
 ​
 # 搜索
 from whoosh.qparser import QueryParser
-with ix.searcher() as searcher:
-    query = QueryParser("content", ix.schema).parse("first")
-    results = searcher.search(query)
-    print(results[0])
-程序最终输出结果为
 
 <Hit {'path': '/a', 'title': 'First document'}>
 官网上的例子，我没有做任何修改，只是添加了两行注释。整个程序分为两部分，第一部分是构建索引的过程，第二部分是搜索的过程。
 
-2. 构建索引
-2.1 倒排索引
-搜索引擎的关键技术是建立倒排索引，倒排索引记录了哪些文档中包含了某个单词，比如 “酷python” 这个词出现在了你正在看的这篇文章中，假设这篇文章的编号是111， 那么索引中就会记录一条 酷python：111的记录。当你搜索 酷python 这个词的时候，搜索引擎从倒排索引中找到 酷python所对应的文档，如果有多个，搜索引擎则计算文档与搜索词的相关性，并根据相关性进行排序返回给你结果。
-
-2.2 分词
-我们在搜索时，所搜索的关键词可能是一个句子，文档里那么多内容，但索引只记录词与文档编号之间的映射关系，因此，不论是构建索引还是根据关键词进行搜索，都得进行分词。对于英语文档，分词是一件简单的事情，因为英语的句子是由若干个单次组成的。而中文的分词则相对复杂，因为我们的词是由单个汉字组成的，而词与词之间是没有空格这种明显的分界的，具体哪几个汉字组成一个词，要看所处的语境，比如 “ 军任命了一名中将 ”， 这里中将就是一个词，但在句子“ 产量三年中将增长两倍 ”， 中将 就不再是一个词。
-
-但你大可不必担心，因为现在的中文分词技术已经非常成熟了，开源库jieba可以满足你绝大部分需求。
-
-2.3 索引模式
-现在要为100篇文章构建索引，一篇文章的信息可能包括 文章标题，内容，作者，在构建索引的时候，你需要定义索引模式，就如同定义一张mysql里的表，你需要指出需要存储哪些字段，以及这些字段的类型
 
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
