@@ -8,4 +8,3 @@ Mount() >>> ScrollView(name='ScrollView#1')
 Mount() >>> WindowView(name='WindowView#1')
 TRANSLATING layout
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
-WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
