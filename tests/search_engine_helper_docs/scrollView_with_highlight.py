@@ -71,7 +71,8 @@ class MyApp(App):
         import os
 
         size = os.get_terminal_size()
-        msize = self.body.window.layout.width
+        msize = self.body.window.layout.# it is totally not right!
+        # the width is zero. means adaptive?
         print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
         print("COLUMNS:",columns)
