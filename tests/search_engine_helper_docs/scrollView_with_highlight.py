@@ -62,7 +62,7 @@ class MyApp(App):
 
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
         # await self.body.watch_y(lineNumber)
-        print('RESULT:',result)
+        print('RESULT:',results_list)
         breakpoint()
 
         # self.body.scroll_in_to_view(lineNumber)
