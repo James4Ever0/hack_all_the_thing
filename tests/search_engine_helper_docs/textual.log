@@ -19,3 +19,13 @@ WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1'
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollView#1')
+set_focus Static(name='Static#2')
+MouseDown(x=38, y=2267, screen_y=1, button=1) >>> Static(name='Static#2')
+MouseUp(x=38, y=2267, screen_y=1, button=1) >>> Static(name='Static#2')
+Click(x=38, y=2267, screen_y=1, button=1) >>> Static(name='Static#2')
+Key(key='q') >>> ScrollView(name='ScrollView#1')
+Key(key='q') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
