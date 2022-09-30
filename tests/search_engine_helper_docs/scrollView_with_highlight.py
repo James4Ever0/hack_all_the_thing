@@ -5,6 +5,7 @@ lineNumber = 2268
 
 # notice: terminal interface is not stable.
 import os
+import math
 
 keywords = set(["recursive"])
 filepath = (
@@ -88,7 +89,7 @@ class MyApp(App):
         lineNumber2 = 
         self.body.set_y(lineNumber2)
 
-    def getEquivalentLineNumber():
+    def getEquivalentLineNumber(self.):
 
         size = os.get_terminal_size()
         # msize = self.body.window.layout.width# it is totally not right!
@@ -98,7 +99,6 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # center = int(lines/2)
         # breakpoint()
-        import math
 
         equivalentLineCountPerLine = [
             max(
