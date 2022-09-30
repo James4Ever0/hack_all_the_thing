@@ -37,15 +37,6 @@ with ix.searcher() as searcher:
     data = results[0]
     text = data.highlights("content")
     print(text)
-程序输出结果为
-
-白日依山尽，<b class="match term0">黄河</b>入海流，欲穷千里目
-在html文件中，你可以自己来定义match 和 term0 的样式。
-
-
-
-3.2 多个字段同时搜索
-对多个字段同时搜索，需要使用MultifieldParser
 
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
@@ -56,18 +47,8 @@ with ix.searcher() as searcher:
     results = searcher.search(query)
     for data in results:
         print(data)
-content中有黄河，或者author有黄河的文档，都可以被搜索出来，程序输出结果
-
-<Hit {'author': '黄河恋', 'content': '展示效果', 'title': '胡乱写的'}>
-<Hit {'author': '王之涣', 'content': '白日依山尽，黄河入海流，欲穷千里目，更上一层楼', 'title': '登鹳雀楼'}>
-3.3 多个关键词同时搜索
-如果你所搜索的内容并不仅仅是一个关键词，而是多个，或者你搜索的是一个句子，搜索引擎会把你的句子进行分词，得到若干个词，这些词作为条件进行搜索，只有被搜索的字段同时满足这些关键词时，才能得到搜索结果，比如下面的搜索
 
 query = MultifieldParser(["content", 'author'], ix.schema).parse("黄河 杜甫")
-这个搜索条件不会得到任何结果，原因在于搜索条件等价于
-
-((content:黄河 OR author:黄河) AND (content:杜甫 OR author:杜甫))
-被搜索的字段中，比如同时包含黄河与杜甫。如果你希望这些关键词之间是或的关系，那么需要你自己来构建搜索条件
 
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
