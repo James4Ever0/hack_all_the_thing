@@ -10,7 +10,6 @@ filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_doc
 # you cannot select this thing. better use 'less'
 
 from textual.widgets import ScrollView
-from textual.scrollbar import ScrollTo
 
 from textual.app import App
 
