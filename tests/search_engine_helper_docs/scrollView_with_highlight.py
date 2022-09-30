@@ -6,9 +6,10 @@ lineNumber = 2268
 # notice: terminal interface is not stable.
 
 keywords = set(["recursive"])
-filepath = (
-    "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
-)
+# filepath = (
+#     "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
+# )
+filepath = 'test.txt'
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
 
