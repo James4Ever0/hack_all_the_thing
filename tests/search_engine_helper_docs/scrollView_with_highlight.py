@@ -29,7 +29,7 @@ class MyApp(App):
         await self.body.update(self.contentText)
         # self.body.y= lineNumber
         # self.body.target_y = lineNumber
-        scrollTo = ScrollTo(self.body, 0, lineNumber)
+        scrollTo = ScrollTo(self.body.vscroll, 0, lineNumber)
         await self.body.vscroll.emit(scrollTo)
         # self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
         # self.body.set_y(lineNumber)
