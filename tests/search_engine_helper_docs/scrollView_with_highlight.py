@@ -39,10 +39,11 @@ class MyApp(App):
         # with self.body.window.console.capture() as capture:
         #     self.body.window.
         # result = capture.get()
-        result = self.body.__rich__() # wtf?
+        mRich = self.body.__rich__() # wtf?
         console= Console()
         with console.capture() as capture:
-            console.print(re)
+            console.print(mRich)
+        result = capture.get()
 
         print("RESULT:", result)
         breakpoint()
