@@ -45,6 +45,7 @@ class MyApp(App):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
         print("disable mouse capture")
+        # print("disable mouse capture")
         # not able to disable this shit at all.
 
         # disable mouse capture instead.
