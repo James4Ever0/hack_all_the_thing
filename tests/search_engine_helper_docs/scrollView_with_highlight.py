@@ -44,7 +44,7 @@ class MyApp(App):
     async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
-        print("disable mouse capture")
+        print("toggle )
         # print("disable mouse capture")
         # not able to disable this shit at all.
 
