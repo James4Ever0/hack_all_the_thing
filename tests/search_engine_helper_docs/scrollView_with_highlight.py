@@ -23,8 +23,8 @@ class MyApp(App):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
         console=Console()
-        with console.capture() as
-        results_list=self.body.__rich__() #renderable!
+        with console.capture() as capture:
+            results_list=self.body.__rich__() #renderable!
         # results_list = [x for x in results]
 
         print("RESULT:", results_list)
