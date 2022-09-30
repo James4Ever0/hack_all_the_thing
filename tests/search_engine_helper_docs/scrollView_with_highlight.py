@@ -32,9 +32,6 @@ class MyApp(App):
         print("disable mouse capture")
 
         # disable mouse capture instead.
-        await self.capture_mouse(None)
-        await self.body.capture_mouse(False)
-
         # console = Console()
         # with console.capture() as capture:
         #     self.body.window.render_lines()
