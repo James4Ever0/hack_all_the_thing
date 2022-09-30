@@ -61,6 +61,7 @@ class MyApp(App):
 
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
         # await self.body.watch_y(lineNumber)
+        print(result)
 
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
