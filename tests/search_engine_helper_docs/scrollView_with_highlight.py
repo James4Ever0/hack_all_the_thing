@@ -91,11 +91,11 @@ class MyApp(App):
 
         lineNumber2 = sum(
             [
-                math.ceil(length / columns)
+                math.ceil(length / columns-1) # when with scrollbar.
                 for length in content_line_char_count[:lineNumber]
             ]
         )
-        # self.body.set_y(lineNumber2)
+        self.body.set_y(lineNumber2)
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
