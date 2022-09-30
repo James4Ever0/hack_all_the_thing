@@ -15,5 +15,8 @@ contentText = Text(content)
 
 from textual.app import App
 
+class MyApp(App):
+    
+
 view.update(contentText)
 view.scroll_in_to_view(lineNumber)
