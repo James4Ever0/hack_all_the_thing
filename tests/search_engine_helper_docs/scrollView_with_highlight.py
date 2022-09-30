@@ -24,6 +24,7 @@ class MyApp(App):
         # self.console.bell()
         key = event.key
         if key == "c":
+            asyncio.
             self.copyScrollView()
 
     async def copyScrollView(self):
