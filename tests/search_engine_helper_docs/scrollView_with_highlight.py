@@ -39,9 +39,7 @@ class MyApp(App):
         # with self.body.window.console.capture() as capture:
         #     self.body.window.
         # result = capture.get()
-        # mRich = self.body.__rich__() # wtf?
-        import time
-        time.sleep(4)
+        # mRich = self.body.__rich__() # wtf
         console= Console()
         with console.capture() as capture:
             console.print(self.body)
