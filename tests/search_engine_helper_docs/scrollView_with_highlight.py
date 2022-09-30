@@ -22,7 +22,7 @@ class MyApp(App):
             self.copyScrollView()
     def copyScrollView(self):
         console= Console()
-        result = self.view.render_cache
+        result = self.view.render_cache.lines
         # with console.capture() as capture:
             # self.body.window.layout.render(console)
         #     console.print(self.body.window.layout.render(console))
