@@ -1,12 +1,12 @@
 
 from whoosh.index import create_in
 from whoosh.fields import *
-​
+
 from whoosh.qparser import QueryParser
 
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
-​
+
 analyzer = ChineseAnalyzer()
 class ArticleSchema(SchemaClass):
     title = TEXT(stored=True, analyzer=analyzer)
@@ -27,7 +27,7 @@ create_in 会创建一个名为indexdir 的文件夹，添加文档时，一定�
 
 from whoosh.qparser import QueryParser
 from whoosh.index import open_dir
-​
+
 ix = open_dir("indexdir", indexname='article_index')
 with ix.searcher() as searcher:
     query = QueryParser("content", ix.schema).parse("黄河")
@@ -57,7 +57,7 @@ with ix.searcher() as searcher:
 
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
-​
+
 ix = open_dir("indexdir", indexname='article_index')
 with ix.searcher() as searcher:
     query = MultifieldParser(["content", 'author'], ix.schema).parse("黄河")
@@ -80,7 +80,7 @@ query = MultifieldParser(["content", 'author'], ix.schema).parse("黄河 杜甫"
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
 from whoosh.query import compound, Term
-​
+
 ix = open_dir("indexdir", indexname='article_index')
 with ix.searcher() as searcher:
     author_query = [Term('author', '黄河'), Term('author', '杜甫')]
