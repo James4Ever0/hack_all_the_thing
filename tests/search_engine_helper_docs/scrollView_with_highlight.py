@@ -31,8 +31,8 @@ class MyApp(App):
         self.y= lineNumber
         self.target_y = lineNumber
         self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
-        scrollTo = ScrollTo(self.body,0,lineNumber)
-        await self.body.handle_scroll_to(scrollTo)
+        # scrollTo = ScrollTo(self.body,0,lineNumber)
+        # await self.body.handle_scroll_to(scrollTo)
 
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
