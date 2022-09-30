@@ -19,6 +19,6 @@ class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_mount(self) -> None:
         await self.view.dock(view, edge="top")
+        await view.update(contentText)
+        await view.scroll_in_to_view(lineNumber)
 
-view.update(contentText)
-view.scroll_in_to_view(lineNumber)
