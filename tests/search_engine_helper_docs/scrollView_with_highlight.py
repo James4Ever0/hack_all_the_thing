@@ -20,6 +20,8 @@ class MyApp(App):
             content = f.read()
         from rich.text import Text
         self.contentText = Text(content)
+        hi
+        self.contentText.highlight([])
 
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
