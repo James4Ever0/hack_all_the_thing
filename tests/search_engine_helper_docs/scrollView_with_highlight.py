@@ -11,6 +11,9 @@ view = ScrollView()
 with open(filepath, 'r') as f:
     content = f.read()
 from rich.text import Text
-contentText = Text()
-view.update(content)
+contentText = Text(content)
+
+
+
+view.update(contentText)
 view.scroll_in_to_view(lineNumber)
