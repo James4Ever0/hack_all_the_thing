@@ -21,6 +21,9 @@ from textual.app import App
 with open(filepath, "r") as f:
     content = f.read()
 
+content.split("\n")
+
+
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_key(self, event):
@@ -68,7 +71,6 @@ class MyApp(App):
         import os
         size = os.get_terminal_size()
         columns,lines = size.columns, size.lines
-        content.split("\n")
         lineNumber2 = 
         self.body.set_y(lineNumber2)
 
