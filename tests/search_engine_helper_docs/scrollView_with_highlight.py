@@ -20,6 +20,5 @@ class MyApp(App):
     async def on_mount(self) -> None:
         await self.view.dock(view, edge="top")
 
-
 view.update(contentText)
 view.scroll_in_to_view(lineNumber)
