@@ -15,6 +15,7 @@ for elem in result:
     path_text = data['path']['text']
     line_text = data['lines']['text']
     line_number = data['lines']['line_number']
+    submatches = data[]
 # rich.print(result)
 #     {
 #         'type': 'match',
