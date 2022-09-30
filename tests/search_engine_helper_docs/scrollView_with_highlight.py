@@ -94,6 +94,8 @@ class MyApp(App):
                 for length in content_line_char_count[:lineNumber]
             ]
         )
+        print("LINE NUMBER:", lineNumber2)
+        breakpoint()
         self.body.set_y(lineNumber2)
 
 
