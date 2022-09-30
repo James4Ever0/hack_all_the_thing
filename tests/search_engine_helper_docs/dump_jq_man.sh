@@ -1,1 +1,1 @@
-man jq -P cat > jq_man.log
+man jq | col -bx > jq_man.log
