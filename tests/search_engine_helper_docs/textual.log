@@ -129,3 +129,11 @@ Key(key='escape') >>> MyApp(title='Code Viewer')
 Key(key=':') >>> ScrollView(name='ScrollFileReader')
 Key(key=':') >>> MyApp(title='Code Viewer')
 Key(key=':') >>> MyApp(title='Code Viewer')
+Key(key='w') >>> ScrollView(name='ScrollFileReader')
+Key(key='w') >>> MyApp(title='Code Viewer')
+Key(key='w') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
