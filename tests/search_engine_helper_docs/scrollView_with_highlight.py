@@ -67,6 +67,7 @@ class MyApp(App):
         await self.body.update(self.contentText)
         import os
         os.get_terminal_size()
+        lineNumber2 = 
         self.body.set_y(lineNumber2)
 
 
