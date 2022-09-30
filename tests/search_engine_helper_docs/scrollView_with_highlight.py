@@ -87,10 +87,10 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-    
+
         lineNumber2 = sum(
             [
-                math.ceil(length / columns-1) # when with scrollbar.
+                math.ceil(length / (columns - 1))  # when with scrollbar.
                 for length in content_line_char_count[:lineNumber]
             ]
         )
