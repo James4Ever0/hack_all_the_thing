@@ -10,6 +10,6 @@ from textual.widgets import ScrollView
 view = ScrollView()
 with open(filepath, 'r') as f:
     content = f.read()
-contentText = rich.Text
+contentText = rich.text.Text
 view.update(content)
 view.scroll_in_to_view(lineNumber)
