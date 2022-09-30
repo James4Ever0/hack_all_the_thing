@@ -50,7 +50,7 @@ with ix.searcher() as searcher:
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
 
-ix = open_dir("indexdir", indexname='article_index')
+ix = open_dir("indexdir3", indexname='article_index')
 with ix.searcher() as searcher:
     query = MultifieldParser(["content", 'author'], ix.schema).parse("黄河")
     results = searcher.search(query)
