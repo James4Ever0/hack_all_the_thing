@@ -81,7 +81,7 @@ class MyApp(App):
             math.ceil(length / columns)
             for length in content_line_char_count[:lineNumber]
         ]
-        self.body.set_y(lineNumber2)
+        # self.body.set_y(lineNumber2)
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
