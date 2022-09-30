@@ -13,7 +13,7 @@ with open(filepath, 'r') as f:
 from rich.text import Text
 contentText = Text(content)
 
-
+from textual.app import App
 
 view.update(contentText)
 view.scroll_in_to_view(lineNumber)
