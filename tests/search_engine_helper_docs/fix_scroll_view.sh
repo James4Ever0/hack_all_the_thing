@@ -1,1 +1,1 @@
-cp _scroll_view.py 
+cp _scroll_view.py /usr/local/lib/python3.9/dist-packages/textual/widgets/
