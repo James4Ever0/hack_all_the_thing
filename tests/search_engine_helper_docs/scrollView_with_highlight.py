@@ -105,5 +105,4 @@ class MyApp(App):
         # breakpoint()
         self.body.set_y(lineNumber2)
 
-
 MyApp.run(title="Code Viewer", log="textual.log")
