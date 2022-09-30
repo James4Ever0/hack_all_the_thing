@@ -71,8 +71,8 @@ class MyApp(App):
         import os
 
         size = os.get_terminal_size()
-        msize = self.body.window.size
-        print("WINDOW SIZE:", msize)
+        msize = self.body.window.
+        print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
         print("COLUMNS:",columns)
         breakpoint()
@@ -81,7 +81,7 @@ class MyApp(App):
         lineNumber2 = sum([
             math.ceil(length / columns)
             for length in content_line_char_count[:lineNumber]
-        ]
+        ])
         # self.body.set_y(lineNumber2)
 
 
