@@ -13,6 +13,7 @@ filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
 # col=1 -> 0
+# end digit: 7 -> 106
 # are you sure this will really jump to the freaking line???
 # from rich.console import Console
 
@@ -82,7 +83,7 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-        # end digit: 7 -> 10
+        
 
         lineNumber2 = sum(
             [
