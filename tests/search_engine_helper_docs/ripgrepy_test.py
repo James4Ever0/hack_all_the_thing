@@ -16,7 +16,7 @@ for elem in result:
     line_text = data['lines']['text']
     line_number = data['lines']['line_number']
     submatches = data['submatches']
-    matched_word_set = set(match['match']['text'] for match in )
+    matched_word_set = set(match['match']['text'] for match in submatches)
 # rich.print(result)
 #     {
 #         'type': 'match',
