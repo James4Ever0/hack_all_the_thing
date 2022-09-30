@@ -86,7 +86,7 @@ class MyApp(App):
         # print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
         # print("COLUMNS:", columns)
-        center = int(lines/2)
+        # center = int(lines/2)
         # breakpoint()
         import math
 
@@ -96,7 +96,8 @@ class MyApp(App):
         ]
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
-        lineNumber2 = max(0, lineNumber2-center)
+        # lineNumber2 = max(0, lineNumber2-center)
+        lineNumber2 = max(0, lineNumber2-2)
         # total_sum =
         # print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
         # print("LINE TOTAL COUNT:", len(content_line_char_count))
