@@ -19,7 +19,8 @@ for elem in result:
     matched_word_set = set(match['match']['text'] for match in submatches)
     # jump to the freaking line please?
 
-# need a scrollbar application, jump to specific line and highlight the 
+# need a scrollbar application, jump to specific line and highlight the given thing
+
 # rich.print(result)
 #     {
 #         'type': 'match',
