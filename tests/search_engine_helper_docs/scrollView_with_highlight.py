@@ -87,19 +87,20 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # breakpoint()
         import math
-        equivalentLineCountPerLine = [max(1,math.ceil(length / (columns-1))) 
-                for length in content_line_char_count]
 
-        lineNumber2 = sum(
-            equivalentLineCountPerLine[:lineNumber]
-        )
-        # total_sum = 
-        print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
-        print("LINE TOTAL COUNT:", len(content_line_char_count))
+        equivalentLineCountPerLine = [
+            max(1, math.ceil(length / (columns - 1)))
+            for length in content_line_char_count
+        ]
+
+        lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
+        # total_sum =
+        # print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
+        # print("LINE TOTAL COUNT:", len(content_line_char_count))
+        # # breakpoint()
+        # print("LINE NUMBER:", lineNumber)
+        # print("LINE NUMBER 2:", lineNumber2)
         # breakpoint()
-        print("LINE NUMBER:", lineNumber)
-        print("LINE NUMBER 2:", lineNumber2)
-        breakpoint()
         self.body.set_y(lineNumber2)
 
 
