@@ -28,8 +28,8 @@ class MyApp(App):
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        self.body.y= lineNumber
-        self.body.target_y = lineNumber
+        # self.body.y= lineNumber
+        # self.body.target_y = lineNumber
         self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
 
         # self.body.scroll_in_to_view(lineNumber)
