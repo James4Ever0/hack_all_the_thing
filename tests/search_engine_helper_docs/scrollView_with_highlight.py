@@ -28,7 +28,7 @@ class MyApp(App):
             result = renderableLayout
         # results_list = [x for x in results]
 
-        print("RESULT:", results_list)
+        print("RESULT:", result)
         breakpoint()
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
