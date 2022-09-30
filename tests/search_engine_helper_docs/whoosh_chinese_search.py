@@ -2,7 +2,6 @@
 from whoosh.index import create_in
 from whoosh.fields import *
 
-from whoosh.qparser import QueryParser
 
 from whoosh.fields import TEXT, SchemaClass
 from jieba.analyse import ChineseAnalyzer
@@ -20,11 +19,6 @@ writer.add_document(title="登鹳雀楼", author="王之涣",content="白日依�
 writer.add_document(title="登高", author="杜甫", content="风急天高猿啸哀，渚清沙白鸟飞回")
 writer.add_document(title="胡乱写的", author="黄河恋", content="展示效果")
 writer.commit()
-create_in 会创建一个名为indexdir 的文件夹，添加文档时，一定要根据你所定义的索引模式进行添加，这样就创建好了索引，添加文档的过程，就如同向mysql的表里写入数据。
-
-3. 搜索
-搜索的过程，需要使用open_dir函数打开索引文件，创建Searcher 对象
-
 from whoosh.qparser import QueryParser
 from whoosh.index import open_dir
 
