@@ -10,7 +10,6 @@ from textual.widgets import ScrollView
 from textual.scrollbar import ScrollTo
 
 
-
 from textual.app import App
 
 class MyApp(App):
@@ -25,6 +24,7 @@ class MyApp(App):
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
+        scrollTo = ScrollTo(0,)
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
         # self.body.y = lineNumber
