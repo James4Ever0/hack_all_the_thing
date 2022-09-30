@@ -36,7 +36,7 @@ class MyApp(App):
         # results_list = [x for x in results]
 
         print("RESULT:", [result], type(result))
-        print("RESULT2:", [text for text, style, control in result2.lines])
+        print("RESULT2:", [text for text in result2.lines])
         breakpoint()
 
     async def on_load(self) -> None:
