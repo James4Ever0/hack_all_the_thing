@@ -20,7 +20,7 @@ from textual.app import App
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
-    def on_key(self, event):
+    async def on_key(self, event):
         # self.console.bell()
         key = event.key
         if key == "c":
