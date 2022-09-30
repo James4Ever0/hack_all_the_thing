@@ -1,0 +1,3 @@
+---
+driver=<class 'textual.drivers.linux_driver.LinuxDriver'>
+Load() >>> MyApp(title='Textual')
