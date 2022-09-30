@@ -24,7 +24,7 @@ class MyApp(App):
         print("RESULT:", result)
         breakpoint()
     async def on_load(self) -> None:
-        action = 'copyScrollView()'
+        # action = 'copyScrollView()'
         self.body = ScrollView()
         with open(filepath, 'r') as f:
             content = f.read()
