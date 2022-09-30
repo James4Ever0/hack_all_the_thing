@@ -15,10 +15,10 @@ class MyApp(App):
     # how to let me copy the text inslde? fuck?
     async def on_load(self) -> None:
         view = ScrollView()
-with open(filepath, 'r') as f:
-    content = f.read()
-from rich.text import Text
-contentText = Text(content)
+        with open(filepath, 'r') as f:
+            content = f.read()
+        from rich.text import Text
+        contentText = Text(content)
 
     async def on_mount(self) -> None:
         await self.view.dock(view, edge="top")
