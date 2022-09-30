@@ -4,7 +4,7 @@ from whoosh.fields import *
 ​
 # 构建索引
 schema = Schema(title=TEXT(stored=True), path=ID(stored=True), content=TEXT)
-ix = create_in("indexdir", schema)
+ix = create_in("indexdir3", schema)
 writer = ix.writer()
 writer.add_document(title=u"First document", path=u"/a",content=u"This is the first document we've added!")
 writer.add_document(title=u"Second document", path=u"/b", content=u"The second one is even more interesting!")
