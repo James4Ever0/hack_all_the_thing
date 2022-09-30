@@ -1,2 +1,2 @@
 lineNumber = 2268
-keywords = se
+keywords = set(['recursive'])
