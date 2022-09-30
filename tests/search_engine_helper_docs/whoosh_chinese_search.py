@@ -82,11 +82,6 @@ with ix.searcher() as searcher:
     results = searcher.search(query)
     for data in results:
         print(data)
-三个文档都会被搜索到， 如果你搜索的是一个句子，那么你可以使用analyzer 对整个句子进行分词，然后构造搜索条件，我所说的analyzer就是 analyzer = ChineseAnalyzer() 语句创建的对象。
-
-3.4 分页搜索
-如果搜索结果太多，那么你需要分页查询
 
 results = searcher.search_page(query, 1)    # 搜索第1页，默认每页10个结果
     print(results.total)   # 搜索到的文档总量，帮助你进行分页
-你获取的是第一页的搜索结果，但results.total 会告诉你搜索结果一共有多少条，这样，你就知道该搜索多少页的数据了。
