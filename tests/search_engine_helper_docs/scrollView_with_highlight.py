@@ -4,6 +4,7 @@ lineNumber = 2268
 # call by _range\n'
 keywords = set(['recursive'])
 filepath ='/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log'
+# are you sure this will really jump to the freaking line???
 
 from textual.widgets import ScrollView
 view = ScrollView()
