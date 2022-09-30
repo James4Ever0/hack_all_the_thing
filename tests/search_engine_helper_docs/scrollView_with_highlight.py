@@ -107,7 +107,7 @@ class MyApp(App):
 
         equivalentLineCountPerLine = [
             max(
-                1, math.ceil(length / (columns - 1))
+                1, math.ceil(length / (columns))
             )  # that's because of the scrollbar taking 1 extra column.
             for length in content_line_char_count
         ]
