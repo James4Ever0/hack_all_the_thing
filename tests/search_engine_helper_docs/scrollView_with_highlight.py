@@ -79,8 +79,8 @@ class MyApp(App):
         # the width is zero. means adaptive?
         # print("WINDOW SIZE:", msize) # not right!
         columns, lines = size.columns, size.lines
-        print("COLUMNS:", columns)
-        breakpoint()
+        # print("COLUMNS:", columns)
+        # breakpoint()
         import math
 
         lineNumber2 = sum(
