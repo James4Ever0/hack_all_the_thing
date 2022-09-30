@@ -51,7 +51,7 @@ class MyApp(App):
         # will it work for hidden ScrollView
         self.index+=1
         self.index%=len(lineNumbers)
-        await self.body.set_y(lineNumbers[self.index])
+        self.body.set_y(lineNumbers[self.index])
 
     async def copyScrollView(self):
         # results=self.body.__rich_repr__() # generator!
