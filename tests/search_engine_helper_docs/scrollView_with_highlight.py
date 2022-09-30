@@ -97,7 +97,7 @@ class MyApp(App):
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
-        lineNumber2 = max(0, lineNumber2-2)
+        lineNumber2 = max(0, lineNumber2-2) # minus 1 to get the exact line location.
         # total_sum =
         # print("TOTAL_SUM:", sum(equivalentLineCountPerLine))
         # print("LINE TOTAL COUNT:", len(content_line_char_count))
