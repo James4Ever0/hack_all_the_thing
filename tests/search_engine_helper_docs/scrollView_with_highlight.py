@@ -38,6 +38,7 @@ content_line_char_count = [len(line) for line in content.split("\n")]
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index=0
+    readerName="ScrollFileReader"
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
@@ -57,7 +58,7 @@ class MyApp(App):
     async def toggleScrollView(self):
         # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
-        await self.view.action_toggle("ScrollView#1")
+        await self.view.action_toggle(self.readerName)
         # print("toggle code review")
         # print("disable mouse capture")
         # not able to disable this shit at all.
@@ -77,7 +78,7 @@ class MyApp(App):
 
     async def on_load(self) -> None:
         # action = 'copyScrollView()'
-        self.body = ScrollView()
+        self.body = ScrollView(self.readerName)
 
         from rich.text import Text
 
