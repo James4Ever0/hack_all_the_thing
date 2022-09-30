@@ -26,6 +26,7 @@ class MyApp(App):
         with console.capture() as capture:
             renderableLayout = self.body.__rich__() #renderable!
             result = renderableLayout
+            
         # results_list = [x for x in results]
 
         print("RESULT:", result)
