@@ -98,7 +98,7 @@ class MyApp(App):
         # total_sum = 
         print("TOTAL_SUM:", sum([math.ceil(length / (columns)) 
                 for length in content_line_char_count]))
-        print()
+        print("LINE TOTAL COUNT:", len(content_line_char_count))
         # breakpoint()
         print("LINE NUMBER:", lineNumber)
         print("LINE NUMBER 2:", lineNumber2)
