@@ -6,6 +6,7 @@ from jieba.analyse import ChineseAnalyzer
 analyzer = ChineseAnalyzer()
 
 
+
 class ArticleSchema(SchemaClass):
     title = TEXT(stored=True, analyzer=analyzer)
     content = TEXT(stored=True, analyzer=analyzer)
@@ -13,7 +14,7 @@ class ArticleSchema(SchemaClass):
 
 
 schema = ArticleSchema()
-ix = create_in("indexdir3", schema, indexname="article_index")
+ix = create_in(indexDirectory, schema, indexname="article_index")
 writer = ix.writer()
 writer.add_document(title="登鹳雀楼", author="王之涣", content="白日依山尽，黄河入海流，欲穷千里目，更上一层楼")
 writer.add_document(title="登高", author="杜甫", content="风急天高猿啸哀，渚清沙白鸟飞回")
@@ -22,7 +23,7 @@ writer.commit()
 from whoosh.qparser import QueryParser
 from whoosh.index import open_dir
 
-ix = open_dir("indexdir3", indexname="article_index")
+ix = open_dir(indexDirectory, indexname="article_index")
 with ix.searcher() as searcher:
     query = QueryParser("content", ix.schema).parse("黄河")
     results = searcher.search(query)
@@ -39,7 +40,7 @@ with ix.searcher() as searcher:
 from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
 
-ix = open_dir("indexdir3", indexname="article_index")
+ix = open_dir(indexDirectory, indexname="article_index")
 with ix.searcher() as searcher:
     query = MultifieldParser(["content", "author"], ix.schema).parse("黄河")
     results = searcher.search(query)
@@ -52,7 +53,7 @@ from whoosh.qparser import QueryParser, MultifieldParser
 from whoosh.index import open_dir
 from whoosh.query import compound, Term
 
-ix = open_dir("indexdir3", indexname="article_index")
+ix = open_dir(indexDirectory, indexname="article_index")
 with ix.searcher() as searcher:
     author_query = [Term("author", "黄河"), Term("author", "杜甫")]
     content_query = [Term("content", "黄河"), Term("content", "杜甫")]
