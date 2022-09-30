@@ -20,9 +20,9 @@ class MyApp(App):
         if key == 'c':
             self.copyScrollView()
     def copyScrollView(self):
-        results=self.body.__rich_repr__() # generator!
+        # results=self.body.__rich_repr__() # generator!
         # [('name','ScrollView#1')]
-        results_list = [x for x in results]
+        # results_list = [x for x in results]
 
         print("RESULT:", results_list)
         breakpoint()
