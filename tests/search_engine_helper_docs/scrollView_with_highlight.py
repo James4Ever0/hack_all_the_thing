@@ -40,6 +40,8 @@ class MyApp(App):
         #     self.body.window.
         # result = capture.get()
         # mRich = self.body.__rich__() # wtf?
+        import time
+        time.sleep(4)
         console= Console()
         with console.capture() as capture:
             console.print(self.body)
