@@ -36,7 +36,7 @@ class MyApp(App):
         # await self.body.emit(scrollTo)
         self.body.set_y(lineNumber)
         with self.body.window.console.capture() as capture:
-            self.body.window.refresh()
+            self.body.window.
         result = capture.get()
         print("RESULT:", result)
         breakpoint()
