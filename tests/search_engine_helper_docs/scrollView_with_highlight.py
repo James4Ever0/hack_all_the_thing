@@ -25,10 +25,10 @@ class MyApp(App):
         #nothing!
         # self.body.console.begin_capture() # [(text, style, control), ...]
         # nothing here?
-        with self.console.capture() as capture:
-            # self.body.window.layout.render(console)
+        with self.body.console.capture() as capture:
+            self.body.window.layout.render(console)
         #     console.print(self.body.window.layout.render(console))
-        # result = capture.get()
+            result = capture.get()
 
         print("RESULT:", result)
         breakpoint()
