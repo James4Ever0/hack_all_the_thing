@@ -29,7 +29,7 @@ class MyApp(App):
         # [('name','ScrollView#1')]
         console = Console()
         with console.capture() as capture:
-            result2 = self.body.window.__rich_console__(
+            result2 = self.body.window.render(
                 console, console.options
             )  # renderable!
         result = capture.get()
