@@ -2,6 +2,9 @@ lineNumber = 2268
 # notice: this is the line.
 #  'text': '       erator will be efficient. In the example below the recursive
 # call by _range\n'
+
+# notice: terminal interface is not stable.
+
 keywords = set(["recursive"])
 filepath = (
     "/root/Desktop/works/hack_all_the_thing/tests/search_engine_helper_docs/jq_man.log"
