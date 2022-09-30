@@ -38,7 +38,7 @@ class MyApp(App):
         # with self.body.window.console.capture() as capture:
         #     self.body.window.
         # result = capture.get()
-        result = self.body._get_lines() # wtf?
+        result = self.body.__rich__ # wtf?
         print("RESULT:", result)
         breakpoint()
         # self.body.animate("y", lineNumber,speed=lineNumber*3, easing="out_cubic")
