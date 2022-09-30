@@ -28,11 +28,11 @@ class MyApp(App):
     async def on_mount(self) -> None:
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        # scrollTo = ScrollTo(self.body,0,lineNumber)
-        # await self.body.handle_scroll_to(scrollTo)
         self.y= lineNumber
         self.target_y = lineNumber
         self.body.animate("y", lineNumber, speed=lineNumber*3, easing="out_cubic")
+        scrollTo = ScrollTo(self.body,0,lineNumber)
+        await self.body.handle_scroll_to(scrollTo)
 
         # self.body.scroll_in_to_view(lineNumber)
         # self.body.target_y = lineNumber
