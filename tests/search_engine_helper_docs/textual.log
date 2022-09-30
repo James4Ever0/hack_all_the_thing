@@ -93,3 +93,8 @@ Key(key='ctrl+q') >>> MyApp(title='Code Viewer')
 Key(key='ctrl+q') >>> ScrollView(name='ScrollFileReader')
 Key(key='ctrl+q') >>> MyApp(title='Code Viewer')
 Key(key='ctrl+q') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
