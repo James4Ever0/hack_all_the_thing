@@ -8,8 +8,9 @@ rg = Ripgrepy(expression, filepath) # ignore case? how?
 result = rg.with_filename().line_number().ignore_case().json().run().as_dict
 # result = rg.with_filename().line_number().ignore_case().json().run() # this will produce list. is it right?
 
-# import rich
+import rich
 for elem in result:
+    rich.print(elem)
     searchType=elem['type']
     data = elem['data']
     path_text = data['path']['text']
@@ -20,7 +21,7 @@ for elem in result:
     # jump to the freaking line please?
     print("LINENUM:", line_number)
     print("TEXT:", line_text)
-    
+    print("KEYWORDS:", matched_word_set)
 
 # need a scrollbar application, jump to specific line and highlight the line, the keywords.
 
