@@ -114,9 +114,9 @@ class MyApp(App):
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
-        context = 0
+        context = 2
         lineNumber2 = max(
-            0, lineNumber2 - 1 - context+lines
+            0, lineNumber2 - 1 - context+lines*2
         )  # minus 1 to get the exact line location.
         self.body.set_y(lineNumber2)
 
