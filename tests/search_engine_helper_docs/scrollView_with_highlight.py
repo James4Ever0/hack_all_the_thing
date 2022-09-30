@@ -21,14 +21,8 @@ class MyApp(App):
         if key == 'c':
             self.copyScrollView()
     def copyScrollView(self):
-        # console= Console()
-        #nothing!
-        # self.body.console.begin_capture() # [(text, style, control), ...]
-        # nothing here?
-        with self.body.console.capture() as capture:
-            self.body.refresh()
-        #     console.print(self.body.window.layout.render(console))
-        result = capture.get()
+        results=self.body.__rich_repr__() # generator!
+        results_list = [x for x in results]
 
         print("RESULT:", result)
         breakpoint()
