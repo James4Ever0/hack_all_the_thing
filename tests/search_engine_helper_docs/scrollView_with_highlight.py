@@ -16,7 +16,11 @@ contentText = Text(content)
 from textual.app import App
 
 class MyApp(App):
-    
+    # how to let me copy the text inslde? fuck?
+    async def on_mount(self) -> None:
+        await self.view.dock(Placeholder(), edge="left", size=40)
+        await self.view.dock(Placeholder(), Placeholder(), edge="top")
+
 
 view.update(contentText)
 view.scroll_in_to_view(lineNumber)
