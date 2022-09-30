@@ -78,7 +78,7 @@ class MyApp(App):
         breakpoint()
         import math
 
-        lineNumber2 = [
+        lineNumber2 = sum([
             math.ceil(length / columns)
             for length in content_line_char_count[:lineNumber]
         ]
