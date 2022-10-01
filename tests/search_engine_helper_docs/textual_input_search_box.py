@@ -13,6 +13,7 @@ class HoverApp(App):
         await self.bind("enter", "submit", "Submit")
         # we want you to hide the thing!
     async def searchToggle(self):
+        await self.view.action_toggle('side')
     async def on_key(self, event):
         key = event.key
         if key_lower in ["s"]: # i doubt that 'escape' shall be treated differently.
