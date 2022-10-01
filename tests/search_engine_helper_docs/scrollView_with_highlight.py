@@ -111,6 +111,7 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
+        textList = self.contentText.split("\n")
         wrapped_lines = self.wrapText()
 
         await self.body.update()
