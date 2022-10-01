@@ -76,7 +76,7 @@ class HoverApp(App):
             [
                 # this is bad. these things are not clickable.
                 Hover(
-                    "widget {}".format(index),onClick = lambda: self.view
+                    "widget {}".format(index),onClick = lambda: self.view.toggle()
                 )
                 for index in range(30)
             ]
