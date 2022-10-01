@@ -9,3 +9,9 @@ Mount() >>> WindowView(name='WindowView#1')
 TRANSLATING layout
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollFileReader')
 WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollFileReader')
+view.forwarded Key(key='ctrl+c')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
