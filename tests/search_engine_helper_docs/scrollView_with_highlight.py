@@ -14,15 +14,7 @@ filepath = (
 # implement soft/hard wrap method yourself, or the scroll view will get tricky.
 import textwrap
 
-def wrapText(textList,width): # the width is col-1
-    content_line_char_count = []
-    wrapped_lines = []
-    for text in textList:
-        lines = textwrap.wrap(text,width=width)
-        wrapped_lines.extend(lines)
-        lineCount = len(lines)
-        content_line_char_count.append(lineCount)
-    return wrapped_lines, content_line_char_count
+
 # filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
@@ -55,6 +47,15 @@ class MyApp(App):
     readerName="ScrollFileReader"
     content_line_char_count= []
     lineNumbers=[2923,2878,0,5] # we test this on android first.
+    def wrapText(textList,width): # the width is col-1
+    content_line_char_count = []
+    wrapped_lines = []
+    for text in textList:
+        lines = textwrap.wrap(text,width=width)
+        wrapped_lines.extend(lines)
+        lineCount = len(lines)
+        content_line_char_count.append(lineCount)
+    return wrapped_lines, content_line_char_count
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
@@ -110,7 +111,7 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
-        wrapped_lines = 
+        wrapped_lines = wrapLi
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
