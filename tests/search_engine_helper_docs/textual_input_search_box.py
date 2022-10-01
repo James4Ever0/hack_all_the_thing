@@ -7,3 +7,4 @@
 
 from textual_inputs import TextInput
 
+class HoverApp(App):
