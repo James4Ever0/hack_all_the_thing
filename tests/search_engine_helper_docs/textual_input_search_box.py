@@ -14,5 +14,6 @@ class HoverApp(App):
         await self.bind("enter", "submit", "Submit")
     async def action_submit(self):
         value = self.mainInput.value
-        # print("ENTERED VALUE: %s" % value)
-        # breakpoint()
+        print("ENTERED VALUE: %s" % value)
+        breakpoint()
+    async def on_
