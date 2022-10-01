@@ -79,8 +79,8 @@ class HoverApp(App):
         #         )
         #     )
 
-        await self.scrollableHovers.update(self.layout)
-        await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
+        # await self.scrollableHovers.update(self.layout)
+        await self.view.dock(self.layout, edge="top", name="side")  # WTF?
         # here we got the view.
 
     # async def on_load(self) -> None:
