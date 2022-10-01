@@ -12,7 +12,9 @@ from textual.app import App
 class HoverApp(App):
     async def on_key(self, event):
         key = event.key
-        
+        key_lower = key.lower()
+        if key_lower == 'c':
+            self.mainInput.title = ''
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         await self.bind('ctrl+s','searchToggle', "searchToggle")
