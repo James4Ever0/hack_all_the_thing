@@ -20,7 +20,8 @@ class HoverApp(App):
 
     async def action_searchToggle(self):
         await self.view.action_toggle("search")
-        await self.view.focus() # deactivate the search fi?
+        if self.search
+        await self.view.focus() # deactivate the search field?
 
 
     async def action_submit(self):
