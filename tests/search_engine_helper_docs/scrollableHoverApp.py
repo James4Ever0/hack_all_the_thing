@@ -77,7 +77,7 @@ class HoverApp(App):
         key_lower = key.lower()
         # handle input elsewhere?
         # when text field is focused, we do not do shit.
-        if key_lower in ["t",'escape']:
+        if key_lower in ["t"]: # i doubt that 'escape' shall be treated differently.
             await self.mainToggle()
 
     async def on_mount(self) -> None:
