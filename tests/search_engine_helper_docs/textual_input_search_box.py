@@ -8,24 +8,30 @@
 from textual_inputs import TextInput
 from textual.app import App
 
+
 class HoverApp(App):
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         # we want you to hide the thing!
+
     async def searchToggle(self):
-        await self.view.action_toggle('search')
+        await self.view.action_toggle("search")
+
     async def on_key(self, event):
         key = event.key
-        key_lower =key.lower()
-        if key_lower in ["s"]: # i doubt that 'escape' shall be treated differently.
+        key_lower = key.lower()
+        if key_lower in ["s"]:  # i doubt that 'escape' shall be treated differently.
             await self.searchToggle()
+
     async def action_submit(self):
         value = self.mainInput.value
         print("ENTERED VALUE: %s" % value)
         breakpoint()
-    async def on_mount(self) -> None:
-        self.mainInput = TextInput(name='query', placeholder='enter your query')
-        await self.view.dock(self.mainInput, edge='top', name='search')
 
-if __name__ == '__main__':
+    async def on_mount(self) -> None:
+        self.mainInput = TextInput(name="query", placeholder="enter your query")
+        await self.view.dock(self.mainInput, edge="top", name="search")
+
+
+if __name__ == "__main__":
     HoverApp.run()
