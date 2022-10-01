@@ -93,7 +93,7 @@ class MyApp(App):
             title="search input",  # height = 3
         )
         # await self.view.dock(, edge="bottom")
-        await self.view.dock(self.mainInput,self.mainInput2, edge="top")
+        await self.view.dock(self.mainInput, edge="top")
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
