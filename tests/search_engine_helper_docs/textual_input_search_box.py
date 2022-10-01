@@ -32,7 +32,7 @@ class HoverApp(App):
         # breakpoint()
 
     async def on_mount(self) -> None:
-        self.mainInput = TextInput(name="query", placeholder="enter your query")
+        self.mainInput = TextInput(name="query", placeholder="enter your query",title='')
         await self.view.dock(self.mainInput, edge="top", name="search")
 
 
