@@ -237,3 +237,10 @@ MouseDown(x=29, y=1, screen_x=69, screen_y=20, button=1) >>> IntegerInput(name='
 InputOnFocus(IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
 MouseUp(x=29, y=1, screen_x=69, screen_y=20, button=1) >>> IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
 Click(x=29, y=1, screen_x=69, screen_y=20, button=1) >>> IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+c') >>> SimpleForm(title='Textual-Inputs Simple Form')
+ACTION SimpleForm(title='Textual-Inputs Simple Form') quit
+CLOSED SimpleForm(title='Textual-Inputs Simple Form')
+PROCESS END
+CLOSED DockView(name='DockView#1')
+CLOSED IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+CLOSED CustomHeader('Textual-Inputs Simple Form')
