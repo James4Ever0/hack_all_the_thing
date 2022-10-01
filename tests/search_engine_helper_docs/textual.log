@@ -36,3 +36,8 @@ MouseScrollUp() >>> ScrollView(name='ScrollFileReader')
 MouseScrollUp() >>> ScrollView(name='ScrollFileReader')
 MouseScrollUp() >>> ScrollView(name='ScrollFileReader')
 MouseScrollUp() >>> ScrollView(name='ScrollFileReader')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+ACTION MyApp(title='Lazero Viewer') quit
+CLOSED MyApp(title='Lazero Viewer')
+PROCESS END
