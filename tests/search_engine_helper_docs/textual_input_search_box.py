@@ -15,7 +15,9 @@ class HoverApp(App):
         key = event.key
         key_lower = key.lower()
         if key_lower == 'c':
-            for queryTitleName in queryTitleNames:
+            for queryTitleName in self.queryTitleNames:
+                if queryTitleName !=self.mainInput.title:
+                    s
             self.mainInput.title =  # check if changed?
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
