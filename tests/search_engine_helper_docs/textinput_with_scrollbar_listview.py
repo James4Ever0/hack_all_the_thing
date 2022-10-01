@@ -93,7 +93,6 @@ class MyApp(App):
         await self.bind("enter", "submit", "Submit")
         await self.bind("ctrl+s", "searchToggle", "searchToggle")
         await self.bind("escape", "reset_focus", show=False)
-        # action = 'copyScrollView()'
         self.body = ScrollView(name=self.readerName)
 
         from rich.text import Text
@@ -107,7 +106,6 @@ class MyApp(App):
         processed_text = "\n".join(wrapped_lines)
 
         self.contentText = Text(processed_text)
-        # highlightLine = "       erator will be efficient. In the example below the recursive call by _range\n"
         highlightLine = "will be efficient. In the example below the recursive call by _range to itself"
         highlightWord = "recursive"  # maybe not so right.
         self.contentText.highlight_words([highlightLine], style="black on red")
