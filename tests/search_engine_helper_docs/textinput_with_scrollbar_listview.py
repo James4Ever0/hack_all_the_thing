@@ -51,7 +51,6 @@ class MyApp(App):
         return wrapped_lines, content_line_char_count
 
     async def on_key(self, event):
-        # self.console.bell()
         key = event.key
         if key == "t":
             await self.toggleScrollView()
@@ -59,8 +58,6 @@ class MyApp(App):
             await self.jumpScrollView()
 
     async def jumpScrollView(self):
-        # jump to next candidate.
-        # will it work for hidden ScrollView
         if self.body.visible:
             self.index += 1
             self.index %= len(self.lineNumbers)
