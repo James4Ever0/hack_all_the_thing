@@ -69,25 +69,7 @@ class MyApp(App):
             )
 
     async def toggleScrollView(self):
-        # results=self.body.__rich_repr__() # generator!
-        # [('name','ScrollView#1')]
         await self.view.action_toggle(self.readerName)
-        # print("toggle code review")
-        # print("disable mouse capture")
-        # not able to disable this shit at all.
-
-        # disable mouse capture instead.
-        # console = Console()
-        # with console.capture() as capture:
-        #     self.body.window.render_lines()
-        #     result2= self.body.window.render_cache
-        #     # result2 = self.body.window.refresh(repaint=True) # renderable!
-        # result = capture.get()
-        # # results_list = [x for x in results]
-
-        # print("RESULT:", [result], type(result))
-        # print("RESULT2:", [text[0] for text in result2.lines])
-        # breakpoint()
 
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
