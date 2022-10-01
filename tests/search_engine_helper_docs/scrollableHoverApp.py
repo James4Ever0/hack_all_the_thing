@@ -70,7 +70,7 @@ class HoverApp(App):
     
     async def on_key(self, event):
         # self.console.bell()
-        key = event.key
+        key = event.key.lower() # serious?
         if key == "t":
             await self.mainToggle()
 
