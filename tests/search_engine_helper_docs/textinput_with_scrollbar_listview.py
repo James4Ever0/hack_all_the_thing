@@ -122,8 +122,6 @@ class MyApp(App):
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
 
-        # register something on window size change?
-
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
             self.content_line_char_count, self.lineNumbers[self.index]
@@ -131,22 +129,7 @@ class MyApp(App):
 
     def jumpToEquivalentLineNumber(self, content_line_char_count, lineNumber):
         size = os.get_terminal_size()
-        # msize = self.body.window.layout.width# it is totally not right!
-        # the width is zero. means adaptive?
-        # print("WINDOW SIZE:", msize) # not right!
-        # columns, lines = size.columns, size.lines
-        # print("COLUMNS:", columns)
-        # center = int(lines/2)
-        # breakpoint()
         equivalentLineCountPerLine = content_line_char_count
-
-        # equivalentLineCountPerLine = [
-        #     max(
-        # #         1, math.ceil(length / (columns-1))
-        #         1, math.ceil(length)
-        #     )  # that's because of the scrollbar taking 1 extra column.
-        #     for length in content_line_char_count
-        # ]
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
