@@ -50,8 +50,9 @@ class MyApp(App):
             await self.focusSearchView()
     async def focusSearchView(self):
         #await self.view.action_toggle('search')
-        if self.mainInput.visible:
-            await self.mainInput.focus()
+        if not self.mainInput.visible:
+            await self.view.toggle('search')
+        await self.mainInput.focus()
 
     async def jumpScrollView(self):
         if self.body.visible:
