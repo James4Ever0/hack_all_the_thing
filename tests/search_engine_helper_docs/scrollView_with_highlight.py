@@ -101,7 +101,7 @@ class MyApp(App):
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
         textList = self.contentText.split("\n")
-        wrapped_lines, self.content_line_char_count = self.wrapText(textList, columns-1)
+        wrapped_lines, self.content_line_char_count = self.wrapText(content, columns-1)
         processed_text = "\n".join(wrapped_lines)
 
         self.contentText = Text(content)
