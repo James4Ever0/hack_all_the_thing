@@ -68,18 +68,18 @@ class HoverApp(App):
 
         # self.renderableHovers = Table()
         for index in range(3):  # this is bad. these things are not clickable.
-            self.layout.add(
-                Hover(
-                    "widget {}".format(index),
-                )
-            )
+            
+            # self.layout.add(
+            #     Hover(
+            #         "widget {}".format(index),
+            #     )
+            # )
         #     self.renderableHovers.add_row(
         #         Hover(
         #             "widget {}".format(index),
         #         )
         #     )
-        f
-        await self.scrollableHovers.layout.add(Hover("widget {}".format(index)))
+        
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
 
