@@ -85,8 +85,6 @@ class MyApp(App):
             name="search", placeholder="enter your query", title="search input"
         )
         await self.view.dock(self.mainInput, self.body,edge="top")
-        # problem is, we don't have the name!
-        await self.view.dock(self.body, edge="top")
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
