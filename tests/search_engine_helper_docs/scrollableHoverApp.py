@@ -71,8 +71,8 @@ class HoverApp(App):
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
-        print("KEYCODE: {}".format(key)) # we want something like 'ESC'
-        breakpoint() 
+        # print("KEYCODE: {}".format(key)) # we want something like 'ESC'
+        # breakpoint() # 'escape'
         key_lower = key.lower()
         # handle input elsewhere?
         # when text field is focused, we do not do shit.
