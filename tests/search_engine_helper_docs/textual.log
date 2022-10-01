@@ -130,3 +130,5 @@ MouseDown(x=47, y=1, button=1) >>> TextInput(name='searchInput', title='search i
 MouseUp(x=47, y=1, button=1) >>> TextInput(name='searchInput', title='search input', value='abdec', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Click(x=47, y=1, button=1) >>> TextInput(name='searchInput', title='search input', value='abdec', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Key(key='j') >>> TextInput(name='searchInput', title='search input', value='abdec', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='j') >>> TextInput(name='searchInput', title='search input', value='abdecj', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='j') >>> TextInput(name='searchInput', title='search input', value='abdecjj', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
