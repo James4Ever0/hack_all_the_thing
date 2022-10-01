@@ -13,7 +13,6 @@ import os
 keywords = set(["recursive"])
 filepath = "./jq_man.log"
 
-# implement soft/hard wrap method yourself, or the scroll view will get tricky.
 import textwrap
 
 
@@ -23,11 +22,6 @@ from textual.app import App
 
 with open(filepath, "r") as f:
     content = f.read()
-
-# content_line_char_count = [len(line) for line in content.split("\n")]
-# get it from somewhere else.
-# better store it in self.content_line_char_count
-
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
