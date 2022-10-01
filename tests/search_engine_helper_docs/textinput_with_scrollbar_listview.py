@@ -8,12 +8,6 @@
 from textual_inputs import TextInput
 from textual.app import App
 
-
-
-# notice: this is the line.
-#  'text': '       erator will be efficient. In the example below the recursive
-# call by _range\n'
-# notice: terminal interface is not stable.
 import os
 
 keywords = set(["recursive"])
