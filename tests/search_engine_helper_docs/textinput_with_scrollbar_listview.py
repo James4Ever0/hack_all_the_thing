@@ -115,6 +115,10 @@ class MyApp(App):
         # await self.bind('c',action,'Copy')
 
     async def on_mount(self) -> None:
+        self.mainInput = TextInput(
+            name="query", placeholder="enter your query", title="search input"
+        )
+        await self.view.dock(self.mainInput, edge="top", name="search")
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
 
@@ -172,14 +176,3 @@ class MyApp(App):
 
 MyApp.run(title="Code Viewer", log="textual.log")
 
-class HoverApp(App):
-    # queryTitleNames = ["search input", "changed title"]
-
-
-
-    async def on_mount(self) -> None:
-
-
-
-if __name__ == "__main__":
-    HoverApp.run()
