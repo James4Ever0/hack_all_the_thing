@@ -67,6 +67,7 @@ class HoverApp(App):
         # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         # self.renderableHovers = Table()
+        ListViewUo(
         for index in range(3):  # this is bad. these things are not clickable.
             self.layout.add(
                 Hover(
