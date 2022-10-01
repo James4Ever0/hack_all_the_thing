@@ -28,6 +28,7 @@ class Hover(Widget):
 
     def __init__(self, *args, **kwargs):
         self.clickFunction = kwargs.get('onClick', None)
+        self.panelStyle = kwargs.get('panelStyle',"")
         super().__init__(*args, **kwargs)
 
     def render(self) -> Panel:
