@@ -111,9 +111,9 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top")
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
-        wrapped_lines = wrapLi
+        wrapped_lines = self.wrapText()
 
-        await self.body.update(self.contentText)
+        await self.body.update()
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
