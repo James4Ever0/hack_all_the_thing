@@ -115,7 +115,7 @@ class MyApp(App):
         wrapped_lines, self.content_line_char_count = self.wrapText(textList, columns-1)
         processed_text = "\n".join(wrapped_lines)
 
-        await self.body.update()
+        await self.body.update(processed_text)
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
