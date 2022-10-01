@@ -34,7 +34,7 @@ class Hover(Widget):
         #     # command = 'bash less_jump_to_line.sh'
         #     # os.system(command) # does not work properly! fuck.
         # else:
-        # print("CLICKED {}".format(self.name))
+        print("CLICKED {}".format(self.name))
 
 
 
@@ -43,6 +43,7 @@ class HoverApp(App):
 
     async def on_mount(self) -> None:
         hovers = (Hover("widget {}".format(index)) for index in range(3))
+        scrollableHovers = 
         await self.view.dock(*hovers, edge="top",name='side') #WTF?
         # here we got the view.
 
