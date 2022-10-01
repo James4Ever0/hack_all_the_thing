@@ -100,3 +100,24 @@ Key(key='ctrl+h') >>> TextInput(name='code', title='Code', value='def this is s'
 Key(key='enter') >>> TextInput(name='code', title='Code', value='def this is ', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Key(key='enter') >>> SimpleForm(title='Textual-Inputs Simple Form')
 ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
+Key(key='ctrl+h') >>> TextInput(name='code', title='Code', value='def this is ', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+h') >>> TextInput(name='code', title='Code', value='def this is', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='enter') >>> TextInput(name='code', title='Code', value='def this i', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='enter') >>> SimpleForm(title='Textual-Inputs Simple Form')
+ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
+set_focus IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+Blur() >>> TextInput(name='code', title='Code', value='def this i', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Focus() >>> IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+MouseDown(x=22, y=1, screen_x=62, screen_y=20, button=1) >>> IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+InputOnFocus(IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
+MouseUp(x=22, y=1, screen_x=62, screen_y=20, button=1) >>> IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+Click(x=22, y=1, screen_x=62, screen_y=20, button=1) >>> IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+h') >>> IntegerInput(name='age', title='Age', value=12, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+age_on_change(IntegerInput(name='age', title='Age', value=1, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
+Age Field Contains: 1
+Key(key='ctrl+h') >>> IntegerInput(name='age', title='Age', value=1, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+age_on_change(IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
+Age Field Contains: None
+Key(key='enter') >>> IntegerInput(name='age', title='Age', value=None, on_change_handler_name='handle_age_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='enter') >>> SimpleForm(title='Textual-Inputs Simple Form')
+ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
