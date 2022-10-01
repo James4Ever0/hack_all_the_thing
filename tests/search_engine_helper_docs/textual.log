@@ -2,8 +2,10 @@
 driver=<class 'textual.drivers.linux_driver.LinuxDriver'>
 Load() >>> MyApp(title='Textual')
 Mount() >>> MyApp(title='Code Viewer')
-CLOSED MyApp(title='Code Viewer')
-PROCESS END
 Mount() >>> DockView(name='DockView#1')
 Mount() >>> ScrollView(name='ScrollFileReader')
 Mount() >>> ScrollView(name='ScrollFileReader')
+Mount() >>> WindowView(name='WindowView#1')
+TRANSLATING layout
+WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollFileReader')
+WindowChange(WindowView(name='WindowView#1')) >>> ScrollView(name='ScrollFileReader')
