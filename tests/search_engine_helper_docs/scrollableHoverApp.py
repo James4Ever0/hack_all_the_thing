@@ -69,7 +69,7 @@ class HoverApp(App):
         #     )
         #     for index in range(3)
         # )
-        # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
+        self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         # self.renderableHovers = Table()
         self.scrollableHovers = ListViewUo(
