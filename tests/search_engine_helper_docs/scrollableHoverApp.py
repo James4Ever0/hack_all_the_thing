@@ -78,7 +78,7 @@ class HoverApp(App):
         #             "widget {}".format(index),
         #         )
         #     )
-        self.scrollableHovers = 
+        self.scrollableHovers = ScrollView()
         
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
