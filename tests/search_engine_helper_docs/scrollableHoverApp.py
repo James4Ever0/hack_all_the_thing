@@ -67,6 +67,12 @@ class HoverApp(App):
     async def mainToggle(self):
         await self.view.action_toggle('side')
         await self.view.action_toggle('viewer')
+    
+    async def on_key(self, event):
+        # self.console.bell()
+        key = event.key
+        if key == "t":
+            await self.mainToggle()
 
     async def on_mount(self) -> None:
         # self.hovers = (
