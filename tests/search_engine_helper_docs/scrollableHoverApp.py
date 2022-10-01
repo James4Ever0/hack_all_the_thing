@@ -73,6 +73,7 @@ class HoverApp(App):
         key = event.key
         # print("KEYCODE: {}".format(key)) # we want something like 'ESC'
         # breakpoint() # 'escape'
+        # https://github.com/Textualize/textual/blob/e406458b8917d660197b8eeafcc1b7fde01e32a6/src/textual/keys.py
         key_lower = key.lower()
         # handle input elsewhere?
         # when text field is focused, we do not do shit.
