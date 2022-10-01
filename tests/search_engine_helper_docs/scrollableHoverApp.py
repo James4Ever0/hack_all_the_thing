@@ -48,6 +48,8 @@ class Hover(Widget):
         self.mouse_over = False
 
     def on_click(self):
+        if self.clickFunction:
+            self.clickFunction()
         # if self.name == "widget 1":
         #     # import os
         #     # command = 'bash less_jump_to_line.sh'
