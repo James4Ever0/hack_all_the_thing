@@ -182,11 +182,6 @@ MyApp.run(title="Code Viewer", log="textual.log")
 class HoverApp(App):
     # queryTitleNames = ["search input", "changed title"]
 
-    async def on_key(self, event):
-        key = event.key
-        key_lower = key.lower()
-        # no need to cnange the query
-
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         await self.bind("ctrl+s", "searchToggle", "searchToggle")
