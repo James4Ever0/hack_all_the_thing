@@ -49,16 +49,16 @@ class HoverApp(App):
     """Demonstrates custom widgets"""
 
     async def on_mount(self) -> None:
-        self.hovers = (
-            Hover(
-                "widget {}".format(index),
-            )
-            for index in range(3)
-        )
+        # self.hovers = (
+        #     Hover(
+        #         "widget {}".format(index),
+        #     )
+        #     for index in range(3)
+        # )
         self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         self.renderableHovers = Table()
-        self.renderableHovers.add_
+        self.renderableHovers.add_row()
 
         await self.scrollableHovers.update(self.renderableHovers)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
