@@ -179,3 +179,8 @@ Blur() >>> TextInput(name='search', title='search input', value='', on_change_ha
 MouseDown(x=25, y=3438, delta_x=-2, delta_y=6, screen_y=8, button=1) >>> Static(name='Static#2')
 MouseUp(x=25, y=3438, screen_y=8, button=1) >>> Static(name='Static#2')
 Click(x=25, y=3438, screen_y=8, button=1) >>> Static(name='Static#2')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
