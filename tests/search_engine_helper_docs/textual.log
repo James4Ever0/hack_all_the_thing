@@ -146,3 +146,12 @@ ACTION SimpleForm(title='Textual-Inputs Simple Form') press
 ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
 set_focus CustomFooter(keys=[])
 MouseDown(x=20, y=0, screen_y=38, button=1) >>> CustomFooter(keys=[])
+MouseUp(x=20, y=0, screen_y=38, button=1) >>> CustomFooter(keys=[])
+Click(x=20, y=0, screen_y=38, button=1) >>> CustomFooter(keys=[])
+ACTION SimpleForm(title='Textual-Inputs Simple Form') press
+ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
+Key(key='right') >>> SimpleForm(title='Textual-Inputs Simple Form')
+Key(key='right') >>> SimpleForm(title='Textual-Inputs Simple Form')
+Leave() >>> CustomFooter(keys=[])
+Leave() >>> CustomFooter(keys=[])
+Leave() >>> CustomFooter(keys=[])
