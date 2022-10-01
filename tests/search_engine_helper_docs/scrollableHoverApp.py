@@ -26,7 +26,7 @@ class Hover(Widget):
         size = os.get_terminal_size()
         width = size.columns-1
         return Panel(
-            text, style=("on red" if self.mouse_over else ""), height=4, width = 
+            text, style=("on red" if self.mouse_over else ""), height=4, width = width
         )  # this is arguable. maybe for mobile device this will be different?
         # calculate this height according to terminal width, and make sure it does not go lower than 3.
 
@@ -67,6 +67,7 @@ class HoverApp(App):
                     "widget {}".format(index),
                 )
             )
+        self.render
 
         await self.scrollableHovers.update(self.renderableHovers)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
