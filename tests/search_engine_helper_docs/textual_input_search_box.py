@@ -20,4 +20,4 @@ class HoverApp(App):
         await self.view.dock(self.mainInput, edge='top')
 
 if __name__ == '__main__':
-    
+    HoverApp.run()
