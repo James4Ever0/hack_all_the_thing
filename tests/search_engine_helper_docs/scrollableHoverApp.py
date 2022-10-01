@@ -65,7 +65,7 @@ class HoverApp(App):
     """Demonstrates custom widgets"""
     async def mainToggle(self):
         self.view.action_toggle(self.scrollableHovers)
-        self.view.action_toggle(self.scrollableHovers)
+        self.view.action_toggle(self.mainViewer)
 
     async def on_mount(self) -> None:
         # self.hovers = (
