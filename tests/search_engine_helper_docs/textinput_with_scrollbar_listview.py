@@ -122,7 +122,7 @@ class MyApp(App):
 
     async def action_reset_focus(self):
         if self.body.visible:
-            self.body.focus()
+            await self.body.focus()
             #add extra elif later
         else:
             await self.view.focus()
