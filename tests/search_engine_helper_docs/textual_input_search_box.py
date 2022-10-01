@@ -14,6 +14,7 @@ class HoverApp(App):
         key = event.key
         key_lower = key.lower()
         if key_lower == 'c':
+            
             self.mainInput.title = 'changed title' # check if changed?
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
