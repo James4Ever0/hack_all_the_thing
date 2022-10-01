@@ -14,3 +14,11 @@ Focus() >>> TextInput(name='search', title='search input', value='', on_change_h
 MouseDown(x=81, y=1, button=1) >>> TextInput(name='search', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 MouseUp(x=81, y=1, button=1) >>> TextInput(name='search', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Click(x=81, y=1, button=1) >>> TextInput(name='search', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+z') >>> TextInput(name='search', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+z') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+z') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
