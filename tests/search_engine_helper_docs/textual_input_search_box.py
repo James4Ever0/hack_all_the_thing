@@ -16,4 +16,4 @@ class HoverApp(App):
         value = self.mainInput.value
         print("ENTERED VALUE: %s" % value)
         breakpoint()
-    async def on_
+    async def on_mount(self) -> None:
