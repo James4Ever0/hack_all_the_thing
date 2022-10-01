@@ -72,8 +72,7 @@ class HoverApp(App):
             
                 Hover(
                     "widget {}".format(index),
-                )
-             for index in range(3)]
+                ) for index in range(3)]
         )
         #     self.renderableHovers.add_row(
         #         Hover(
