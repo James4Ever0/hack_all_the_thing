@@ -14,3 +14,4 @@ def wrapText(textList, width):  # the width is col-1
     return wrapped_lines, content_line_char_count
 
 
+wrapText
