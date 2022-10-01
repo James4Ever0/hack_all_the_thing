@@ -87,6 +87,7 @@ class MyApp(App):
             placeholder="enter your query",
             title="search input",  # height = 3
         )
+        self.main
         # await self.view.dock(, edge="bottom")
         await self.view.dock(self.mainInput,self.body, edge="top")
 
