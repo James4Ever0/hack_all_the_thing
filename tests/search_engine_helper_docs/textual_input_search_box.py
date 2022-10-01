@@ -13,7 +13,7 @@ class HoverApp(App):
         await self.bind("enter", "submit", "Submit")
         # we want you to hide the thing!
     async def searchToggle(self):
-        await self.view.action_toggle('side')
+        await self.view.action_toggle('search')
     async def on_key(self, event):
         key = event.key
         if key_lower in ["s"]: # i doubt that 'escape' shall be treated differently.
@@ -24,7 +24,7 @@ class HoverApp(App):
         breakpoint()
     async def on_mount(self) -> None:
         self.mainInput = TextInput(name='query', placeholder='enter your query')
-        await self.view.dock(self.mainInput, edge='top')
+        await self.view.dock(self.mainInput, edge='top', name='search')
 
 if __name__ == '__main__':
     HoverApp.run()
