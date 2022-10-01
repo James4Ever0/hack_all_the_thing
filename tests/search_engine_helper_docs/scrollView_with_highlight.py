@@ -37,7 +37,7 @@ from textual.app import App
 with open(filepath, "r") as f:
     content = f.read()
 
-content_line_char_count = [len(line) for line in content.split("\n")]
+# content_line_char_count = [len(line) for line in content.split("\n")]
 
 
 class MyApp(App):
