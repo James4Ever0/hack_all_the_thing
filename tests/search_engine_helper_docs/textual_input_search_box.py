@@ -10,6 +10,7 @@ from textual.app import App
 
 
 class HoverApp(App):
+    queryTitleNames = ['search input', 'changed title']
     async def on_key(self, event):
         key = event.key
         key_lower = key.lower()
