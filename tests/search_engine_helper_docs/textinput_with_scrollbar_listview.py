@@ -49,7 +49,7 @@ class MyApp(App):
         elif key == 's':
             await self.toggleSearchView()
     async def toggleSearchView(self):
-        self.
+        self.view.action_toggle('search')
 
     async def jumpScrollView(self):
         if self.body.visible:
