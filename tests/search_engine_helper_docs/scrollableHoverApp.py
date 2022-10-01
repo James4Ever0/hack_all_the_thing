@@ -4,8 +4,10 @@ from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
+
 # from rich.table import Table
 from textual.layouts.vertical import VerticalLayout
+
 # text = Text(
 #     "hello world python this is python", style="green"
 # )  # there is no style applied.
@@ -23,10 +25,11 @@ class Hover(Widget):
     def render(self) -> Panel:
         text = Text(self.name)
         import os
+
         size = os.get_terminal_size()
-        width = size.columns-1
+        width = size.columns - 1
         return Panel(
-            text, style=("on red" if self.mouse_over else ""), height=4, width = width
+            text, style=("on red" if self.mouse_over else ""), height=4, width=width
         )  # this is arguable. maybe for mobile device this will be different?
         # calculate this height according to terminal width, and make sure it does not go lower than 3.
 
@@ -64,10 +67,12 @@ class HoverApp(App):
         self.layout = VerticalLayout()
 
         # self.renderableHovers = Table()
-        for index in range(3): # this is bad. these things are not clickable.
-            self.layout.add(                Hover(
-                     "widget {}".format(index),
-                 ))
+        for index in range(3):  # this is bad. these things are not clickable.
+            self.layout.add(
+                Hover(
+                    "widget {}".format(index),
+                )
+            )
         #     self.renderableHovers.add_row(
         #         Hover(
         #             "widget {}".format(index),
