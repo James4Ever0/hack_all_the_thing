@@ -14,7 +14,8 @@ class HoverApp(App):
         # we want you to hide the thing!
     async def on_key(self, event):
         key = event.key
-        
+        if key_lower in ["s"]: # i doubt that 'escape' shall be treated differently.
+            await self.mainToggle()
     async def action_submit(self):
         value = self.mainInput.value
         print("ENTERED VALUE: %s" % value)
