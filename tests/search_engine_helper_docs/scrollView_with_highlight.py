@@ -121,7 +121,7 @@ class MyApp(App):
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
-        columns, size = os.get_terminal_size()
+        # size = os.get_terminal_size()
         # msize = self.body.window.layout.width# it is totally not right!
         # the width is zero. means adaptive?
         # print("WINDOW SIZE:", msize) # not right!
@@ -144,6 +144,8 @@ class MyApp(App):
         lineNumber2 = max(
             0, lineNumber2-context
         )  # minus 1 to get the exact line location.
+        print("")
+        print("LINE NUMBER:", lineNumber2)
         self.body.set_y(lineNumber2)
 
 MyApp.run(title="Code Viewer", log="textual.log")
