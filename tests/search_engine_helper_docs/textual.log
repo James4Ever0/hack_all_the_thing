@@ -189,3 +189,12 @@ MouseDown(x=22, y=1, screen_x=62, screen_y=2, button=1) >>> TextInput(name='user
 InputOnFocus(TextInput(name='username', title='Username', value='abcdefg', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
 MouseUp(x=22, y=1, screen_x=62, screen_y=2, button=1) >>> TextInput(name='username', title='Username', value='abcdefg', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')
 Click(x=22, y=1, screen_x=62, screen_y=2, button=1) >>> TextInput(name='username', title='Username', value='abcdefg', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='中') >>> TextInput(name='username', title='Username', value='abcdefg', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='文') >>> TextInput(name='username', title='Username', value='abcdefg中', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')
+username_on_change(TextInput(name='username', title='Username', value='abcdefg中文', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
+Username Field Contains: abcdefg中文
+username_on_change(TextInput(name='username', title='Username', value='abcdefg中文', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')) >>> SimpleForm(title='Textual-Inputs Simple Form')
+Username Field Contains: abcdefg中文
+Key(key='enter') >>> TextInput(name='username', title='Username', value='abcdefg中文', on_change_handler_name='handle_username_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='enter') >>> SimpleForm(title='Textual-Inputs Simple Form')
+ACTION SimpleForm(title='Textual-Inputs Simple Form') submit
