@@ -68,7 +68,6 @@ class HoverApp(App):
         # )
         # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
-        self.layout = VerticalLayout()
 
         # self.renderableHovers = Table()
         for index in range(3):  # this is bad. these things are not clickable.
@@ -82,7 +81,6 @@ class HoverApp(App):
         #             "widget {}".format(index),
         #         )
         #     )
-        self.scrollableHovers = ScrollView(self.layout)
         
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
