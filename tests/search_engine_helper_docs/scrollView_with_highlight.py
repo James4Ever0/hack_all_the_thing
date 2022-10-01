@@ -15,7 +15,7 @@ filepath = (
 # implement soft/hard wrap method yourself, or the scroll view will get tricky.
 import textwrap
 def wrapText(text,width):
-textwrap.wrap(width=width)
+    textwrap.wrap(width=width)
 # filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
