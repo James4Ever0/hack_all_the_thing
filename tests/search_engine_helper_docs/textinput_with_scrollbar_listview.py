@@ -95,7 +95,7 @@ class MyApp(App):
         self.mainInput = TextInput(
             name="searchInput",
             placeholder="enter your query",
-            title="search input",  # height = 3
+            title="lazero search",  # height = 3
         )
         await self.view.dock(self.mainInput, edge="top", size=3, name='search')
         await self.view.dock(self.body, edge="top")
@@ -131,4 +131,4 @@ class MyApp(App):
             await self.view.focus()  # deactivate the search field?
 
 
-MyApp.run(title="Code Viewer", log="textual.log")
+MyApp.run(title="Lazero Viewer", log="textual.log")
