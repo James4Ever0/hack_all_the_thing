@@ -78,7 +78,7 @@ class HoverApp(App):
         #             "widget {}".format(index),
         #         )
         #     )
-
+        f
         await self.scrollableHovers.layout.add(Hover("widget {}".format(index)))
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
