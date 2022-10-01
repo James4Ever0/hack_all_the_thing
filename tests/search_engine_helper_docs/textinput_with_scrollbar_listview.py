@@ -112,14 +112,12 @@ class MyApp(App):
         highlightWord = "recursive"  # maybe not so right.
         self.contentText.highlight_words([highlightLine], style="black on red")
         self.contentText.highlight_words([highlightWord], style="yellow on red")
-        # await self.bind('c',action,'Copy')
 
     async def on_mount(self) -> None:
         self.mainInput = TextInput(
             name="query", placeholder="enter your query", title="search input"
         )
         await self.view.dock(self.mainInput, edge="top", name="search")
-        # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
 
         await self.body.update(self.contentText)
