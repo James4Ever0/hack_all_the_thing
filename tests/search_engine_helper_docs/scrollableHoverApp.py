@@ -49,9 +49,10 @@ class Hover(Widget):
     def on_leave(self) -> None:
         self.mouse_over = False
 
-    def on_click(self):
+    async def on_click(self):
         if self.clickFunction:
             await self.clickFunction() # what should you pass?
+            # assume to be 
         # if self.name == "widget 1":
         #     # import os
         #     # command = 'bash less_jump_to_line.sh'
