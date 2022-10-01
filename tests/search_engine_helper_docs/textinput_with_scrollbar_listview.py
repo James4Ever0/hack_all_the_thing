@@ -117,4 +117,5 @@ class MyApp(App):
         else:
             await self.view.focus()  # deactivate the search field?
 
+
 MyApp.run(title="Code Viewer", log="textual.log")
