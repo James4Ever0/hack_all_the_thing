@@ -12,7 +12,8 @@ from rich.text import Text
 # text.on(click="os.system('bash less_jump_to_line.sh')") # what is this fucking toggle?
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
 # text.on(click=lambda: os.system('bash less_jump_to_line.sh')) # unmarshallable. fuck.
-# text.on(click="view.toggle('side')") 
+# text.on(click="view.toggle('side')")
+
 
 class Hover(Widget):
 
@@ -20,7 +21,9 @@ class Hover(Widget):
 
     def render(self) -> Panel:
         text = Text(self.name)
-        return Panel(text, style=("on red" if self.mouse_over else ""),height = 4) # this is arguable. maybe for mobile device this will be different?
+        return Panel(
+            text, style=("on red" if self.mouse_over else ""), height=4
+        )  # this is arguable. maybe for mobile device this will be different?
         # calculate this height according to terminal width, and make sure it does not go lower than 3.
 
     def on_enter(self) -> None:
@@ -28,7 +31,7 @@ class Hover(Widget):
 
     def on_leave(self) -> None:
         self.mouse_over = False
-    
+
     def on_click(self):
         # if self.name == "widget 1":
         #     # import os
@@ -37,6 +40,7 @@ class Hover(Widget):
         # else:
         print("CLICKED {}".format(self.name))
 
+
 from textual.widgets import ScrollView
 
 
@@ -44,9 +48,14 @@ class HoverApp(App):
     """Demonstrates custom widgets"""
 
     async def on_mount(self) -> None:
-        hovers = (Hover("widget {}".format(index),) for index in range(3))
-        scrollableHovers = ScrollView() # with name or not? you need keywords.
-        await self.view.dock(scrollableHovers, edge="top",name='side') #WTF?
+        hovers = (
+            Hover(
+                "widget {}".format(index),
+            )
+            for index in range(3)
+        )
+        scrollableHovers = ScrollView()  # with name or not? you need keywords.
+        await self.view.dock(scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
 
 
