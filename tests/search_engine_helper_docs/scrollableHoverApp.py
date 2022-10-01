@@ -36,7 +36,7 @@ class Hover(Widget):
         # else:
         print("CLICKED {}".format(self.name))
 
-
+from import 
 
 class HoverApp(App):
     """Demonstrates custom widgets"""
