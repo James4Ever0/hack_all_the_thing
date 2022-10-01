@@ -82,11 +82,6 @@ class MyApp(App):
         self.contentText.highlight_words([highlightWord], style="yellow on red")
 
     async def on_mount(self) -> None:
-        self.mainInput2 = TextInput(
-            name="search2",
-            placeholder="enter your query",
-            title="search input",  # height = 3
-        )
         self.mainInput = TextInput(
             name="search",
             placeholder="enter your query",
