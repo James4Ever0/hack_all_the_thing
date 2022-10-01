@@ -109,7 +109,7 @@ class MyApp(App):
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
         await self.body.update(self.contentText)
-        self.jumpToEquivalentLineNumber(lineNumbers[self.index])
+        self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
         size = os.get_terminal_size()
