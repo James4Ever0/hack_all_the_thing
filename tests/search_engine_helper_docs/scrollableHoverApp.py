@@ -49,7 +49,7 @@ class Hover(Widget):
 
     def on_click(self):
         if self.clickFunction:
-            self.clickFunction()
+            self.clickFunction() # what should you pass?
         # if self.name == "widget 1":
         #     # import os
         #     # command = 'bash less_jump_to_line.sh'
