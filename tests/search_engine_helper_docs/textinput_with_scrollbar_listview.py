@@ -1,8 +1,3 @@
-# aim to build some search box here. dock this.
-# are you sure you will listen to the key events? let's try to toggle this thing via key 's', retrieve input via 'enter' key?
-
-# make it centered.
-
 # https://github.com/sirfuzzalot/textual-inputs
 
 from textual_inputs import TextInput
@@ -22,6 +17,7 @@ from textual.app import App
 
 with open(filepath, "r") as f:
     content = f.read()
+
 
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
@@ -106,7 +102,8 @@ class MyApp(App):
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
-        self.body.set_y(lineNumber2) 
+        self.body.set_y(lineNumber2)
+
     async def action_submit(self):
         value = self.mainInput.value
 
@@ -119,6 +116,7 @@ class MyApp(App):
             await self.mainInput.focus()
         else:
             await self.view.focus()  # deactivate the search field?
+
 
 MyApp.run(title="Code Viewer", log="textual.log")
 t
