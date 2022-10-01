@@ -26,8 +26,8 @@ class Hover(Widget):
     mouse_over = Reactive(False)
 
     def __init__(self, *args, **kwargs):
-        
-        if :
+        clickFunction
+        if clickFunction:
 
 
     def render(self) -> Panel:
