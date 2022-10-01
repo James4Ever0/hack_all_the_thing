@@ -23,20 +23,6 @@ filepath = "./jq_man.log"
 import textwrap
 
 
-# filepath = "test.txt"  # col: 108
-# now check the layout?
-# col=10 -> 9
-# col=1 -> 0
-# end digit: 7 -> 108
-# there is no scrollbar. fuck.
-# with scrollbar: width=1. end digit: 6 -> 107
-# minus 2?
-# cat: col=108 -> 7
-# are you sure this will really jump to the freaking line???
-# from rich.console import Console
-
-# you cannot select this thing. better use 'less'
-
 from textual.widgets import ScrollView
 
 from textual.app import App
