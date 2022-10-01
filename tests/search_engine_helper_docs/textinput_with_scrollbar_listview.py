@@ -160,6 +160,10 @@ class MyApp(App):
     async def action_submit(self):
         value = self.mainInput.value
 
+    async def action_reset_focus(self):
+        await self.view.focus()
+
+
 
 MyApp.run(title="Code Viewer", log="textual.log")
 
@@ -167,16 +171,6 @@ MyApp.run(title="Code Viewer", log="textual.log")
 class HoverApp(App):
     # queryTitleNames = ["search input", "changed title"]
 
-
-    async def action_reset_focus(self):
-        await self.view.focus()
-
-    async def action_searchToggle(self):
-        await self.view.action_toggle("search")
-        if self.mainInput.visible:
-            await self.mainInput.focus()
-        else:
-            await self.view.focus()  # deactivate the search field?
 
 
     async def on_mount(self) -> None:
