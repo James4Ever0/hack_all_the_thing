@@ -4,6 +4,7 @@ from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
+from rich.
 
 # text = Text(
 #     "hello world python this is python", style="green"
