@@ -128,6 +128,7 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # center = int(lines/2)
         # breakpoint()
+        eqyivalentLineC
 
         # equivalentLineCountPerLine = [
         #     max(
