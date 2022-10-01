@@ -157,6 +157,8 @@ class MyApp(App):
         # breakpoint()
         # self.body.set_y(lineNumber2)
         self.body.set_y(lineNumber2)  # how about let's not alter this thing?
+    async def action_submit(self):
+        value = self.mainInput.value
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
@@ -176,11 +178,6 @@ class HoverApp(App):
         else:
             await self.view.focus()  # deactivate the search field?
 
-    async def action_submit(self):
-        value = self.mainInput.value
-        # so we perform search?
-        # print("ENTERED VALUE: %s" % value)
-        # breakpoint()
 
     async def on_mount(self) -> None:
         self.mainInput = TextInput(
