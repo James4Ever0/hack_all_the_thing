@@ -36,7 +36,8 @@ class Hover(Widget):
         # else:
         print("CLICKED {}".format(self.name))
 
-from import 
+from textual.widgets import ScrollView
+
 
 class HoverApp(App):
     """Demonstrates custom widgets"""
