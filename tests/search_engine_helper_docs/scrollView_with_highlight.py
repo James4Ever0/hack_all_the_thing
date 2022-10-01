@@ -20,6 +20,7 @@ def wrapText(textList,width): # the width is col-1
     wrapped_lines = []
     for text in textList:
         lines = textwrap.wrap(text,width=width)
+        wrapped_lines.extend(lines)
         lineCount = len(lines)
         content_line_char_count.append(lineCount)
     return content_line_char_count
