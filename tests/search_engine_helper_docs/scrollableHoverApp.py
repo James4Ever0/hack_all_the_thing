@@ -26,8 +26,7 @@ class Hover(Widget):
     mouse_over = Reactive(False)
 
     def __init__(self, *args, **kwargs):
-        clickFunction
-        if clickFunction:
+        self.clickFunction = kwargs.get('', None)
 
 
     def render(self) -> Panel:
@@ -54,7 +53,7 @@ class Hover(Widget):
         #     # command = 'bash less_jump_to_line.sh'
         #     # os.system(command) # does not work properly! fuck.
         # else:
-        print("CLICKED {}".format(self.name))
+        # print("CLICKED {}".format(self.name))
         # breakpoint()
 
 
