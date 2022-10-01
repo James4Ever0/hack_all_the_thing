@@ -44,7 +44,7 @@ class HoverApp(App):
 
     async def on_mount(self) -> None:
         hovers = (Hover("widget {}".format(index)) for index in range(3))
-        scrollableHovers = ScrollView
+        scrollableHovers = ScrollView() # with name or not?
         await self.view.dock(*hovers, edge="top",name='side') #WTF?
         # here we got the view.
 
