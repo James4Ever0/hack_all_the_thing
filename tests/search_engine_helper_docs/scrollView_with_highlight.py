@@ -104,7 +104,7 @@ class MyApp(App):
         wrapped_lines, self.content_line_char_count = self.wrapText(content, columns-1)
         processed_text = "\n".join(wrapped_lines)
 
-        self.contentText = Text(content)
+        self.contentText = Text(processed_text)
         highlightLine = "       erator will be efficient. In the example below the recursive call by _range\n"
         highlightWord = "recursive"  # maybe not so right.
         self.contentText.highlight_words([highlightLine], style="black on red")
