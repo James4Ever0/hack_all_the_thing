@@ -146,7 +146,7 @@ class MyApp(App):
         )  # minus 1 to get the exact line location.
         print("LINE NUMBER:", lineNumber)
         print("LINE NUMBER 2:", lineNumber2)
-        breakprint()
+        breakpoint()
         self.body.set_y(lineNumber2)
 
 MyApp.run(title="Code Viewer", log="textual.log")
