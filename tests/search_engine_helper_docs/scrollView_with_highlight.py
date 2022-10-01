@@ -108,6 +108,8 @@ class MyApp(App):
     async def on_mount(self) -> None:
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
+        size = os.get_terminal_size()
+
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
