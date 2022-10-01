@@ -84,7 +84,7 @@ class MyApp(App):
         self.mainInput = TextInput(
             name="search", placeholder="enter your query", title="search input" # height = 3
         )
-        await self.view.dock(self.mainInput)
+        await self.view.dock(self.mainInput, edge='top')
         await self.view.dock(self. ,edge="top")
 
         await self.body.update(self.contentText)
