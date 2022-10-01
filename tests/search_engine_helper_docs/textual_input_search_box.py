@@ -9,7 +9,6 @@ from textual_inputs import TextInput
 from textual.app import App
 
 class HoverApp(App):
-    mainInput=None
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
     async def action_submit(self):
@@ -17,4 +16,5 @@ class HoverApp(App):
         print("ENTERED VALUE: %s" % value)
         breakpoint()
     async def on_mount(self) -> None:
-        self.
+        self.mainInput = 
+        self.view.dock()
