@@ -17,7 +17,7 @@ import textwrap
 
 def wrapText(textList,width):
     content_line_char_count = []
-    to
+    wrapped_lines = 
     for text in textList:
         lines = textwrap.wrap(text,width=width)
         lineCount = len(lines)
