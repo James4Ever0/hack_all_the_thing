@@ -50,3 +50,11 @@ Key(key='ctrl+u') >>> TextInput(name='searchInput', title='search input', value=
 Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
 Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
 ACTION MyApp(title='Code Viewer') clearSearchView
+Key(key='w') >>> TextInput(name='searchInput', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='s') >>> TextInput(name='searchInput', title='search input', value='w', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='f') >>> TextInput(name='searchInput', title='search input', value='ws', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='f') >>> TextInput(name='searchInput', title='search input', value='wsf', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+u') >>> TextInput(name='searchInput', title='search input', value='wsff', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') clearSearchView
