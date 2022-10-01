@@ -23,7 +23,7 @@ def wrapText(textList,width): # the width is col-1
         wrapped_lines.extend(lines)
         lineCount = len(lines)
         content_line_char_count.append(lineCount)
-    return wrapped_lines = content_line_char_count
+    return wrapped_lines, content_line_char_count
 # filepath = "test.txt"  # col: 108
 # now check the layout?
 # col=10 -> 9
