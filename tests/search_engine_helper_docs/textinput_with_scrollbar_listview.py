@@ -121,7 +121,11 @@ class MyApp(App):
         value = self.mainInput.value
 
     async def action_reset_focus(self):
-        await self.view.focus()
+        if self.body.visible:
+            self.body.focus()
+            #add extra elif later
+        else:
+            await self.view.focus()
 
     async def action_searchToggle(self):
         await self.view.action_toggle("search")
