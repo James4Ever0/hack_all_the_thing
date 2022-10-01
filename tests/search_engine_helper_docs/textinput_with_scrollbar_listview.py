@@ -87,8 +87,8 @@ class MyApp(App):
             placeholder="enter your query",
             title="search input",  # height = 3
         )
-        # await self.view.dock(, edge="bottom")
-        await self.view.dock(self.mainInput, edge="top")
+        await self.view.dock(self.mainInput, edge="top", sie=3)
+        await self.view.dock(self.body, edge="bottom")
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
