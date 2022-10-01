@@ -12,6 +12,7 @@ from textual.app import App
 class HoverApp(App):
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
+        await self.bind('s')
         # we want you to hide the thing!
 
     async def searchToggle(self):
