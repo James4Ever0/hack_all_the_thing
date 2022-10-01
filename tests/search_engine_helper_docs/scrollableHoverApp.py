@@ -64,8 +64,8 @@ class Hover(Widget):
 class HoverApp(App):
     """Demonstrates custom widgets"""
     async def mainToggle(self):
-        await self.view.action_toggle()
-        await self.view.action_toggle()
+        await self.view.action_toggle('side')
+        await self.view.action_toggle('viewer')
 
     async def on_mount(self) -> None:
         # self.hovers = (
@@ -95,6 +95,7 @@ class HoverApp(App):
 
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         await self.view.dock(self.mainViewer, edge='top', name='viewer')
+        await self.view.action_toggle('viewer')
         # here we got the view.
 
     # async def on_load(self) -> None:
