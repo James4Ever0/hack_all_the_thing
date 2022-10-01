@@ -42,7 +42,7 @@ class MyApp(App):
     index = 0
     readerName = "ScrollFileReader"
     content_line_char_count = []
-    lineNumbers = [2235] # adjusted.
+    lineNumbers = [2235]  # adjusted.
     # lineNumbers = [2268]
     # lineNumbers=[2923,2878,0,5] # we test this on android first.
     def wrapText(self, textList, width):  # the width is col-1
@@ -151,7 +151,7 @@ class MyApp(App):
 
         lineNumber2 = sum(equivalentLineCountPerLine[:lineNumber])
         # lineNumber2 = max(0, lineNumber2-center)
-        context = 4 # true context, no extra bullshit. -> real line on rendered result
+        context = 4  # true context, no extra bullshit. -> real line on rendered result
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
@@ -161,7 +161,7 @@ class MyApp(App):
         # print("LEN:", len(equivalentLineCountPerLine))
         # breakpoint()
         # self.body.set_y(lineNumber2)
-        self.body.set_y(lineNumber2) # how about let's not alter this thing?
+        self.body.set_y(lineNumber2)  # how about let's not alter this thing?
 
 
 MyApp.run(title="Code Viewer", log="textual.log")
