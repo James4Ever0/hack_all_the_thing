@@ -38,7 +38,7 @@ class Hover(Widget):
         width = size.columns - 1
         return Panel(
             # this style is strange. we should alter it in some way.
-            text, style=("on red" if self.mouse_over else ""), height=4, width=width
+            text, style="", height=4, width=width
         )  # this is arguable. maybe for mobile device this will be different?
         # calculate this height according to terminal width, and make sure it does not go lower than 3.
 
