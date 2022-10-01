@@ -69,7 +69,7 @@ class MyApp(App):
         if self.body.visible:
             self.index+=1
             self.index%=len(self.lineNumbers)
-            self.jumpToEquivalentLineNumber(self.content_line_char_count,lineNumbers[self.index])
+            self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     async def toggleScrollView(self):
         # results=self.body.__rich_repr__() # generator!
