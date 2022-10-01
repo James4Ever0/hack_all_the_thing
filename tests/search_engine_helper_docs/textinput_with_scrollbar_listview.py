@@ -110,6 +110,11 @@ class MyApp(App):
         # breakpoint()
 
     async def on_load(self) -> None:
+        await self.bind("enter", "submit", "Submit")
+        await self.bind("ctrl+s", "searchToggle", "searchToggle")
+        await self.bind("escape", "reset_focus", show=False)
+        # we want you to hide the thing!
+    async def on_load(self) -> None:
         # action = 'copyScrollView()'
         self.body = ScrollView(name=self.readerName)
 
@@ -182,11 +187,6 @@ MyApp.run(title="Code Viewer", log="textual.log")
 class HoverApp(App):
     # queryTitleNames = ["search input", "changed title"]
 
-    async def on_load(self) -> None:
-        await self.bind("enter", "submit", "Submit")
-        await self.bind("ctrl+s", "searchToggle", "searchToggle")
-        await self.bind("escape", "reset_focus", show=False)
-        # we want you to hide the thing!
 
     async def action_reset_focus(self):
         await self.view.focus()
