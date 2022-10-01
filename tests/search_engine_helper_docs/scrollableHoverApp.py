@@ -69,11 +69,11 @@ class HoverApp(App):
         # self.renderableHovers = Table()
         self.scrollableHovers = ListViewUo([
         :  # this is bad. these things are not clickable.
-            self.layout.add(
+            
                 Hover(
                     "widget {}".format(index),
                 )
-            ) for index in range(3)]
+             for index in range(3)]
         )
         #     self.renderableHovers.add_row(
         #         Hover(
