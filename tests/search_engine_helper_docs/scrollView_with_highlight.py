@@ -39,7 +39,7 @@ with open(filepath, "r") as f:
 
 # content_line_char_count = [len(line) for line in content.split("\n")]
 # get it from somewhere else.
-# better store it in self.something
+# better store it in self.content_line_char_count
 
 
 class MyApp(App):
