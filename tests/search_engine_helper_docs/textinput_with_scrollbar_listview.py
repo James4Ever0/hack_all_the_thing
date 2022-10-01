@@ -62,12 +62,12 @@ class MyApp(App):
         await self.bind("enter", "submit", "Submit")
         await self.bind("ctrl+s", "searchToggle", "searchToggle")
         await self.bind("escape", "reset_focus", show=False)
-        self.body = ScrollView(name=self.readerName)
 
         from rich.text import Text
 
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
+        self.body = ScrollView(name=self.readerName)
         textList = content.split("\n")
         wrapped_lines, self.content_line_char_count = self.wrapText(
             textList, columns - 1
