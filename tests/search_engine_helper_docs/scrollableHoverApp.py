@@ -21,7 +21,7 @@ class Hover(Widget):
     def render(self) -> Panel:
         text = Text(self.name)
         return Panel(text, style=("on red" if self.mouse_over else ""),height = 4) # this is arguable. maybe for mobile device this will be different?
-        # calculate this height according to terminal width.
+        # calculate this height according to terminal width, and make sure it does not go lower than 3.
 
     def on_enter(self) -> None:
         self.mouse_over = True
