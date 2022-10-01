@@ -176,3 +176,4 @@ class MyApp(App):
 
 MyApp.run(title="Code Viewer", log="textual.log")
 
+tew
