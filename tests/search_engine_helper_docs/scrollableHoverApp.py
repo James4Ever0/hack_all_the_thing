@@ -25,6 +25,9 @@ class Hover(Widget):
 
     mouse_over = Reactive(False)
 
+    def __init__(self, *args, **kwargs):
+        if kwargs.get('')
+
     def render(self) -> Panel:
         text = Text(self.name)
         import os
