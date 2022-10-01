@@ -1,4 +1,4 @@
-
+import textwrap
 
 def wrapText(textList,width): # the width is col-1
     content_line_char_count = []
