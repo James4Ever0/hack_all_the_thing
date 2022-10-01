@@ -67,7 +67,6 @@ class HoverApp(App):
                     "widget {}".format(index),
                 )
             )
-        self.scrollableHovers.
 
         await self.scrollableHovers.update(self.renderableHovers)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
