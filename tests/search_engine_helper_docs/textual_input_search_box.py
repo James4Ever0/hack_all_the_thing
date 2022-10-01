@@ -12,8 +12,8 @@ class HoverApp(App):
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         # we want you to hide the thing!
-    async def on_key(self, key):
-        
+    async def on_key(self, event):
+        key = event.key
     async def action_submit(self):
         value = self.mainInput.value
         print("ENTERED VALUE: %s" % value)
