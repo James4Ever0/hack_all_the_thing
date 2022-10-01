@@ -46,6 +46,8 @@ class MyApp(App):
             await self.toggleScrollView()
         elif key == "j":
             await self.jumpScrollView()
+        elif key == 's':
+            await self.
 
     async def jumpScrollView(self):
         if self.body.visible:
