@@ -24,7 +24,7 @@ class Hover(Widget):
         text = Text(self.name)
         import os
         size = os.get_terminal_size()
-        
+        width = size.columns-1
         return Panel(
             text, style=("on red" if self.mouse_over else ""), height=4, width = 
         )  # this is arguable. maybe for mobile device this will be different?
