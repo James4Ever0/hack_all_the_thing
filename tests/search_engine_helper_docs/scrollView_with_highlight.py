@@ -46,6 +46,7 @@ class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index=0
     readerName="ScrollFileReader"
+    content_line_char_count= 0
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
