@@ -10,19 +10,22 @@ from textual.app import App
 
 
 class HoverApp(App):
-    queryTitleNames = ['search input', 'changed title']
+    queryTitleNames = ["search input", "changed title"]
+
     async def on_key(self, event):
         key = event.key
         key_lower = key.lower()
-        if key_lower == 'c':
+        if key_lower == "c":
             for queryTitleName in self.queryTitleNames:
                 if queryTitleName != self.mainInput.title:
                     self.mainInput.title = queryTitleName
+
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
-        await self.bind('ctrl+s','searchToggle', "searchToggle")
-        await self.bind('escape',"reset_focus", show=False)
+        await self.bind("ctrl+s", "searchToggle", "searchToggle")
+        await self.bind("escape", "reset_focus", show=False)
         # we want you to hide the thing!
+
     async def action_reset_focus(self):
         await self.view.focus()
 
@@ -31,7 +34,7 @@ class HoverApp(App):
         if self.mainInput.visible:
             await self.mainInput.focus()
         else:
-            await self.view.focus() # deactivate the search field?
+            await self.view.focus()  # deactivate the search field?
 
     async def action_submit(self):
         value = self.mainInput.value
@@ -40,7 +43,9 @@ class HoverApp(App):
         # breakpoint()
 
     async def on_mount(self) -> None:
-        self.mainInput = TextInput(name="query", placeholder="enter your query",title=self.queryTitleNames[0])
+        self.mainInput = TextInput(
+            name="query", placeholder="enter your query", title=self.queryTitleNames[0]
+        )
         await self.view.dock(self.mainInput, edge="top", name="search")
 
 
