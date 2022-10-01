@@ -121,7 +121,7 @@ class MyApp(App):
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
-        size = os.get_terminal_size()
+        columns, size = os.get_terminal_size()
         # msize = self.body.window.layout.width# it is totally not right!
         # the width is zero. means adaptive?
         # print("WINDOW SIZE:", msize) # not right!
