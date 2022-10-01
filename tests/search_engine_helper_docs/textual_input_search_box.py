@@ -9,4 +9,5 @@ from textual_inputs import TextInput
 from textual.app import App
 
 class HoverApp(App):
+    mainInput=None
     
