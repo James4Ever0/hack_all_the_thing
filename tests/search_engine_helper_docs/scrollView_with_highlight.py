@@ -128,7 +128,7 @@ class MyApp(App):
         # print("COLUMNS:", columns)
         # center = int(lines/2)
         # breakpoint()
-        eqyivalentLineCountPerLine = self.
+        eqyivalentLineCountPerLine = content_line_char_count
 
         # equivalentLineCountPerLine = [
         #     max(
