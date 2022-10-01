@@ -79,7 +79,7 @@ class HoverApp(App):
         #         )
         #     )
 
-        await self.scrollableHovers.update(self.renderableHovers)
+        await self.scrollableHovers.update(self.layout)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
 
