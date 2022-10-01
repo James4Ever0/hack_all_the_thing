@@ -16,6 +16,7 @@ class HoverApp(App):
         await self.view.action_toggle('search')
     async def on_key(self, event):
         key = event.key
+        key_lower =key.lower()
         if key_lower in ["s"]: # i doubt that 'escape' shall be treated differently.
             await self.searchToggle()
     async def action_submit(self):
