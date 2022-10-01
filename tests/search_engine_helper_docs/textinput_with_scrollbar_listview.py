@@ -154,13 +154,7 @@ class MyApp(App):
         lineNumber2 = max(
             0, lineNumber2 - 1 - context
         )  # minus 1 to get the exact line location.
-
-        # print("LINE NUMBER:", lineNumber)
-        # print("LINE NUMBER 2:", lineNumber2)
-        # print("LEN:", len(equivalentLineCountPerLine))
-        # breakpoint()
-        # self.body.set_y(lineNumber2)
-        self.body.set_y(lineNumber2)  # how about let's not alter this thing?
+        self.body.set_y(lineNumber2) 
     async def action_submit(self):
         value = self.mainInput.value
 
