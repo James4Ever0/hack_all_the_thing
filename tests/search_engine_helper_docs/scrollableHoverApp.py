@@ -61,7 +61,7 @@ class HoverApp(App):
         for index in range(3):
             self.renderableHovers.add_row(        Hover(
                 "widget {}".format(index),
-            )
+            ))
 
         await self.scrollableHovers.update(self.renderableHovers)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
