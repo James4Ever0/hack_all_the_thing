@@ -15,7 +15,7 @@ class HoverApp(App):
     async def on_key(self, event):
         key = event.key
         key_lower = key.lower()
-        # no need to cnange the query 
+        # no need to cnange the query
 
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
