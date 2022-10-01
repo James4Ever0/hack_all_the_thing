@@ -86,3 +86,8 @@ Key(key='s') >>> MyApp(title='Code Viewer')
 view.forwarded Key(key='s')
 Key(key='s') >>> MyApp(title='Code Viewer')
 Key(key='s') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
