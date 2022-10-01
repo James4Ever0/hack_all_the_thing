@@ -98,6 +98,11 @@ class MyApp(App):
         self.body = ScrollView(name=self.readerName)
 
         from rich.text import Text
+        size = os.get_terminal_size()
+        columns, lines = size.columns, size.lines
+        textList = self.contentText.split("\n")
+        wrapped_lines, self.content_line_char_count = self.wrapText(textList, columns-1)
+        processed_text = "\n".join(wrapped_lines)
 
         self.contentText = Text(content)
         highlightLine = "       erator will be efficient. In the example below the recursive call by _range\n"
@@ -109,11 +114,7 @@ class MyApp(App):
     async def on_mount(self) -> None:
         # self.set_interval(5, self.refresh)
         await self.view.dock(self.body, edge="top")
-        size = os.get_terminal_size()
-        columns, lines = size.columns, size.lines
-        textList = self.contentText.split("\n")
-        wrapped_lines, self.content_line_char_count = self.wrapText(textList, columns-1)
-        processed_text = "\n".join(wrapped_lines)
+
         # register something on window size change?
 
         await self.body.update(self.contentText)
