@@ -16,7 +16,7 @@ class HoverApp(App):
         key_lower = key.lower()
         if key_lower == 'c':
             for queryTitleName in self.queryTitleNames:
-                if queryTitleName !=self.mainInput.title:
+                if queryTitleName != self.mainInput.title:
                     self.mainInput.title = queryTitleName
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
@@ -40,7 +40,7 @@ class HoverApp(App):
         # breakpoint()
 
     async def on_mount(self) -> None:
-        self.mainInput = TextInput(name="query", placeholder="enter your query",title='search input')
+        self.mainInput = TextInput(name="query", placeholder="enter your query",title=self.queryTitleNames[0])
         await self.view.dock(self.mainInput, edge="top", name="search")
 
 
