@@ -34,7 +34,7 @@ class Hover(Widget):
         #     # command = 'bash less_jump_to_line.sh'
         #     # os.system(command) # does not work properly! fuck.
         # else:
-        print("CLICKED {}".format(self.name))
+        # print("CLICKED {}".format(self.name))
 
 
 
