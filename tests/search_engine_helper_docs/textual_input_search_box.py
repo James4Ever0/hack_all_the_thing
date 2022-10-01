@@ -6,5 +6,7 @@
 # https://github.com/sirfuzzalot/textual-inputs
 
 from textual_inputs import TextInput
+from textual.app import App
 
 class HoverApp(App):
+    
