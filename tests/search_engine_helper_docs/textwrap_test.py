@@ -13,4 +13,4 @@ def wrapText(textList, width):  # the width is col-1
 
 
 textList = ["123"*20, "1234"] * 2000
-wrapText(textList)
+wrapText(textList, width=2)
