@@ -53,7 +53,6 @@ class Hover(Widget):
         breakpoint()
 
 
-from textual.widgets import ScrollView
 
 
 class HoverApp(App):
