@@ -54,6 +54,7 @@ class MyApp(App):
     index=0
     readerName="ScrollFileReader"
     content_line_char_count= 0
+    lineNumbers=[2923,2878,0,5] # we test this on android first.
     async def on_key(self, event):
         # self.console.bell()
         key = event.key
