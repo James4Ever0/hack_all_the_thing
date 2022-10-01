@@ -57,6 +57,7 @@ class HoverApp(App):
         self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
+        await self.view.
     # async def on_load(self) -> None:
 
 
