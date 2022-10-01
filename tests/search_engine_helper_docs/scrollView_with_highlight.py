@@ -124,11 +124,11 @@ class MyApp(App):
         # msize = self.body.window.layout.width# it is totally not right!
         # the width is zero. means adaptive?
         # print("WINDOW SIZE:", msize) # not right!
-        columns, lines = size.columns, size.lines
+        # columns, lines = size.columns, size.lines
         # print("COLUMNS:", columns)
         # center = int(lines/2)
         # breakpoint()
-        eqyivalentLineCountPerLine = content_line_char_count
+        equivalentLineCountPerLine = content_line_char_count
 
         # equivalentLineCountPerLine = [
         #     max(
