@@ -38,6 +38,7 @@ with open(filepath, "r") as f:
     content = f.read()
 
 # content_line_char_count = [len(line) for line in content.split("\n")]
+# get it from somewhere else.
 
 
 class MyApp(App):
