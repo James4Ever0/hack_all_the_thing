@@ -62,7 +62,7 @@ class HoverApp(App):
         #     )
         #     for index in range(3)
         # )
-        self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
+        # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         self.layout = VerticalLayout()
 
@@ -78,7 +78,7 @@ class HoverApp(App):
         #             "widget {}".format(index),
         #         )
         #     )
-        self.scrollableHovers = ScrollView()
+        self.scrollableHovers = ScrollView(self.layout)
         
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
