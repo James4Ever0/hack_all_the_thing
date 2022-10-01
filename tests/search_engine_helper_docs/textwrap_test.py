@@ -11,6 +11,6 @@ def wrapText(textList, width):  # the width is col-1
         content_line_char_count.append(lineCount)
     return wrapped_lines, content_line_char_count
 
-textList = ["123", "1234"] * 2000
 
+textList = ["123", "1234"] * 2000
 wrapText(textList)
