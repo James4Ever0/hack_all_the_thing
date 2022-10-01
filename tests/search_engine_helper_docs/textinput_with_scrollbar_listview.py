@@ -48,7 +48,8 @@ class MyApp(App):
             await self.jumpScrollView()
         elif key == 's':
             await self.focusSearchView()
-    async def focusSearchView(self):
+    async def action_clearSearchView(self):
+        self.mainInput.value=''    async def focusSearchView(self):
         #await self.view.action_toggle('search')
         if not self.mainInput.visible:
             await self.view.action_toggle('search')
@@ -68,7 +69,8 @@ class MyApp(App):
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         await self.bind("ctrl+s", "searchToggle", "searchToggle")
-        await self.bind("escape", "reset_focus", show=False)
+        await self.bind("ctrl+u", "clearSearchView", "clearSearchView")
+    await self.bind("escape", "reset_focus", show=False)
 
         from rich.text import Text
 
