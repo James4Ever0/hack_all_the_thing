@@ -48,3 +48,12 @@ view.forwarded Key(key=':')
 Key(key=':') >>> ScrollView(name='ScrollFileReader')
 Key(key=':') >>> MyApp(title='Lazero Viewer')
 Key(key=':') >>> MyApp(title='Lazero Viewer')
+view.forwarded Key(key='ctrl+f')
+Key(key='ctrl+f') >>> ScrollView(name='ScrollFileReader')
+Key(key='ctrl+f') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+f') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+ACTION MyApp(title='Lazero Viewer') quit
+CLOSED MyApp(title='Lazero Viewer')
+PROCESS END
