@@ -52,7 +52,7 @@ class Hover(Widget):
     async def on_click(self):
         if self.clickFunction:
             await self.clickFunction() # what should you pass?
-            # assume to be 
+            # assume to be some async function?
         # if self.name == "widget 1":
         #     # import os
         #     # command = 'bash less_jump_to_line.sh'
