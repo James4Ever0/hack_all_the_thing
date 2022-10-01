@@ -9,8 +9,6 @@ from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
 
-# from rich.table import Table
-from textual.layouts.vertical import VerticalLayout
 
 # text = Text(
 #     "hello world python this is python", style="green"
@@ -20,6 +18,7 @@ from textual.layouts.vertical import VerticalLayout
 # text.on(click="view.toggle('world')") # what is this fucking toggle?
 # text.on(click=lambda: os.system('bash less_jump_to_line.sh')) # unmarshallable. fuck.
 # text.on(click="view.toggle('side')")
+from ck_widgets_lv import ListViewUo
 
 
 class Hover(Widget):
@@ -67,7 +66,6 @@ class HoverApp(App):
         # )
         # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
-
         # self.renderableHovers = Table()
         for index in range(3):  # this is bad. these things are not clickable.
             self.layout.add(
