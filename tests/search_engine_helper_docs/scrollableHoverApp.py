@@ -64,7 +64,7 @@ class HoverApp(App):
         layout = VerticalLayout()
 
         # self.renderableHovers = Table()
-        # for index in range(3): # this is bad. these things are not clickable.
+        for index in range(3): # this is bad. these things are not clickable.
         #     self.renderableHovers.add_row(
         #         Hover(
         #             "widget {}".format(index),
