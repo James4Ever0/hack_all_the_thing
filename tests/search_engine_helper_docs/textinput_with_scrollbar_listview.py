@@ -82,7 +82,7 @@ class MyApp(App):
 
     async def on_mount(self) -> None:
         self.mainInput = TextInput(
-            name="search", placeholder="enter your query", title="search input", height=4
+            name="search", placeholder="enter your query", title="search input"
         )
         await self.view.dock(self.mainInput, self.body,edge="top")
 
