@@ -45,7 +45,8 @@ class MyApp(App):
     index=0
     readerName="ScrollFileReader"
     content_line_char_count= []
-    lineNumbers=[2923,2878,0,5] # we test this on android first.
+    line
+    # lineNumbers=[2923,2878,0,5] # we test this on android first.
     def wrapText(self,textList,width): # the width is col-1
         content_line_char_count = []
         wrapped_lines = []
