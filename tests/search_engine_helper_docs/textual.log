@@ -40,3 +40,13 @@ Key(key='ctrl+u') >>> TextInput(name='searchInput', title='search input', value=
 Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
 Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
 ACTION MyApp(title='Code Viewer') clearSearchView
+Key(key='d') >>> TextInput(name='searchInput', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='j') >>> TextInput(name='searchInput', title='search input', value='d', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='d') >>> TextInput(name='searchInput', title='search input', value='dj', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='o') >>> TextInput(name='searchInput', title='search input', value='djd', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='c') >>> TextInput(name='searchInput', title='search input', value='djdo', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='k') >>> TextInput(name='searchInput', title='search input', value='djdoc', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+u') >>> TextInput(name='searchInput', title='search input', value='djdock', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+u') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') clearSearchView
