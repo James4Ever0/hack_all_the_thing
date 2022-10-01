@@ -113,6 +113,7 @@ class MyApp(App):
         columns, lines = size.columns, size.lines
         textList = self.contentText.split("\n")
         wrapped_lines = self.wrapText()
+        processed_text = "\n".join(wrapped)
 
         await self.body.update()
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
