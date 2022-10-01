@@ -71,7 +71,7 @@ class MyApp(App):
         await self.bind("enter", "submit", "Submit")
         await self.bind("ctrl+s", "searchToggle", "searchToggle")
         await self.bind("ctrl+u", "clearSearchView", "clearSearchView")
-    await self.bind("escape", "reset_focus", show=False)
+        await self.bind("escape", "reset_focus", show=False)
 
         from rich.text import Text
 
