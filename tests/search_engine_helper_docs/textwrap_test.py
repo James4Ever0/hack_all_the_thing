@@ -1,7 +1,7 @@
 import textwrap
 
+textList = ['123','1234']*2000
 
-myText = ['123','1234']
 def wrapText(textList,width): # the width is col-1
     content_line_char_count = []
     wrapped_lines = []
