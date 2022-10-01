@@ -83,7 +83,7 @@ class MyApp(App):
         # print("toggle code review")
         # print("disable mouse capture")
         # not able to disable this shit at all.
-        
+
         # disable mouse capture instead.
         # console = Console()
         # with console.capture() as capture:
