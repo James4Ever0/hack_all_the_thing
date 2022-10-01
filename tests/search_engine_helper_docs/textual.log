@@ -56,3 +56,8 @@ Key(key='escape') >>> MyApp(title='Code Viewer')
 Key(key='escape') >>> MyApp(title='Code Viewer')
 ACTION MyApp(title='Code Viewer') reset_focus
 set_focus DockView(name='DockView#1')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Code Viewer')
+ACTION MyApp(title='Code Viewer') quit
+CLOSED MyApp(title='Code Viewer')
+PROCESS END
