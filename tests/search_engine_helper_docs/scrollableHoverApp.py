@@ -20,7 +20,7 @@ class Hover(Widget):
 
     def render(self) -> Panel:
         text = Text(self.name)
-        return Panel(text, style=("on red" if self.mouse_over else ""),height = )
+        return Panel(text, style=("on red" if self.mouse_over else ""),height = 4) # this is arguable. maybe for 
 
     def on_enter(self) -> None:
         self.mouse_over = True
