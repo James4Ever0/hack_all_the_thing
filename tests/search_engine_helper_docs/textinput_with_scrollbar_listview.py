@@ -83,7 +83,7 @@ class MyApp(App):
 
     async def on_mount(self) -> None:
         self.mainInput2 = TextInput(
-            name="search",
+            name="search2",
             placeholder="enter your query",
             title="search input",  # height = 3
         )
@@ -93,7 +93,7 @@ class MyApp(App):
             title="search input",  # height = 3
         )
         # await self.view.dock(, edge="bottom")
-        await self.view.dock(self.mainInput,self.mainInput, edge="top")
+        await self.view.dock(self.mainInput,self.mainInput2, edge="top")
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
