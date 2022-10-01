@@ -13,7 +13,7 @@ class HoverApp(App):
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
         await self.bind('ctrl+s','searchToggle', "searchToggle")
-        await self.bind('escape','')
+        await self.bind('escape',"reset_focus", show=False)
         # we want you to hide the thing!
 
     async def action_searchToggle(self):
