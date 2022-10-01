@@ -68,7 +68,7 @@ class MyApp(App):
         size = os.get_terminal_size()
         columns, lines = size.columns, size.lines
         self.body = ScrollView(name=self.readerName)
-        self.height=lines-3
+        # self.height=lines-3
         textList = content.split("\n")
         wrapped_lines, self.content_line_char_count = self.wrapText(
             textList, columns - 1
