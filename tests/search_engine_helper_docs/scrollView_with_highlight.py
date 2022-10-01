@@ -116,7 +116,7 @@ class MyApp(App):
         processed_text = "\n".join(wrapped_lines)
         # register something on window size change?
 
-        await self.body.update(processed_text)
+        await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(self.content_line_char_count,self.lineNumbers[self.index])
 
     def jumpToEquivalentLineNumber(self,content_line_char_count,lineNumber):
