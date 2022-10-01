@@ -43,6 +43,7 @@ class Hover(Widget):
         #     # os.system(command) # does not work properly! fuck.
         # else:
         print("CLICKED {}".format(self.name))
+        breakpoint()
 
 
 from textual.widgets import ScrollView
