@@ -83,7 +83,7 @@ class MyApp(App):
 
     async def on_mount(self) -> None:
         self.mainInput = TextInput(
-            name="search",
+            name="searchInput",
             placeholder="enter your query",
             title="search input",  # height = 3
         )
