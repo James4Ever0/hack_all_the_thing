@@ -3,7 +3,7 @@ from rich.panel import Panel
 
 # https://github.com/Cvaniak/TextualListViewUnofficial
 # the hack
-# pip3 install git+https://github.com/Cvaniak/TextualListViewUnofficial.git 
+# pip3 install git+https://github.com/Cvaniak/TextualListViewUnofficial.git
 from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
@@ -52,8 +52,6 @@ class Hover(Widget):
         breakpoint()
 
 
-
-
 class HoverApp(App):
     """Demonstrates custom widgets"""
 
@@ -67,18 +65,21 @@ class HoverApp(App):
         # self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         # self.renderableHovers = Table()
-        self.scrollableHovers = ListViewUo([
-        :  # this is bad. these things are not clickable.
+        self.scrollableHovers = ListViewUo(
+            [
+                # this is bad. these things are not clickable.
                 Hover(
                     "widget {}".format(index),
-                ) for index in range(3)]
+                )
+                for index in range(3)
+            ]
         )
         #     self.renderableHovers.add_row(
         #         Hover(
         #             "widget {}".format(index),
         #         )
         #     )
-        
+
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
 
