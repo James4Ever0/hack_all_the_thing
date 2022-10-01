@@ -87,3 +87,7 @@ Key(key='ctrl+h') >>> TextInput(name='searchInput', title='search input', value=
 Key(key='ctrl+h') >>> TextInput(name='searchInput', title='search input', value='who', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Key(key='ctrl+h') >>> TextInput(name='searchInput', title='search input', value='wh', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
 Key(key='ctrl+h') >>> TextInput(name='searchInput', title='search input', value='w', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='w') >>> TextInput(name='searchInput', title='search input', value='', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='w') >>> TextInput(name='searchInput', title='search input', value='w', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='w') >>> TextInput(name='searchInput', title='search input', value='ww', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
+Key(key='w') >>> TextInput(name='searchInput', title='search input', value='www', on_change_handler_name='handle_input_on_change', on_focus_handler_name='handle_input_on_focus')
