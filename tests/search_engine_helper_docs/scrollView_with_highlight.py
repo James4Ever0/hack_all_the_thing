@@ -15,6 +15,7 @@ filepath = (
 # implement soft/hard wrap method yourself, or the scroll view will get tricky.
 import textwrap
 def wrapText(textList,width):
+    
     for text in  textList:
         lines = textwrap.wrap(text,width=width)
         lineCount = len(lines)
