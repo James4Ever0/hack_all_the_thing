@@ -53,7 +53,7 @@ class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index=0
     readerName="ScrollFileReader"
-    content_line_char_count= 0
+    content_line_char_count= []
     lineNumbers=[2923,2878,0,5] # we test this on android first.
     async def on_key(self, event):
         # self.console.bell()
