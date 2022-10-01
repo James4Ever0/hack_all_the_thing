@@ -68,8 +68,8 @@ class MyApp(App):
         # will it work for hidden ScrollView
         if self.body.visible:
             self.index+=1
-            self.index%=len(lineNumbers)
-            self.jumpToEquivalentLineNumber(content_line_char_count,lineNumbers[self.index])
+            self.index%=len(self.lineNumbers)
+            self.jumpToEquivalentLineNumber(self.content_line_char_count,lineNumbers[self.index])
 
     async def toggleScrollView(self):
         # results=self.body.__rich_repr__() # generator!
