@@ -14,5 +14,6 @@ def wrapText(textList, width):  # the width is col-1
 
 textList = ["123"*20, "1234"] * 2000
 wrapped_lines, content_line_char_count = wrapText(textList, width=20)
+from lazero.utils.logger import sprint
 sprint(wrapped_lines)
 sprint(content_line_char_count)
