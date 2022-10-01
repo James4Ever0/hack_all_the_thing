@@ -4,7 +4,8 @@ from textual.app import App
 from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
-from rich.table import Table
+# from rich.table import Table
+from textual.layout import VerticalLayout
 # text = Text(
 #     "hello world python this is python", style="green"
 # )  # there is no style applied.
