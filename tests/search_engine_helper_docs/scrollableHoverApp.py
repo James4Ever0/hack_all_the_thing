@@ -55,6 +55,7 @@ class HoverApp(App):
             for index in range(3)
         )
         self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
+        self.scrollableHovers.update()
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # here we got the view.
         
