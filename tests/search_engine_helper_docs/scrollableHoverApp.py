@@ -58,7 +58,10 @@ class HoverApp(App):
         self.scrollableHovers = ScrollView()  # with name or not? you need keywords.
         # hoverRenderable = self.hovers
         self.renderableHovers = Table()
-        self.renderableHovers.add_row()
+        for index in range(3):
+            self.renderableHovers.add_row(      #     Hover(
+        #         "widget {}".format(index),
+        #     )
 
         await self.scrollableHovers.update(self.renderableHovers)
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
