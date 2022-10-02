@@ -178,8 +178,9 @@ class MyApp(App):
         )  # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
+        await self.
         self.scrollableHovers = ListViewUo([])
-        self.
+        
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
         await self.view.dock(self.scrollableHovers, edge="top", name="side")
 
