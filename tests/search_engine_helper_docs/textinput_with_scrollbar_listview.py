@@ -14,7 +14,9 @@ from ck_widgets_lv import ListViewUo
 
 from textual.widgets import ScrollView
 
-from textual.app import App
+from textual.reactive import Reactive
+from textual.widget import Widget
+from rich.text import Text
 
 with open(filepath, "r") as f:
     content = f.read()
