@@ -23,20 +23,16 @@ print("LOAD COMPLETE")
 # reshape this thing.
 
 limit = 5
+query = ''
+uid_list_top5= embeddings.search(query, limit) # what is this thing?
+# print(uid_list_top5)
+# breakpoint()
+# [(849, 0.6242430210113525), (186, 0.6196383833885193), (823, 0.6172434687614441), (728, 0.6048709750175476), (1389, 0.6044095158576965)]
+# something like this. pretty cool.
 
-embeddings.search()
 for uid, score in uid_list_top5:
-    uid = int(uid)
+    # uid = int(uid)
     # where is the damn score? wtf?
     answer = data_source[uid]
     print("{}:".format(uid), answer)
-    print("score:", score)
-# with open(storage_file_name, "w+") as f:
-#     answers = []
-#     for uid, score in uid_list_top5:
-#         uid = int(uid)
-#         answer = data_source[uid]
-#         answers.append(answer)
-#     data_example_json.update({"answers": answers})
-#     f.write(json.dumps(data_example_json, ensure_ascii=False, indent=4))
-#     print("write to %s" % storage_file_name)
+    sprint("score:", score)
