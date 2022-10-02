@@ -18,7 +18,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 ) # recursive every element apply
 # from semantic_ai_chinese_english import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
-# ) # video 
+# ) # video language recognition
 
 data_source = [
     elem["conv_group_merged"]
