@@ -9,6 +9,7 @@ keywords = set(["recursive"])
 filepath = "./jq_man.log"
 
 import textwrap
+from ck_widgets_lv import ListViewUo
 
 
 from textual.widgets import ScrollView
