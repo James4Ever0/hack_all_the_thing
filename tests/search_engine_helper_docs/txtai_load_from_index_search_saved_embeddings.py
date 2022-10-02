@@ -1,2 +1,3 @@
 import numpy as np
-from txtai import Em
+from txtai.embeddings import Embeddings
+
