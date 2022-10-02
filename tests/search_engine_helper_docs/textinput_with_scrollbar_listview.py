@@ -129,9 +129,9 @@ class MyApp(App):
             await self.view.action_toggle("search")
         await self.mainInput.focus()
 
-    async def jumpScrollView(self, reverse=False):
+    async def jumpScrollView(self, reverse:bool=False):
         if self.body.visible:
-            self.index += 1 if not reverse else -1)
+            self.index += -int(reverse)
             self.index %= len(self.lineNumbers)
             self.jumpToEquivalentLineNumber(
                 self.content_line_char_count, self.lineNumbers[self.index]
