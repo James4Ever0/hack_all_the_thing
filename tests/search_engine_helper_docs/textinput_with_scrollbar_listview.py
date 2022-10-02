@@ -139,8 +139,8 @@ class MyApp(App):
                 self.content_line_char_count, self.lineNumbers[self.index]
             )
 
-    async def toggleScrollView(self):
-        await self.view.action_toggle(self.readerName)
+    # async def toggleScrollView(self):
+    #     await self.view.action_toggle(self.readerName)
 
     async def on_load(self) -> None:
         await self.bind("enter", "submit", "Submit")
