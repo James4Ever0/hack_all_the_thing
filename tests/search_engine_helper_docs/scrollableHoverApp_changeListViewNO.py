@@ -89,11 +89,11 @@ class HoverApp(App):
     async def alterListView(self):
         import random
         label = random.randint(0,10)
-        contents = [
+        contents = 
+        self.scrollableHovers = ListViewUo([
             Hover("widget {}_{}".format(index, label), onClick=lambda: self.mainToggle())
             for index in range(30)
-        ]
-        self.scrollableHovers = ListViewUo(contents)  # what should we update?
+        ])  # what should we update?
 
     async def on_mount(self) -> None:
         # self.hovers = (
