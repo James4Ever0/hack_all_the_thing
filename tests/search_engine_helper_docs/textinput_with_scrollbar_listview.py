@@ -51,6 +51,7 @@ class MyApp(App):
         elif key_lower == "s":
             await self.focusSearchView()
         elif key_lower == 'a':
+            await self.alterListView()
 
     async def alterListView(self):
         import random
