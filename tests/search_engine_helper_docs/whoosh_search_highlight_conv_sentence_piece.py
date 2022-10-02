@@ -117,6 +117,7 @@ def index_search(dirname, search_fields, search_query):
 
 # query = "apply recursive every"
 query = "apply every recursive"  # seems not so good.
+# query = "apply every recursive"  # seems not so good.
 # query = "math addition"
 # must not with reader closed.
 # results_dict = index_search(indexDirectory, ['title','content'], query)
