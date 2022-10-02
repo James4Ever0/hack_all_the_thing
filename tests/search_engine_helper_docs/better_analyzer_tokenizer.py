@@ -53,7 +53,7 @@ def standardLineCleaner(line):
 import wordninja
 import string
 from zhon.hanzi import punctuation
-import j
+import jieba
 
 chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
@@ -65,3 +65,4 @@ for sample in samples:
         sample.replace(punctuation, " ")
     cleaned_line = standardLineCleaner(line)
     # now use what?
+    # split with what first?
