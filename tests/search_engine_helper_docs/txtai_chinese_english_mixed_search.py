@@ -34,6 +34,9 @@ if __name__ == "__main__":
 # needs to query from huggingface?
 # will this fucking work?
 # these models belong to 'sentence similarity' category in huggingface
+
+# i strongly suspect that some web
+
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB
