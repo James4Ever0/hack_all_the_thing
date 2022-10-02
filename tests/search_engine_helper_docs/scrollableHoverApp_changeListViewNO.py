@@ -83,7 +83,10 @@ class HoverApp(App):
             await self.alterListView()
     
     async def alterListView(self):
-        contents = []
+        contents = [Hover(
+                    "widget {}".format(index),onClick = lambda: self.mainToggle()
+                )
+                for index in range(30)]
         await self.scrollableHovers.update(contents) # what should we update?
 
     async def on_mount(self) -> None:
