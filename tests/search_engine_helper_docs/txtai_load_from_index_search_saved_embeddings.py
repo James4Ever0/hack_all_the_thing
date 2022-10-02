@@ -9,7 +9,7 @@ data_source = [
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 ]
 # embeddings = Embeddings()
-data = np.fromfile('ids.txt', dtype=np.float32).reshape(-1,768)
+data = np.fromfile('ids.txt', dtype=np.float32).reshape(768,-1).T
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
 queries = np.fromfile("ann_query_embedding.txt",dtype=np.float32).reshape(1,-1)
