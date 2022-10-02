@@ -18,7 +18,8 @@ class MyApp(App):
         console = Console(record=True)
         console.print(self)
         text = console.export_text(clear=False) # so we can see the console afterwards.
-        
+        import pyperclip
+        pyperclip.copy(text)
         console.save_svg("screenshot.svg", title="MyTitle") # not so right?
 
 MyApp.run()
