@@ -34,7 +34,7 @@ if __name__ == "__main__":
 # needs to query from huggingface?
 # will this fucking work?
     embeddings = Embeddings(
-        {"path": "sentence-transformers/"} # this is not the 'all' kind of thing.
+        {"path": "sentence-transformers/"} # this is not the 'all' kind of thing. MULTILINGUAL!
         # {"path": "sentence-transformers/nli-mpnet-base-v2"}
     )  # same as the 'indexed' demo.
 

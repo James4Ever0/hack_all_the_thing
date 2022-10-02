@@ -33,7 +33,7 @@ if __name__ == "__main__":
 # will this fucking work?
     embeddings = Embeddings(
         {'path': 'sentence-transformers/all-MiniLM-L6-v2'}# official
-        {"path": "sentence-transformers/nli-mpnet-base-v2"} # original
+        # {"path": "sentence-transformers/nli-mpnet-base-v2"} # original
     )  # same as the 'indexed' demo.
 
     # loading this thing?
