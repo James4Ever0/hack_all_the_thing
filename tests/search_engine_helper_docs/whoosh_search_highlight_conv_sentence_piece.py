@@ -116,7 +116,7 @@ def index_search(dirname, search_fields, search_query):
 # return results
 
 # query = "apply recursive every"
-query = ""  # seems not so good.
+query = "github"  # seems not so good.
 # query = "apply every recursive"  # seems not so good.
 # query = "math addition"
 # must not with reader closed.
