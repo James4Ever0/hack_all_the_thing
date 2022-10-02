@@ -93,6 +93,7 @@ class HoverApp(App):
             Hover("widget {}_{}".format(index, label), onClick=lambda: self.mainToggle())
             for index in range(30)
         ])  # what should we update?
+        await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
 
     async def on_mount(self) -> None:
         # self.hovers = (
