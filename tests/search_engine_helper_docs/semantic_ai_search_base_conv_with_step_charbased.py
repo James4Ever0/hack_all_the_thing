@@ -1,4 +1,4 @@
-from load_demo_data import data, data2 # for chinese
+from load_demo_data import data
 
 # the data is indeed unstructured.
 # split the data with newline.
