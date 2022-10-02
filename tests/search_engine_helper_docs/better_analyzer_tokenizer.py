@@ -56,6 +56,8 @@ from zhon.hanzi import punctuation
 
 chinese_and_english_punctuation = string.punctuation+punctuation
 
+# you also need to stem english words.
+
 for sample in samples:
     line = sample.replace("\n"," ")
     
