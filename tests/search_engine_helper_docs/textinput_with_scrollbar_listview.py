@@ -179,7 +179,9 @@ class MyApp(App):
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
         await self.view.action_toggle('viewer')
-        self.scrollableHovers = ListViewUo([])
+        self.scrollableHovers = ListViewUo([
+            
+        ])
         
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
         await self.view.dock(self.scrollableHovers, edge="top", name="side")
