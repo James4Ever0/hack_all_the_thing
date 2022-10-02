@@ -39,6 +39,7 @@ data_source = [
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 ]
 import os
+import numpy as np
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -111,7 +112,7 @@ if __name__ == "__main__":
             break
         # the "1" is the limit. how about let's make it into 5?
         limit = 5
-        ann_query_embedding =  np.array([embeddings.transform((None, query, None))])
+        ann_query_embedding = np.array([embeddings.transform((None, query, None))])
         uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
         # print(uid_list_top5)
         # breakpoint()
