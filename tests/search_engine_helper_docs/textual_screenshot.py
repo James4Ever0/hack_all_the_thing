@@ -21,7 +21,7 @@ class MyApp(App):
 
     def action_screenshot(self) -> None:
         console = Console(record=True)
-        console.print(self)
+        console.print(self.body.window)
         # console.print(self)
         text = console.export_text(clear=False)  # so we can see the console afterwards.
         # import pyperclip
