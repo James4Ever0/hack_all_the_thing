@@ -91,7 +91,9 @@ class HoverApp(App):
 
         label = random.randint(0, 10)
         # del self.scrollableHovers
-        self.named_widgets
+        things = self.query("#items Thing")
+            if things:
+                random.choice(things).remove()
         self.scrollableHovers = ListViewUo(
             [
                 Hover(
