@@ -53,7 +53,7 @@ def standardLineCleaner(line):
 import wordninja
 import string
 from zhon.hanzi import punctuation
-import 
+import j
 
 chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
