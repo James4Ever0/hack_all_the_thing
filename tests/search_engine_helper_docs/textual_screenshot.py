@@ -8,7 +8,7 @@ from textual.widgets import ScrollView
 class MyApp(App):
     async def on_load(self) -> None:
         await self.bind("y", "screenshot", "Screenshot")
-        await self.view.dock(self.body, edge="top")
+    async def 
 
 
     def action_screenshot(self) -> None:
