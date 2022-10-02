@@ -16,5 +16,5 @@ https://github.com/sopify-bot/seo
 # query = "math addition operation" # strange enbedding!
 # query="following examples"
 from docarray import Document, DocumentArray
-""",  # wordninja
+""",  # wordninja, glued 
 ]
