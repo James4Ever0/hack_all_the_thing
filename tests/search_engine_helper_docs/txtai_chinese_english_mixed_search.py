@@ -25,6 +25,8 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
 # ) # video language recognition
 
+# better display scores nearby.
+
 data_source = [
     elem["conv_group_merged"]
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
