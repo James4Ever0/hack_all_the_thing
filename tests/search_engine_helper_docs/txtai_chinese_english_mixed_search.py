@@ -103,6 +103,7 @@ if __name__ == "__main__":
     # Add index and sort desc based on score
     # save embeddings!
     embeddings.save("./multilingual_index_demo")
+    print('saving done')
     while True:
         query = input("> ")
         if query == "q":
