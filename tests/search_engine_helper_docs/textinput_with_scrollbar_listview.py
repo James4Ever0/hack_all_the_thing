@@ -46,14 +46,16 @@ class MyApp(App):
             await self.toggleScrollView()
         elif key == "j":
             await self.jumpScrollView()
-        elif key == 's':
+        elif key == "s":
             await self.focusSearchView()
+
     async def action_clearSearchView(self):
-        self.mainInput.value=''
+        self.mainInput.value = ""
+
     async def focusSearchView(self):
-        #await self.view.action_toggle('search')
+        # await self.view.action_toggle('search')
         if not self.mainInput.visible:
-            await self.view.action_toggle('search')
+            await self.view.action_toggle("search")
         await self.mainInput.focus()
 
     async def jumpScrollView(self):
@@ -97,8 +99,10 @@ class MyApp(App):
             placeholder="enter your query",
             title="lazero search",  # height = 3
         )
-        await self.view.dock(self.mainInput, edge="top", size=3, name='search')
-        await self.view.dock(self.body, edge="top") # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
+        await self.view.dock(self.mainInput, edge="top", size=3, name="search")
+        await self.view.dock(
+            self.body, edge="top"
+        )  # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
@@ -122,13 +126,14 @@ class MyApp(App):
 
     async def action_submit(self):
         value = self.mainInput.value
-        if not value in ['', None]:
-            # do nothing please?
+        if not value in ["", None]:
+            # do something please?
+            ...
 
     async def action_reset_focus(self):
         if self.body.visible:
             await self.body.focus()
-            #add extra elif later
+            # add extra elif later
         else:
             await self.view.focus()
 
