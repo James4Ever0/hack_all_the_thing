@@ -81,6 +81,17 @@ class HoverApp(App):
             await self.mainToggle()
         elif key_lower == 'a':
             await self.alterListView()
+    
+    async def alterListView(self):
+        self.scrollableHovers = ListViewUo(
+            [
+                # this is bad. these things are not clickable.
+                Hover(
+                    "widget {}".format(index),onClick = lambda: self.mainToggle()
+                )
+                for index in range(30)
+            ]
+        )
 
     async def on_mount(self) -> None:
         # self.hovers = (
