@@ -4,4 +4,6 @@ from txtai.embeddings import Embeddings
 embeddings = Embeddings()
 embeddings.load("./multilingual_index_demo")
 
-embeddings.ann.search(queries)
+ann_query_embedding = np.fromfile('ann_query_embedding.txt')
+
+embeddings.ann.search(queries,)
