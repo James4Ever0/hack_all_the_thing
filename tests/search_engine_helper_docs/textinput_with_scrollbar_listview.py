@@ -20,6 +20,40 @@ with open(filepath, "r") as f:
     content = f.read()
 
 
+class Hover(Widget):
+
+    mouse_over = Reactive(False)
+
+    def __init__(self, *args, **kwargs):
+        self.clickFunction = kwargs.pop("onClick", None)
+        self.panelStyle = kwargs.pop("panelStyle", "")
+        super().__init__(*args, **kwargs)
+
+    def render(self) -> Panel:
+        text = Text(self.name)
+        import os
+
+        size = os.get_terminal_size()
+        width = size.columns - 1
+        return Panel(
+            # this style is strange. we should alter it in some way.
+            text,
+            style=self.panelStyle,
+            height=4,
+            width=width,  # better config it in some way.
+        )  # this is arguable. maybe for mobile device this will be different?
+        # calculate this height according to terminal width, and make sure it does not go lower than 3.
+
+    def on_enter(self) -> None:
+        self.mouse_over = True
+
+    def on_leave(self) -> None:
+        self.mouse_over = False
+
+    async def on_click(self):
+        if self.clickFunction:
+            await self.clickFunction()  # what should you pass?
+
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index = 0
@@ -53,7 +87,7 @@ class MyApp(App):
         elif key_lower == 'a':
             await self.alterListView()
 
-    async def mainToggle(self):
+    async def mainToggle(self): # you may need to adjust this thing?
         await self.view.action_toggle("side")
         await self.view.action_toggle("viewer")
     async def alterListView(self):
