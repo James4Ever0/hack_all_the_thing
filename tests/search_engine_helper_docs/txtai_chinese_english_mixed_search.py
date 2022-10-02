@@ -19,7 +19,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 
 # how to make it offline? we don't need online shit.
 # no to do this you need to be online, since you need to encode your query into embeddings.
-# consider to use jina?
+# consider to use jina or not?
 
 # from semantic_ai_chinese_english import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
