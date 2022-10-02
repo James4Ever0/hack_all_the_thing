@@ -89,7 +89,6 @@ class HoverApp(App):
 
     async def alterListView(self):
         import random
-
         label = random.randint(0, 10)
         # del self.view.named_widgets['side']
         # print(self.view.named_widgets)
