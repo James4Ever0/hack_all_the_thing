@@ -98,7 +98,7 @@ class MyApp(App):
         await self.view.action_toggle("viewer")
 
     async def alterListView(self):
-        if self.
+        if self.scrollableHovers
 
         import random
 
