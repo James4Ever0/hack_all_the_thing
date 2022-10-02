@@ -36,7 +36,7 @@ if __name__ == "__main__":
 # these models belong to 'sentence similarity' category in huggingface
 
 # i strongly suspect that some websites are just built upon this tech.
-# 
+# i suspect all mo
 
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
