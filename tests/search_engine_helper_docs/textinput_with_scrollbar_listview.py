@@ -61,7 +61,7 @@ class Hover(Widget):
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index = 0
-    readerName = "ScrollFileReader"
+    readerName = "viewer"
     content_line_char_count = []
     lineNumbers = [2235]  # adjusted.
     # lineNumbers = [2268]
