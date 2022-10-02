@@ -89,7 +89,7 @@ class HoverApp(App):
                 Hover(
                     "widget {}".format(index),onClick = lambda: self.mainToggle()
                 )
-                for index in range(30)
+                for index in [random.randint(0,30)]
             ]
         )
 
