@@ -1,6 +1,7 @@
 # we mainly change the model, and the datasource.
 
-# import os
+import os
+
 # for fname in ["ids.txt","ann_query_embedding.txt"]:
 #     if os.path.exists(fname):
 #         os.remove(fname)
