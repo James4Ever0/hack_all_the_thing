@@ -13,7 +13,9 @@ from lazero.utils.logger import sprint
 # this is a search application! damn it.
 
 # we still got some unfixed hyphen problems. damn.
-from symlinks/hack_all_the_thing/tests/search_engine_helper_docs/semantic_ai_search_base_conv_with_step_charbased
+# from semantic_ai_search_base_conv_with_step_charbased import (
+#     listOfCleanedMergedConvGroupWithLineIndexMapping,
+# )
 from semantic_ai_chinese_english import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
