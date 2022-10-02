@@ -9,6 +9,7 @@ class MyApp(App):
         await self.bind("y", "screenshot", "Screenshot")
     async def 
 
+
     def action_screenshot(self) -> None:
         console = Console(record=True)
         console.print(self)
