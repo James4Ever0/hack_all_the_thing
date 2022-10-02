@@ -15,6 +15,7 @@ embeddings = Embeddings(
 
 # 4.2M also for our embeddings.
 # do not trust jina since it will not load our shit!
+# it will automatically revoke our instances, nullfy our shit!
 
 # # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 embeddings.load("./multilingual_index_demo") # no model out there! fuck.
