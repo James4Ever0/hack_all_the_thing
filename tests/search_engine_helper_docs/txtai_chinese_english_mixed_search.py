@@ -22,6 +22,7 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 # consider to use jina or not?
 
 # we only use this during development or system idle. we don't do this while busy.
+# while busy we use whoosh instead.
 
 # from semantic_ai_chinese_english import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
