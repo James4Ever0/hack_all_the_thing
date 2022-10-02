@@ -46,6 +46,7 @@ if __name__ == "__main__":
         {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"}
         # 471 MB
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
+        # 438 MB
         # {"path": "sentence-transformers/nli-mpnet-base-v2"} # english only?
     )  # same as the 'indexed' demo.
 
