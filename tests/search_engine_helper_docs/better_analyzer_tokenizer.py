@@ -8,5 +8,5 @@ https://github.com/sopify-bot/seo
 
 分为主动点击 换IP点击 
 以及优化自身关键词 被动优化两种方式""",  # chinese with english
-"" # wordninja
+"wordninja " # wordninja
 ]
