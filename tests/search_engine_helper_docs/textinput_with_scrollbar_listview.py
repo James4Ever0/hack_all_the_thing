@@ -83,7 +83,7 @@ class MyApp(App):
         key = event.key
         key_lower = key.lower()
         if key_lower == "t":
-            await self.mainn()
+            await self.mainToggle()
         elif key_lower == "j":
             await self.jumpScrollView()
         elif key_lower == "k":
