@@ -1,7 +1,9 @@
 # we mainly change the model, and the datasource.
 
 import os
-for fname in ["ids.txt",]
+for fname in ["ids.txt","ann_query_embedding.txt"]:
+    if os.path.exists(fname):
+        os.remove(fname)
 # do not use streamlit this time. maybe you want repl?
 # check the damn GPU usage!
 
