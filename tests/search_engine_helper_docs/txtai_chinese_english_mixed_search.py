@@ -56,7 +56,7 @@ if __name__ == "__main__":
         # since i don't speak languages other than chinese and english.
         {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems good?
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
-        # 539 MB
+        # 539 MBrecursive every element apply
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
         # 471 MB
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
