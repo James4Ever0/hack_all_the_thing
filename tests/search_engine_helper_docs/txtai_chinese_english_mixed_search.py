@@ -35,7 +35,7 @@ if __name__ == "__main__":
 # will this fucking work?
     embeddings = Embeddings(
         {"path": "sentence-transformers/"} # this is not the 'all' kind of thing. MULTILINGUAL!
-        # {"path": "sentence-transformers/nli-mpnet-base-v2"}
+        # {"path": "sentence-transformers/nli-mpnet-base-v2"} # english only?
     )  # same as the 'indexed' demo.
 
     # loading this thing?
