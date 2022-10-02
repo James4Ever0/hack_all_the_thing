@@ -48,3 +48,12 @@ def standardLineCleaner(line):
     line = removeDuplicates(line)
     line = stripChars(line)
     return line
+
+
+import wordninja
+import string
+from zhon.hanzi import punctuation
+
+chinese_and_english_punctuation = string.punctuation+punctuation
+
+f
