@@ -90,7 +90,7 @@ class HoverApp(App):
         import random
 
         label = random.randint(0, 10)
-        del self.named_widgets['side']
+        del self.view.named_widgets['side']
         # await self.remove(self.scrollableHovers)
         self.scrollableHovers = ListViewUo(
             [
@@ -101,9 +101,9 @@ class HoverApp(App):
                 for index in range(30)
             ]
         )  # what should we update?
-        await self.view.action_toggle('side')
+        # await self.view.action_toggle('side')
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
-        await self.view.action_toggle('side')
+        # await self.view.action_toggle('side')
 
 
     async def on_mount(self) -> None:
