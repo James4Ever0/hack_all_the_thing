@@ -83,7 +83,7 @@ class HoverApp(App):
             await self.alterListView()
     
     async def alterListView(self):
-        self.scrollableHovers.update() # what should we update?
+        self.scrollableHovers.update(content) # what should we update?
 
     async def on_mount(self) -> None:
         # self.hovers = (
