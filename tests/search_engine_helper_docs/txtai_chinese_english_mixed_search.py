@@ -14,7 +14,7 @@ from lazero.utils.logger import sprint
 
 # we still got some unfixed hyphen problems. damn.
 
-from semantic_ai_chinese_english import (
+from seman import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
 
