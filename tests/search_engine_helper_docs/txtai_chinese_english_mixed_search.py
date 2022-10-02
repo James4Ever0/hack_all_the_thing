@@ -2,7 +2,7 @@
 
 # this application aims to run on my macbook air and cause a major ram consumption up to 0.5 GB
 
-
+# would cause more trouble if index more files.
 
 import os
 # os.environ['http_proxy'] = ''
