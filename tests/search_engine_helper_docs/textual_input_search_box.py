@@ -31,7 +31,7 @@ class HoverApp(App):
         if self.mainInput.visible:
             await self.mainInput.focus()
         else:
-            await self.view.focus()  # deactivate the search field?
+            await self.view.focus() # deactivate the search field?
 
     async def action_submit(self):
         value = self.mainInput.value
