@@ -5,6 +5,8 @@ embeddings = Embeddings()
 embeddings.load("./multilingual_index_demo")
 
 ann_query_embedding = np.fromfile("ann_query_embedding.txt").reshape(1,-1)
+
+# it still needs gpu.
 # reshape this thing.
 
 limit = 3
