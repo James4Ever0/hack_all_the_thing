@@ -22,4 +22,4 @@ class MyApp(App):
         pyperclip.copy(text)
         console.save_svg("screenshot.svg", title="MyTitle") # not so right?
 
-MyApp.run()
+MyApp.run(title="Code Viewer")
