@@ -769,3 +769,8 @@ Click(x=57, y=2756, screen_y=11, button=3) >>> Static(name='Static#3')
 Key(key='k') >>> ScrollView(name='viewer')
 Key(key='k') >>> MyApp(title='Lazero Viewer')
 Key(key='k') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+Key(key='ctrl+c') >>> MyApp(title='Lazero Viewer')
+ACTION MyApp(title='Lazero Viewer') quit
+CLOSED MyApp(title='Lazero Viewer')
+PROCESS END
