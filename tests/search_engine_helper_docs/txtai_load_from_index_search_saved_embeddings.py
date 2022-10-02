@@ -10,7 +10,7 @@ data_source = [
 ]
 # embeddings = Embeddings()
 data = np.load('ids.npy') # format wrong! fuck.
-# 4.2M for ids.npy.
+# 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
 queries = np.load("ann_query_embedding.npy")
