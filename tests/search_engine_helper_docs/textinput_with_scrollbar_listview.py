@@ -86,7 +86,7 @@ class MyApp(App):
             await self.toggleScrollView()
         elif key_lower == "j":
             await self.jumpScrollView()
-        elif key_lower == 'k':
+        elif key_lower == "k":
             await self.jumpScrollView(reverse=True)
         elif key_lower == "s":
             await self.focusSearchView()
@@ -131,7 +131,7 @@ class MyApp(App):
             await self.view.action_toggle("search")
         await self.mainInput.focus()
 
-    async def jumpScrollView(self, reverse:bool=False):
+    async def jumpScrollView(self, reverse: bool = False):
         if self.body.visible:
             self.index += -int(reverse)
             self.index %= len(self.lineNumbers)
@@ -174,22 +174,19 @@ class MyApp(App):
         )
         await self.view.dock(self.mainInput, edge="top", size=3, name="search")
         await self.view.dock(
-            self.body, edge="top", name = 'viewer'
+            self.body, edge="top", name="viewer"
         )  # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
-        await self.view.action_toggle('viewer')
+        await self.view.action_toggle("viewer")
         self.scrollableHovers = ListViewUo(
-
             [
                 # this is bad. these things are not clickable.
-                Hover(
-                    "widget {}".format(index),onClick = lambda: self.mainToggle()
-                )
+                Hover("widget {}".format(index), onClick=lambda: self.mainToggle())
                 for index in range(30)
-            
-        ])
-        
+            ]
+        )
+
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
         await self.view.dock(self.scrollableHovers, edge="top", name="side")
 
