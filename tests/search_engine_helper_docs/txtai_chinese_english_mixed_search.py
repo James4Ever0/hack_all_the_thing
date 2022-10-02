@@ -35,7 +35,8 @@ if __name__ == "__main__":
 # will this fucking work?
 # these models belong to 'sentence similarity' category in huggingface
 
-# i strongly suspect that some web
+# i strongly suspect that some websites are just built upon this tech.
+# 
 
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
