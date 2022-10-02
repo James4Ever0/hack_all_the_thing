@@ -9,9 +9,9 @@ data_source = [
     elem["conv_group_merged"]
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 ]
-embeddings = Embeddings({
-            "path": "sentence-transformers/distiluse-base-multilingual-cased-v1"
-        })
+embeddings = Embeddings(
+    {"path": "sentence-transformers/distiluse-base-multilingual-cased-v1"}
+)
 # data = np.load("ids.npy")  # format wrong! fuck.
 # # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
@@ -23,8 +23,8 @@ print("LOAD COMPLETE")
 # reshape this thing.
 
 limit = 5
-query = 'recursive every element apply'
-uid_list_top5= embeddings.search(query, limit) # what is this thing?
+query = "recursive every element apply"
+uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
 # print(uid_list_top5)
 # breakpoint()
 # [(849, 0.6242430210113525), (186, 0.6196383833885193), (823, 0.6172434687614441), (728, 0.6048709750175476), (1389, 0.6044095158576965)]
