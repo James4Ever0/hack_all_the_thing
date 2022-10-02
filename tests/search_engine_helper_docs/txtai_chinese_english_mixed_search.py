@@ -35,7 +35,7 @@ if __name__ == "__main__":
 # will this fucking work?
 # these models belong to 'sentence similarity' category in huggingface
     embeddings = Embeddings(
-        {"path": "sentence-transformers/"} # this is not the 'all' kind of thing. MULTILINGUAL!
+        {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
         # {"path": "sentence-transformers/nli-mpnet-base-v2"} # english only?
     )  # same as the 'indexed' demo.
 
