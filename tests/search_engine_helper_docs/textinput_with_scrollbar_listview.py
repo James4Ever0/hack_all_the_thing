@@ -122,9 +122,8 @@ class MyApp(App):
 
     async def action_submit(self):
         value = self.mainInput.value
-        if value in '':
+        if not value in ['', None]:
             # do nothing please?
-
 
     async def action_reset_focus(self):
         if self.body.visible:
