@@ -61,4 +61,4 @@ chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 for sample in samples:
     line = sample.replace("\n"," ")
     for punctuation in chinese_and_english_punctuation:
-        if punctuation
+        sample.replace(punctuation, " ")
