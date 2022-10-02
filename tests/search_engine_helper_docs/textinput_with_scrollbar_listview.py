@@ -101,7 +101,7 @@ class MyApp(App):
         await self.view.dock(self.body, edge="top") # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
-        # changes happens after hitting the enter key with 
+        # changes happens after hitting the enter key
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
