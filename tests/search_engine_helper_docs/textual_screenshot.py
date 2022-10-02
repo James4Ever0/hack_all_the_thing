@@ -8,5 +8,5 @@ class MyApp(App):
     def action_screenshot(self) -> None:
         console = Console(record=True)
         console.print(self)
-        console.text
+        console.export_text(clear=False)
         console.save_svg("screenshot.svg", title="MyTitle") # not so right?
