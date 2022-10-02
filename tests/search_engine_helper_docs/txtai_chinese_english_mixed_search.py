@@ -42,7 +42,8 @@ if __name__ == "__main__":
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB
         # https://huggingface.co/TingChenChang/make-multilingual-en-zh-tw-20220825062338/tree/main
-        {'path': ""}
+        #539MB
+        {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"}
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
         # {"path": "sentence-transformers/nli-mpnet-base-v2"} # english only?
     )  # same as the 'indexed' demo.
