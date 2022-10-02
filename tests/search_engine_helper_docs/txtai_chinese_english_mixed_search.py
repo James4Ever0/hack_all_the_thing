@@ -107,6 +107,7 @@ if __name__ == "__main__":
     ids = embeddings.config["embeddings"] # tricky namings.
     np.savetxt("ids.txt", ids)
     print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
+    # SHAPE (1421, 768) DTYPE float32
     print("saving done")
     while True:
         query = input("> ")
