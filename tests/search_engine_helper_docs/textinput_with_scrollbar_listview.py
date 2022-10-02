@@ -179,7 +179,14 @@ class MyApp(App):
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
         await self.view.action_toggle('viewer')
-        self.scrollableHovers = ListViewUo([
+        self.scrollableHovers = ListViewUo(
+
+            [
+                # this is bad. these things are not clickable.
+                Hover(
+                    "widget {}".format(index),onClick = lambda: self.mainToggle()
+                )
+                for index in range(30)
             
         ])
         
