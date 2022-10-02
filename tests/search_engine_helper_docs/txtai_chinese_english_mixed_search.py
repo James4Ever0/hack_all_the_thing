@@ -41,9 +41,9 @@ if __name__ == "__main__":
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB, could blow my shit?
-        # https://huggingface.co/TingChenChang/make-multilingual-en-zh-tw-20220825062338/tree/main
+        # https://huggingface.co/TingChenChang/make-multilingual-en-zh-tw-20220825062338
         # 539 MB
-        {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"}
+        # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"}
         # 471 MB
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
         # 438 MB
