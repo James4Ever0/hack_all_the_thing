@@ -17,6 +17,7 @@ from textual.widgets import ScrollView
 from textual.reactive import Reactive
 from textual.widget import Widget
 from rich.text import Text
+from rich.panel import Panel
 
 with open(filepath, "r") as f:
     content = f.read()
