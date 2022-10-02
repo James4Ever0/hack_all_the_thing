@@ -35,4 +35,4 @@ for uid, score in uid_list_top5:
     # where is the damn score? wtf?
     answer = data_source[uid]
     print("{}:".format(uid), answer)
-    sprint("score:", score)
+    print("score:", score)
