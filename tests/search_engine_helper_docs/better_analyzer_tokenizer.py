@@ -8,5 +8,13 @@ https://github.com/sopify-bot/seo
 
 分为主动点击 换IP点击 
 以及优化自身关键词 被动优化两种方式""",  # chinese with english
-"""wordninja hit.matched_terms()""" # wordninja
+    """wordninja hit.matched_terms() from semantic_ai_search_base_conv_with_step_charbased import (
+    listOfCleanedMergedConvGroupWithLineIndexMapping,
+    linewise,
+)
+
+# query = "math addition operation" # strange enbedding!
+# query="following examples"
+from docarray import Document, DocumentArray
+""",  # wordninja
 ]
