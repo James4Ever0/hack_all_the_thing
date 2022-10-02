@@ -43,13 +43,36 @@ class MyApp(App):
 
     async def on_key(self, event):
         key = event.key
-        if key == "t":
+        key_lower = key.lower()
+        if key_lower == "t":
             await self.toggleScrollView()
-        elif key == "j":
+        elif key_lower == "j":
             await self.jumpScrollView()
-        elif key == "s":
+        elif key_lower == "s":
             await self.focusSearchView()
-        elif key == 
+        elif key_lower == 'a':
+
+    async def alterListView(self):
+        import random
+        label = random.randint(0, 10)
+        # del self.view.named_widgets['side']
+        # print(self.view.named_widgets)
+        # print(self.view.named_widgets.keys())
+        # breakpoint()
+        del self.scrollableHovers
+        # await self.remove(self.scrollableHovers)
+        self.scrollableHovers = ListViewUo(
+            [
+                Hover(
+                    "widget {}_{}".format(index, label),
+                    onClick=lambda: self.mainToggle(),
+                )
+                for index in range(30)
+            ]
+        )  # what should we update?
+        await self.view.action_toggle('side')
+        await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
+        # await self.view.action_toggle('side')
 
     async def action_clearSearchView(self):
         self.mainInput.value = ""
