@@ -62,4 +62,4 @@ for sample in samples:
     line = sample.replace("\n"," ")
     for punctuation in chinese_and_english_punctuation:
         sample.replace(punctuation, " ")
-    cleaned_line = 
+    cleaned_line = standardLineCleaner(line)
