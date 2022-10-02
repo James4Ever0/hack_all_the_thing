@@ -10,6 +10,7 @@ class MyApp(App):
         await self.bind("y", "screenshot", "Screenshot")
     async def on_mount(self):
         self.body = ScrollView()
+        self.body.update()
         await self.view.dock(self.body, edge="top")
 
 
