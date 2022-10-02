@@ -2,6 +2,8 @@
 
 # this application aims to run on my macbook air and cause a major ram consumption up to 0.5 GB
 
+
+
 import os
 # os.environ['http_proxy'] = ''
 # os.environ['https_proxy'] = ''
