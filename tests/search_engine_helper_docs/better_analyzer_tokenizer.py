@@ -56,4 +56,4 @@ from zhon.hanzi import punctuation
 
 chinese_and_english_punctuation = string.punctuation+punctuation
 
-f
+for sample in samples:
