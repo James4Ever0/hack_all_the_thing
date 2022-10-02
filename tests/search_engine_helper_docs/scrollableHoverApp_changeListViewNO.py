@@ -84,8 +84,8 @@ class HoverApp(App):
         if key_lower == "t":  # i doubt that 'escape' shall be treated differently.
             await self.mainToggle()
         elif key_lower == "a":
-            if self.
-            await self.alterListView()
+            if self.scrollableHovers.visible:
+                await self.alterListView()
 
     async def alterListView(self):
         import random
