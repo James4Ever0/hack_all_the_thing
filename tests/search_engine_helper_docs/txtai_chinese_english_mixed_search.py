@@ -104,9 +104,9 @@ if __name__ == "__main__":
     # Add index and sort desc based on score
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
-    ids = embeddings.config['ids']
-    np.savetxt('ids.txt',ids)
-    print('SHAPE',ids.shape,'DTYPE', ids.dtype)
+    ids = embeddings.config["ids"]
+    np.savetxt("ids.txt", ids)
+    print("SHAPE", ids.shape, "DTYPE", ids.dtype)
     print("saving done")
     while True:
         query = input("> ")
@@ -117,7 +117,7 @@ if __name__ == "__main__":
         limit = 5
         ann_query_embedding = np.array([embeddings.transform((None, query, None))])
         # print('SHAPE:',ann_query_embedding.shape,'DTYPE:', ann_query_embedding.dtype)
-        np.savetxt('ann_query_embedding.txt', ann_query_embedding)
+        np.savetxt("ann_query_embedding.txt", ann_query_embedding)
         uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
         # print(uid_list_top5)
         # breakpoint()
