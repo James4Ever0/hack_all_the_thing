@@ -104,7 +104,7 @@ if __name__ == "__main__":
     # Add index and sort desc based on score
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
-    ids = embeddings.config["ids"]
+    ids = embeddings.config["embeddings"]
     np.savetxt("ids.txt", ids)
     print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
     print("saving done")
