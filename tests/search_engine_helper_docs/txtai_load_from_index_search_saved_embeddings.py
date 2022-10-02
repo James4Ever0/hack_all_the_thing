@@ -6,4 +6,4 @@ embeddings.load("./multilingual_index_demo")
 
 ann_query_embedding = np.fromfile('ann_query_embedding.txt')
 
-embeddings.ann.search(queries,)
+embeddings.ann.search(ann_query_embedding,)
