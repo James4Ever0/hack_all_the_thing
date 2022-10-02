@@ -90,7 +90,7 @@ class HoverApp(App):
         import random
 
         label = random.randint(0, 10)
-        del self.scrollableHovers
+        del self.named_widgets['side']scrollableHovers
         # await self.remove(self.scrollableHovers)
         self.scrollableHovers = ListViewUo(
             [
