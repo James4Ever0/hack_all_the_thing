@@ -98,7 +98,8 @@ class MyApp(App):
         await self.view.action_toggle("viewer")
 
     async def alterListView(self):
-        if not self.scrollableHovers.visible: ...
+        if not self.scrollableHovers.visible:
+            return
         import random
 
         label = random.randint(0, 10)
