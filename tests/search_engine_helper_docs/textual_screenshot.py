@@ -14,3 +14,5 @@ class MyApp(App):
         console.print(self)
         console.export_text(clear=False) # so we can see the console afterwards.
         console.save_svg("screenshot.svg", title="MyTitle") # not so right?
+
+MyApp.run()
