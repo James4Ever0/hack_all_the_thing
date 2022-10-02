@@ -44,6 +44,7 @@ if __name__ == "__main__":
         # https://huggingface.co/TingChenChang/make-multilingual-en-zh-tw-20220825062338/tree/main
         # 539 MB
         {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"}
+        # 471 MB
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
         # {"path": "sentence-transformers/nli-mpnet-base-v2"} # english only?
     )  # same as the 'indexed' demo.
