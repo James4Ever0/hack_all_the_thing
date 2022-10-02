@@ -22,7 +22,7 @@ print("LOAD COMPLETE")
 # reshape this thing.
 
 limit = 5
-query = "recursive every element apply"
+query = "recursive every element apply" # prone to fail?
 uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
 # print(uid_list_top5)
 # breakpoint()
