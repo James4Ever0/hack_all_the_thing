@@ -54,7 +54,7 @@ import wordninja
 import string
 from zhon.hanzi import punctuation
 
-chinese_and_english_punctuation = slist[string.punctuation+punctuation
+chinese_and_english_punctuation = set(list[string.punctuation+punctuation))
 
 # you also need to stem english words.
 
