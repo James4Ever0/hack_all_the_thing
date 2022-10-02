@@ -122,7 +122,7 @@ if __name__ == "__main__":
         limit = 5
         ann_query_embedding = np.array([embeddings.transform((None, query, None))])
         # print('SHAPE:',ann_query_embedding.shape,'DTYPE:', ann_query_embedding.dtype)
-        np.save("ann_query_embedding.", ann_query_embedding)
+        np.save("ann_query_embedding.npy", ann_query_embedding)
         uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
         # print(uid_list_top5)
         # breakpoint()
