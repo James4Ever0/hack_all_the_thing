@@ -1,4 +1,5 @@
 import numpy as np
+
 # from txtai.embeddings import Embeddings
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
@@ -9,7 +10,7 @@ data_source = [
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 ]
 # embeddings = Embeddings()
-data = np.load('ids.npy') # format wrong! fuck.
+data = np.load("ids.npy")  # format wrong! fuck.
 # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
@@ -23,13 +24,10 @@ limit = 5
 
 
 scores = np.dot(queries, data.T).tolist()  # the damn dot product!
-        # uid = embeddings.similarity(query, data)[0][0]
-        # this is actually the same. just a miniatured 'indexed' thing.
-uids = [
-    sorted(enumerate(score), key=lambda x: x[1], reverse=True)
-    for score in scores
-]
-uid_list_top5 = np.array(uids)[0, :limit, :] 
+# uid = embeddings.similarity(query, data)[0][0]
+# this is actually the same. just a miniatured 'indexed' thing.
+uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
+uid_list_top5 = np.array(uids)[0, :limit, :]
 for uid, score in uid_list_top5:
     uid = int(uid)
     # where is the damn score? wtf?
