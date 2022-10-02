@@ -57,4 +57,4 @@ from zhon.hanzi import punctuation
 chinese_and_english_punctuation = string.punctuation+punctuation
 
 for sample in samples:
-    
+    line = sample.replace("\n"," ")
