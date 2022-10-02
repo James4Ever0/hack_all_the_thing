@@ -1,5 +1,7 @@
 # we mainly change the model, and the datasource.
 
+# this application aims to run on my macbook air and cause a major 
+
 import os
 # os.environ['http_proxy'] = ''
 # os.environ['https_proxy'] = ''
