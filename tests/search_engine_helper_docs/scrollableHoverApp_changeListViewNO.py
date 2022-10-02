@@ -90,7 +90,7 @@ class HoverApp(App):
         import random
 
         label = random.randint(0, 10)
-        del self.view.named_widgets['side']
+        # del self.view.named_widgets['side']
         # print(self.view.named_widgets)
         # print(self.view.named_widgets.keys())
         # breakpoint()
@@ -105,8 +105,8 @@ class HoverApp(App):
                 for index in range(30)
             ]
         )  # what should we update?
-        await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         await self.view.action_toggle('side')
+        await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         await self.view.action_toggle('side')
 
 
