@@ -49,6 +49,7 @@ class MyApp(App):
             await self.jumpScrollView()
         elif key == "s":
             await self.focusSearchView()
+        elif key == 
 
     async def action_clearSearchView(self):
         self.mainInput.value = ""
