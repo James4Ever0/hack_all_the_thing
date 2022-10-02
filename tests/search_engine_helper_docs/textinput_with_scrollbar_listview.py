@@ -66,7 +66,7 @@ class MyApp(App):
             [
                 Hover(
                     "widget {}_{}".format(index, label),
-                    onClick=lambda: self.mainToggle(),
+                    onClick=lambda: self.mainToggle(), # toggle what? jump to the 
                 )
                 for index in range(30)
             ]
