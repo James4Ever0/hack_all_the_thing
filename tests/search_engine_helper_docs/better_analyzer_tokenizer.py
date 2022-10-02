@@ -21,4 +21,4 @@ from docarray import Document, DocumentArray
 
 import wordninja
 import string
-from zhon.
+from zhon.hanzi import punctuation
