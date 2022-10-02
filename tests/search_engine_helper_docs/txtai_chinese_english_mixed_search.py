@@ -45,7 +45,7 @@ if __name__ == "__main__":
         # 1.11 GB, could blow my shit?
         # since i don't speak languages other than chinese and english.
         # {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'}
-        # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
+        {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
         # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
         # 471 MB
