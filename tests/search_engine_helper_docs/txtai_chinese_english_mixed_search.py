@@ -73,7 +73,7 @@ if __name__ == "__main__":
         {
             "path": # "sentence-transformers/distiluse-base-multilingual-cased-v1"
             # use path native to alpharetta instead.
-            /root/.cache/huggingface/hub/models--sentence-transformers--distiluse-base-multilingual-cased-v1/snapshots/756c7aa7d57c27bd1c71a483367c53966465f450
+            "/root/.cache/huggingface/hub/models--sentence-transformers--distiluse-base-multilingual-cased-v1/snapshots/756c7aa7d57c27bd1c71a483367c53966465f450"
         }  # use this instead!
         # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
