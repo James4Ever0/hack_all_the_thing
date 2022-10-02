@@ -1,6 +1,13 @@
 import numpy as np
 # from txtai.embeddings import Embeddings
+from semantic_ai_search_base_conv_with_step_charbased import (
+    listOfCleanedMergedConvGroupWithLineIndexMapping,
+)
 
+data_source = [
+    elem["conv_group_merged"]
+    for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
+]
 # embeddings = Embeddings()
 data = np.fromfile('ids.txt', dtype=np.float32).reshape(-1,768)
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
