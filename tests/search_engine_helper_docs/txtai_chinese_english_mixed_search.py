@@ -88,13 +88,13 @@ if __name__ == "__main__":
 
     # Convert queries to embedding vectors
     print("loading data_source")
-    from progressbar import progressbar
+    import progressbar
 
     # but i want to ask, what can be the 'tags'?
 
     embeddings.index(
         (uid, text, None)
-        for uid, text in enumerate(progressbar(data_source))
+        for uid, text in enumerate(progressbar.progressbar(data_source))
     )  # are you sure that this progressbar will work?
     # generator? are we passing a generator?
     # this is quick! fuck.
