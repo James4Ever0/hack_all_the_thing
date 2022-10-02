@@ -13,12 +13,12 @@ from lazero.utils.logger import sprint
 # this is a search application! damn it.
 
 # we still got some unfixed hyphen problems. damn.
-# from semantic_ai_search_base_conv_with_step_charbased import (
-#     listOfCleanedMergedConvGroupWithLineIndexMapping,
-# )
-from semantic_ai_chinese_english import (
+from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
+# from semantic_ai_chinese_english import (
+#     listOfCleanedMergedConvGroupWithLineIndexMapping,
+# )
 
 data_source = [
     elem["conv_group_merged"]
@@ -44,8 +44,8 @@ if __name__ == "__main__":
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB, could blow my shit?
         # since i don't speak languages other than chinese and english.
-        # {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'}
-        {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
+        {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'}
+        # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
         # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
         # 471 MB
