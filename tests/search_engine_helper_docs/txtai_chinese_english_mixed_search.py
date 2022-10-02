@@ -21,6 +21,8 @@ from semantic_ai_search_base_conv_with_step_charbased import (
 # no to do this you need to be online, since you need to encode your query into embeddings.
 # consider to use jina or not?
 
+# we only use this during development or system idle. we don't do this while busy.
+
 # from semantic_ai_chinese_english import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
 # ) # video language recognition
