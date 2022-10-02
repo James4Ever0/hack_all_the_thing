@@ -131,7 +131,7 @@ class MyApp(App):
 
     async def jumpScrollView(self, reverse=False):
         if self.body.visible:
-            self.index += 1 if 
+            self.index += 1 if not reverse else -1)
             self.index %= len(self.lineNumbers)
             self.jumpToEquivalentLineNumber(
                 self.content_line_char_count, self.lineNumbers[self.index]
