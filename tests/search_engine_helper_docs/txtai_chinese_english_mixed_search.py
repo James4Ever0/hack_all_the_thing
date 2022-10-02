@@ -14,7 +14,7 @@ from lazero.utils.logger import sprint
 
 # we still got some unfixed hyphen problems. damn.
 
-from /root/Desktop/works/pyjom/symlinks/hack_all_the_thing/tests/search_engine_helper_docs/semantic_ai_chinese_english import (
+from semantic_ai_chinese_english import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
 
@@ -34,7 +34,8 @@ if __name__ == "__main__":
 # needs to query from huggingface?
 # will this fucking work?
     embeddings = Embeddings(
-        {"path": "sentence-transformers/nli-mpnet-base-v2"}
+        {"path": "sentence-transformers/"}
+        # {"path": "sentence-transformers/nli-mpnet-base-v2"}
     )  # same as the 'indexed' demo.
 
     # loading this thing?
