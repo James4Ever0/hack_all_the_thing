@@ -13,6 +13,8 @@ embeddings = Embeddings(
 )
 # data = np.load("ids.npy")  # format wrong! fuck.
 
+# 4.2M also for our embeddings.
+# do not trust jina since it will not load our shit!
 
 # # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 embeddings.load("./multilingual_index_demo") # no model out there! fuck.
