@@ -86,6 +86,8 @@ class MyApp(App):
             await self.toggleScrollView()
         elif key_lower == "j":
             await self.jumpScrollView()
+        elif key_lower == 'k':
+            await self.jumpScrollView(reverse=True)
         elif key_lower == "s":
             await self.focusSearchView()
         elif key_lower == "a":
