@@ -1,5 +1,7 @@
 # we mainly change the model, and the datasource.
 
+import os
+for fname in ["ids.txt",]
 # do not use streamlit this time. maybe you want repl?
 # check the damn GPU usage!
 
@@ -105,7 +107,7 @@ if __name__ == "__main__":
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
     ids = embeddings.config["embeddings"] # tricky namings.
-    np.savetxt("ids.txt", ids,)
+    np.savetxt("ids.txt", ids)
     print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
     # SHAPE (1421, 768) DTYPE float32
     print("saving done")
