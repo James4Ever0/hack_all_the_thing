@@ -71,7 +71,9 @@ if __name__ == "__main__":
         # since i don't speak languages other than chinese and english.
         # {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems bad for english language. no stemming.
         {
-            "path": "sentence-transformers/distiluse-base-multilingual-cased-v1"
+            "path": # "sentence-transformers/distiluse-base-multilingual-cased-v1"
+            # use path native to alpharetta instead.
+            /root/.cache/huggingface/hub/models--sentence-transformers--distiluse-base-multilingual-cased-v1/snapshots/756c7aa7d57c27bd1c71a483367c53966465f450
         }  # use this instead!
         # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
