@@ -101,6 +101,7 @@ if __name__ == "__main__":
     # Dot product on normalized vectors is equal to cosine similarity
 
     # Add index and sort desc based on score
+    # save embeddings!
     while True:
         query = input("> ")
         if query == "q":
