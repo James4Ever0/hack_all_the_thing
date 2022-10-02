@@ -100,7 +100,7 @@ class MyApp(App):
         await self.view.dock(self.mainInput, edge="top", size=3, name='search')
         await self.view.dock(self.body, edge="top") # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
-        # when 
+        # search performed later depends on the 
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
