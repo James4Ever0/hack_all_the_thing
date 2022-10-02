@@ -25,3 +25,32 @@ from zhon.hanzi import punctuation
 
 chinese_and_english_punctuation = string.punctuation+punctuation
 
+def removeDuplicates(line, chars=[" ", "\t"], maxConsecutiveLength=1):
+    for char in chars:
+        minUnallowedConsecutiveLength = maxConsecutiveLength + 1
+        while True:
+            if char * minUnallowedConsecutiveLength in line:
+                line = line.replace(
+                    char * minUnallowedConsecutiveLength, char * maxConsecutiveLength
+                )
+            else:
+                break
+    return line
+
+
+def stripChars(line, chars=[" ", "\t"]):
+    while True:
+        flag = False
+        for char in chars:
+            if line.startswith(char) or line.endswith(char):
+                line = line.strip(char)
+                flag = True
+        if not flag:
+            break
+    return line
+
+
+def standardLineCleaner(line):
+    line = removeDuplicates(line)
+    line = stripChars(line)
+    return line
