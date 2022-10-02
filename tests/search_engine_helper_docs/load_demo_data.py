@@ -3,7 +3,7 @@
 with open("jq_man.log","r") as f:
     data=f.read()
 
-with open("jq_man.log","r") as f:
+with open("","r") as f:
     data2=f.read()
 # whatever search engine you use.
 # where is the damn data?
