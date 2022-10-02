@@ -36,6 +36,7 @@ if __name__ == "__main__":
 # these models belong to 'sentence similarity' category in huggingface
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
+        # 1.11 GB
         # https://huggingface.co/TingChenChang/make-multilingual-en-zh-tw-20220825062338/tree/main
         {'path': ""}
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
