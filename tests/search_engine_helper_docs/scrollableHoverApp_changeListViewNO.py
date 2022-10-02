@@ -80,7 +80,7 @@ class HoverApp(App):
         if key_lower in ["t"]: # i doubt that 'escape' shall be treated differently.
             await self.mainToggle()
         elif key_lower == 'a':
-            await self.
+            await self.alterListView()
 
     async def on_mount(self) -> None:
         # self.hovers = (
