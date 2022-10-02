@@ -5,6 +5,8 @@
 
 # are you sure indexed search is the same as similarity search?
 
+# question: how to get jina app
+
 from txtai.embeddings import Embeddings
 from lazero.utils.logger import sprint
 # seems it can pull out the right thing.
