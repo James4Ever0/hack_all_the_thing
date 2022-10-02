@@ -5,6 +5,7 @@
 # would cause more trouble if index more files on my mac.
 
 import os
+
 # os.environ['http_proxy'] = ''
 # os.environ['https_proxy'] = ''
 # for fname in ["ids.txt","ann_query_embedding.txt"]:
@@ -71,7 +72,7 @@ if __name__ == "__main__":
         # since i don't speak languages other than chinese and english.
         # {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems bad for english language. no stemming.
         {
-            "path": # "sentence-transformers/distiluse-base-multilingual-cased-v1"
+            "path":  # "sentence-transformers/distiluse-base-multilingual-cased-v1"
             # use path native to alpharetta instead.
             "/root/.cache/huggingface/hub/models--sentence-transformers--distiluse-base-multilingual-cased-v1/snapshots/756c7aa7d57c27bd1c71a483367c53966465f450"
         }  # use this instead!
@@ -116,9 +117,9 @@ if __name__ == "__main__":
     # Add index and sort desc based on score
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
-    ids = embeddings.config["embeddings"] # tricky namings.
+    ids = embeddings.config["embeddings"]  # tricky namings.
     np.save("ids.npy", ids)
-    print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
+    print("SHAPE", ids.shape, "DTYPE", ids.dtype)  # it is a list.
     # SHAPE (1421, 768) DTYPE float32
     print("saving done")
     while True:
