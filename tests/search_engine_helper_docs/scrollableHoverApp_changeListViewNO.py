@@ -100,9 +100,9 @@ class HoverApp(App):
                 for index in range(30)
             ]
         )  # what should we update?
-        self.view.action_toggle('side')
+        await self.view.action_toggle('side')
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
-        self.view.action_toggle('side')
+        await self.view.action_toggle('side')
 
 
     async def on_mount(self) -> None:
