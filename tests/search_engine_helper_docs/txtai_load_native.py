@@ -25,10 +25,6 @@ queries = np.load("ann_query_embedding.npy") # this is the live data. we will ob
 limit = 5
 
 
-scores = np.dot(queries, data.T).tolist()  # the damn dot product!
-# uid = embeddings.similarity(query, data)[0][0]
-# this is actually the same. just a miniatured 'indexed' thing.
-uids = [sorted(enumerate(score), key=lambda x: x[1], reverse=True) for score in scores]
 uid_list_top5 = np.array(uids)[0, :limit, :]
 for uid, score in uid_list_top5:
     uid = int(uid)
