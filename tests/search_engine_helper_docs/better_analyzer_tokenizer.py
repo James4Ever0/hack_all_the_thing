@@ -19,12 +19,6 @@ from docarray import Document, DocumentArray
 """,  # wordninja, glued words or code.
 ]
 
-import wordninja
-import string
-from zhon.hanzi import punctuation
-
-chinese_and_english_punctuation = string.punctuation+punctuation
-
 def removeDuplicates(line, chars=[" ", "\t"], maxConsecutiveLength=1):
     for char in chars:
         minUnallowedConsecutiveLength = maxConsecutiveLength + 1
