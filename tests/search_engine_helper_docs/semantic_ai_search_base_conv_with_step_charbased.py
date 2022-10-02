@@ -1,5 +1,5 @@
 from load_demo_data import data
-from load_chinese_mixed_data 
+from load_chinese_english_mixed_data import data2
 
 # the data is indeed unstructured.
 # split the data with newline.
