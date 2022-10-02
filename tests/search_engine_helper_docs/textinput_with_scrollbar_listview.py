@@ -56,6 +56,7 @@ class Hover(Widget):
         if self.clickFunction:
             await self.clickFunction()  # what should you pass?
 
+
 class MyApp(App):
     # how to let me copy the text inslde? fuck?
     index = 0
@@ -86,14 +87,16 @@ class MyApp(App):
             await self.jumpScrollView()
         elif key_lower == "s":
             await self.focusSearchView()
-        elif key_lower == 'a':
+        elif key_lower == "a":
             await self.alterListView()
 
-    async def mainToggle(self): # you may need to adjust this thing?
+    async def mainToggle(self):  # you may need to adjust this thing?
         await self.view.action_toggle("side")
         await self.view.action_toggle("viewer")
+
     async def alterListView(self):
         import random
+
         label = random.randint(0, 10)
         # del self.view.named_widgets['side']
         # print(self.view.named_widgets)
@@ -105,12 +108,12 @@ class MyApp(App):
             [
                 Hover(
                     "widget {}_{}".format(index, label),
-                    onClick=lambda: self.mainToggle(), # toggle what? jump to the viewer?
+                    onClick=lambda: self.mainToggle(),  # toggle what? jump to the viewer?
                 )
                 for index in range(30)
             ]
         )  # what should we update?
-        await self.view.action_toggle('side')
+        await self.view.action_toggle("side")
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
         # await self.view.action_toggle('side')
 
@@ -170,11 +173,9 @@ class MyApp(App):
         )  # remember that both 'body' and 'ListViewUo' are not visible at the start because there is nothing to display at this time.
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
-        self.scrollableHovers = ListViewUo([
-            
-        ])
+        self.scrollableHovers = ListViewUo([])
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
-        await self.view.dock(self.scrollableHovers, edge='top', name='side')
+        await self.view.dock(self.scrollableHovers, edge="top", name="side")
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
