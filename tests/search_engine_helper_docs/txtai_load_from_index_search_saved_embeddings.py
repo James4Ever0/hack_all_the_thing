@@ -2,10 +2,10 @@ import numpy as np
 # from txtai.embeddings import Embeddings
 
 # embeddings = Embeddings()
-embeddings = np.fromfile('ids.txt', dtype=np.float32).reshape(-1,768)
+data = np.fromfile('ids.txt', dtype=np.float32).reshape(-1,768)
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
-ann_query_embedding = np.fromfile("ann_query_embedding.txt",dtype=np.float32).reshape(1,-1)
+queries = np.fromfile("ann_query_embedding.txt",dtype=np.float32).reshape(1,-1)
 # SHAPE: (1, 768) DTYPE: float32
 
 # it still needs gpu.
@@ -26,7 +26,7 @@ scores = np.dot(queries, data.T).tolist()  # the damn dot product!
         # #data: different position inside the data, representing different values: (index, score)
         #          #b #doc #data
         # uid= uids[0][0][0]
-        uid_list_top5 = np.array(uids)[0, :5, :]  # allow omitted index???
+        uid_list_top5 = np.array(uids)[0, :limit, :]  # allow omitted index???
         # the thing is integer based. so the score is always zero.
         # uid_list_top5 = np.array(uids,dtype=int)[0,:5,0]
         # this is a list, not a numpy array!
