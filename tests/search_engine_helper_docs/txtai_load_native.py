@@ -16,7 +16,7 @@ embeddings = Embeddings({
 # # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
-queries = np.load("ann_query_embedding.npy") # this is the live data. we will obtain this embedding from jina.
+# queries = np.load("ann_query_embedding.npy") # this is the live data. we will obtain this embedding from jina.
 # SHAPE: (1, 768) DTYPE: float32
 
 # it still needs gpu.
@@ -24,7 +24,7 @@ queries = np.load("ann_query_embedding.npy") # this is the live data. we will ob
 
 limit = 5
 
-embeddings.
+embeddings.search()
 for uid, score in uid_list_top5:
     uid = int(uid)
     # where is the damn score? wtf?
