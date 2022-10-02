@@ -1,6 +1,6 @@
 # we mainly change the model, and the datasource.
 
-# this application aims to run on my macbook air and cause a major ram c
+# this application aims to run on my macbook air and cause a major ram consumption up to 0.5 GB
 
 import os
 # os.environ['http_proxy'] = ''
