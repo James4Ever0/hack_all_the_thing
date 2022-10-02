@@ -105,10 +105,10 @@ if __name__ == "__main__":
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
     ids = embeddings.config["embeddings"] # tricky namings.
-    np.savetxt("ids.txt", ids)
-    print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
-    # SHAPE (1421, 768) DTYPE float32
-    print("saving done")
+    # np.savetxt("ids.txt", ids)
+    # print("SHAPE", ids.shape, "DTYPE", ids.dtype) # it is a list.
+    # # SHAPE (1421, 768) DTYPE float32
+    # print("saving done")
     while True:
         query = input("> ")
         if query == "q":
