@@ -12,7 +12,7 @@ data_source = [
 data = np.fromfile('ids.npy', dtype=np.float32).reshape(-1,768) # format wrong! fuck.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
 print("LOAD COMPLETE")
-queries = np.fromfile("ann_query_embedding.npy",dtype=np.float32).reshape(1,-1)
+queries = np.load("ann_query_embedding.npy",dtype=np.float32).reshape(1,-1)
 # SHAPE: (1, 768) DTYPE: float32
 
 # it still needs gpu.
