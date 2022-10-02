@@ -6,7 +6,7 @@
 # are you sure indexed search is the same as similarity search?
 
 # question: how to get jina applied to our application?
-# answer: jina is used for query embedding and local machine will store general embeddings.
+# answer: jina is used for query embedding and local machine will store general embeddings (really?)
 
 from txtai.embeddings import Embeddings
 from lazero.utils.logger import sprint
