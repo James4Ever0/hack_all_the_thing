@@ -99,6 +99,7 @@ class HoverApp(App):
                 for index in range(30)
             ]
         )  # what should we update?
+        self.view.re
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
 
     async def on_mount(self) -> None:
