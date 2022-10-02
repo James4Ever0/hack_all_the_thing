@@ -91,7 +91,7 @@ class HoverApp(App):
 
         label = random.randint(0, 10)
         # del self.scrollableHovers
-        self.named_
+        self.named_widgets
         self.scrollableHovers = ListViewUo(
             [
                 Hover(
