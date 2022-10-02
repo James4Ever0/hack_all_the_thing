@@ -22,3 +22,5 @@ from docarray import Document, DocumentArray
 import wordninja
 import string
 from zhon.hanzi import punctuation
+
+chinese_and_english_punctuation = string.punctuation+punctuation
