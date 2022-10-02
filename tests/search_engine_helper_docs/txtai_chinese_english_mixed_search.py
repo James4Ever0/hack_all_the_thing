@@ -10,6 +10,7 @@
 
 from txtai.embeddings import Embeddings
 from lazero.utils.logger import sprint
+
 # seems it can pull out the right thing.
 # but the ram consumption?
 # 1455MiB. this is high.
@@ -18,7 +19,7 @@ from lazero.utils.logger import sprint
 # we still got some unfixed hyphen problems. damn.
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
-) # recursive every element apply
+)  # recursive every element apply
 
 # how to make it offline? we don't need online shit.
 # no to do this you need to be online, since you need to encode your query into embeddings.
@@ -46,19 +47,21 @@ if __name__ == "__main__":
     os.environ["all_proxy"] = ""
     # progressbar?
 
-# needs to query from huggingface?
-# will this fucking work?
-# these models belong to 'sentence similarity' category in huggingface
+    # needs to query from huggingface?
+    # will this fucking work?
+    # these models belong to 'sentence similarity' category in huggingface
 
-# i strongly suspect that some websites are just built upon this tech.
-# i suspect all models on huggingface can be used in someway, but first let me dig into this semantic search thing. could be the entrance.
+    # i strongly suspect that some websites are just built upon this tech.
+    # i suspect all models on huggingface can be used in someway, but first let me dig into this semantic search thing. could be the entrance.
 
     embeddings = Embeddings(
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB, could blow my shit?
         # since i don't speak languages other than chinese and english.
         # {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems bad for english language. no stemming.
-        {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"} # use this instead!
+        {
+            "path": "sentence-transformers/distiluse-base-multilingual-cased-v1"
+        }  # use this instead!
         # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
         # 471 MB
@@ -82,7 +85,10 @@ if __name__ == "__main__":
 
     # but i want to ask, what can be the 'tags'?
 
-    embeddings.index((uid, text, None) for uid, text in enumerate(progressbar.progressbar(data_source))) # are you sure that this progressbar will work?
+    embeddings.index(
+        (uid, text, None)
+        for uid, text in enumerate(progressbar.progressbar(data_source))
+    )  # are you sure that this progressbar will work?
     # generator? are we passing a generator?
     # this is quick! fuck.
 
@@ -102,7 +108,7 @@ if __name__ == "__main__":
             break
         # the "1" is the limit. how about let's make it into 5?
         limit = 5
-        uid_list_top5= embeddings.search(query, limit) # what is this thing?
+        uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
         # print(uid_list_top5)
         # breakpoint()
         # [(849, 0.6242430210113525), (186, 0.6196383833885193), (823, 0.6172434687614441), (728, 0.6048709750175476), (1389, 0.6044095158576965)]
