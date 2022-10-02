@@ -26,7 +26,6 @@ class MyApp(App):
         # import pyperclip
         with open("EXPORTED_TEXT.log",'w+') as f:
             f.write(text)
-
         # pyperclip.copy(text) # are you sure it works?
         console.save_svg("screenshot.svg", title="MyTitle")  # not so right?
 
