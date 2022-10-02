@@ -90,6 +90,7 @@ class HoverApp(App):
         import random
 
         label = random.randint(0, 10)
+        del self.self.scrollableHovers
         self.scrollableHovers = ListViewUo(
             [
                 Hover(
