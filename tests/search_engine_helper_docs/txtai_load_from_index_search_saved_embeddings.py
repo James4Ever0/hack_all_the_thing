@@ -8,5 +8,5 @@ ann_query_embedding = np.fromfile("ann_query_embedding.txt").reshape(1,-1)
 # reshape this thing.
 
 limit = 3
-result = embeddings.ann.search(ann_query_embedding, limit)
+result = embeddings.ann.search(ann_query_embedding, limit) # how long does it take for you to load all these stuff?
 print(result)
