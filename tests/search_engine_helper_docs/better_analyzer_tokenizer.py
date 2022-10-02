@@ -54,10 +54,10 @@ import wordninja
 import string
 from zhon.hanzi import punctuation
 
-chinese_and_english_punctuation = set(list[string.punctuation+punctuation))
+chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
 # you also need to stem english words.
 
 for sample in samples:
     line = sample.replace("\n"," ")
-    for pun
+    for punctuation in chinese_and_english_punctuation:
