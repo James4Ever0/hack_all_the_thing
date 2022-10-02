@@ -1,6 +1,6 @@
 import numpy as np
 
-# from txtai.embeddings import Embeddings
+from txtai.embeddings import Embeddings
 from semantic_ai_search_base_conv_with_step_charbased import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 )
@@ -9,7 +9,7 @@ data_source = [
     elem["conv_group_merged"]
     for elem in listOfCleanedMergedConvGroupWithLineIndexMapping
 ]
-# embeddings = Embeddings()
+embeddings = Embeddings('')
 # data = np.load("ids.npy")  # format wrong! fuck.
 # # 4.2M for ids.npy. whatever. 200 files may take 200*4 = 800MB.
 # embeddings.load("./multilingual_index_demo") # no model out there! fuck.
