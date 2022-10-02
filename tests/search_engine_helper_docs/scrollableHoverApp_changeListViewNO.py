@@ -81,7 +81,7 @@ class HoverApp(App):
         key_lower = key.lower()
         # handle input elsewhere?
         # when text field is focused, we do not do shit.
-        if key_lower in ["t"]:  # i doubt that 'escape' shall be treated differently.
+        if key_lower == 't':  # i doubt that 'escape' shall be treated differently.
             await self.mainToggle()
         elif key_lower == "a":
             await self.alterListView()
