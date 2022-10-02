@@ -24,8 +24,7 @@ queries = np.load("ann_query_embedding.npy") # this is the live data. we will ob
 
 limit = 5
 
-
-uid_list_top5 = np.array(uids)[0, :limit, :]
+embeddings.
 for uid, score in uid_list_top5:
     uid = int(uid)
     # where is the damn score? wtf?
