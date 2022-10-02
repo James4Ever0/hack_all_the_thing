@@ -111,7 +111,7 @@ if __name__ == "__main__":
             break
         # the "1" is the limit. how about let's make it into 5?
         limit = 5
-        query_embedding =  embeddings.transform([])
+        query_embedding =  embeddings.transform((None, ))
         uid_list_top5 = embeddings.search(query, limit)  # what is this thing?
         # print(uid_list_top5)
         # breakpoint()
