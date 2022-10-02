@@ -54,9 +54,9 @@ if __name__ == "__main__":
         # shibing624/text2vec-base-chinese for text2vec: https://pypi.org/project/text2vec/
         # 1.11 GB, could blow my shit?
         # since i don't speak languages other than chinese and english.
-        {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems good?
+        {'path':'TingChenChang/make-multilingual-en-zh-tw-20220825062338'} # seems bad for english language. no stemming.
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v1"}
-        # 539 MBrecursive every element apply
+        # 539 MB
         # {'path': "sentence-transformers/distiluse-base-multilingual-cased-v2"} # more languages but performs weaker.
         # 471 MB
         # {"path": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"} # this is not the 'all' kind of thing. MULTILINGUAL!
