@@ -81,18 +81,24 @@ class HoverApp(App):
         key_lower = key.lower()
         # handle input elsewhere?
         # when text field is focused, we do not do shit.
-        if key_lower == 't':  # i doubt that 'escape' shall be treated differently.
+        if key_lower == "t":  # i doubt that 'escape' shall be treated differently.
             await self.mainToggle()
         elif key_lower == "a":
             await self.alterListView()
 
     async def alterListView(self):
         import random
-        label = random.randint(0,10)
-        self.scrollableHovers= ListViewUo([
-            Hover("widget {}_{}".format(index, label), onClick=lambda: self.mainToggle())
-            for index in range(30)
-        ])  # what should we update?
+
+        label = random.randint(0, 10)
+        self.scrollableHovers = ListViewUo(
+            [
+                Hover(
+                    "widget {}_{}".format(index, label),
+                    onClick=lambda: self.mainToggle(),
+                )
+                for index in range(30)
+            ]
+        )  # what should we update?
         await self.view.dock(self.scrollableHovers, edge="top", name="side")  # WTF?
 
     async def on_mount(self) -> None:
