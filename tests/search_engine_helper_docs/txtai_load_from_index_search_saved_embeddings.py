@@ -8,3 +8,4 @@ ann_query_embedding = np.fromfile('ann_query_embedding.txt')
 
 limit = 3
 result = embeddings.ann.search(ann_query_embedding,limit)
+print(result)
