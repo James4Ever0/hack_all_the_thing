@@ -16,6 +16,8 @@ from lazero.utils.logger import sprint
 # from semantic_ai_search_base_conv_with_step_charbased import (
 #     listOfCleanedMergedConvGroupWithLineIndexMapping,
 # ) # recursive every element apply
+
+# how to make it offline? we don't need online shit.
 from semantic_ai_chinese_english import (
     listOfCleanedMergedConvGroupWithLineIndexMapping,
 ) # video language recognition
