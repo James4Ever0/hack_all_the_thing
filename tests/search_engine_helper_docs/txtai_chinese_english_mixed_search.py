@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # save embeddings!
     # embeddings.save("./multilingual_index_demo")
     ids = embeddings.config['ids']
-    
+    np.savetxt('ids.txt',ids)
     print("saving done")
     while True:
         query = input("> ")
