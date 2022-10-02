@@ -1,7 +1,8 @@
 # we mainly change the model, and the datasource.
 
 import os
-
+os.environ['http_proxy'] = ''
+os.environ['https_proxy'] = ''
 # for fname in ["ids.txt","ann_query_embedding.txt"]:
 #     if os.path.exists(fname):
 #         os.remove(fname)
