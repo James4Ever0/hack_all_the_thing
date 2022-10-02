@@ -106,6 +106,7 @@ class MyApp(App):
         # when search is performed at the first time, 'ListViewUo' shows first.
         # search performed later depends on the visible component, if 'body' is visible then perform search inside this file, if 'ListViewUo' is visible then perform search across multiple files.
         # changes happens after hitting the enter key, if the search area is cleared, then do nothing.
+        awaitself.view.dock(self.)
 
         await self.body.update(self.contentText)
         self.jumpToEquivalentLineNumber(
