@@ -58,4 +58,4 @@ chinese_and_english_punctuation = string.punctuation+punctuation
 
 for sample in samples:
     line = sample.replace("\n"," ")
-    line = line.split()
+    line = 
