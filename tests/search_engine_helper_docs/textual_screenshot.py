@@ -2,12 +2,13 @@ from textual.app import App
 from rich.console import Console
 
 
+from textual.widgets import ScrollView
 
 
 class MyApp(App):
     async def on_load(self) -> None:
         await self.bind("y", "screenshot", "Screenshot")
-    async def 
+        await self.view.dock(self.body, edge="top")
 
 
     def action_screenshot(self) -> None:
