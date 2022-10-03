@@ -94,9 +94,10 @@ for sample in samples:
     # finally, join all things with space, for whatever reason.
     final_line = " ".join(final_words) # for our dearly transformer
     final_stemmed_line = " ".join(final_stemmed_words) # for our dearly whoosh
-    final_cutted_stemmed_line = " ".join(final_stemmed_words) # for our dearly whoosh
+    final_cutted_stemmed_line = " ".join(final_cutted_stemmed_words) # for our dearly whoosh
     from lazero.utils.logger import sprint
     print('final_line')
     sprint(final_line)
     print('final_stemmed_line')
+    sprint(final_stemmed_line)
     sprint(final_stemmed_line)
