@@ -102,7 +102,7 @@ for sample in samples:
     # how to use these four things?
     # use them all for all search engines? that will increase our index size significantly!
     
-    # problem is, both query and 
+    # problem is, both query and data need to be processed somehow. but how?
     print('final_line')
     sprint(final_line)
     print('final_cutted_line')
