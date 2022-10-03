@@ -80,8 +80,8 @@ def index_search(dirname, search_fields, search_query):
         # line number? use string slice and count('\n') please.
         # or we could directly use the highlighter without whoosh?
         for hitIndex, hit in enumerate(results): # we cannot override the imported 'index'
-            # score = results.scorer(hit)
-            score = hit.score
+            score = results.scorer(hit)
+            # score = hit.score
             print("SCORE", score)
             print('HIT:',hitIndex)
             # print(hit)
