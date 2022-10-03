@@ -101,6 +101,8 @@ for sample in samples:
     from lazero.utils.logger import sprint
     print('final_line')
     sprint(final_line)
+    print('final_cutted_line')
+    sprint(final_cutted_line)
     print('final_stemmed_line')
     sprint(final_stemmed_line)
     print('final_cutted_stemmed_line')
