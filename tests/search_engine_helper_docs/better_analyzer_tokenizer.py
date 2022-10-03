@@ -83,5 +83,6 @@ for sample in samples:
             else:
                 final_words.extend(ninja_cutted_word)
     # finally, join all things with space, for whatever reason.
-    " "
+    final_line = " ".join(final_words)
+    
     
