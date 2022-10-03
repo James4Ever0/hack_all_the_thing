@@ -68,4 +68,4 @@ for sample in samples:
     # split with what first?
     # wordninja. split words.
     # nope. we use jieba first.
-    jieba.lcut(cleaned_line)
+    cutted_words = jieba.lcut(cleaned_line)
