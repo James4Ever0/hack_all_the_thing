@@ -68,8 +68,18 @@ for sample in samples:
     # split with what first?
     # wordninja. split words.
     # nope. we use jieba first.
-    cutted_words = jieba.lcut(cleaned_line) # remove whitespace!
-    for word in cutted_words:
+    jieba_cutted_words = jieba.lcut(cleaned_line) # remove whitespace!
+    final_words = []
+    for word in jieba_cutted_words:
         strip_word = word.strip()
         if len(strip_word) == 0:
-            
+            # we should only keep the splited words.
+            continue
+        else:
+            ninja_cutted_word = wordninja.split(word)
+            if len(ninja_cutted_word) == 0 :
+                # we shall keep the original word.
+                final_words.append(word)
+            else:
+                final_words.extend(ninja_cutted_word)
+    
