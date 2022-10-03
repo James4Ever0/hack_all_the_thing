@@ -61,6 +61,8 @@ stemmer = PorterStemmer()
 chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
 # you also need to stem english words.
+print(chinese_and_english_punctuation)
+breakpoint()
 
 for sample in samples:
     line = sample.replace("\n"," ")
@@ -100,5 +102,5 @@ for sample in samples:
     sprint(final_line)
     print('final_stemmed_line')
     sprint(final_stemmed_line)
-    print('final_stemmed_line')
-    sprint(final_stemmed_line)
+    print('final_cutted_stemmed_line')
+    sprint(final_cutted_stemmed_line)
