@@ -66,3 +66,4 @@ for sample in samples:
     cleaned_line = standardLineCleaner(line)
     # now use what?
     # split with what first?
+    # wordninja. split words.
