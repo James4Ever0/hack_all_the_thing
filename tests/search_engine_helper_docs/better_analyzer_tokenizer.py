@@ -80,6 +80,9 @@ for sample in samples:
             continue
         else:
             ninja_cutted_word = wordninja.split(word)
+            if len(ninja_cutted_word) == 0 :
+                # we shall keep the original word.
+                final_words.append(word)
             else:
                 final_words.extend(word, ninja_cutted_word)
     # now 'stem' words use nltk.
