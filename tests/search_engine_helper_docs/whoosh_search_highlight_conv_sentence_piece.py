@@ -82,8 +82,9 @@ def index_search(dirname, search_fields, search_query):
             # print(hit)
             # breakpoint()
             content = hit['content']
-            print(hit.keys())
-            breakpoint()
+            # doesn't metter we can insert the index.
+            # print(hit.keys())
+            # breakpoint()
             # reversed stem highlight!
             sprint('content:',content)
             # sprint(dir(hit))
