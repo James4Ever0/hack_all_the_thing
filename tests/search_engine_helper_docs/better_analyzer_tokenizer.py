@@ -85,7 +85,7 @@ for sample in samples:
                 # we shall keep the original word.
                 final_words.append(word)
             else:
-                final_words.extend(ninja_cutted_word)
+                final_cutted_words.extend(ninja_cutted_word)
     # now 'stem' words use nltk.
     final_stemmed_words = []
     for word in final_words:
