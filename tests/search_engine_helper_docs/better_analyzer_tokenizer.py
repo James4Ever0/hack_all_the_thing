@@ -67,3 +67,5 @@ for sample in samples:
     # now use what?
     # split with what first?
     # wordninja. split words.
+    # nope. we use jieba first.
+    
