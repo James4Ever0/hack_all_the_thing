@@ -67,7 +67,7 @@ breakpoint()
 for sample in samples:
     line = sample.replace("\n"," ")
     for punctuation in chinese_and_english_punctuation:
-        sample.replace(punctuation, " ")
+        sample = sample.replace(punctuation, " ")
     cleaned_line = standardLineCleaner(line)
     # now use what?
     # split with what first?
