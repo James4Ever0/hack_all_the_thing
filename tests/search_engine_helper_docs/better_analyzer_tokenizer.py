@@ -61,13 +61,13 @@ stemmer = PorterStemmer()
 chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
 # you also need to stem english words.
-print(chinese_and_english_punctuation)
-breakpoint()
+# print(chinese_and_english_punctuation)
+# breakpoint()
 
 for sample in samples:
     line = sample.replace("\n"," ")
     for punctuation in chinese_and_english_punctuation:
-        sample = sample.replace(punctuation, " ")
+        line = line.replace(punctuation, " ")
     cleaned_line = standardLineCleaner(line)
     # now use what?
     # split with what first?
