@@ -88,9 +88,9 @@ for sample in samples:
             else:
                 final_cutted_words.extend(ninja_cutted_word)
     # now 'stem' words use nltk.
-    final_stemmed_words = []
+    final_stemmed_words = [stemmer.stem(word)]
     for word in final_words:
-        stemmed_word = stemmer.stem(word)
+        stemmed_word = 
         final_stemmed_words.append(stemmed_word)
     # finally, join all things with space, for whatever reason.
     final_line = " ".join(final_words) # for our dearly transformer
