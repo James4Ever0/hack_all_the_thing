@@ -18,6 +18,8 @@ import os, os.path
 from whoosh import qparser
 # from whoosh.highlight import HtmlFormatter
 
+from whoosh import scoring
+
 # question: how to tokenize chinese text?
 # better search for 'whoosh 中文搜索' 'whoosh + jieba'
 schema = Schema(
