@@ -63,6 +63,7 @@ def index_search(dirname, search_fields, search_query):
     # (title:math OR content:math OR title:addition OR content:addition)
     # why you have case conversion? why the fuck?
 
+    # with ix.searcher(weighting=scoring.BM25F()) as s:
     with ix.searcher(weighting=scoring.TF_IDF()) as s:
         results = s.search(q, terms=True, limit=5)  # what fucking terms?
         results.fragmenter.charlimit = 100000
@@ -80,8 +81,8 @@ def index_search(dirname, search_fields, search_query):
         # line number? use string slice and count('\n') please.
         # or we could directly use the highlighter without whoosh?
         for hitIndex, hit in enumerate(results): # we cannot override the imported 'index'
-            score = results.scorer(hit)
-            # score = hit.score
+            # score = results.scorer(hit)
+            score = hit.score
             print("SCORE", score)
             print('HIT:',hitIndex)
             # print(hit)
@@ -120,8 +121,11 @@ def index_search(dirname, search_fields, search_query):
 # print(results[0:10])
 # return results
 
-# query = "apply recursive every"
+# query = "apply recursive every" # it does have score. but it does not work for short term or single returns
+# and the score is not from 0 to 1 (not normalized)
 query = "github" # find the damn link!
+# no github this time. fuck. better revise our model.
+# what if there is two github things within?
 # query = "apply every recursive"  # seems not so good.
 # query = "math addition"
 # must not with reader closed.
