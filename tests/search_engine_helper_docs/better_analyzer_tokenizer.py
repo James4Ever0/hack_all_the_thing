@@ -101,6 +101,8 @@ for sample in samples:
     from lazero.utils.logger import sprint
     # how to use these four things?
     # use them all for all search engines? that will increase our index size significantly!
+    
+    # problem is, both query and 
     print('final_line')
     sprint(final_line)
     print('final_cutted_line')
