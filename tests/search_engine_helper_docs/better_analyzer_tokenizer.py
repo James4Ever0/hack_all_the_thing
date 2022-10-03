@@ -100,4 +100,5 @@ for sample in samples:
     sprint(final_line)
     print('final_stemmed_line')
     sprint(final_stemmed_line)
+    print('final_stemmed_line')
     sprint(final_stemmed_line)
