@@ -100,7 +100,7 @@ for sample in samples:
     final_cutted_stemmed_line = " ".join(final_cutted_stemmed_words) # for our dearly whoosh
     from lazero.utils.logger import sprint
     # how to use these four things?
-    # use them all for all search engines?
+    # use them all for all search engines? that will increase our index size significantly!
     print('final_line')
     sprint(final_line)
     print('final_cutted_line')
