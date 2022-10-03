@@ -103,8 +103,9 @@ for sample in samples:
     # use them all for all search engines? that will increase our index size significantly!
     
     # problem is, both query and data need to be processed somehow. but how?
-    
+
     # you want to use different split methods at the same time, or one at a time?
+    # you want to score them right? mostly in whoosh!
     print('final_line')
     sprint(final_line)
     print('final_cutted_line')
