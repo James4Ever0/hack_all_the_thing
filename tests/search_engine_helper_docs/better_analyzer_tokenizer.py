@@ -69,3 +69,7 @@ for sample in samples:
     # wordninja. split words.
     # nope. we use jieba first.
     cutted_words = jieba.lcut(cleaned_line) # remove whitespace!
+    for word in cutted_words:
+        strip_word = word.strip()
+        if len(strip_word) == 0:
+            
