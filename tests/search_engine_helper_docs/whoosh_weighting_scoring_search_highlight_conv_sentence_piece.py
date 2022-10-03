@@ -66,6 +66,7 @@ def index_search(dirname, search_fields, search_query):
     # with ix.searcher(weighting=scoring.BM25F()) as s:
     with ix.searcher(weighting=scoring.TF_IDF()) as s:
         results = s.search(q, terms=True, limit=5)  # what fucking terms?
+        # is it sorted by score?
         results.fragmenter.charlimit = 100000
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
@@ -121,9 +122,9 @@ def index_search(dirname, search_fields, search_query):
 # print(results[0:10])
 # return results
 
-# query = "apply recursive every" # it does have score. but it does not work for short term or single returns
+query = "apply recursive every" # it does have score. but it does not work for short term or single returns
 # and the score is not from 0 to 1 (not normalized)
-query = "github" # find the damn link!
+# query = "github" # find the damn link!
 # no github this time. fuck. better revise our model.
 # what if there is two github things within?
 # query = "apply every recursive"  # seems not so good.
