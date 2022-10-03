@@ -63,7 +63,7 @@ def index_search(dirname, search_fields, search_query):
     # (title:math OR content:math OR title:addition OR content:addition)
     # why you have case conversion? why the fuck?
 
-    with ix.searcher() as s:
+    with ix.searcher(weighting=scoring.TF_IDF()) as s:
         results = s.search(q, terms=True, limit=5)  # what fucking terms?
         results.fragmenter.charlimit = 100000
         # how about let's set it as max char length among our document database?
