@@ -62,7 +62,7 @@ def index_search(dirname, search_fields, search_query):
     # why you have case conversion? why the fuck?
 
     with ix.searcher() as s:
-        results = s.search(q, terms=True, limit=5, scoring)  # what fucking terms?
+        results = s.search(q, terms=True, limit=5, score=)  # what fucking terms?
         results.fragmenter.charlimit = 100000
         # how about let's set it as max char length among our document database?
         print("Search Results: ")
