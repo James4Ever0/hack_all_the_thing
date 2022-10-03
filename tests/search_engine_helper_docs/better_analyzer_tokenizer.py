@@ -54,6 +54,9 @@ import wordninja
 import string
 from zhon.hanzi import punctuation
 import jieba
+from nltk.stem import PorterStemmer
+
+stemmer = PorterStemmer()
 
 chinese_and_english_punctuation = set(list(string.punctuation+punctuation))
 
@@ -85,8 +88,10 @@ for sample in samples:
     # now 'stem' words use nltk.
     final_stemmed_words = []
     for word in final_words:
-        
+        stemmed_word = stemmer.stem(word)
+        final_stemmed_words.append(stemmed_word)
     # finally, join all things with space, for whatever reason.
-    # final_line = " ".join(final_stemmed_words)
+    final_line = " ".join(final_words)
+    final_stemmed_line = " ".join(final_stemmed_words)
 
     

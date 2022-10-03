@@ -9,7 +9,7 @@ from nltk.stem import PorterStemmer
 # just english and chinese. for other languages we don't understand so much.
 # this requires tensorflow.
 englishNLP = en_core_web_sm.load() # oh shit
-porterStemmer = PorterStemmer()
+porterStemmer = PorterStemmer() # whill automatically get lower case.
 
 
 def englishTextToOriginalAndStemmedWordPairs(text):
