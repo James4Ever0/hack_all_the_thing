@@ -91,7 +91,7 @@ for sample in samples:
         stemmed_word = stemmer.stem(word)
         final_stemmed_words.append(stemmed_word)
     # finally, join all things with space, for whatever reason.
-    final_line = " ".join(final_words)
+    final_line = " ".join(final_words) # for our dearly transformer
     final_stemmed_line = " ".join(final_stemmed_words)
 
     
