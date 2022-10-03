@@ -92,6 +92,6 @@ for sample in samples:
         final_stemmed_words.append(stemmed_word)
     # finally, join all things with space, for whatever reason.
     final_line = " ".join(final_words) # for our dearly transformer
-    final_stemmed_line = " ".join(final_stemmed_words)
+    final_stemmed_line = " ".join(final_stemmed_words) # for our dearly whoosh
 
     
