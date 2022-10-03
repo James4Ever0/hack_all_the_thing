@@ -82,7 +82,8 @@ for sample in samples:
                 final_words.append(word)
             else:
                 final_words.extend(ninja_cutted_word)
+    # now 'stem' words use nltk.
     # finally, join all things with space, for whatever reason.
     final_line = " ".join(final_words)
-    
+
     
