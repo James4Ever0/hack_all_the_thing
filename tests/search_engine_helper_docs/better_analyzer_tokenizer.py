@@ -99,6 +99,7 @@ for sample in samples:
     final_stemmed_line = " ".join(final_stemmed_words) # for our dearly whoosh
     final_cutted_stemmed_line = " ".join(final_cutted_stemmed_words) # for our dearly whoosh
     from lazero.utils.logger import sprint
+    # how to use these four things?
     print('final_line')
     sprint(final_line)
     print('final_cutted_line')
