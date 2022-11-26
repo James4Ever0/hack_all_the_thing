@@ -18,9 +18,12 @@ with open("apt_export_termux.log","r") as f:
                     continue
                 else:
                     if len(mbuf)!=2:
+                        print("unlawful shit happening:")
+                        import rich
+                        rich.print(mbuf)
                         raise Exception("shit")
                     mhead=mbuf[0]
-                    mtail=mbuf[1:]
+                    mtail=mbuf[1]
                     #print("_"*4)
                     mbuf=[]
             else:
