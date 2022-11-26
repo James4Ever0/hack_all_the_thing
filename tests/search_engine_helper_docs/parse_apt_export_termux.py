@@ -17,9 +17,12 @@ with open("apt_export_termux.log","r") as f:
                 if mbuf == []:
                     continue
                 else:
+                    if len(mbuf)!=2:
+                        raise Exception("shit")
                     mhead=mbuf[0]
-                    mtail=mbuf[1]
+                    mtail=mbuf[1:]
                     #print("_"*4)
+                    mbuf=[]
             else:
                 #print(l)
                 mbuf.append(l)
