@@ -6,4 +6,5 @@ print("dog synsets?" , var)
 var=wn.synsets('狗', lang='cmn')[0]
 # it is working, but we still don't get the language id firsthand.
 # well that is simple. we don't have many languages.
+# if no response, simply translate or query for more related info/tags on web.
 print("dog2 synsets?" , var)
