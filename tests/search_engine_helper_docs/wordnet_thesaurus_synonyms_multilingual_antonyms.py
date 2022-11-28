@@ -11,6 +11,9 @@ print("dog2 synsets?" , var)
 
 # then? find synonyms.
 
-s=var.lemmas("cmn").synonyms()
-print(s)
+for l in var.lemmas("cmn"):
+    s=l.synonyms()
+    a=l.antonyms()
+    print(s)
+    print(a)
 
