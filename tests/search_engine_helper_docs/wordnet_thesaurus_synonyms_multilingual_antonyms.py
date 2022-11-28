@@ -10,7 +10,8 @@ var=wn.synsets('狗', lang='cmn')[0]
 print("dog2 synsets?" , var)
 
 # then? find synonyms.
-s=var.hypernyms()[0].hypernyms()
+s=var.hypernyms()[0].hyponyms()
+#not hypernyms. hyponyms.
 #s=var.hypernyms()[0].hypernyms()
 print(s)
 
