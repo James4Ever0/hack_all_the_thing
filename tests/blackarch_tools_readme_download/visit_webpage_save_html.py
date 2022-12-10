@@ -68,7 +68,7 @@ with sync_playwright() as p:
         with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
         # fuck tempfile. fuck everything.
         # save_path = "target.html"
-        # save_path = f.name
+            save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
             success = False
