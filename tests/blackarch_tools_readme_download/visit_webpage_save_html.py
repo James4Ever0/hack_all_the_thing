@@ -33,6 +33,7 @@ def browseAndSave(page, targetURL, save_path, timeout=5000):
 
     # Save the page HTML to a file
     html = page.content()
+    if type(save_path) == str:
     with open(save_path, "w+") as f:
         f.write(html)
     return incomplete
