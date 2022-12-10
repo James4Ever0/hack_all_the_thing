@@ -30,7 +30,7 @@ for index, row in df.iterrows():
 for key, elem in urlmap.items():
     # now you must develop a tool for browsing both github pages (with your damn proxy) and other common pages, extracting HTML then send it to readbilityjs.
     # you want to be l33t then use elinks instead. i don't mind.
-    # print("KEY?", key)
+    print("KEY?", key)
 #    print("ELEM?", elem)
 #    print("____"*3)
 # you'd better use neo4j for this.
