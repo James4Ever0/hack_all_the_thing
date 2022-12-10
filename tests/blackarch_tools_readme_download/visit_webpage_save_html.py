@@ -16,7 +16,6 @@ browser_context_options = {
 }
 browser = p.chromium.launch(browser_context_options=browser_context_options)
 
-Copy code
 # Create a new page and set the HTTP proxy
 page = browser.new_page()
 page.set_http_proxy('http://localhost:38457')
