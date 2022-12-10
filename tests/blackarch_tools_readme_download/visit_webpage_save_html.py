@@ -66,7 +66,7 @@ with sync_playwright() as p:
             try:
                 data = read_html(save_path) # will it succeed?
             else:
-                data = {}
+                data = 
             # test the tinydb code first. please!
             # many repetitions. but could all be important. what do you want?
     # main loop you should do some thing.
