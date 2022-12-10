@@ -16,7 +16,7 @@ def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} ):
     )  # that shit is faked by openai. it does not read the fucking manual carefully.
     return browser
 
-def browseAndSave(page,targetURL, save_path):
+def browseAndSave(page,targetURL, save_path, timeout = 5000):
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
@@ -30,21 +30,5 @@ with sync_playwright() as p:
     # does that work?
 
     # Navigate to Google and wait for the page to fully load
-    page.goto(targetURL)
-    # page.wait_for_selector('body') # oh shit does that really work?
-    # you should use some timeout strategy.]
-    incomplete = True
-    try:
-        page.wait_for_load_state("networkidle", timeout=timeout)
-        incomplete = False
-    except:
-        print(
-            "MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:", timeout
-        )
-
-    # Save the page HTML to a file
-    html = page.content()
-    with open(save_path, "w+") as f:
-        f.write(html)
     # Close the browser
     browser.close()
