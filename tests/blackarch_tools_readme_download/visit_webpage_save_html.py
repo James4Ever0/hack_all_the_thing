@@ -70,6 +70,7 @@ with sync_playwright() as p:
             except:
                 data = {}
             data.update({'success': success,'incomplete':incomplete})
+            key = targetURL
             upsert_data(key,data)
             # test the tinydb code first. please!
             # many repetitions. but could all be important. what do you want?
