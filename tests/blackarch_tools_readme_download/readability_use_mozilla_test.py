@@ -6,6 +6,7 @@ with open("fastgithub_readme.html", "r") as f:
     html = f.read()
     # url = "https://github.com/dotnetcore/FastGithub"
     # do not provide url. JSDOM won't load shit.
+    print('loading JSDOM')
     doc = JSDOM(html)
     reader = Readability(doc.window.document)
     article = reader.parse()
