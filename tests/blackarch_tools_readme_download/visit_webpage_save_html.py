@@ -64,7 +64,7 @@ with sync_playwright() as p:
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
             data = read_html(save_path)
-            # many repetitions. what do you want?
+            # many repetitions. but could all be important. what do you want?
     # main loop you should do some thing.
 
     # Navigate to Google and wait for the page to fully load
