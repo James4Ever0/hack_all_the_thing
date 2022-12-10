@@ -34,6 +34,7 @@ with sync_playwright() as p:
     incomplete = True
     try:
         page.wait_for_load_state("networkidle", timeout=timeout)
+        incomplete = False
     except:
         print(
             "MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:", timeout
