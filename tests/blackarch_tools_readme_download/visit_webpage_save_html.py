@@ -53,9 +53,6 @@ with sync_playwright() as p:
     # Create a new page and set the HTTP proxy
     page = browser.new_page()  # just use the same damn page.
     # does that work?
-    from read_and_scrape import getURLMap
-    from readability_use_mozilla_test import read_html
-    from tinydb_upsert import 
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
