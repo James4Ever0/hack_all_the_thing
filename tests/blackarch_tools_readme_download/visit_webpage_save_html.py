@@ -70,11 +70,11 @@ with sync_playwright() as p:
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
             success = False
-            print("FILEPATH?", save_path)
-            print("CONTENT?")
-            cnt = f.read()
-            print(cnt)
-            f.seek(0)
+            # print("FILEPATH?", save_path)
+            # print("CONTENT?")
+            # cnt = f.read()
+            # print(cnt)
+            # f.seek(0)
             try:
                 data = read_html(save_path)  # will it succeed?
             except:
