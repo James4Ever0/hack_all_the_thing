@@ -63,9 +63,9 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in progressbar.progressbar(urlmap.items()):
         # targetURL = "https://github.com/dotnetcore/FastGithub"
-        import tempfile
+        # import tempfile
 
-        with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
+        # with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
             save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
