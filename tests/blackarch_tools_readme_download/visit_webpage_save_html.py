@@ -12,7 +12,10 @@ from playwright.sync_api import sync_playwright
 
 
 def getBrowserInstance(
-    p, headless=False, mProxySettings={"server": "http://127.0.0.1:38457"}
+    p, 
+    # headless=False, 
+    headless=True, 
+    mProxySettings={"server": "http://127.0.0.1:38457"}
 ):
     # not using proxy settings! fuck
     browser = p.chromium.launch(
@@ -63,11 +66,11 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in progressbar.progressbar(urlmap.items()):
         # targetURL = "https://github.com/dotnetcore/FastGithub"
+        # save_path = "target.html"
+        # fuck tempfile. fuck everything.
         import tempfile
 
         with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
-        # fuck tempfile. fuck everything.
-        # save_path = "target.html"
             save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
