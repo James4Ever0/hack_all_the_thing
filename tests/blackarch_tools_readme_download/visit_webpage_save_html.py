@@ -14,7 +14,7 @@ timeout = 5000  # 5 seconds? too short?
 with sync_playwright() as p:
     mProxySettings = {"server": "127.0.0.1:38457"}  # whatever.
     browser = p.chromium.launch(
-        proxy=mProxySettings
+        proxy=mProxySettings # seems to be headless. fuck.
     )  # that shit is faked by openai. it does not read the fucking manual carefully.
     # Create a new page and set the HTTP proxy
     page = browser.new_page()
