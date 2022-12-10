@@ -42,16 +42,16 @@ def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, ti
     # wtf?
     # courtesy from openai
     try:
-    page.wait_for_selector("html", timeout=timeout_2) # thing will not even show up. no navigation. fuck?
-    html = page.content()
-    # html = page.evaluate("document.documentElement.outerHTML") # not fucking working?
-    if type(save_path) == str:
-        with open(save_path, "w+") as f:
-            f.write(html)
-    else:
-        save_path.write(html)
-        save_path.seek(0)
-        # named temporary file?
+        page.wait_for_selector("html", timeout=timeout_2) # thing will not even show up. no navigation. fuck?
+        html = page.content()
+        # html = page.evaluate("document.documentElement.outerHTML") # not fucking working?
+        if type(save_path) == str:
+            with open(save_path, "w+") as f:
+                f.write(html)
+        else:
+            save_path.write(html)
+            save_path.seek(0)
+            # named temporary file?
     return incomplete
 
 
