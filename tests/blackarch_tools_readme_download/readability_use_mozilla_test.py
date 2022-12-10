@@ -12,7 +12,7 @@ read_html = require("./readability_html.js").read_html # must use .js extension.
 # # print(dir(JSDOM))
 if __name__ == "__main__":
     filepath = "fastgithub_readme.html"
-    article = read_html(filepath)z
+    article = read_html(filepath)
     import rich
     rich.print(article)
 
