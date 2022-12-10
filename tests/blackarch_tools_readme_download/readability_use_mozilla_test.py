@@ -1,4 +1,6 @@
 from javascript import require
+# fuck that.
+
 # Readability = require("@mozilla/readability")
 # R = require("@mozilla/readability").Readability
 # # JSDOM = require("jsdom")
