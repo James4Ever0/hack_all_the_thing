@@ -1,7 +1,7 @@
 from javascript import require
 
 var { Readability } = require('@mozilla/readability');
-var { JSDOM } = require('jsdom');
+var { JSDOM } = require('jsdom').JSDOM
 var doc = new JSDOM(html, {
   url: url
 });
