@@ -65,13 +65,15 @@ with sync_playwright() as p:
         # targetURL = "https://github.com/dotnetcore/FastGithub"
         import tempfile
 
-        with tempfile.NamedTemporaryFile(suffix=".html") as f:
+        with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
             save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
             success = False
             print("FILEPATH?", save_path)
-            print("CONTENT?",f.read())
+            print("CONTENT?")
+            cnt = f.read()
+            print(cnt)
             f.seek(0)
             try:
                 data = read_html(save_path)  # will it succeed?
