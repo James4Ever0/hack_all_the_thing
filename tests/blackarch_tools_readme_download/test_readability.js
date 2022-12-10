@@ -5,3 +5,4 @@ var doc = new JSDOM("<body>Look at this cat: <img src='./cat.jpg'></body>", {
 });
 let reader = new Readability(doc.window.document);
 let article = reader.parse();
+console.log("ARTICLE?")
