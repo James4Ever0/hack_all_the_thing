@@ -9,3 +9,5 @@ query = query.key == "foo"
 
 # Update the value of the key "foo", creating a new record if it does not exist
 db.upsert({"key": "foo", "value": "new_value"}, query)
+
+if __name__ == "__main__":
