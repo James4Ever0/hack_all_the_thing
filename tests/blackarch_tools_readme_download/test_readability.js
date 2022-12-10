@@ -1,5 +1,7 @@
 var { Readability } = require('@mozilla/readability');
-var { JSDOM } = require('jsdom');
+// var { JSDOM } = require('jsdom');
+var J = require('jsdom');
+JSDOM = J.JSDOM
 // var doc = new JSDOM("<body>Look at this cat: <img src='./cat.jpg'></body>", {
 //   url: "https://www.baidu.com" // fine now? you do not load shits from that url ?
 // });
