@@ -25,7 +25,7 @@ def getBrowserInstance(
     return browser
 
 
-def browseAndSave(page, targetURL, save_path, timeout_0=5000, timeout_1=2000):
+def browseAndSave(page, targetURL, save_path, timeout_0=5000, timeout_1=2000): # more countdowns?
     # page.wait_for_selector('body') # oh shit does that really work?
     # you should use some timeout strategy.]
     incomplete = True
