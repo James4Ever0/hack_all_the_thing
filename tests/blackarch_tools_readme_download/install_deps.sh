@@ -1,1 +1,1 @@
-npm install -g 
+npm install -g @mozilla/readability jsdom
