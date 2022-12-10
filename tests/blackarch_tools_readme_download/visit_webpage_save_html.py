@@ -45,6 +45,7 @@ def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, ti
         page.wait_for_selector("html", timeout=timeout_2) # thing will not even show up. no navigation. fuck?
         html = page.content()
         # html = page.evaluate("document.documentElement.outerHTML") # not fucking working?
+        # cause you don't have html.
         if type(save_path) == str:
             with open(save_path, "w+") as f:
                 f.write(html)
