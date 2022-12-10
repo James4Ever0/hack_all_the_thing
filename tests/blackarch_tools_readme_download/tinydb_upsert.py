@@ -1,8 +1,8 @@
 from tinydb import TinyDB, Query
 
+dbpath = "my_database.json"
 # Open a TinyDB database
 db = TinyDB(dbpath)
-
 
 # Create a query to find the record with the key "foo"
 query = Query()
