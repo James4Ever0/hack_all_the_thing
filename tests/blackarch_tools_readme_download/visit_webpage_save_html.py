@@ -71,6 +71,8 @@ with sync_playwright() as p:
             # now you utilize the function.
             success = False
             print("FILEPATH?", save_path)
+            print("CONTENT?",f.read())
+            f.seek(0)
             try:
                 data = read_html(save_path)  # will it succeed?
             except:
