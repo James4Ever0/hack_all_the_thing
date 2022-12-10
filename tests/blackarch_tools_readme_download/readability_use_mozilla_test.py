@@ -3,9 +3,10 @@ from javascript import require
 Readability = require("@mozilla/readability")
 # Readability = require("@mozilla/readability").Readability
 JSDOM = require("jsdom")
+req
 # JSDOM = require("jsdom").JSDOM
 
-print(D)
+print(dir(JSDOM))
 with open("fastgithub_readme.html", "r") as f:
     html = f.read()
     # url = "https://github.com/dotnetcore/FastGithub"
