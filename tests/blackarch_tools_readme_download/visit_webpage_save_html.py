@@ -3,6 +3,8 @@
 # import os
 from playwright.sync_api import sync_playwright
 
+# shit! playwright is not running!
+
 # Set the path to the certificate file
 # cert_path = '/opt/fastgithub/cacert/fastgithub.cer' # where is the path of fastgithub?
 targetURL = "https://github.com/dotnetcore/FastGithub"
