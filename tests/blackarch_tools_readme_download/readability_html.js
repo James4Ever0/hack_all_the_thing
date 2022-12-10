@@ -7,5 +7,7 @@ module.exports = {
     var content = fs.readFileSync(mpath, {encoding: "utf8"})
 var doc = new JSDOM(content);
 let reader = new Readability(doc.window.document);
-let article = reader.parse()
+let article = reader.parse();
+return article;
+}
 }
