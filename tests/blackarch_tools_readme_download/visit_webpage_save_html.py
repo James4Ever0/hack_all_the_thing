@@ -19,7 +19,7 @@ def getBrowserInstance(p, headless=False,mProxySettings={"server": "http://127.0
     return browser
 
 
-def browseAndSave(page, targetURL, save_path, timeout=5000):
+def browseAndSave(page, targetURL, save_path, timeout_0=5000,timeout_1 = 2000):
     # page.wait_for_selector('body') # oh shit does that really work?
     # you should use some timeout strategy.]
     incomplete = True
