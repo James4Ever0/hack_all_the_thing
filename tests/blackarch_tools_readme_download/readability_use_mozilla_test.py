@@ -1,4 +1,6 @@
 from javascript import require
+import javascript
+javascript.
 
 Readability = require("@mozilla/readability")
 # Readability = require("@mozilla/readability").Readability
