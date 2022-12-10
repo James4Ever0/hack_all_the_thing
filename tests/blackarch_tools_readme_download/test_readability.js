@@ -7,7 +7,7 @@ let JSDOM = J.JSDOM // working.
 //   url: "https://www.baidu.com" // fine now? you do not load shits from that url ?
 // });
 const fs = require("fs");
-mpath = ""
+mpath = "fastgithub_readme"
 var content = fs.readFileSync(mpath, {encoding: "utf8"})
 var doc = new JSDOM(content);
 let reader = new Readability(doc.window.document);
