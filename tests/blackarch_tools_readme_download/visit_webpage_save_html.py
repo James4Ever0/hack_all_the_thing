@@ -37,7 +37,7 @@ def browseAndSave(page, targetURL, save_path, timeout_0=5000, timeout_1=2000):
         print("MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:")
 
     # Save the page HTML to a file
-    html = page.content()
+    # html = page.content()
     # playwright._impl._api_types.Error: Unable to retrieve content because the page is navigating and changing the content.
     # wtf?
     if type(save_path) == str:
