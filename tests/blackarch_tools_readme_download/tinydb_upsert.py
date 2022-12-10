@@ -14,3 +14,5 @@ def upsert_data(key,value):
     # fucking working?
 
 if __name__ == "__main__":
+    key,value = "foo",'bar'
+    
