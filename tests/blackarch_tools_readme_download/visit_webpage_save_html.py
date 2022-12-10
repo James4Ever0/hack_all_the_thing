@@ -40,6 +40,8 @@ def browseAndSave(page, targetURL, save_path, timeout_0=5000, timeout_1=2000):
     # html = page.content()
     # playwright._impl._api_types.Error: Unable to retrieve content because the page is navigating and changing the content.
     # wtf?
+    # courtesy from openai
+    html = page.evaluate("document.documentElement.outerHTML")
     if type(save_path) == str:
         with open(save_path, "w+") as f:
             f.write(html)
