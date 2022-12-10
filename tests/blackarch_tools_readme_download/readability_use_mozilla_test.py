@@ -8,7 +8,9 @@ with open("fastgithub_readme.html", "r") as f:
     # do not provide url. JSDOM won't load shit.
     print('loading JSDOM')
     doc = JSDOM(html)
+    print("STEP 2")
     reader = Readability(doc.window.document)
+    print("STEP 3")
     article = reader.parse()
     print("ARTICLE?")
     import rich
