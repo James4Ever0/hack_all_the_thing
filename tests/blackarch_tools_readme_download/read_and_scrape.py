@@ -1,5 +1,6 @@
 import pandas
 
+def getURLMap(fpath):
 fpath = "tools.csv"
 
 df = pandas.read_csv(fpath)
