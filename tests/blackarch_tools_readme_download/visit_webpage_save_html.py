@@ -10,7 +10,11 @@ from playwright.sync_api import sync_playwright
 targetURL = "https://github.com/dotnetcore/FastGithub"
 timeout = 5000  # 5 seconds? too short?
 
-def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} )
+def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} ):
+    browser = p.chromium.launch(
+        proxy=mProxySettings # seems to be headless. fuck. i ain't see shit. you need to be patient though.
+    )  # that shit is faked by openai. it does not read the fucking manual carefully.
+    return bro
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
