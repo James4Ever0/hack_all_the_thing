@@ -1,11 +1,7 @@
 from javascript import require
-import javascript
-javascript.
-
 Readability = require("@mozilla/readability")
 # Readability = require("@mozilla/readability").Readability
 JSDOM = require("jsdom")
-req
 # JSDOM = require("jsdom").JSDOM
 
 print(dir(JSDOM))
