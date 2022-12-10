@@ -5,7 +5,7 @@ JSDOM = require('jsdom').JSDOM
 with open("fastgithub_readme.html",'r') as f:
     html = f.read()
     url = 'https://github.com/dotnetcore/FastGithub'
- doc =JSDOM(html, {
+    doc =JSDOM(html, {
   url: url
 })
 let reader = new Readability(doc.window.document);
