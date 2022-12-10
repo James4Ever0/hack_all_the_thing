@@ -30,7 +30,8 @@ with sync_playwright() as p:
     # Navigate to Google and wait for the page to fully load
     page.goto(targetURL)
     # page.wait_for_selector('body') # oh shit does that really work?
-    # you should use some timeout strategy.
+    # you should use some timeout strategy.]
+    incomplete = True
     try:
         page.wait_for_load_state("networkidle", timeout=timeout)
     except:
