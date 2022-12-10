@@ -3,10 +3,10 @@
 import os
 from playwright.sync_api import Playwright, sync_playwright
 
-Set the path to the certificate file
+# Set the path to the certificate file
 cert_path = '/tmp/cacert.crt'
 
-Create a Playwright instance and launch browser
+# Create a Playwright instance and launch browser
 with sync_playwright() as p:
 # Set browser to use the certificate for HTTPS connections
 browser_context_options = {
