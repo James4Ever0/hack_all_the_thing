@@ -9,9 +9,7 @@ targetURL = "https://github.com/dotnetcore/FastGithub"
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
-    browser = p.chromium.launch(https_certificates=[{
-        "certificate_chain": [open(cert_path, "rb").read()]
-    }])
+    browser = p.chromium.launch() # that shit is faked by openai. it does not read the fucking manual.
     # Create a new page and set the HTTP proxy
     page = browser.new_page()
     # does that work?
