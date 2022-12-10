@@ -67,6 +67,7 @@ with sync_playwright() as p:
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
             success = False
+            
             try:
                 data = read_html(save_path) # will it succeed?
             except:
