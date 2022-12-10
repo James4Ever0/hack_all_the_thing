@@ -1,30 +1,29 @@
 import pandas
 
 def getURLMap(fpath):
+    df = pandas.read_csv(fpath)
 
-df = pandas.read_csv(fpath)
+    # print(df.head())
 
-# print(df.head())
+    # visit "Website", set things under "Name", save other metadata along side.
 
-# visit "Website", set things under "Name", save other metadata along side.
+    # things may have the same website. are you sure you only want to scrape its first page? but maybe that's enough
 
-# things may have the same website. are you sure you only want to scrape its first page? but maybe that's enough
+    # Version, Description, Category
+    # you should not iterate columns in this way.
+    # for col in df:
+    #    print(col)
+    #    print("___BREAK?___")
 
-# Version, Description, Category
-# you should not iterate columns in this way.
-# for col in df:
-#    print(col)
-#    print("___BREAK?___")
-
-urlmap = {}
-for index, row in df.iterrows():
-    # jackpot?
-    name = row["Name"]
-    url = row["Website"]
-    # and you want to avoid visiting the same website twice.
-    urlmap.update({url: urlmap.get(url, []) + [name]})
-#    print(row)
-#    print("ROW?")
+    urlmap = {}
+    for index, row in df.iterrows():
+        # jackpot?
+        name = row["Name"]
+        url = row["Website"]
+        # and you want to avoid visiting the same website twice.
+        urlmap.update({url: urlmap.get(url, []) + [name]})
+    #    print(row)
+    #    print("ROW?")
 
 # now plan on urls.
 if __name__ == "__main__":
