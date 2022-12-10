@@ -52,6 +52,8 @@ def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, ti
             save_path.write(html)
             save_path.seek(0)
             # named temporary file?
+    except:
+        print("HTML not loaded. skipping...")
     return incomplete
 
 
