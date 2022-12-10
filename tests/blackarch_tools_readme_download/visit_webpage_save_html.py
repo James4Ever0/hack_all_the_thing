@@ -52,7 +52,7 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in urlmap.items():
 
-    targetURL = "https://github.com/dotnetcore/FastGithub"
+    # targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = "target.html"
 
     browseAndSave(page, targetURL, save_path)
