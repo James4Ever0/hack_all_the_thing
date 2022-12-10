@@ -51,7 +51,7 @@ with sync_playwright() as p:
     targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = "target.html"
 
-    browseAndSave(page, targetURL, save_path)
+    browseAndSave(page, targetURL, save_path) # main loop you should do some thing.
 
     # Navigate to Google and wait for the page to fully load
     # Close the browser
