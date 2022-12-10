@@ -2,7 +2,7 @@ from javascript import require
 
 Readability= require('@mozilla/readability').Readability
 JSDOM = require('jsdom').JSDOM
-var doc = new JSDOM(html, {
+ doc =JSDOM(html, {
   url: url
 });
 let reader = new Readability(doc.window.document);
