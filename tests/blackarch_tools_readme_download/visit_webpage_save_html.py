@@ -6,7 +6,7 @@ from playwright.sync_api import  sync_playwright
 # Set the path to the certificate file
 # cert_path = '/opt/fastgithub/cacert/fastgithub.cer' # where is the path of fastgithub?
 targetURL = "https://github.com/dotnetcore/FastGithub"
-timeout = 5000
+timeout = 5000 # 5 seconds? too short?
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
