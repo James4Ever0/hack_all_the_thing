@@ -15,4 +15,5 @@ def upsert_data(key,value):
 
 if __name__ == "__main__":
     key,value = "foo",'bar'
-    
+    upsert_data(key,value)
+    upsert_data(key,value)
