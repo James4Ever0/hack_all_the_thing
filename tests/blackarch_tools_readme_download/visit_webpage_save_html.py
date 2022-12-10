@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 # Set the path to the certificate file
 # cert_path = '/opt/fastgithub/cacert/fastgithub.cer' # where is the path of fastgithub?
 # targetURL = "https://github.com/dotnetcore/FastGithub"
-timeout = 5000  # 5 seconds? too short?
+# timeout = 5000  # 5 seconds? too short?
 
 def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} ):
     browser = p.chromium.launch(
