@@ -24,8 +24,8 @@ def browseAndSave(page, targetURL, save_path, timeout_0=5000,timeout_1 = 2000):
     # you should use some timeout strategy.]
     incomplete = True
     try:
-        page.goto(targetURL,wait_until="domcontentloaded")
-        page.wait_for_load_state("load",timeout=timeout)
+        page.goto(targetURL,wait_until="domcontentloaded",timeout=timeout_0)
+        page.wait_for_load_state("load",timeout=timeout_1)
         incomplete = False
     except:
         print(
