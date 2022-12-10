@@ -2,7 +2,7 @@ from javascript import require
 
 Readability= require('@mozilla/readability').Readability
 JSDOM = require('jsdom').JSDOM
-with open(""
+with open("fastgithub_readme.html"
  doc =JSDOM(html, {
   url: url
 });
