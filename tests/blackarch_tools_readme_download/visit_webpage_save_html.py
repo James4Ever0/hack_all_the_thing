@@ -52,8 +52,8 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
-    import tempfile
-    tempfile.NamedTemporaryFile(suffix=".html") as f:
+        import tempfile
+        tempfile.NamedTemporaryFile(suffix=".html") as f:
         save_path = f.name
 
     browseAndSave(page, targetURL, save_path)
