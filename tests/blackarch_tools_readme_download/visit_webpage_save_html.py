@@ -53,8 +53,8 @@ with sync_playwright() as p:
     for targetURL, _ in urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
         import tempfile
-        tempfile.NamedTemporaryFile(suffix=".html") as f:
-        save_path = f.name
+        with tempfile.NamedTemporaryFile(suffix=".html") as f:
+            save_path = f.name
 
     browseAndSave(page, targetURL, save_path)
     # main loop you should do some thing.
