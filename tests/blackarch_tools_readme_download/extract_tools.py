@@ -45,7 +45,7 @@ with open(filename,'r') as f:
         href = val['href']
 #        print("href?", href)
         val.string = href # when you do hy repl, you should consider replace the current statement with that "modified" statement, instead of this previous statement, treat it like a real runtime fix.
-    # you must preprocess the column to make it somehow visible.
+    # you must preprocess the column to make it somehow visible.e
     mtable = mytable.prettify("utf-8")
     df = pd.read_html(mtable)[0]
     #df = pd.read_html(tfname)[0]
