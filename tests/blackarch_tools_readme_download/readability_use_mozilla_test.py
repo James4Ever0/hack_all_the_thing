@@ -4,7 +4,7 @@ Readability = require("@mozilla/readability")
 # JSDOM = require("jsdom")
 JSDOM = require("jsdom").JSDOM
 
-print(dir(JSDOM))
+# print(dir(JSDOM))
 with open("fastgithub_readme.html", "r") as f:
     html = f.read()
     # url = "https://github.com/dotnetcore/FastGithub"
