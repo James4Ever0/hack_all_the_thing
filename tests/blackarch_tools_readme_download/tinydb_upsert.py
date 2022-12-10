@@ -1,5 +1,6 @@
 from tinydb import TinyDB, Query
 
+# courtesy from openai.
 dbpath = "my_database.json"
 # Open a TinyDB database
 db = TinyDB(dbpath)
