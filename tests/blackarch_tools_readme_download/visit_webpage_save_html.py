@@ -12,10 +12,10 @@ from playwright.sync_api import sync_playwright
 
 
 def getBrowserInstance(
-    p, 
-    # headless=False, 
-    headless=True, 
-    mProxySettings={"server": "http://127.0.0.1:38457"}
+    p,
+    # headless=False,
+    headless=True,
+    mProxySettings={"server": "http://127.0.0.1:38457"},
 ):
     # not using proxy settings! fuck
     browser = p.chromium.launch(
@@ -25,7 +25,9 @@ def getBrowserInstance(
     return browser
 
 
-def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, timeout_2 = 1000): # more countdowns? let's see.
+def browseAndSave(
+    page, targetURL, save_path, timeout_0=6500, timeout_1=2500, timeout_2=1000
+):  # more countdowns? let's see.
     # page.wait_for_selector('body') # oh shit does that really work?
     # you should use some timeout strategy.]
     incomplete = True
@@ -34,7 +36,12 @@ def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, ti
         page.wait_for_load_state("load", timeout=timeout_1)
         incomplete = False
     except:
-        print("MAYBE TIMEOUT ENCOUNTERED.\nTRY TO SAVE HTML NO MATTER WHAT.\nTIMEOUTS?:", timeout_0, timeout_1,timeout_2)
+        print(
+            "MAYBE TIMEOUT ENCOUNTERED.\nTRY TO SAVE HTML NO MATTER WHAT.\nTIMEOUTS?:",
+            timeout_0,
+            timeout_1,
+            timeout_2,
+        )
 
     # Save the page HTML to a file
     # html = page.content()
@@ -42,7 +49,9 @@ def browseAndSave(page, targetURL, save_path, timeout_0=6500, timeout_1=2500, ti
     # wtf?
     # courtesy from openai
     try:
-        page.wait_for_selector("html", timeout=timeout_2) # thing will not even show up. no navigation. fuck?
+        page.wait_for_selector(
+            "html", timeout=timeout_2
+        )  # thing will not even show up. no navigation. fuck?
         html = page.content()
         # html = page.evaluate("document.documentElement.outerHTML") # not fucking working?
         # cause you don't have html.
@@ -78,14 +87,15 @@ with sync_playwright() as p:
         skip = True
         if type(targetURL) == str:
             if len(targetURL.strip()) > 0:
-                skip=False
-        if skip:continue
+                skip = False
+        if skip:
+            continue
         # targetURL = "https://github.com/dotnetcore/FastGithub"
         # save_path = "target.html"
         # fuck tempfile. fuck everything.
         import tempfile
 
-        with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
+        with tempfile.NamedTemporaryFile("w+", suffix=".html") as f:
             save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
@@ -98,7 +108,7 @@ with sync_playwright() as p:
             # it is fucked up.
             try:
                 data = read_html(save_path).valueOf()  # will it succeed?
-                #fucking shit.
+                # fucking shit.
                 # print("DATA?",data)
                 # breakpoint()
             except:
