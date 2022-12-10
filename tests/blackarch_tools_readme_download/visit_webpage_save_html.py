@@ -24,7 +24,7 @@ with sync_playwright() as p:
     # )  # that shit is faked by openai. it does not read the fucking manual carefully.
     browser = getBrowserInstance(p)
     # Create a new page and set the HTTP proxy
-    page = browser.new_page()
+    page = browser.new_page() # just use the same damn page.
     # does that work?
 
     # Navigate to Google and wait for the page to fully load
