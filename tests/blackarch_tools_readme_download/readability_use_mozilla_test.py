@@ -2,6 +2,7 @@ from javascript import require
 
 Readability= require('@mozilla/readability').Readability
 JSDOM = require('jsdom').JSDOM
+with open(""
  doc =JSDOM(html, {
   url: url
 });
