@@ -79,7 +79,7 @@ with sync_playwright() as p:
         # f.seek(0)
         # it is fucked up.
         try:
-            data = read_html(save_path)  # will it succeed?
+            data = read_html(save_path).valueOf()  # will it succeed?
             print("DATA?",data)
             breakpoint()
         except:
