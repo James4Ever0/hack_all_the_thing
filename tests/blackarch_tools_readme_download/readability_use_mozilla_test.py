@@ -4,7 +4,8 @@ Readability = require("@mozilla/readability").Readability
 JSDOM = require("jsdom").JSDOM
 with open("fastgithub_readme.html", "r") as f:
     html = f.read()
-    url = "https://github.com/dotnetcore/FastGithub"
+    # url = "https://github.com/dotnetcore/FastGithub"
+    # do not provide url. JSDOM won't load shit.
     doc = JSDOM(html)
     reader = Readability(doc.window.document)
     article = reader.parse()
