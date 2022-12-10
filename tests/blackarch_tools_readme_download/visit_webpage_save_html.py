@@ -50,6 +50,7 @@ with sync_playwright() as p:
     # does that work?
     from read_and_scrape import getURLMap
     urlmap = getURLMap("tools.csv")
+    
     targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = "target.html"
 
