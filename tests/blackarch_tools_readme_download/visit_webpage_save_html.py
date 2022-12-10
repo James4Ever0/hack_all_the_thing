@@ -48,6 +48,7 @@ with sync_playwright() as p:
     # Create a new page and set the HTTP proxy
     page = browser.new_page()  # just use the same damn page.
     # does that work?
+    from read_and_scrape import getURLMap
     targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = "target.html"
 
