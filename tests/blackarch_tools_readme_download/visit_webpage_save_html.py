@@ -14,7 +14,7 @@ def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} )
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
-    mProxySettings = {"server": "127.0.0.1:38457"}  # whatever.
+    # mProxySettings = {"server": "127.0.0.1:38457"}  # whatever.
     browser = p.chromium.launch(
         proxy=mProxySettings # seems to be headless. fuck. i ain't see shit. you need to be patient though.
     )  # that shit is faked by openai. it does not read the fucking manual carefully.
