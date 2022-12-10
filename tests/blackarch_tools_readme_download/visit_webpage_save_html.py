@@ -66,25 +66,27 @@ with sync_playwright() as p:
         # import tempfile
 
         # with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
-            save_path = f.name
-            incomplete = browseAndSave(page, targetURL, save_path)
-            # now you utilize the function.
-            success = False
-            # print("FILEPATH?", save_path)
-            # print("CONTENT?")
-            # cnt = f.read()
-            # print(cnt)
-            # f.seek(0)
-            # it is fucked up.
-            try:
-                data = read_html(save_path)  # will it succeed?
-            except:
-                data = {}
-            data.update({"success": success, "incomplete": incomplete})
-            key = targetURL
-            upsert_data(key, data)
-            # test the tinydb code first. please!
-            # many repetitions. but could all be important. what do you want?
+        # fuck tempfile. fuck everything.
+        save_path = "target.html"
+        # save_path = f.name
+        incomplete = browseAndSave(page, targetURL, save_path)
+        # now you utilize the function.
+        success = False
+        # print("FILEPATH?", save_path)
+        # print("CONTENT?")
+        # cnt = f.read()
+        # print(cnt)
+        # f.seek(0)
+        # it is fucked up.
+        try:
+            data = read_html(save_path)  # will it succeed?
+        except:
+            data = {}
+        data.update({"success": success, "incomplete": incomplete})
+        key = targetURL
+        upsert_data(key, data)
+        # test the tinydb code first. please!
+        # many repetitions. but could all be important. what do you want?}
     # main loop you should do some thing.
 
     # Navigate to Google and wait for the page to fully load
