@@ -28,7 +28,7 @@ page.wait_for_selector('body')
 
 # Save the page HTML to a file
 html = page.content()
-with open('google.html', 'w') as f:
+with open('target.html', 'w') as f:
     f.write(html)
 
 # Close the browser
