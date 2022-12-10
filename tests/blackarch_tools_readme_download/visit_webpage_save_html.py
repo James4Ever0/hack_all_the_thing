@@ -4,7 +4,7 @@ import os
 from playwright.sync_api import Playwright, sync_playwright
 
 # Set the path to the certificate file
-cert_path = '/tmp/cacert.crt'
+cert_path = '' # where is the path of fastgithub?
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
