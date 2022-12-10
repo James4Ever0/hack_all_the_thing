@@ -24,6 +24,7 @@ def getURLMap(fpath):
         urlmap.update({url: urlmap.get(url, []) + [name]})
     #    print(row)
     #    print("ROW?")
+    return urlmap
 
 # now plan on urls.
 if __name__ == "__main__":
