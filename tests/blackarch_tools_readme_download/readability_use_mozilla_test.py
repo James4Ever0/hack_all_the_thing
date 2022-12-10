@@ -3,6 +3,7 @@ Readability = require("@mozilla/readability")
 # Readability = require("@mozilla/readability").Readability
 # JSDOM = require("jsdom")
 JSDOM = require("jsdom").JSDOM
+## name collision?
 
 # print(dir(JSDOM))
 with open("fastgithub_readme.html", "r") as f:
