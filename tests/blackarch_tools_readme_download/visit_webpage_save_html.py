@@ -11,7 +11,7 @@ targetURL = "https://github.com/dotnetcore/FastGithub"
 timeout = 5000  # 5 seconds? too short?
 
 # Create a Playwright instance and launch browser
-with sync_playwright() as p: # how to 
+with sync_playwright() as p:
     mProxySettings = {"server": "127.0.0.1:38457"}  # whatever.
     browser = p.chromium.launch(
         proxy=mProxySettings # seems to be headless. fuck. i ain't see shit. you need to be patient though.
@@ -35,6 +35,5 @@ with sync_playwright() as p: # how to
     html = page.content()
     with open("target.html", "w") as f:
         f.write(html)
-
     # Close the browser
     browser.close()
