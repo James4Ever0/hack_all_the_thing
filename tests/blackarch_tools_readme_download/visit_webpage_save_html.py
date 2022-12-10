@@ -34,8 +34,12 @@ def browseAndSave(page, targetURL, save_path, timeout=5000):
     # Save the page HTML to a file
     html = page.content()
     if type(save_path) == str:
-    with open(save_path, "w+") as f:
-        f.write(html)
+        with open(save_path, "w+") as f:
+            f.write(html)
+    else:
+        save_path.write(html)
+        save_path.seek(0)
+        # named temporary file?
     return incomplete
 
 
@@ -50,13 +54,17 @@ with sync_playwright() as p:
     page = browser.new_page()  # just use the same damn page.
     # does that work?
     from read_and_scrape import getURLMap
+    from readability_use_mozilla_test import read_html
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
         import tempfile
         with tempfile.NamedTemporaryFile(suffix=".html") as f:
             save_path = f.name
-            browseAndSave(page, targetURL, save_path)
+            incomplete = browseAndSave(page, targetURL, save_path)
+            # now you utilize the function.
+            data = read_html(save_path)
+            # many repetitions. what do you want?
     # main loop you should do some thing.
 
     # Navigate to Google and wait for the page to fully load

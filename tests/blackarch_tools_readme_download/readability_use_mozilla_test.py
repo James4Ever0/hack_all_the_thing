@@ -10,10 +10,11 @@ read_html = require("./readability_html.js").read_html # must use .js extension.
 # ## name collision?
 
 # # print(dir(JSDOM))
-filepath = "fastgithub_readme.html"
-article = read_html(filepath)
-import rich
-rich.print(article)
+if __name__ == "__main__":
+    filepath = "fastgithub_readme.html"
+    article = read_html(filepath)
+    import rich
+    rich.print(article)
 
 # with open("fastgithub_readme.html", "r") as f:
 #     html = f.read()
