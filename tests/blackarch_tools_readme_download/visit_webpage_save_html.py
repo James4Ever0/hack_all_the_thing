@@ -57,7 +57,7 @@ with sync_playwright() as p:
     page = browser.new_page()  # just use the same damn page.
     # does that work?
     urlmap = getURLMap("tools.csv")
-    for targetURL, _ in urlmap.items():
+    for targetURL, _ in progressbar.progressbar(urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
         import tempfile
         with tempfile.NamedTemporaryFile(suffix=".html") as f:
