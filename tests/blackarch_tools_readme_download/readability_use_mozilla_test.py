@@ -1,6 +1,6 @@
 from javascript import require
 
-Readabilityequire('@mozilla/readability').Readability
+Readability= require('@mozilla/readability').Readability
 JSDOM = require('jsdom').JSDOM
 var doc = new JSDOM(html, {
   url: url
