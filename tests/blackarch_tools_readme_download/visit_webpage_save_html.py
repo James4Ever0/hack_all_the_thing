@@ -80,6 +80,8 @@ with sync_playwright() as p:
         # it is fucked up.
         try:
             data = read_html(save_path)  # will it succeed?
+            print("DATA?",data)
+            breakpoint()
         except:
             data = {}
         data.update({"success": success, "incomplete": incomplete})
