@@ -2,7 +2,7 @@ from javascript import require
 # Readability = require("@mozilla/readability")
 R = require("@mozilla/readability").Readability
 # JSDOM = require("jsdom")
-JSDOM = require("jsdom").JSDOM
+J = require("jsdom").JSDOM
 ## name collision?
 
 # print(dir(JSDOM))
@@ -12,9 +12,9 @@ with open("fastgithub_readme.html", "r") as f:
     # do not provide url. JSDOM won't load shit.
     print('loading JSDOM') # shit man. do not load shit!
     # taking forever? fuck!
-    doc = JSDOM(html)
+    doc = J(html)
     print("STEP 2")
-    reader = Readability(doc.window.document)
+    reader = R(doc.window.document)
     print("STEP 3")
     article = reader.parse()
     print("ARTICLE?")
