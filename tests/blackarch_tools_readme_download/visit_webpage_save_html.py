@@ -84,7 +84,7 @@ with sync_playwright() as p:
     # does that work?
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in progressbar.progressbar(urlmap.items()):
-        skip = True
+        skip = True # fix NaN issue.
         if type(targetURL) == str:
             if len(targetURL.strip()) > 0:
                 skip = False
