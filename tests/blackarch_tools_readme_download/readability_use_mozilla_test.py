@@ -8,5 +8,5 @@ with open("fastgithub_readme.html",'r') as f:
     doc =JSDOM(html, {
   "url": url
 })
-let reader = new Readability(doc.window.document);
-let article = reader.parse();
+    reader = Readability(doc.window.document);
+    article = reader.parse();
