@@ -49,6 +49,7 @@ with sync_playwright() as p:
     page = browser.new_page()  # just use the same damn page.
     # does that work?
     from read_and_scrape import getURLMap
+    urlmap = getURLMap("tools.csv")
     targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = "target.html"
 
