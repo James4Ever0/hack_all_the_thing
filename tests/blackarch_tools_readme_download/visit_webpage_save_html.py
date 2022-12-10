@@ -63,9 +63,9 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in progressbar.progressbar(urlmap.items()):
         # targetURL = "https://github.com/dotnetcore/FastGithub"
-        # import tempfile
+        import tempfile
 
-        # with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
+        with tempfile.NamedTemporaryFile("w+",suffix=".html") as f:
         # fuck tempfile. fuck everything.
         save_path = "target.html"
         # save_path = f.name
@@ -80,6 +80,7 @@ with sync_playwright() as p:
         # it is fucked up.
         try:
             data = read_html(save_path).valueOf()  # will it succeed?
+            #fucking shit.
             # print("DATA?",data)
             # breakpoint()
         except:
