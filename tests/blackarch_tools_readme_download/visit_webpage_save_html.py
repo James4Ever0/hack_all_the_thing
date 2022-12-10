@@ -76,7 +76,7 @@ with sync_playwright() as p:
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in progressbar.progressbar(urlmap.items()):
         if type(targetURL) == str:
-            if targetURL.startswith("http://
+            if targetURL.startswith(e) for e in ["https","http"]
         # targetURL = "https://github.com/dotnetcore/FastGithub"
         # save_path = "target.html"
         # fuck tempfile. fuck everything.
