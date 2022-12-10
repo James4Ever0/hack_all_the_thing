@@ -33,3 +33,4 @@ for key, elem in urlmap.items():
     # print("KEY?", key)
 #    print("ELEM?", elem)
 #    print("____"*3)
+# you'd better use neo4j for this.
