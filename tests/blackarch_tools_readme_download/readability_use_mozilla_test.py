@@ -1,6 +1,6 @@
 from javascript import require
-Readability = require("@mozilla/readability")
-# Readability = require("@mozilla/readability").Readability
+# Readability = require("@mozilla/readability")
+R = require("@mozilla/readability").Readability
 # JSDOM = require("jsdom")
 JSDOM = require("jsdom").JSDOM
 ## name collision?
