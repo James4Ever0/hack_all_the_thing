@@ -55,8 +55,7 @@ with sync_playwright() as p:
         import tempfile
         with tempfile.NamedTemporaryFile(suffix=".html") as f:
             save_path = f.name
-
-    browseAndSave(page, targetURL, save_path)
+            browseAndSave(page, targetURL, save_path)
     # main loop you should do some thing.
 
     # Navigate to Google and wait for the page to fully load
