@@ -24,7 +24,8 @@ page.set_https_proxy('http://localhost:38457')
 
 # Navigate to Google and wait for the page to fully load
 page.goto('https://google.com')
-page.wait_for_selector('body') # oh shit does that really work?
+# page.wait_for_selector('body') # oh shit does that really work?
+# you should use some timeout strategy.
 
 # Save the page HTML to a file
 html = page.content()
