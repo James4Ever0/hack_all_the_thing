@@ -70,7 +70,7 @@ with sync_playwright() as p:
             except:
                 data = {}
             data.update({'success': success,'incomplete':incomplete})
-
+            upsert_data(key,data)
             # test the tinydb code first. please!
             # many repetitions. but could all be important. what do you want?
     # main loop you should do some thing.
