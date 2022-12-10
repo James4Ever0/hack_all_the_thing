@@ -8,7 +8,7 @@ read_html = require("readability_html").read_html
 # ## name collision?
 
 # # print(dir(JSDOM))
-filepath = ""
+filepath = "fastgithub_readme.html"
 article = read_html(filepath)
 import rich
 rich.print(article)
