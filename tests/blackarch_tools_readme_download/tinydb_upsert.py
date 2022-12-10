@@ -11,5 +11,6 @@ def upsert_data(value):
 
     # Update the value of the key "foo", creating a new record if it does not exist
     db.upsert({"key": "foo", "value": value}, query)
+    # fucking working?
 
 if __name__ == "__main__":
