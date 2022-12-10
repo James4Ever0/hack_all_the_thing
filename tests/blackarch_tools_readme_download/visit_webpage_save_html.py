@@ -11,7 +11,7 @@ from playwright.sync_api import sync_playwright
 # timeout = 5000  # 5 seconds? too short?
 
 
-def getBrowserInstance(p, mProxySettings={"server": "127.0.0.1:38457"}):
+def getBrowserInstance(p, mProxySettings={"server": "http://127.0.0.1:38457"}):
     # not using proxy settings! fuck
     browser = p.chromium.launch(
         proxy=mProxySettings  # seems to be headless. fuck. i ain't see shit. you need to be patient though.
