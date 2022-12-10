@@ -12,7 +12,7 @@ with open("fastgithub_readme.html", "r") as f:
     # do not provide url. JSDOM won't load shit.
     print('loading JSDOM') # shit man. do not load shit!
     # taking forever? fuck!
-    doc = J(html) # just because you cannot load this stuff. 
+    doc = J(html) # just because you cannot load this stuff. how about create some javascript library for this task. use module.export instead.
     print("STEP 2")
     reader = R(doc.window.document)
     print("STEP 3")
