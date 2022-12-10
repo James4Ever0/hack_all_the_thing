@@ -34,5 +34,3 @@ with sync_playwright() as p:
 
     # Close the browser
     browser.close()
-
-
