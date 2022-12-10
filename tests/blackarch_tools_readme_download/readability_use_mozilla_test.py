@@ -8,5 +8,8 @@ with open("fastgithub_readme.html",'r') as f:
     doc =JSDOM(html, {
   "url": url
 })
-    reader = Readability(doc.window.document);
-    article = reader.parse();
+    reader = Readability(doc.window.document)
+    article = reader.parse()
+    print("ARTICLE?")
+    import rich
+    rich.print(article)
