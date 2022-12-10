@@ -44,7 +44,7 @@ def browseAndSave(page, targetURL, save_path, timeout=5000):
 
 from read_and_scrape import getURLMap
 from readability_use_mozilla_test import read_html
-from tinydb_upsert import 
+from tinydb_upsert import upsert_data
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
