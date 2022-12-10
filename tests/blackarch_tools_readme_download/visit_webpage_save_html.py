@@ -75,6 +75,7 @@ with sync_playwright() as p:
             # cnt = f.read()
             # print(cnt)
             # f.seek(0)
+            # it is fucked up.
             try:
                 data = read_html(save_path)  # will it succeed?
             except:
