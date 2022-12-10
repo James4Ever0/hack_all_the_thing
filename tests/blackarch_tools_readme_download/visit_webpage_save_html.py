@@ -45,9 +45,9 @@ with sync_playwright() as p:
     # Create a new page and set the HTTP proxy
     page = browser.new_page() # just use the same damn page.
     # does that work?
-# targetURL = "https://github.com/dotnetcore/FastGithub"
+    targetURL = "https://github.com/dotnetcore/FastGithub"
 
-    browseAndSave
+    browseAndSave(page,targetURL, save_path)
 
     # Navigate to Google and wait for the page to fully load
     # Close the browser
