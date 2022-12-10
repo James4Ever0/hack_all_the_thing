@@ -66,7 +66,7 @@ with sync_playwright() as p:
             success = False
             try:
                 data = read_html(save_path) # will it succeed?
-            else:
+            except:
                 data = {}
             data.update({'success': success})
             # test the tinydb code first. please!
