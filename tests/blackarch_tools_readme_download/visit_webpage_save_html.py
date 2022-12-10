@@ -55,6 +55,7 @@ with sync_playwright() as p:
     # does that work?
     from read_and_scrape import getURLMap
     from readability_use_mozilla_test import read_html
+    from 
     urlmap = getURLMap("tools.csv")
     for targetURL, _ in urlmap.items():
     # targetURL = "https://github.com/dotnetcore/FastGithub"
@@ -69,7 +70,7 @@ with sync_playwright() as p:
             except:
                 data = {}
             data.update({'success': success,'incomplete':incomplete})
-            
+
             # test the tinydb code first. please!
             # many repetitions. but could all be important. what do you want?
     # main loop you should do some thing.
