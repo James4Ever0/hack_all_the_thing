@@ -42,7 +42,7 @@ with sync_playwright() as p:
 
     # Save the page HTML to a file
     html = page.content()
-    with open("target.html", "w") as f:
+    with open(save_path, "w") as f:
         f.write(html)
     # Close the browser
     browser.close()
