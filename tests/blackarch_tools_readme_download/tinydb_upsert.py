@@ -1,7 +1,7 @@
 from tinydb import TinyDB, Query
 
 # Open a TinyDB database
-db = TinyDB()
+db = TinyDB(dbpath)
 
 # Create a query to find the record with the key "foo"
 query = Query()
