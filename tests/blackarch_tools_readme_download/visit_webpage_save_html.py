@@ -1,7 +1,7 @@
 # let's ask openai.
 # openai you are the best.
 import os
-from playwright.sync_api import Playwright, sync_playwright
+from playwright.sync_api import Playwright, sync_playwright, ProxySettings
 
 # Set the path to the certificate file
 cert_path = '/opt/fastgithub/cacert/fastgithub.cer' # where is the path of fastgithub?
