@@ -25,7 +25,7 @@ def browseAndSave(page, targetURL, save_path, timeout=5000):
     incomplete = True
     try:
         page.goto(targetURL)
-        page.wait_for_load_state("networkidle", timeout=timeout)
+        page.wait_for_load_state("load")
         incomplete = False
     except:
         print(
