@@ -10,13 +10,15 @@ from playwright.sync_api import sync_playwright
 # targetURL = "https://github.com/dotnetcore/FastGithub"
 # timeout = 5000  # 5 seconds? too short?
 
-def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} ):
+
+def getBrowserInstance(p, mProxySettings={"server": "127.0.0.1:38457"}):
     browser = p.chromium.launch(
-        proxy=mProxySettings # seems to be headless. fuck. i ain't see shit. you need to be patient though.
+        proxy=mProxySettings  # seems to be headless. fuck. i ain't see shit. you need to be patient though.
     )  # that shit is faked by openai. it does not read the fucking manual carefully.
     return browser
 
-def browseAndSave(page,targetURL, save_path, timeout = 5000):
+
+def browseAndSave(page, targetURL, save_path, timeout=5000):
     page.goto(targetURL)
     # page.wait_for_selector('body') # oh shit does that really work?
     # you should use some timeout strategy.]
@@ -35,6 +37,7 @@ def browseAndSave(page,targetURL, save_path, timeout = 5000):
         f.write(html)
     return incomplete
 
+
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
     # mProxySettings = {"server": "127.0.0.1:38457"}  # whatever.
@@ -43,12 +46,12 @@ with sync_playwright() as p:
     # )  # that shit is faked by openai. it does not read the fucking manual carefully.
     browser = getBrowserInstance(p)
     # Create a new page and set the HTTP proxy
-    page = browser.new_page() # just use the same damn page.
+    page = browser.new_page()  # just use the same damn page.
     # does that work?
     targetURL = "https://github.com/dotnetcore/FastGithub"
     save_path = ".html"
 
-    browseAndSave(page,targetURL, save_path)
+    browseAndSave(page, targetURL, save_path)
 
     # Navigate to Google and wait for the page to fully load
     # Close the browser
