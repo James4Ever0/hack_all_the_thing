@@ -4,6 +4,7 @@ dbpath = "my_database.json"
 # Open a TinyDB database
 db = TinyDB(dbpath)
 
+def upsert_data(value)
 # Create a query to find the record with the key "foo"
 query = Query()
 query = query.key == "foo"
