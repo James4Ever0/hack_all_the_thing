@@ -29,6 +29,7 @@ def getURLMap(fpath):
 # now plan on urls.
 if __name__ == "__main__":
     fpath = "tools.csv"
+    urlmap = getURLMap(fpath)
     for key, elem in urlmap.items():
         # now you must develop a tool for browsing both github pages (with your damn proxy) and other common pages, extracting HTML then send it to readbilityjs.
         # you want to be l33t then use elinks instead. i don't mind.
