@@ -9,12 +9,6 @@ targetURL = "https://github.com/dotnetcore/FastGithub"
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
-    # Set browser to use the certificate for HTTPS connections
-    browser_context_options = {
-    "https_certificates": [{
-    "certificate_chain": [open(cert_path, "rb").read()]
-    }]
-    }
     browser = p.chromium.launch(https_certificates=[{
         "certificate_chain": [open(cert_path, "rb").read()]
     }])
