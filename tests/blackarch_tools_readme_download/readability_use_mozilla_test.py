@@ -2,6 +2,7 @@ from javascript import require
 # fuck that.
 read_html = require("./readability_html.js").read_html # must use .js extension. fuck.
 # fucking working.
+# what the fuck are you waiting for? just dump shit!
 # Readability = require("@mozilla/readability")
 # R = require("@mozilla/readability").Readability
 # # JSDOM = require("jsdom")
