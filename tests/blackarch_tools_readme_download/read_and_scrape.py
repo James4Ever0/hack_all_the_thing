@@ -1,10 +1,10 @@
-import pandas 
+import pandas
 
-fpath="tools.csv"
+fpath = "tools.csv"
 
-df=pandas.read_csv(fpath)
+df = pandas.read_csv(fpath)
 
-#print(df.head())
+# print(df.head())
 
 # visit "Website", set things under "Name", save other metadata along side.
 
@@ -12,17 +12,17 @@ df=pandas.read_csv(fpath)
 
 # Version, Description, Category
 # you should not iterate columns in this way.
-#for col in df:
+# for col in df:
 #    print(col)
 #    print("___BREAK?___")
 
 urlmap = {}
 for index, row in df.iterrows():
-    #jackpot?
-    name = row['Name']
-    url = row['Website']
+    # jackpot?
+    name = row["Name"]
+    url = row["Website"]
     # and you want to avoid visiting the same website twice.
-    urlmap.update({url:urlmap.get(url,[])+[name]})
+    urlmap.update({url: urlmap.get(url, []) + [name]})
 #    print(row)
 #    print("ROW?")
 
@@ -30,6 +30,6 @@ for index, row in df.iterrows():
 for key, elem in urlmap.items():
     # now you must develop a tool for browsing both github pages (with your damn proxy) and other common pages, extracting HTML then send it to readbilityjs.
     # you want to be l33t then use elinks instead. i don't mind.
-    print("KEY?",key)
+    print("KEY?", key)
 #    print("ELEM?", elem)
 #    print("____"*3)
