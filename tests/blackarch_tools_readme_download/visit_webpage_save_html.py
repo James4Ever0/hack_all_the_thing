@@ -5,6 +5,7 @@ from playwright.sync_api import Playwright, sync_playwright
 
 # Set the path to the certificate file
 cert_path = '/opt/fastgithub/cacert/fastgithub.cer' # where is the path of fastgithub?
+targetURL = "https://github.com/dotnetcore/FastGithub"
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
@@ -14,8 +15,9 @@ with sync_playwright() as p:
     "certificate_chain": [open(cert_path, "rb").read()]
     }]
     }
-    browser = p.chromium.launch(browser_context_options=browser_context_options)
-
+    browser = p.chromium.launch(https_certificates=[{
+        "certificate_chain": [open(cert_path, "rb").read()]
+    }])
     # Create a new page and set the HTTP proxy
     page = browser.new_page()
     # does that work?
@@ -23,7 +25,7 @@ with sync_playwright() as p:
     page.set_https_proxy('http://localhost:38457')
 
     # Navigate to Google and wait for the page to fully load
-    page.goto('https://google.com')
+    page.goto(targetURL)
     # page.wait_for_selector('body') # oh shit does that really work?
     # you should use some timeout strategy.
 
