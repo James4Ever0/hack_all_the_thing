@@ -29,7 +29,7 @@ def browseAndSave(page, targetURL, save_path, timeout_0=5000,timeout_1 = 2000):
         incomplete = False
     except:
         print(
-            "MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:", timeout
+            "MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:"
         )
 
     # Save the page HTML to a file
