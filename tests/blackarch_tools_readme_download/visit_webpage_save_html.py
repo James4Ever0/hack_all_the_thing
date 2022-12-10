@@ -10,7 +10,7 @@ from playwright.sync_api import sync_playwright
 targetURL = "https://github.com/dotnetcore/FastGithub"
 timeout = 5000  # 5 seconds? too short?
 
-
+def getBrowserInstance(p,mProxySettings = {"server": "127.0.0.1:38457"} )
 
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
