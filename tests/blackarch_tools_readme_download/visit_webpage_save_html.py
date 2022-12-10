@@ -49,7 +49,7 @@ with sync_playwright() as p:
     page = browser.new_page()  # just use the same damn page.
     # does that work?
     targetURL = "https://github.com/dotnetcore/FastGithub"
-    save_path = ".html"
+    save_path = "target.html"
 
     browseAndSave(page, targetURL, save_path)
 
