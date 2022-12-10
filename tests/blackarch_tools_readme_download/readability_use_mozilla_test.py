@@ -1,4 +1,4 @@
-import javascript
+from javascript import require
 
 var { Readability } = require('@mozilla/readability');
 var { JSDOM } = require('jsdom');
