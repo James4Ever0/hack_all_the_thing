@@ -12,6 +12,7 @@ from playwright.sync_api import sync_playwright
 
 
 def getBrowserInstance(p, mProxySettings={"server": "127.0.0.1:38457"}):
+    # not using proxy settings! fuck
     browser = p.chromium.launch(
         proxy=mProxySettings  # seems to be headless. fuck. i ain't see shit. you need to be patient though.
     )  # that shit is faked by openai. it does not read the fucking manual carefully.
