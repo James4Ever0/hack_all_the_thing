@@ -10,7 +10,7 @@ targetURL = "https://github.com/dotnetcore/FastGithub"
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
     mProxySettings = {
-              '  server': '127.0.0.1:24000',
+              'server': '127.0.0.1:24000',
                 'username': '',
                 'password': ''
             },
