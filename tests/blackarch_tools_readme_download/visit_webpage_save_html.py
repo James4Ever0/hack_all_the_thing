@@ -54,7 +54,7 @@ with sync_playwright() as p:
     # targetURL = "https://github.com/dotnetcore/FastGithub"
     import tempfile
     tempfile.NamedTemporaryFile(suffix=".html") as f:
-        save_path = "target.html"
+        save_path = f.name
 
     browseAndSave(page, targetURL, save_path)
     # main loop you should do some thing.
