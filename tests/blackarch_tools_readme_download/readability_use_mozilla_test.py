@@ -7,6 +7,6 @@ with open("fastgithub_readme.html",'r') as f:
     url = 'https://github.com/dotnetcore/FastGithub'
  doc =JSDOM(html, {
   url: url
-});
+})
 let reader = new Readability(doc.window.document);
 let article = reader.parse();
