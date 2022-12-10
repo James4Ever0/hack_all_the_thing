@@ -63,6 +63,7 @@ with sync_playwright() as p:
             save_path = f.name
             incomplete = browseAndSave(page, targetURL, save_path)
             # now you utilize the function.
+            try:
             data = read_html(save_path) # will it succeed?
             # test the tinydb code first. please!
             # many repetitions. but could all be important. what do you want?
