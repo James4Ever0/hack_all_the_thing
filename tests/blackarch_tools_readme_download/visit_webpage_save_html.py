@@ -15,7 +15,7 @@ with sync_playwright() as p:
     "certificate_chain": [open(cert_path, "rb").read()]
     }]
     }
-    browser = p.chromium.launch(https_certificates=[{
+    browser = p.chromium.new_context(https_certificates=[{
         "certificate_chain": [open(cert_path, "rb").read()]
     }])
     # Create a new page and set the HTTP proxy
