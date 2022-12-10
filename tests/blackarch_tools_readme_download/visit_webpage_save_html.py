@@ -25,7 +25,7 @@ with sync_playwright() as p:
     try:
         page.wait_for_load_state('networkidle',timeout=timeout)
     except:
-        print("MAYBE TIMEOUT ENCOUNTERED. SAVE NO MATTER WHAT. TIMEOUT?:",timeout)
+        print("MAYBE TIMEOUT ENCOUNTERED.\nSAVE HTML NO MATTER WHAT.\nTIMEOUT?:",timeout)
 
     # Save the page HTML to a file
     html = page.content()
