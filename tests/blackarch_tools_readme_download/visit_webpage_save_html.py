@@ -53,7 +53,7 @@ with sync_playwright() as p:
     for targetURL, _ in urlmap.items():
 
     # targetURL = "https://github.com/dotnetcore/FastGithub"
-    save_path = "target.html"
+        save_path = "target.html"
 
     browseAndSave(page, targetURL, save_path)
     # main loop you should do some thing.
