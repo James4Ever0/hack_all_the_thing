@@ -9,9 +9,9 @@ read_html = require("readability_html").read_html
 
 # # print(dir(JSDOM))
 filepath = ""
-#     import rich
-
-#     rich.print(article)
+article = read_html(filepath)
+import rich
+rich.print(article)
 
 # with open("fastgithub_readme.html", "r") as f:
 #     html = f.read()
