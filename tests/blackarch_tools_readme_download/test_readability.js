@@ -6,7 +6,8 @@ let JSDOM = J.JSDOM // working.
 // var doc = new JSDOM("<body>Look at this cat: <img src='./cat.jpg'></body>", {
 //   url: "https://www.baidu.com" // fine now? you do not load shits from that url ?
 // });
-
+const fs = require("fs");
+fs.readFileSync(mpath, )
 var doc = new JSDOM(content);
 let reader = new Readability(doc.window.document);
 let article = reader.parse();
