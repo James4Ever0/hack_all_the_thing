@@ -7,6 +7,7 @@ with open("fastgithub_readme.html", "r") as f:
     # url = "https://github.com/dotnetcore/FastGithub"
     # do not provide url. JSDOM won't load shit.
     print('loading JSDOM') # shit man. do not load shit!
+    # taking forever? fuck!
     doc = JSDOM(html)
     print("STEP 2")
     reader = Readability(doc.window.document)
