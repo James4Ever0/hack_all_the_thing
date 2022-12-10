@@ -10,14 +10,12 @@ targetURL = "https://github.com/dotnetcore/FastGithub"
 # Create a Playwright instance and launch browser
 with sync_playwright() as p:
     mProxySettings = {
-              'server': '127.0.0.1:24000'
+              'server': '127.0.0.1:38457'
             } # whatever.
     browser = p.chromium.launch(proxy=mProxySettings) # that shit is faked by openai. it does not read the fucking manual carefully.
     # Create a new page and set the HTTP proxy
     page = browser.new_page()
     # does that work?
-    page.set_http_proxy('http://localhost:38457')
-    page.set_https_proxy('http://localhost:38457')
 
     # Navigate to Google and wait for the page to fully load
     page.goto(targetURL)
