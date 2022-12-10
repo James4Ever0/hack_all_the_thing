@@ -19,6 +19,7 @@ browser = p.chromium.launch(browser_context_options=browser_context_options)
 # Create a new page and set the HTTP proxy
 page = browser.new_page()
 page.set_http_proxy('http://localhost:38457')
+page.set_http_proxy('http://localhost:38457')
 
 # Navigate to Google and wait for the page to fully load
 page.goto('https://google.com')
