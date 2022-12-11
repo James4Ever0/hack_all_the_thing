@@ -14,7 +14,8 @@ for fname in htmls:
         print("filename?", fname)
         if fname == "kali_official.html" and flag ==0:
             for div_card in soup.find_all("div",class_="card"):
-                print('card?',div_card)
+                # print('card?',div_card)
+                for a in div_card.find('a')
         elif fname == "kali_tools_all.html" and flag ==1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag ==2:
