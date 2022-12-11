@@ -17,6 +17,7 @@ for fname in htmls:
             ...
         elif fname == "pentest_tools_with_name.html":
             # data = {"heading":[], "name":[],"link":[]}
+            # no need to convert into dataframe?
             cname = "main-content"
             mc = soup.find("div",class_=cname)
             parts = mc.find_all("div", class_="mynav")
