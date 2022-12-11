@@ -36,3 +36,4 @@ for fname in htmls:
                     else:
                         a_text = elem.text.strip()
                         # print("elem?", a_text)
+                        a_link = None # might be 
