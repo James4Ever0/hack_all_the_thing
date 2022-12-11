@@ -9,3 +9,4 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # kali package index:
 # https://pkg.kali.org/
 
+# you can retrieve package information in apt 
