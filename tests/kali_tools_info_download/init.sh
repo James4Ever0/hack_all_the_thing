@@ -21,6 +21,6 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # https://pypi.org/project/pypi-command-line/
 # install it.
 # run: pypi search <query>
-# it also provides "read-the-docs" to search for documentation
+# it also provides "read-the-docs" to search in documentation of a package
 
 # you can download man pages before installing package
