@@ -12,11 +12,11 @@ for fname in htmls:
         soup = BeautifulSoup(content, features='lxml')
         # case by case. please.
         print("filename?", fname)
-        if fname == "kali_official.html":
+        if fname == "kali_official.html" and flag ==0:
             ...
-        elif fname == "kali_tools_all.html":
+        elif fname == "kali_tools_all.html" and flag ==0:
             ...
-        elif fname == "pentest_tools_with_name.html":
+        elif fname == "pentest_tools_with_name.html" and flag ==0:
             data = {"heading":[], "name":[],"link":[]}
             cname = "main-content"
             mc = soup.find("div",class_=cname)
