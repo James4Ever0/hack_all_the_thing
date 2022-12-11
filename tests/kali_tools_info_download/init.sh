@@ -7,4 +7,4 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # kali meta page on package index:
 # http://pkg.kali.org/pkg/kali-meta
 # kali package index:
-# https://pkg.kali.org/tools/kali-meta/
+# https://pkg.kali.org/
