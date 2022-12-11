@@ -36,4 +36,4 @@ for fname in htmls:
                     else:
                         a_text = elem.text.strip()
                         # print("elem?", a_text)
-                        a_link = None # might be 
+                        a_link = None # might be NaN in this sense. check how to convert into pandas dataframe.
