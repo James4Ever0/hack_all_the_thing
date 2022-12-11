@@ -16,7 +16,7 @@ for fname in htmls:
         elif fname == "kali_tools_all.html":
             ...
         elif fname == "pentest_tools_with_name.html":
-            data = {"heading"
+            data = {"heading":[], ""
             cname = "main-content"
             mc = soup.find("div",class_=cname)
             parts = mc.find_all("div", class_="mynav")
