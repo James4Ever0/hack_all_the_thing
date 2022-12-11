@@ -15,6 +15,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # if you want package dependencies you will also have it.
 
 # maybe you want to retrieve package information with pacman.
+
 # i remember you have scraped tsinghua pypi index, containing many python tools.
 # what is the commandline tool for searching in pypi?
 
