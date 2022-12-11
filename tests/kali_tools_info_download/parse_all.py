@@ -29,7 +29,8 @@ for fname in htmls:
                     # check if there's link
                     a = elem.find('a')
                     if a is not None:
-                        print("FOUND A:",a.text.strip())
-                        print("A LINK:",a.attrs['href'])
+                        a_text = a.text.strip()
+                        # print("FOUND A:",a_text)
+                        # print("A LINK:",a.attrs['href'])
                     else:
                         print("elem?", elem.text.strip())
