@@ -13,7 +13,7 @@ for fname in htmls:
         # case by case. please.
         print("filename?", fname)
         if fname == "kali_official.html" and flag ==0:
-            div_card = soup.find_all("div",class_="card")
+            for div_card in soup.find_all("div",class_="card")
         elif fname == "kali_tools_all.html" and flag ==1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag ==2:
