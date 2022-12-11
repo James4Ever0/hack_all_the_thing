@@ -30,6 +30,7 @@ for fname in htmls:
                     a = elem.find('a')
                     if a is not None:
                         a_text = a.text.strip()
+                        a_link = a.attrs['href']
                         # print("FOUND A:",a_text)
                         # print("A LINK:",a_link)
 
