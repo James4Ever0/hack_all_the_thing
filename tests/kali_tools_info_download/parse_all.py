@@ -41,3 +41,4 @@ for fname in htmls:
                     data['heading'].append(mhead)
                     data['link'].append(a_link)
                     data['name'].append(a_text)
+            
