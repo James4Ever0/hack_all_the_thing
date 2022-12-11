@@ -21,9 +21,9 @@ for fname in htmls:
             parts = mc.find_all("div", class_="mynav")
             for p in parts:
                 # there are two things, one is the "h2" heading the other is the "ul" list
-                print("____"*3)
+                # print("____"*3)
                 mhead = p.find("h2").text.strip()
-                print("heading?", mhead)
+                # print("heading?", mhead)
                 mlist = p.find("ul")
                 for elem in mlist.find_all("li"):
                     # check if there's link
