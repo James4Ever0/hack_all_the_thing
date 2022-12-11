@@ -33,7 +33,6 @@ for fname in htmls:
                         a_link = a.attrs['href']
                         # print("FOUND A:",a_text)
                         # print("A LINK:",a_link)
-
                     else:
                         a_text = elem.text.strip()
                         # print("elem?", a_text)
