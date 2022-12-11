@@ -17,7 +17,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # maybe you want to retrieve package information with pacman.
 
 # i remember you have scraped tsinghua pypi index, containing many python tools.
-# https://pypi.tuna.tsinghua.edu.cn/simple/ 
+# visit https://pypi.tuna.tsinghua.edu.cn/simple/ to get all package names. but the info is clearly on the other page. you retrieve this manually
 # what is the commandline tool for searching in pypi?
 # https://pypi.org/project/pypi-command-line/
 # install it.
