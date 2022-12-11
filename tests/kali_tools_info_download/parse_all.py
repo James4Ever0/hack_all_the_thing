@@ -23,7 +23,7 @@ for fname in htmls:
                 # there are two things, one is the "h2" heading the other is the "ul" list
                 print("____"*3)
                 mhead = p.find("h2").text.strip()
-                print("heading?", mhead.text)
+                print("heading?", mhead)
                 mlist = p.find("ul")
                 for elem in mlist.find_all("li"):
                     # check if there's link
