@@ -12,4 +12,6 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # you can retrieve package information in apt command, like:
 # apt show <package_name>
 # you will get homepage link and package description
-# if you want package de
+# if you want package dependencies you will also have it.
+
+# 
