@@ -31,4 +31,4 @@ for fname in htmls:
                     if a is not None:
                         print("FOUND A:",a)
                     else:
-                        print("elem?", elem)
+                        print("elem?", elem.text)
