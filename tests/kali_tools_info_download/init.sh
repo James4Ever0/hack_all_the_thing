@@ -18,5 +18,8 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 
 # i remember you have scraped tsinghua pypi index, containing many python tools.
 # what is the commandline tool for searching in pypi?
+# https://pypi.org/project/pypi-command-line/
+# install it
+# run: pypi search <query>
 
 # you can download man pages before installing package
