@@ -43,4 +43,4 @@ for fname in htmls:
                     data['name'].append(a_text)
             # now you turn the data into a pandas dataframe
             import pandas as pd
-            pd.DataFrame(data=data)
+            df = pd.DataFrame(data=data)
