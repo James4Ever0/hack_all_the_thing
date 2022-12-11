@@ -4,7 +4,7 @@ import os
 htmls = os.listdir(".")
 htmls = [ x for x in htmls if x.endswith(".html")]
 htmls.sort()
-flag = 0
+flag = 0 # so we can select. good!
 for fname in htmls:
     with open(fname,'r') as f:
         content = f.read()
@@ -14,9 +14,9 @@ for fname in htmls:
         print("filename?", fname)
         if fname == "kali_official.html" and flag ==0:
             ...
-        elif fname == "kali_tools_all.html" and flag ==0:
+        elif fname == "kali_tools_all.html" and flag ==1:
             ...
-        elif fname == "pentest_tools_with_name.html" and flag ==0:
+        elif fname == "pentest_tools_with_name.html" and flag ==2:
             data = {"heading":[], "name":[],"link":[]}
             cname = "main-content"
             mc = soup.find("div",class_=cname)
@@ -45,3 +45,4 @@ for fname in htmls:
             # now you turn the data into a pandas dataframe
             import pandas as pd
             df = pd.DataFrame(data=data)
+            df.to_csv("pentest_tools_with_name.csv", index=False)
