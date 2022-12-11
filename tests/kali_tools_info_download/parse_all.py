@@ -40,4 +40,4 @@ for fname in htmls:
                         a_link = None # might be NaN in this sense. check how to convert into pandas dataframe.
                     data['heading'].append(mhead)
                     data['link'].append(a_link)
-                    data['name']
+                    data['name'].append(a_text)
