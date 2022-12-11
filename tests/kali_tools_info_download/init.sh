@@ -14,6 +14,6 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # you will get homepage link and package description
 # if you want package dependencies you will also have it.
 
-# maybe you want to retrieve package information 
+# maybe you want to retrieve package information with pacman.
 
 # you can download man pages before installing package
