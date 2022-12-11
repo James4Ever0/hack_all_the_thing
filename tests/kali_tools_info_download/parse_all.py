@@ -39,3 +39,5 @@ for fname in htmls:
                         # print("elem?", a_text)
                         a_link = None # might be NaN in this sense. check how to convert into pandas dataframe.
                     data['heading'].append(mhead)
+                    data['link'].append(a_link)
+                    data['name']
