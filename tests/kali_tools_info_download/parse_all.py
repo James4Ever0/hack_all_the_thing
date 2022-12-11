@@ -27,3 +27,4 @@ for fname in htmls:
                 mlist = p.find("ul")
                 for elem in mlist.find_all("li"):
                     print("elem?", elem)
+                    # if 
