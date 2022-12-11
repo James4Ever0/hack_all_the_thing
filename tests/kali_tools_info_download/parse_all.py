@@ -28,4 +28,6 @@ for fname in htmls:
                 for elem in mlist.find_all("li"):
                     print("elem?", elem)
                     # check if there's link
-                    for a in elem.find('a')
+                    a = elem.find('a')
+                    if a is not None:
+                        print("FOUND A:",a)
