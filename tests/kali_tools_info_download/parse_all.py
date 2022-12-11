@@ -31,7 +31,8 @@ for fname in htmls:
                     if a is not None:
                         a_text = a.text.strip()
                         # print("FOUND A:",a_text)
-                        # print("A LINK:",a.attrs['href'])
+                        # print("A LINK:",a_link)
+
                     else:
                         a_text = elem.text.strip()
                         # print("elem?", a_text)
