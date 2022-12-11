@@ -13,7 +13,6 @@ for fname in htmls:
         # case by case. please.
         print("filename?", fname)
         if fname == "kali_official.html" and flag ==0:
-            ...
         elif fname == "kali_tools_all.html" and flag ==1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag ==2:
