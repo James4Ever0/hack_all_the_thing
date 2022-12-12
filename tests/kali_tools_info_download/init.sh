@@ -54,4 +54,8 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 
 # you may miss the wiki, forum, tutorials. you know where to get them.
 
-# for ruby, you must get all 
+# for ruby, you must get all package names, then retrieve info.
+# list local packages:
+# gem list
+# get all local package info:
+# gem info
