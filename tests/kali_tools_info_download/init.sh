@@ -36,3 +36,5 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 
 # alpine linux is able to download man page alone without installing package:
 # apk 
+
+# you may miss the wiki, forum, tutorials
