@@ -2,6 +2,8 @@ import parse
 
 # use --depth=1
 
+def gen_git_clone_command()
+
 def check_if_is_repo(url):
     url = url.strip("/")
     format = "https://github.com/{user}/{repo}"
