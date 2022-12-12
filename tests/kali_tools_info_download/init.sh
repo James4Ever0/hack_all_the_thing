@@ -33,6 +33,8 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # https://linux.die.net
 # man pages with different sections (categories):
 # https://linux.die.net/man/
+# hierachical manpages of ubuntu:
+# https://manpages.ubuntu.com/manpages
 
 # alpine linux is able to download man page alone without installing package:
 # apk 
