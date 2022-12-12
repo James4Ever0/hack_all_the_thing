@@ -38,6 +38,9 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # dman for ubuntu man pages:
 # https://manpages.ubuntu.com/dman
 
+# location of locally installed man pages:
+# /usr/share/man
+
 # alpine linux is able to download man page alone without installing package: https://georgegarside.com/blog/technology/alpine-linux-install-all-man-pages/
 # apk list -I | sed -rn '/-doc/! s/([a-z-]+[a-z]).*/\1/p' | awk '{ print system("apk info \""$1"-doc\" > /dev/null") == 0 ? $ "-doc" : "" }' | xargs apk add
 
