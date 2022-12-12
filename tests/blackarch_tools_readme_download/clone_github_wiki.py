@@ -1,4 +1,6 @@
 import parse
+import os
+os.mkdir("github_wiki")
 
 # use --depth=1
 
