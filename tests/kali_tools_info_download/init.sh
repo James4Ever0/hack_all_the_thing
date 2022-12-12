@@ -61,3 +61,5 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # gem list -r
 # get all local package info:
 # gem info
+# get all remote package info:
+# gem info -r
