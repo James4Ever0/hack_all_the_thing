@@ -1,7 +1,14 @@
-from lib2to3.pytree import type_repr
+
 import parse
 import os
-os.mkdir("github_wiki")
+from read_and_scrape import getURLMap
+
+urlmap = getURLMap("tools.csv")
+
+try:
+    os.mkdir("github_wiki")
+except:
+    pass
 os.chdir("github_wiki")
 # use --depth=1
 
@@ -13,11 +20,14 @@ def check_if_is_repo(url):
     format = "https://github.com/{user}/{repo}"
     if parse.parse(format, url):
         wiki_url = url+".wiki.git" # simply wrong
+        return wiki_url
 
 
-from read_and_scrape import getURLMap
 
-urlmap = getURLMap("tools.csv")
-for url, _ in urlmap.items():
+import progressbar
+for url, _ in progressbar.progressbar(urlmap.items()):
     if type(url) == str:
-        
+        wiki_url = check_if_is_repo(url)
+        if wiki_url:
+            cmd = gen_git_clone_command(wiki_url)
+            os.system(cmd)
