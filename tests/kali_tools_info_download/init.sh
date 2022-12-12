@@ -29,7 +29,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # you can download man pages before installing package
 # use "dman" by bikeshed
 # apt-get install bikeshed
-# or browse manpages on web
+# or browse manpages on web, tutorials on linux and languages
 # https://linux.die.net
 # man pages with different sections (categories):
 # https://linux.die.net/man/
