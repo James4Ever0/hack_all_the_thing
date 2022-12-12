@@ -1,5 +1,7 @@
 import parse
 
+# use --depth=1
+
 def check_if_is_repo(url):
     url = url.strip("/")
     format = "https://github.com/{user}/{repo}"
