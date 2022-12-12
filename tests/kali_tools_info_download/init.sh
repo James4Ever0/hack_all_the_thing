@@ -38,7 +38,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # dman for ubuntu man pages:
 # https://manpages.ubuntu.com/dman
 
-# alpine linux is able to download man page alone without installing package:
+# alpine linux is able to download man page alone without installing package: https://georgegarside.com/blog/technology/alpine-linux-install-all-man-pages/
 # apk 
 
 # you may miss the wiki, forum, tutorials
