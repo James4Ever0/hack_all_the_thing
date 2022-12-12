@@ -26,7 +26,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 
 # i remember you have scraped tsinghua pypi index, containing many python tools.
 # retrieve python package info as json:
-# https://pypi.org/pypi/python3-nmap/json
+# https://pypi.org/pypi/<package-name>/json
 # visit https://pypi.tuna.tsinghua.edu.cn/simple/ to get all package names. but the info is clearly on the other page. you retrieve this from pypi. use the below commandline tool?
 # pypi [information|description] <package_name>
 # documentation url is provided separately from mainpage.
