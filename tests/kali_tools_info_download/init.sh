@@ -30,6 +30,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # use "dman" by bikeshed
 # apt-get install bikeshed
 # or browse manpages on web
+# https://linux.die.net
 
 # alpine linux is able to download man page alone without installing package:
 # apk 
