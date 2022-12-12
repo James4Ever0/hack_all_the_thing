@@ -16,13 +16,9 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 
 # maybe you want to retrieve package information with pacman.
 # list all package information just like apt
-#                   mpdecimal: for decimal
-                  xz: for lzma [installed]
-                  tk: for tkinter [installed]
-Required By     : aircrack-ng  androguard  angr  angr-management  apkid  archivebox  arybo  auto-xor-decryptor  autopwn  avet
-                  aws-extender-cli  awsbucketdump  aztarna  badkarma  bandicoot  bashfuscator  beebug  bfac  billcipher  bind-tools
-                  binwalk  bitdump  bletchley  blindy  blisqy  bro  btlejack  canalyzat0r  cantoolz  capfuzz  centry  chameleonmini
-                  chiasm-shell  cloudfail  c
+# pacman -Si
+# use some parser?
+# for aur repos, use 
 
 # i remember you have scraped tsinghua pypi index, containing many python tools.
 # visit https://pypi.tuna.tsinghua.edu.cn/simple/ to get all package names. but the info is clearly on the other page. you retrieve this from pypi. use the below commandline tool?
