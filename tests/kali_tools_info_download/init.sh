@@ -57,5 +57,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # for ruby, you must get all package names, then retrieve info.
 # list local packages:
 # gem list
+# list remote packages:
+# gem list -r
 # get all local package info:
 # gem info
