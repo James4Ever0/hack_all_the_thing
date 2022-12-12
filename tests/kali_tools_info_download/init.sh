@@ -17,7 +17,7 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # if you want package dependencies you will also have it.
 
 # maybe you want to retrieve package information with pacman.
-# list all package information just like apt
+# list all package information just like apt, 
 # pacman -Si
 # use some parser?
 # for aur repos, use yay or yaourt.
