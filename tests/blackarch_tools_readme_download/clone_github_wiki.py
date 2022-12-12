@@ -1,3 +1,4 @@
+from lib2to3.pytree import type_repr
 import parse
 import os
 os.mkdir("github_wiki")
@@ -16,4 +17,7 @@ def check_if_is_repo(url):
 
 from read_and_scrape import getURLMap
 
-urlmap = getURLMap("")
+urlmap = getURLMap("tools.csv")
+for url, _ in urlmap.items():
+    if type(url) == str:
+        
