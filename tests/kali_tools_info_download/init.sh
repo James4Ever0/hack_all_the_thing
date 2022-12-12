@@ -53,3 +53,5 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # apk list -I | sed -rn '/-doc/! s/([a-z-]+[a-z]).*/\1/p' | awk '{ print system("apk info \""$1"-doc\" > /dev/null") == 0 ? $ "-doc" : "" }' | xargs apk add
 
 # you may miss the wiki, forum, tutorials. you know where to get them.
+
+# for ruby, you must get all 
