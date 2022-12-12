@@ -18,7 +18,9 @@ curl https://en.kali.tools/ > pentest_tools_with_name.html
 # list all package information just like apt
 # pacman -Si
 # use some parser?
-# for aur repos, use 
+# for aur repos, use yay or yaourt.
+# yaourt -Si
+# you may use dependencies to deduce relationship between packages, use description, man pages, wiki, manual and tutorials to understand the usage of packages.
 
 # i remember you have scraped tsinghua pypi index, containing many python tools.
 # visit https://pypi.tuna.tsinghua.edu.cn/simple/ to get all package names. but the info is clearly on the other page. you retrieve this from pypi. use the below commandline tool?
