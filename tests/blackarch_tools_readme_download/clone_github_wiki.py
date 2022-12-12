@@ -13,6 +13,7 @@ def check_if_is_repo(url):
     if parse.parse(format, url):
         wiki_url = url+".wiki.git" # simply wrong
 
-import pandas as pd
 
 from read_and_scrape import getURLMap
+
+urlmap = getURLMap("")
