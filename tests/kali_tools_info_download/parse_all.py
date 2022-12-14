@@ -21,6 +21,7 @@ for fname in htmls:
                 init = True
                 for a in div_card.find_all("a"):
                     print("elem A?", a)
+                    if init: init=False
         elif fname == "kali_tools_all.html" and flag == 1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag == 2:
