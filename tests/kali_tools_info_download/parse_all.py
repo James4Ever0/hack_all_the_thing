@@ -34,7 +34,7 @@ for fname in htmls:
                     title = a.text.strip()
                     if title is "":
                         title = a.attrs.get('title',link.strip().replace("#","/").split("/")[-1].strip())
-                    title = title.replace("$","").replace("\n","").strip()
+                    title = title)
                     print("TOOL:",title,"URL:",link)
                     data["link"].append(a_link:=link)
                     data["name"].append(a_text:=title)
