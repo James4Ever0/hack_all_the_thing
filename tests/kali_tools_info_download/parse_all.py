@@ -13,7 +13,8 @@ def dict_list_write_to_csv(name,data,index =False):
 
     df = pd.DataFrame(data=data)
     df.to_csv(name, index=index)
-
+def stripper(text):
+    .replace("$","").replace("\n","").strip()
 for fname in htmls:
     with open(fname, "r") as f:
         content = f.read()
@@ -34,7 +35,7 @@ for fname in htmls:
                     title = a.text.strip()
                     if title is "":
                         title = a.attrs.get('title',link.strip().replace("#","/").split("/")[-1].strip())
-                    title = title)
+                    title = stripper(title)
                     print("TOOL:",title,"URL:",link)
                     data["link"].append(a_link:=link)
                     data["name"].append(a_text:=title)
