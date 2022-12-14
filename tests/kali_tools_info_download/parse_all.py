@@ -18,6 +18,7 @@ for fname in htmls:
             for div_card in soup.find_all("div", class_="card"):
                 print("____" * 4)
                 # print('card?',div_card)
+                init = True
                 for a in div_card.find_all("a"):
                     print("elem A?", a)
         elif fname == "kali_tools_all.html" and flag == 1:
