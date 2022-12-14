@@ -38,7 +38,7 @@ for fname in htmls:
                     data["link"].append(a_link:=link)
                     data["name"].append(a_text:=title)
                     if init: init=False
-            
+            write_
         elif fname == "kali_tools_all.html" and flag == 1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag == 2:
@@ -68,4 +68,4 @@ for fname in htmls:
                     data["link"].append(a_link)
                     data["name"].append(a_text)
             # now you turn the data into a pandas dataframe
-            dict_list_write_to_csv("pentest_tools_with_name.csv")
+            dict_list_write_to_csv("pentest_tools_with_name.csv",data)
