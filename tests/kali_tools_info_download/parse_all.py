@@ -6,6 +6,9 @@ htmls = [x for x in htmls if x.endswith(".html")]
 htmls.sort()
 flag = 0  # so we can select. good!
 
+
+def 
+
 for fname in htmls:
     with open(fname, "r") as f:
         content = f.read()
@@ -61,3 +64,4 @@ for fname in htmls:
                     data["link"].append(a_link)
                     data["name"].append(a_text)
             # now you turn the data into a pandas dataframe
+
