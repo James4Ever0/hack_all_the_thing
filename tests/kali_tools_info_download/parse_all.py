@@ -15,6 +15,7 @@ for fname in htmls:
         # case by case. please.
         print("filename?", fname)
         if fname == "kali_official.html" and flag == 0:
+            data = {""}
             for div_card in soup.find_all("div", class_="card"):
                 print("____" * 4)
                 # print('card?',div_card)
