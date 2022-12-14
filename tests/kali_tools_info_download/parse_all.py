@@ -38,7 +38,7 @@ for fname in htmls:
                     data["link"].append(a_link:=link)
                     data["name"].append(a_text:=title)
                     if init: init=False
-            dict_list_write_to_csv(data
+            dict_list_write_to_csv("kali_official.csv",data
         elif fname == "kali_tools_all.html" and flag == 1:
             ...
         elif fname == "pentest_tools_with_name.html" and flag == 2:
