@@ -7,7 +7,7 @@ htmls.sort()
 flag = 0  # so we can select. good!
 
 
-def dict_list_write_to_csv(name,index =False):
+def dict_list_write_to_csv(name,data,index =False):
     import pandas as pd
 
     df = pd.DataFrame(data=data)
