@@ -61,7 +61,3 @@ for fname in htmls:
                     data["link"].append(a_link)
                     data["name"].append(a_text)
             # now you turn the data into a pandas dataframe
-            import pandas as pd
-
-            df = pd.DataFrame(data=data)
-            df.to_csv("pentest_tools_with_name.csv", index=False)
