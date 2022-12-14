@@ -53,6 +53,7 @@ for fname in htmls:
             print("head?")
             print(df.head())
             # we are good.
+            df.
         elif fname == "pentest_tools_with_name.html" and flag == 2:
             data = {"heading": [], "name": [], "link": []}
             cname = "main-content"
