@@ -24,7 +24,8 @@ for fname in htmls:
                     link = a.attrs['href']
                     title = a.text.strip()
                     if title is "":
-                        title = a.attrs.get('title',link.strip().replace("/").split("/"))
+                        title = a.attrs.get('title',link.strip().replace("#","/").split("/"))
+                    print("TOOL:",title,"URL:")
                     if init: init=False
         elif fname == "kali_tools_all.html" and flag == 1:
             ...
