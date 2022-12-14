@@ -4,7 +4,8 @@ import os
 htmls = os.listdir(".")
 htmls = [x for x in htmls if x.endswith(".html")]
 htmls.sort()
-flag = 0  # so we can select. good!
+# flag = 0  # so we can select. good!
+flag = 1
 
 
 def dict_list_write_to_csv(name,data,index =False):
