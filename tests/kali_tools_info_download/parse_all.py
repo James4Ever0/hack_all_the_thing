@@ -42,7 +42,7 @@ for fname in htmls:
                     if init: init=False
             dict_list_write_to_csv("kali_official.csv",data)
         elif fname == "kali_tools_all.html" and flag == 1:
-            soup.find_all("table",)
+            soup.find_all("table",class_="table")
         elif fname == "pentest_tools_with_name.html" and flag == 2:
             data = {"heading": [], "name": [], "link": []}
             cname = "main-content"
