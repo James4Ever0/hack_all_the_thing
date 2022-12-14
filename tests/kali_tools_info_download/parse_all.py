@@ -24,7 +24,7 @@ for fname in htmls:
                     link = a.attrs['href']
                     title = a.text.strip()
                     if title is "":
-                        title = a.attrs.get('title',link.strip().replace("#","/").split("/"))
+                        title = a.attrs.get('title',link.strip().replace("#","/").split("/")[-1].strip())
                     title = title.replace("$","").replace("\n","").strip()
                     print("TOOL:",title,"URL:",link)
                     if init: init=False
