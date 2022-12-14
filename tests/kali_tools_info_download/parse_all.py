@@ -51,7 +51,7 @@ for fname in htmls:
             df = pd.read_html(mtable)[0]
             #df = pd.read_html(tfname)[0]
             print("head?")
-            print(df)
+            print(df.head())
         elif fname == "pentest_tools_with_name.html" and flag == 2:
             data = {"heading": [], "name": [], "link": []}
             cname = "main-content"
