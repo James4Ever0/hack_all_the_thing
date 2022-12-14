@@ -7,12 +7,12 @@ htmls.sort()
 flag = 0  # so we can select. good!
 
 
-def dict_list_write_to_csv(,index =False):
+def dict_list_write_to_csv(name,index =False):
 
             import pandas as pd
 
             df = pd.DataFrame(data=data)
-            df.to_csv(, index=index)
+            df.to_csv(name, index=index)
 
 for fname in htmls:
     with open(fname, "r") as f:
