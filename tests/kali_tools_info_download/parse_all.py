@@ -68,4 +68,4 @@ for fname in htmls:
                     data["link"].append(a_link)
                     data["name"].append(a_text)
             # now you turn the data into a pandas dataframe
-            
+            dict
