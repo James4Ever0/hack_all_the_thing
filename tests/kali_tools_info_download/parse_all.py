@@ -8,11 +8,10 @@ flag = 0  # so we can select. good!
 
 
 def dict_list_write_to_csv(name,index =False):
+    import pandas as pd
 
-            import pandas as pd
-
-            df = pd.DataFrame(data=data)
-            df.to_csv(name, index=index)
+    df = pd.DataFrame(data=data)
+    df.to_csv(name, index=index)
 
 for fname in htmls:
     with open(fname, "r") as f:
@@ -69,4 +68,4 @@ for fname in htmls:
                     data["link"].append(a_link)
                     data["name"].append(a_text)
             # now you turn the data into a pandas dataframe
-
+            
