@@ -47,7 +47,8 @@ for fname in htmls:
             mytable = soup.find("table",class_="table")
             # only one was found. please engage.
             mtable = mytable.prettify("utf-8")
-                    # print("TABLE?",mtable)      df = pd.read_html(mtable)[0]
+            # print("TABLE?",mtable)      
+            df = pd.read_html(mtable)[0]
             #df = pd.read_html(tfname)[0]
             print("head?")
             print(df)
