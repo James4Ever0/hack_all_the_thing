@@ -32,7 +32,7 @@ for fname in htmls:
                 for a in div_card.find_all("a"):
                     # print("elem A?", a)
                     link = a.attrs['href']
-                    title = stripper(a.text).strip()
+                    title = stripper(a.text)
                     if title is "":
                         title = a.attrs.get('title',link.strip().replace("#","/").split("/")[-1].strip())
                     title = stripper(title)
