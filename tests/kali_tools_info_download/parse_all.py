@@ -7,7 +7,12 @@ htmls.sort()
 flag = 0  # so we can select. good!
 
 
-def 
+def dict_list_write_to_csv():
+
+            import pandas as pd
+
+            df = pd.DataFrame(data=data)
+            df.to_csv("pentest_tools_with_name.csv", index=False)
 
 for fname in htmls:
     with open(fname, "r") as f:
