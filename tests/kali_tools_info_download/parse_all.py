@@ -22,7 +22,9 @@ for fname in htmls:
                 for a in div_card.find_all("a"):
                     # print("elem A?", a)
                     link = a.attrs['href']
-                    title = a.text
+                    title = a.text.strip()
+                    if title is "":
+                        title = 
                     if init: init=False
         elif fname == "kali_tools_all.html" and flag == 1:
             ...
