@@ -14,7 +14,7 @@ def dict_list_write_to_csv(name,data,index =False):
     df = pd.DataFrame(data=data)
     df.to_csv(name, index=index)
 def stripper(text):
-    .replace("$","").replace("\n","").strip()
+    return text.replace("$","").replace("\n","").strip()
 for fname in htmls:
     with open(fname, "r") as f:
         content = f.read()
