@@ -6,10 +6,10 @@ htmls = [x for x in htmls if x.endswith(".html")]
 htmls.sort()
 # flag = 0  # so we can select. good!
 flag = 1
+import pandas as pd
 
 
 def dict_list_write_to_csv(name,data,index =False):
-    import pandas as pd
 
     df = pd.DataFrame(data=data)
     df.to_csv(name, index=index)
