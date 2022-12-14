@@ -46,7 +46,11 @@ for fname in htmls:
             # print("TOTAL TABLES?",len(mtables))
             mtable = soup.find("table",class_="table")
             # only one was found. please engage.
-            
+                mtable = mytable.prettify("utf-8")
+    df = pd.read_html(mtable)[0]
+    #df = pd.read_html(tfname)[0]
+    print("head?")
+    print(df)
         elif fname == "pentest_tools_with_name.html" and flag == 2:
             data = {"heading": [], "name": [], "link": []}
             cname = "main-content"
