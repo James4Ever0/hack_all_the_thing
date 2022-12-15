@@ -3,8 +3,7 @@ fstring = """Package: python3
 Version: 3.10.6-1
 Priority: optional
 Section: python
-Source: python3-defaults
-Maintainer: Matthias Klose <doko@debian.org>
+Source: Maintainer: {}
 Installed-Size: {}
 Provides: {}
 Pre-Depends: {}
