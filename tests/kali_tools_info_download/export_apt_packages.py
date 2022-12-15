@@ -31,4 +31,5 @@ print("unique package names:",len(packageNames))
 for pname in packageNames:
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
-    print(info)
+    if info is not None:
+        print(info)
