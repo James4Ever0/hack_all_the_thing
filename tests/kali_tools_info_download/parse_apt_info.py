@@ -44,7 +44,7 @@ def parse_apt_info(packageNames,debug=False,limit=10):
         if len(elem.strip())>limit:
             melem = prefix+elem
             mfstring = entryCounter(melem,debug=debug)
-            res = parse.parse(mfstring, melem)
+            res = parse.parse(mfstring, melem.replace("\n"," \n"))
             if debug:
                 print("____")
                 print(elem)
