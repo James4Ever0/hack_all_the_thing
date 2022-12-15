@@ -2,6 +2,7 @@ import subprocess
 
 output = subprocess.check_output(["apt","list"])
 #breakpoint()
+import parse
 # skip first "Listing..." line.
 from io import StringIO 
 formatstr = "{packageName}/{OSName} {versionNum} {platform}"
