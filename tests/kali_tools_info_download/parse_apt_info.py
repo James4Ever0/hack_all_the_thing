@@ -25,7 +25,7 @@ def entryCounter(mstring):
         if len(entries)>=1:
             ment = entries[0]
             if ment.endswith(":") and ment.strip() == ment:
-                ments.append(ment)
+                
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
     import subprocess
