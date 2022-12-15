@@ -8,6 +8,9 @@ from io import StringIO
 formatstr = "{packageName}/{OSName} {versionNum} {platform}"
 mio = StringIO(output.decode("utf-8"))
 mio.readline()# discard first line
+
+
+packageNames = set()
 for line in mio.readlines():
 #    print("LINE?",line)
     mline = line.strip()
