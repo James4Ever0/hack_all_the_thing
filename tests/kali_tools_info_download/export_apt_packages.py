@@ -43,3 +43,4 @@ for pname in packageNames:
         parse_apt_info(pname,debug=True)
         breakpoint()
 df = pd.DataFrame(data)
+df.to_csv("kali_apt_packages_info.csv"
