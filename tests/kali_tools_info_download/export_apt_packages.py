@@ -23,3 +23,5 @@ for line in mio.readlines():
     except:
         print("ERROR PARSING:",mline)
         breakpoint()
+
+print("unique package names:",len(packageNames))
