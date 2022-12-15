@@ -43,6 +43,7 @@ for pnames in pg.progressbar(iter(lambda: iter(islice(packageNames,n)),())
     infos = parse_apt_info(pnames,debug=True)
     for info in infos:
         if info is not None:
+            pname = 
             data['Name'].append(pname)
             mdict = info.named
             mdict = {key:val.strip() for key,val in mdict.items()}
