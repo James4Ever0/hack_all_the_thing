@@ -40,7 +40,7 @@ n = 100
 for pnames in pg.progressbar(iter(lambda: iter(islice(packageNames,n)),())
 ):
     from parse_apt_info import parse_apt_info
-    infos = parse_apt_info(pnames)
+    infos = parse_apt_info(pnames,debug=True)
     for info in infos:
         if info is not None:
             data['Name'].append(pname)
