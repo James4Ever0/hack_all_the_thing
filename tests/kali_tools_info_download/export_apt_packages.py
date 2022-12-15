@@ -40,7 +40,7 @@ for pname in pg.progressbar(packageNames):
         for col in targetCols:
             data[col].append(info.named.get(col,None))
             # the Result class is composed of "fixed" and "named", cannot be directly converted to dictionary
-        print({x:info[x] for x in targetCols if x in info.named.keys()})
+        #print({x:info[x] for x in targetCols if x in info.named.keys()})
     else:
         parse_apt_info(pname,debug=True)
         breakpoint()
