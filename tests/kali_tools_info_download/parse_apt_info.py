@@ -38,7 +38,7 @@ def parse_apt_info(packageNames,debug=False,limit=10):
     so = "\n"+output.decode('utf-8')
     #print(so)
     prefix="Package:"
-    so_splited = so.split("\n"+())
+    so_splited = so.split("\n"+prefix)
     #cannot split like that.
     for elem in so_splited:
         if len(elem.strip())>limit:
