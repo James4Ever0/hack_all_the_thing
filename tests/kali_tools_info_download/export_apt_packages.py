@@ -45,6 +45,9 @@ for pnames in pg.progressbar(iter(lambda: iter(islice(packageNames,n)),())
         mdict = info.named
         if info is not None:
             pname = mdict.get("Package",None)
+            if pname is None:
+                continue
+            pname = pname.strip()
             data['Name'].append(pname)
             mdict = {key:val.strip() for key,val in mdict.items()}
             for col in targetCols:
