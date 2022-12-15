@@ -39,6 +39,9 @@ from itertools import islice
 n = 1000
 miter = iter(packageNames)
 for pnames in pg.progressbar(iter(lambda: islice(miter,n),())):
+    pnames = list(pnames)
+    if len(pnames) == 0:
+        break
     from parse_apt_info import parse_apt_info
     infos = parse_apt_info(pnames,debug=True)
     for info in infos:
