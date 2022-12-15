@@ -37,6 +37,7 @@ for pname in pg.progressbar(packageNames):
     info = parse_apt_info(pname)
     if info is not None:
         data['Name'].append(pname)
+        mdict = info.named
         for col in targetCols:
             data[col].append(mdict.get(col,None))
             # the Result class is composed of "fixed" and "named", cannot be directly converted to dictionary
