@@ -27,13 +27,15 @@ def entryCounter(mstring):
             ment = entries[0]
             if ment.endswith(":") and ment.strip() == ment:
                 mfstring.append(ment+" {"+ment.replace(":","")+"}") 
+    return "\n".join(mfstring)
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
     import subprocess
     output = subprocess.check_output(cmd)
     so = output.decode('utf-8')
     #print(so)
-    res = parse.parse(fstring, so)
+    mfstring = entryCounter(so)
+    res = parse.parse(mfstring, so)
     print(res)
 
 if __name__ == "__main__":
