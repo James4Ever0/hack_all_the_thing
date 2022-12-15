@@ -19,6 +19,7 @@ Description: {}
 """
 
 # this fstring is deprecated.
+def entryCounter(mstring):
 
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
