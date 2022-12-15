@@ -36,7 +36,7 @@ import progressbar as pg
 # do it like: [packageNames[i:i+n] for i in range(0, len(packageNames),n)]
 # or: iter(lambda: islice(miter,n)),())
 from itertools import islice
-n = 100
+n = 1000
 miter = iter(packageNames)
 for pnames in pg.progressbar(iter(lambda: islice(miter,n),())):
     from parse_apt_info import parse_apt_info
