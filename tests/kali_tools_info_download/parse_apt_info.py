@@ -39,7 +39,8 @@ def parse_apt_info(packageName,debug=False):
     #print(so)
     mfstring = entryCounter(so)
     res = parse.parse(mfstring, so)
-    #print(res)
+    if debug:
+        print(res)
     return res
 
 if __name__ == "__main__":
