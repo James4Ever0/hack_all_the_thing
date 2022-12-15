@@ -12,3 +12,8 @@ for line in mio.readlines():
     mline = line.strip()
     parsed = parse.parse(formatstr,mline)
     print(parsed)
+    try:
+        assert parsed is not None
+    except:
+        print("ERROR PARSING:",mline)
+        breakpoint()
