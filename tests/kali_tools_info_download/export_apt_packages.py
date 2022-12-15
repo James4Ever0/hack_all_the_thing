@@ -12,7 +12,7 @@ for line in mio.readlines():
 #    print("LINE?",line)
     mline = line.strip()
     parsed = parse.parse(formatstr,mline)
-    print(parsed)
+    #print(parsed)
     try:
         assert parsed is not None
     except:
