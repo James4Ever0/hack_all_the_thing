@@ -17,7 +17,7 @@ for line in mio.readlines():
     parsed = parse.parse(formatstr,mline)
     #print(parsed)
     # we want unique package names.
-    packageNames.add(parsed.packageName)
+    packageNames.add(parsed["packageName"])
     try:
         assert parsed is not None
     except:
