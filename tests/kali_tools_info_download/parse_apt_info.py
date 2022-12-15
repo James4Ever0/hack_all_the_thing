@@ -1,6 +1,6 @@
 import parse
-fstring = """Package: python3
-Version: Priority: {}
+fstring = """Package:Version: {}
+Priority: {}
 Section: {}
 Source: {}
 Maintainer: {}
