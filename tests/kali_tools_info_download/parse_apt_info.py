@@ -31,7 +31,7 @@ def entryCounter(mstring,debug=False):
     if debug:
         print("MRES?",mres)
     return mres
-def parse_apt_info(packageNames,debug=False):
+def parse_apt_info(packageNames,debug=False,limit=30):
     cmd = ["apt","show",*packageNames]
     import subprocess
     output = subprocess.check_output(cmd)
