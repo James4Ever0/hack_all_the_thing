@@ -9,3 +9,4 @@ def parse_apt_info(packageName):
 
 if __name__ == "__main__":
     pname = "python3"
+    parse_apt_info(pname)
