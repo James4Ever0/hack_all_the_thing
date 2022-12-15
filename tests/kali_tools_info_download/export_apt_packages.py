@@ -38,6 +38,7 @@ for pname in pg.progressbar(packageNames):
     if info is not None:
         data['Name'].append(pname)
         mdict = info.named
+        mdict = {key:val.strip() for key,val in mdict.items()}
         for col in targetCols:
             data[col].append(mdict.get(col,None))
             # the Result class is composed of "fixed" and "named", cannot be directly converted to dictionary
