@@ -1,7 +1,6 @@
 import parse
 fstring = """Package: python3
-Version: 3.10.6-1
-Priority: optional
+Version: Priority: {}
 Section: {}
 Source: {}
 Maintainer: {}
