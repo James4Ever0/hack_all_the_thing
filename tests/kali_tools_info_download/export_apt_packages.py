@@ -32,9 +32,10 @@ for pname in packageNames:
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
     if info is not None:
-        print(info)
         try:
             print(pname,info["HomePage"])
+        except:
+            pass
     else:
         parse_apt_info(pname,debug=True)
         breakpoint()
