@@ -27,3 +27,8 @@ for line in mio.readlines():
 print("unique package names:",len(packageNames))
 
 # try to parse info
+
+for pname in packageNames:
+    from parse_apt_info import parse_apt_info
+    info = parse_apt_info(pname)
+    print(info)
