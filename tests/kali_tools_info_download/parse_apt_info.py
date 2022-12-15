@@ -6,8 +6,9 @@ Section: python
 Source: python3-defaults
 Maintainer: Matthias Klose <doko@debian.org>
 Installed-Size: 92.2 kB
-Provides: python3-profiler
-Pre-Depends: Depends: {}
+Provides: {}
+Pre-Depends: {}
+Depends: {}
 Suggests: {}
 Replaces: {}
 Homepage: {}
