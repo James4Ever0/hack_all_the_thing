@@ -33,3 +33,6 @@ for pname in packageNames:
     info = parse_apt_info(pname)
     if info is not None:
         print(info)
+    else:
+        parse_apt_info(pname,debug=True)
+        breakpoint()
