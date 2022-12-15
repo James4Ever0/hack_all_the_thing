@@ -38,6 +38,8 @@ def parse_apt_info(packageNames,debug=False):
     so = output.decode('utf-8')
     #print(so)
     so_splited = so.split("Package:")
+    for elem in so_splited:
+
     mfstring = entryCounter(so)
     res = parse.parse(mfstring, so)
     if debug:
