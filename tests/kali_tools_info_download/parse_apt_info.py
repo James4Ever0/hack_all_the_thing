@@ -5,7 +5,7 @@ Priority: optional
 Section: python
 Source: python3-defaults
 Maintainer: Matthias Klose <doko@debian.org>
-Installed-Size: 92.2 kB
+Installed-Size: {}
 Provides: {}
 Pre-Depends: {}
 Depends: {}
