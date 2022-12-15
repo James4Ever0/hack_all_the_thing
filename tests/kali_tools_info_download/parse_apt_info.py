@@ -16,7 +16,7 @@ Tag: devel::interpreter, devel::lang:python, devel::library,
  implemented-in::c, implemented-in::python, role::devel-lib,
  role::program, role::shared-lib
 Download-Size: 38.2 kB
-APT-Sources: http://mirrors.aliyun.com/kali kali-rolling/main amd64 Packages
+APT-Sources:s
 Description:
 """
 def parse_apt_info(packageName):
