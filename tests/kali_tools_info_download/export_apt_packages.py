@@ -9,3 +9,4 @@ mio = StringIO(output.decode("utf-8"))
 for line in mio.readlines():
 #    print("LINE?",line)
     mline = line.strip()
+    parsed = parse.parse(formatstr,mline)
