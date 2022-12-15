@@ -20,7 +20,9 @@ Description: {}
 
 # this fstring is deprecated.
 def entryCounter(mstring):
-
+    for line in mstring.split("\n"):
+        entries = line.split(" ")
+        ment = entries[0]
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
     import subprocess
