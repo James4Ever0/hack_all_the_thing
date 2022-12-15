@@ -28,6 +28,8 @@ def entryCounter(mstring):
             if ment.endswith(":") and ment.strip() == ment:
                 mfstring.append(ment+" {"+ment.replace(":","")+"}") 
     mres = "\n".join(mfstring)
+    print("MRES?",mres)
+    return mres
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
     import subprocess
