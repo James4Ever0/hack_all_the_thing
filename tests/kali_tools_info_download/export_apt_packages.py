@@ -42,7 +42,6 @@ for pnames in pg.progressbar(iter(lambda: islice(miter,n),())):
     from parse_apt_info import parse_apt_info
     infos = parse_apt_info(pnames,debug=True)
     for info in infos:
-        mdict = info.named
         if info is not None:
             pname = mdict.get("Package",None)
             if pname is None:
