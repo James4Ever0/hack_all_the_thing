@@ -38,7 +38,8 @@ def parse_apt_info(packageName):
     #print(so)
     mfstring = entryCounter(so)
     res = parse.parse(mfstring, so)
-    print(res)
+    #print(res)
+    return res
 
 if __name__ == "__main__":
     pname = "python3"
