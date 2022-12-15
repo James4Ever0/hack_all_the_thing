@@ -22,6 +22,7 @@ Description: {}
 def entryCounter(mstring):
     for line in mstring.split("\n"):
         entries = line.split(" ")
+        if len(entries)>=1:
         ment = entries[0]
         if ment.endswith(":") and ment.strip() == ment:
 def parse_apt_info(packageName):
