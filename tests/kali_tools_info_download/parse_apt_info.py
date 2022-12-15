@@ -2,8 +2,9 @@ import parse
 fstring = """Package: python3
 Version: 3.10.6-1
 Priority: optional
-Section: python
-Source: Maintainer: {}
+Section: {}
+Source: {}
+Maintainer: {}
 Installed-Size: {}
 Provides: {}
 Pre-Depends: {}
