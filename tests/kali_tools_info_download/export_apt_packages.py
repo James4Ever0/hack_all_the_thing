@@ -6,5 +6,5 @@ output = subprocess.check_output(["apt","list"])
 from io import StringIO 
 
 mio = StringIO(output.decode("utf-8"))
-mio.readline():
+for line in mio.readlines():
     print("LINE?",line)
