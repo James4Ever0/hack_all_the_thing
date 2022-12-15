@@ -19,7 +19,7 @@ Description: {}
 """
 
 # this fstring is deprecated.
-def entryCounter(mstring):
+def entryCounter(mstring,debug=False):
     mfstring = []
     for line in mstring.split("\n"):
         entries = line.split(" ")
