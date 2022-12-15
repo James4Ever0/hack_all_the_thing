@@ -32,7 +32,7 @@ targetCols = ["Homepage","Tag","Description"]
 data = {x:[] for x in (["Name"]+targetCols)}
 import pandas as pd
 import progressbar as pg
-for pname in packageNames:
+for pname in pg.progressbar(packageNames):
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
     if info is not None:
