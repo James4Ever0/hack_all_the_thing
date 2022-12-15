@@ -17,6 +17,9 @@ Download-Size: {}
 APT-Sources: {}
 Description: {}
 """
+
+# this fstring is deprecated.
+
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
     import subprocess
