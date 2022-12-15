@@ -27,7 +27,7 @@ for line in mio.readlines():
 print("unique package names:",len(packageNames))
 
 # try to parse info
-targetCols = ["Homepage","Tag","Description"]
+targetCols = ["Package","Homepage","Tag","Description"]
 
 data = {x:[] for x in (["Name"]+targetCols)}
 import pandas as pd
