@@ -3,6 +3,7 @@ import subprocess
 output = subprocess.check_output(["apt","list"])
 #breakpoint()
 # skip first "Listing..." line.
+mio.readline()# discard first line
 from io import StringIO 
 formatstr = "{packageName}/{OSName} {versionNum} {platform}"
 mio = StringIO(output.decode("utf-8"))
