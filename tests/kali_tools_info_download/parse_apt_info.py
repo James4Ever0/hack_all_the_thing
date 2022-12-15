@@ -1,5 +1,6 @@
 import parse
-fstring = """Package:Version: {}
+fstring = """Package: {}
+Version: {}
 Priority: {}
 Section: {}
 Source: {}
