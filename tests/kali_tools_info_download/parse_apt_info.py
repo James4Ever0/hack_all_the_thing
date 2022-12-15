@@ -27,7 +27,7 @@ def entryCounter(mstring,debug=False):
             ment = entries[0]
             if ment.endswith(":") and ment.strip() == ment:
                 mfstring.append(ment+"{"+ment.replace(":","").replace("-","_")+"}") 
-    mres = "\n".join(mfstring)
+    mres = "\n".join(mfstring)# here's the problem. there is nothing in between
     if debug:
         print("MRES?",mres)
     return mres
