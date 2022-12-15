@@ -39,8 +39,6 @@ for pname in pg.progressbar(packageNames):
         data['Name'].append(pname)
         for col in targetCols:
             data[col].append(dict(info).get(col,None))
-        breakpoint()
-        print(targetCols)
         print({x:info[x] for x in targetCols if x in dict(info).keys()})
     else:
         parse_apt_info(pname,debug=True)
