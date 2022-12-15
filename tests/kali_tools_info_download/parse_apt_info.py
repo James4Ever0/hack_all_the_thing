@@ -41,7 +41,7 @@ def parse_apt_info(packageNames,debug=False,limit=10):
     for elem in so_splited:
         if len(elem.strip())>limit:
             melem = prefix+elem
-            mfstring = entryCounter(so)
+            mfstring = entryCounter(melem)
             res = parse.parse(mfstring, so)
             if debug:
                 print(res)
