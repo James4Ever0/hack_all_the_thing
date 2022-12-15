@@ -44,7 +44,7 @@ for pname in pg.progressbar(packageNames):
             # the Result class is composed of "fixed" and "named", cannot be directly converted to dictionary
         print({x:info[x] for x in targetCols if x in mdict.keys()})
     else:
-        parse_apt_info(pname,debug=True)
+        #parse_apt_info(pname,debug=True)
         breakpoint()
 df = pd.DataFrame(data)
 df.to_csv("kali_apt_packages_info.csv",index=False)
