@@ -35,7 +35,7 @@ import progressbar as pg
 for pname in pg.progressbar(packageNames):
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
-    #if info is not None:
+    if info is not None:
         data['Name'].append(pname)
         mdict = info.named
         mdict = {key:val.strip() for key,val in mdict.items()}
