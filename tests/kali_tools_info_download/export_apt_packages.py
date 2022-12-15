@@ -32,6 +32,9 @@ targetCols = ["Homepage","Tag","Description"]
 data = {x:[] for x in (["Name"]+targetCols)}
 import pandas as pd
 import progressbar as pg
+
+# do it like: [packageNames[i:i+n] for i in range(0, len(packageNames),n)]
+# or: iter(lambda: iter(islice(packageNames,n)),())
 for pname in pg.progressbar():
     from parse_apt_info import parse_apt_info
     infos = parse_apt_info(pnames)
