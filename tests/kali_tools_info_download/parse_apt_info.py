@@ -47,7 +47,7 @@ def parse_apt_info(packageNames,debug=False,limit=10):
             res = parse.parse(mfstring, melem)
             if debug:
                 print("____")
-                print()
+                print(elem)
                 print("____")
                 print(res)
             yield res
