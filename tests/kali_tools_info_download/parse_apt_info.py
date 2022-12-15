@@ -9,8 +9,8 @@ Installed-Size: 92.2 kB
 Provides: python3-profiler
 Pre-Depends: python3-minimal (= 3.10.6-1)
 Depends: python3.10 (>= 3.10.6-1~), libpython3-stdlib (= 3.10.6-1)
-Suggests: python3-doc (>= 3.10.6-1), python3-tk (>= 3.10.6-1~), python3-venv (>= 3.10.6-1)
-Replaces: Homepage: {}
+Suggests: Replaces: {}
+Homepage: {}
 Tag: {}
 Download-Size: {}
 APT-Sources: {}
