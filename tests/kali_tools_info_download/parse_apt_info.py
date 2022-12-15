@@ -17,13 +17,7 @@ Tag: devel::interpreter, devel::lang:python, devel::library,
  role::program, role::shared-lib
 Download-Size: 38.2 kB
 APT-Sources: http://mirrors.aliyun.com/kali kali-rolling/main amd64 Packages
-Description: interactive high-level object-oriented language (default python3 version)
- Python, the high-level, interactive object oriented language,
- includes an extensive class library with lots of goodies for
- network programming, system administration, sounds and graphics.
- .
- This package is a dependency package, which depends on Debian's default
- Python 3 version (currently v3.10).
+Description:
 """
 def parse_apt_info(packageName):
     cmd = ["apt","show",packageName]
