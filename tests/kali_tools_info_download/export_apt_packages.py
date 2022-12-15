@@ -34,7 +34,7 @@ import pandas as pd
 import progressbar as pg
 for pname in pg.progressbar(packageNames):
     from parse_apt_info import parse_apt_info
-    infos = parse_apt_info(pname)
+    infos = parse_apt_info(pnames)
     for info in infos:
         if info is not None:
             data['Name'].append(pname)
