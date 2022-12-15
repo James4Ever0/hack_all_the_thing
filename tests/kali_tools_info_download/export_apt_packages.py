@@ -27,7 +27,7 @@ for line in mio.readlines():
 print("unique package names:",len(packageNames))
 
 # try to parse info
-targetCols = ["Package","Homepage","Tag","Description"]
+targetCols = ["Homepage","Tag","Description"]
 
 data = {x:[] for x in (["Name"]+targetCols)}
 import pandas as pd
@@ -44,7 +44,7 @@ for pnames in pg.progressbar(iter(lambda: iter(islice(packageNames,n)),())
     for info in infos:
         mdict = info.named
         if info is not None:
-            pname = 
+            pname = mdict.get("Package")
             data['Name'].append(pname)
             mdict = {key:val.strip() for key,val in mdict.items()}
             for col in targetCols:
