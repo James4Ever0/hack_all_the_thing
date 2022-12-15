@@ -9,7 +9,7 @@ puts('hello world')
 # you are going to dig into the msf source code.
 # can you run bare ruby script instead of this heavy shit?
 
-# use search -l in msfconsole to list all mo, or use your python client.
+# use search -l in msfconsole to list all modules, or use your python client.
 
 search_string = Msf::Modules::Metadata::Search.parse_search_string("cve:2008")
 
