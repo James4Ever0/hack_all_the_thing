@@ -25,3 +25,5 @@ for line in mio.readlines():
         breakpoint()
 
 print("unique package names:",len(packageNames))
+
+# try to parse info
