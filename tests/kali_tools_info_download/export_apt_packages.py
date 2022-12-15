@@ -38,7 +38,7 @@ for pname in pg.progressbar(packageNames):
     if info is not None:
         data['Name'].append(pname)
         for col in targetCols:
-            data[col].append(dict(info).get(col,None))
+            data[col].append(info.named.get(col,None))
         print({x:info[x] for x in targetCols if x in dict(info).keys()})
     else:
         parse_apt_info(pname,debug=True)
