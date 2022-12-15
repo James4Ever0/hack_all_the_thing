@@ -7,8 +7,8 @@ Source: python3-defaults
 Maintainer: Matthias Klose <doko@debian.org>
 Installed-Size: 92.2 kB
 Provides: python3-profiler
-Pre-Depends: python3-minimal (= 3.10.6-1)
-Depends:Suggests: {}
+Pre-Depends: Depends: {}
+Suggests: {}
 Replaces: {}
 Homepage: {}
 Tag: {}
