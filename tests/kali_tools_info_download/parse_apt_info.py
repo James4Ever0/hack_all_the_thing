@@ -23,7 +23,7 @@ def parse_apt_info(packageName):
     output = subprocess.check_output(cmd)
     so = output.decode('utf-8')
     #print(so)
-    res = parse.parse(fstring, output)
+    res = parse.parse(fstring, so)
     print(res)
 
 if __name__ == "__main__":
