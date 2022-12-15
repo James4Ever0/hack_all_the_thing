@@ -20,6 +20,7 @@ Description: {}
 
 # this fstring is deprecated.
 def entryCounter(mstring):
+    mfstring = []
     for line in mstring.split("\n"):
         entries = line.split(" ")
         if len(entries)>=1:
