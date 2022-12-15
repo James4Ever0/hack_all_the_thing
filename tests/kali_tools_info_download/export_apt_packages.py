@@ -30,6 +30,8 @@ print("unique package names:",len(packageNames))
 targetCols = ["Homepage","Tag","Description"]
 
 data = {x:[] for x in (["Name"]+targetCols)}
+import pandas as pd
+
 for pname in packageNames:
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
