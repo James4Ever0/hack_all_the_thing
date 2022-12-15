@@ -34,7 +34,7 @@ import pandas as pd
 import progressbar as pg
 
 # do it like: [packageNames[i:i+n] for i in range(0, len(packageNames),n)]
-# or: iter(lambda: iter(islice(packageNames,n)),())
+# or: iter(lambda: islice(miter,n)),())
 from itertools import islice
 n = 100
 miter = iter(packageNames)
