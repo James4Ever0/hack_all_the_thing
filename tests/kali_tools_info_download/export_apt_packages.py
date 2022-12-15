@@ -35,6 +35,8 @@ for pname in packageNames:
     info = parse_apt_info(pname)
     if info is not None:
         data['Name'].append(pname)
+        for col in targetCols:
+            data[col].append(dict(info).get(col,None))
     else:
         parse_apt_info(pname,debug=True)
         breakpoint()
