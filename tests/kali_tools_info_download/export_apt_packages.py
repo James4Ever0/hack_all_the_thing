@@ -28,6 +28,8 @@ print("unique package names:",len(packageNames))
 
 # try to parse info
 targetCols = ["Homepage","Tag","Description"]
+
+data = {x:[] for x in (["Name"]+targetCols)}
 for pname in packageNames:
     from parse_apt_info import parse_apt_info
     info = parse_apt_info(pname)
