@@ -37,9 +37,9 @@ def parse_apt_info(packageNames,debug=False,limit=10):
     output = subprocess.check_output(cmd)
     so = output.decode('utf-8')
     #print(so)
-    so_splited = so.split("Package:")
+    so_splited = so.split()
     for elem in so_splited:
-        if len(elem)>limit:
+        if len(elem.strip())>limit:
             melem = prefix+elem
             mfstring = entryCounter(so)
             res = parse.parse(mfstring, so)
