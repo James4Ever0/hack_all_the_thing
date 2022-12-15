@@ -49,5 +49,5 @@ def parse_apt_info(packageNames,debug=False,limit=10):
 
 if __name__ == "__main__":
     pname = "python3"
-    i = parse_apt_info([pname,'apt']).__next__()
-    print(i)
+    for i in parse_apt_info([pname,'apt']).__next__()
+        print(i)
