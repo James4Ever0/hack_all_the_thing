@@ -26,7 +26,7 @@ def entryCounter(mstring,debug=False):
         if len(entries)>=1:
             ment = entries[0]
             if ment.endswith(":") and ment.strip() == ment:
-                mfstring.append(ment+" {"+ment.replace(":","").replace("-","_")+"}") 
+                mfstring.append(ment+"{"+ment.replace(":","").replace("-","_")+"}") 
     mres = "\n".join(mfstring)
     if debug:
         print("MRES?",mres)
