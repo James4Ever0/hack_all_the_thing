@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.check_output(["apt","list"])
+output = subprocess.check_output(["apt","list"])
