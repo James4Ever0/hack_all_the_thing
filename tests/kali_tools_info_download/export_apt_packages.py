@@ -42,3 +42,4 @@ for pname in packageNames:
     else:
         parse_apt_info(pname,debug=True)
         breakpoint()
+df = pd.DataFrame(data)
