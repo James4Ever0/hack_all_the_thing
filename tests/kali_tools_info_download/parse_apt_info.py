@@ -41,11 +41,11 @@ def parse_apt_info(packageNames,debug=False):
     for elem in so_splited:
         if len(elem)>limit:
             melem = prefix+elem
-        mfstring = entryCounter(so)
-        res = parse.parse(mfstring, so)
-        if debug:
-            print(res)
-        return res
+            mfstring = entryCounter(so)
+            res = parse.parse(mfstring, so)
+            if debug:
+                print(res)
+            return res
 
 if __name__ == "__main__":
     pname = "python3"
