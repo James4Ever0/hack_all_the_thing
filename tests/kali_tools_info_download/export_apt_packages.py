@@ -49,7 +49,6 @@ for pnames in pg.progressbar(iter(lambda: islice(miter,n),())):
                 continue
             pname = pname.strip()
             data['Name'].append(pname)
-            mdict = {key:val.strip() for key,val in mdict.items()}
             for col in targetCols:
                 data[col].append(mdict.get(col,None))
                 # the Result class is composed of "fixed" and "named", cannot be directly converted to dictionary
