@@ -14,4 +14,5 @@ for line in sio.readlines():
     if line == "" and sec !=[]:
         # process this sec.
         for s in sec:
+            if s[0]!=""
         sec = []
