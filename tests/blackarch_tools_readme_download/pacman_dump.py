@@ -19,5 +19,5 @@ for line in sio.readlines():
                 if ":" in s:
                     # then it must be the line.
                     mprefix = s.split(":")[0]
-
+                    mformat = 
         sec = []
