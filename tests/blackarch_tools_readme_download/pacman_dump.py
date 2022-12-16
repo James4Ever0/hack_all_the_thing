@@ -15,4 +15,5 @@ for line in sio.readlines():
         # process this sec.
         for s in sec:
             if s[0].isalnum(): # better analyze it. what is it?
+                # check the format.
         sec = []
