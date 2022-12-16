@@ -18,4 +18,6 @@ for line in sio.readlines():
                 # check the format.
                 if ":" in s:
                     # then it must be the line.
+                    mprefix = s.split(":")[0]
+
         sec = []
