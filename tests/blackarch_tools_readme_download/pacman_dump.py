@@ -20,5 +20,6 @@ for line in sio.readlines():
                     # then it must be the line.
                     mprefix = s.split(":")[0]
                     myName = mprefix.strip()
+                    if len(myName)>0:
                     mformat = 
         sec = []
