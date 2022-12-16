@@ -14,5 +14,5 @@ for line in sio.readlines():
     if mline == "" and sec !=[]:
         # process this sec.
         for s in sec:
-            if s[0]!=" ": # better analyze it. what is it?
+            if isalnum(s[0]): # better analyze it. what is it?
         sec = []
