@@ -34,5 +34,8 @@ for line in sio.readlines():
             # heck!
             result = parse.parse(myFormatter, source_file)
             if result is None:
+                print("source?",source_file)
+                print("_"*4)
+                print("_"*4)
                 breakpoint()
         sec = []
