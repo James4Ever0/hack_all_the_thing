@@ -32,4 +32,5 @@ for line in sio.readlines():
             # do we have parse in blackarch?
             # yes, by our dearly anaconda.
             # heck!
+            result = parse.parse(myFormatter, source_file)
         sec = []
