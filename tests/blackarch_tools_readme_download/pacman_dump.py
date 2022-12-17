@@ -26,4 +26,6 @@ for line in sio.readlines():
                         fmts.append(mformat)
         if len(fmts)>0: 
             myFormatter = "\n".join(fmts)
+            source_file = "".join(sec)
+            source_file = source_file.strip().replace("\n"," \n")
         sec = []
