@@ -48,4 +48,7 @@ for line in pg.progressbar(sio.readlines()):
                 print(myFormatter)
                 print("shit happened. nothing parsed.")
                 breakpoint()
+            else:
+                mdict = result.named
+
         sec = []
