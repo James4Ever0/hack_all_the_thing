@@ -62,3 +62,4 @@ for line in pg.progressbar(sio.readlines()):
 fname = "blackarch_pacman_registry.csv"
 df = pd.DataFrame(data)
 df.to_csv(fname,index=False)
+print("exported to:",fname)
