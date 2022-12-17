@@ -22,7 +22,7 @@ for line in sio.readlines():
                     mprefix = s.split(":")[0]
                     myName = mprefix.strip()
                     if len(myName)>0:
-                        mformat = "{"+myName+"}:"
+                        mformat = mprefix+":"+"{"+myName+"}"
                         fmts.append(mformat)
         if len(fmts)>0: 
             myFormatter = "\n".join(fmts)
