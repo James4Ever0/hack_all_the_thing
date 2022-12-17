@@ -28,4 +28,5 @@ for line in sio.readlines():
             myFormatter = "\n".join(fmts)
             source_file = "".join(sec)
             source_file = source_file.strip().replace("\n"," \n")
+            import parse
         sec = []
