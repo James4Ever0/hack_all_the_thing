@@ -8,7 +8,7 @@ sio = io.StringIO(output.decode('utf-8')+"\n\n")
 
 sec = []
 import progressbar as pg
-for line in sio.readlines():
+for line in pg.progressbar(sio.readlines():
     mline =line.strip()
     if mline !="":
         sec.append(line)
