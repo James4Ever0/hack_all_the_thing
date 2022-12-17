@@ -24,5 +24,6 @@ for line in sio.readlines():
                     if len(myName)>0:
                         mformat = "{}:"
                         fmts.append(mformat)
-        myFormatter = "\n".join(fmts)
+        if len(fmts)>0: 
+            myFormatter = "\n".join(fmts)
         sec = []
