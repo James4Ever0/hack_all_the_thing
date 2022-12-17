@@ -50,5 +50,6 @@ for line in pg.progressbar(sio.readlines()):
                 breakpoint()
             else:
                 mdict = result.named
-
+                for k in targets:
+                    mdict.get(k,None)
         sec = []
