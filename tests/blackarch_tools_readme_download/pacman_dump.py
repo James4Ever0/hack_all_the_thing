@@ -30,4 +30,6 @@ for line in sio.readlines():
             source_file = source_file.strip().replace("\n"," \n")
             import parse
             # do we have parse in blackarch?
+            # yes, by our dearly anaconda.
+            # heck!
         sec = []
