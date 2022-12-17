@@ -54,7 +54,7 @@ for line in pg.progressbar(sio.readlines()):
                     for k in targets:
                         v = mdict.get(k,None)
                         data[k].append(v)
-                except e:
+                except Exception as e:
                     e.print_exc()
                     breakpoint()
         sec = []
