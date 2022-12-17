@@ -38,5 +38,6 @@ for line in sio.readlines():
                 print("_"*4)
                 print("formatter?",myFormatter)
                 print("_"*4)
+                print("shit happened. nothing parsed.")
                 breakpoint()
         sec = []
