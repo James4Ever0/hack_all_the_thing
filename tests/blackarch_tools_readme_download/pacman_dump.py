@@ -49,6 +49,7 @@ for line in pg.progressbar(sio.readlines()):
                 print("shit happened. nothing parsed.")
                 breakpoint()
             else:
+                try:
                 mdict = result.named
                 for k in targets:
                     v = mdict.get(k,None)
