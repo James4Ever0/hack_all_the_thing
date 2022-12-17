@@ -29,4 +29,5 @@ for line in sio.readlines():
             source_file = "".join(sec)
             source_file = source_file.strip().replace("\n"," \n")
             import parse
+            # do we have parse in blackarch?
         sec = []
