@@ -34,6 +34,8 @@ for line in pg.progressbar(sio.readlines()):
             # yes, by our dearly anaconda.
             # heck!
             result = parse.parse(myFormatter, source_file)
+            # looks good!
+            # let's execute this shit.
             if result is None:
                 print("source?")
                 print("_"*4)
