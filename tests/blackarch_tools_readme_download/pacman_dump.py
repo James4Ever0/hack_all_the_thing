@@ -8,6 +8,8 @@ sio = io.StringIO(output.decode('utf-8')+"\n\n")
 
 sec = []
 targets = ["Name","Description","URL","Repository"]
+import pandas as pd
+data = {k:[] for k in targets}
 import progressbar as pg
 for line in pg.progressbar(sio.readlines()):
     mline =line.strip()
