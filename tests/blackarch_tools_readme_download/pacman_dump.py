@@ -36,9 +36,11 @@ for line in pg.progressbar(sio.readlines()):
             result = parse.parse(myFormatter, source_file)
             if result is None:
                 print("source?")
-                print(source_file)
-                print("formatter?",myFormatter)
                 print("_"*4)
+                print(source_file)
+                print("formatter?")
+                print("_"*4)
+                print(myFormatter)
                 print("shit happened. nothing parsed.")
                 breakpoint()
         sec = []
