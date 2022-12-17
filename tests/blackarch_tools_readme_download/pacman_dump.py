@@ -13,6 +13,7 @@ for line in sio.readlines():
         sec.append(line)
     if mline == "" and sec !=[]:
         # process this sec.
+        fmts = []
         for s in sec:
             if s[0].isalnum(): # better analyze it. what is it?
                 # check the format.
@@ -23,4 +24,5 @@ for line in sio.readlines():
                     if len(myName)>0:
                         mformat = "{}:"
                         fmts.append(mformat)
+        myFormatter = fmts.join("
         sec = []
