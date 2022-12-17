@@ -36,6 +36,7 @@ for line in sio.readlines():
             if result is None:
                 print("source?",source_file)
                 print("_"*4)
+                print("formatter?",myFormatter)
                 print("_"*4)
                 breakpoint()
         sec = []
