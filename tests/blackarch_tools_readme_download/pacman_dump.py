@@ -52,4 +52,5 @@ for line in pg.progressbar(sio.readlines()):
                 mdict = result.named
                 for k in targets:
                     v = mdict.get(k,None)
+                    data[k].append(v)
         sec = []
