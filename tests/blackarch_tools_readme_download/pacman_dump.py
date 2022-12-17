@@ -21,7 +21,7 @@ for line in pg.progressbar(sio.readlines()):
                 if ":" in s:
                     # then it must be the line.
                     mprefix = s.split(":")[0]
-                    myName = mprefix.strip()
+                    myName = mprefix.strip().replace(" ","_").replace("-","_")
                     if len(myName)>0:
                         mformat = mprefix+":"+"{"+myName+"}"
                         fmts.append(mformat)
