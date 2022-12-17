@@ -35,8 +35,8 @@ for line in pg.progressbar(sio.readlines()):
             # heck!
             result = parse.parse(myFormatter, source_file)
             if result is None:
-                print("source?",source_file)
-                print("_"*4)
+                print("source?")
+                print(source_file)
                 print("formatter?",myFormatter)
                 print("_"*4)
                 print("shit happened. nothing parsed.")
