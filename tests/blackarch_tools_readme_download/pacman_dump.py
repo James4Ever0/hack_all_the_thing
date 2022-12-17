@@ -58,3 +58,7 @@ for line in pg.progressbar(sio.readlines()):
                     print(dir(result))
                     breakpoint()
         sec = []
+
+fname = "blackarch_pacman_registry.csv"
+df = pd.DataFrame(data)
+df.to_csv(fname,index=False)
