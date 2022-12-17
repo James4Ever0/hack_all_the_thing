@@ -33,4 +33,6 @@ for line in sio.readlines():
             # yes, by our dearly anaconda.
             # heck!
             result = parse.parse(myFormatter, source_file)
+            if result is None:
+                breakpoint()
         sec = []
