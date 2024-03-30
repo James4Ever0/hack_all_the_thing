@@ -1,0 +1,1 @@
+msfrpcd -P lazero # this will start at background daemon.
