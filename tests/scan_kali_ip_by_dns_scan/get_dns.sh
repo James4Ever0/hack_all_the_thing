@@ -1,0 +1,1 @@
+dnsenum www.kali.org -o dns_kali.xml
